@@ -1,0 +1,9 @@
+mailing
+.github
+.idea
+.vscode
+dist
+mailing/html
+node_modules
+playwright-report
+*.yml

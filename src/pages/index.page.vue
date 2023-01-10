@@ -1,0 +1,22 @@
+<script lang="ts" setup>
+import { navigate } from 'vite-plugin-ssr/client/router'
+import Counter from '../components/Counter.vue'
+
+const randomNavigation = () => {
+  const randomIndex = Math.floor(Math.random() * 3)
+  navigate(['/markdown', '/star-wars', '/hello/alice'][randomIndex])
+}
+</script>
+
+<template>
+  <h1>Welcome to <code>vite-plugin-ssr</code></h1>
+  This page is:
+  <ul>
+    <li>Rendered to HTML.</li>
+    <li>Interactive. <Counter /></li>
+  </ul>
+  <p>
+    We <code>export const clientRouting = true</code> to enable Client Routing.
+    <button @click="randomNavigation">Random Page</button>
+  </p>
+</template>
