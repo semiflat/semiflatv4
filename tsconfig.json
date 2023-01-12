@@ -2,26 +2,21 @@
   "compilerOptions": {
     "baseUrl": ".",
     "strict": true,
-    "module": "ES2020",
-    "moduleResolution": "Node",
-    "target": "ES2020",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vitest", "vite/client"],
-    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
     "esModuleInterop": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
+    "types": ["vitest", "vite/client"],
     "paths": {
       "~/*": ["src/*"]
-    }
-  },
-  "ts-node": {
-    "transpileOnly": true,
-    "compilerOptions": {
-      "module": "CommonJS"
     }
   },
   "exclude": ["dist", "node_modules"]

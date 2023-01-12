@@ -1,33 +1,36 @@
+import path from 'path'
 import vue from '@vitejs/plugin-vue'
-import md from 'vite-plugin-md'
 import ssr from 'vite-plugin-ssr/plugin'
 import Unocss from 'unocss/vite'
-import { UserConfig } from 'vite'
-import svgLoader from 'vite-svg-loader'
-import yaml from '@rollup/plugin-yaml'
-import AutoImport from 'unplugin-auto-import/vite'
+import type { UserConfig } from 'vite'
+import { VitePluginFonts } from 'vite-plugin-fonts'
 import Components from 'unplugin-vue-components/vite'
-
-
+import AutoImport from 'unplugin-auto-import/vite'
+import yaml from '@rollup/plugin-yaml'
+import svgLoader from 'vite-svg-loader'
 
 const config: UserConfig = {
   plugins: [
-    vue({
-      include: [/\.vue$/, /\.md$/]
-    }),
-    md(),
-    ssr({ prerender: true }),
+    vue(),
+    ssr(),
     Unocss(),
+    VitePluginFonts({
+      google: {
+        families: ['Poppins:wght@400;500;600;700;800'],
+      },
+    }),
     svgLoader({
       svgo: false,
     }),
     yaml(),
+    // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: ['vue', '@vueuse/core'],
       dts: 'src/auto-imports.d.ts',
       dirs: ['src/composables', 'src/store'],
       vueTemplate: true,
     }),
+    // https://github.com/antfu/unplugin-vue-components
     Components({
       // allow auto load markdown components under `./src/components/`
       extensions: ['vue', 'md'],
@@ -36,8 +39,11 @@ const config: UserConfig = {
       dts: 'src/components.d.ts',
     }),
   ],
-  // We manually add a list of dependencies to be pre-bundled, in order to avoid a page reload at dev start which breaks vite-plugin-ssr's CI
-  optimizeDeps: { include: ['cross-fetch'] }
+  resolve: {
+    alias: {
+      '~/': `${path.resolve(__dirname, 'src')}/`,
+    },
+  },
 }
 
 export default config

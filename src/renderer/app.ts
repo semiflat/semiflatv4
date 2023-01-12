@@ -1,61 +1,43 @@
-import { createSSRApp, defineComponent, h, markRaw, reactive } from 'vue'
+import { createSSRApp, defineComponent, h } from 'vue'
 import PageShell from './PageShell.vue'
-import type { Component, PageContext } from './types'
-import { setPageContext } from './usePageContext'
+import { setPageContext } from '~/composables/usePageContext'
+import type { PageContext, UserModule } from '~/types'
+
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
-import '../styles/main.css'
+import '~/styles/main.css'
+import { initI18n, loadAsyncLanguage } from '~/i18n'
 
-
-function createApp(pageContext: PageContext) {
-  const { Page } = pageContext
-
-  let rootComponent: Component
-  const PageWithWrapper = defineComponent({
-    data: () => ({
-      Page: markRaw(Page),
-      pageProps: markRaw(pageContext.pageProps || {})
-    }),
-    created() {
-      rootComponent = this
-    },
+async function createApp(pageContext: PageContext) {
+  const { Page, pageProps } = pageContext
+  const PageWithLayout = defineComponent({
     render() {
       return h(
         PageShell,
         {},
         {
-          default: () => {
-            return h(this.Page, this.pageProps)
-          }
+          default() {
+            // @ts-expect-error Page wrong types
+            return h(Page, pageProps || {})
+          },
         }
       )
-    }
+    },
   })
 
-  const app = createSSRApp(PageWithWrapper)
+  await loadAsyncLanguage(pageContext.locale)
+  await initI18n()
 
-  // We use `app.changePage()` to do Client Routing, see `_default.page.client.js`
-  objectAssign(app, {
-    changePage: (pageContext: PageContext) => {
-      Object.assign(pageContextReactive, pageContext)
-      rootComponent.Page = markRaw(pageContext.Page)
-      rootComponent.pageProps = markRaw(pageContext.pageProps || {})
-    }
-  })
+  const app = createSSRApp(PageWithLayout)
 
-  // When doing Client Routing, we mutate pageContext (see usage of `app.changePage()` in `_default.page.client.js`).
-  // We therefore use a reactive pageContext.
-  const pageContextReactive = reactive(pageContext)
+  // Make `pageContext` available from any Vue component
+  setPageContext(app, pageContext)
 
-  // Make `pageContext` accessible from any Vue component
-  setPageContext(app, pageContextReactive)
+  Object.values(
+    import.meta.glob<{ install: UserModule }>('~/modules/*.ts', { eager: true })
+  ).forEach((i) => i.install?.({ app }))
 
   return app
-}
-
-// Same as `Object.assign()` but with type inference
-function objectAssign<Obj, ObjAddendum>(obj: Obj, objAddendum: ObjAddendum): asserts obj is Obj & ObjAddendum {
-  Object.assign(obj, objAddendum)
 }
 
 export { createApp }

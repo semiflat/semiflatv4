@@ -1,68 +1,21 @@
-<template>
-  <div class="layout">
-    <div class="navigation">
-      <a href="/" class="logo">
-        <img src="./logo.svg" height="64" width="64" />
-      </a>
-      <Link href="/">Welcome</Link>
-      <Link href="/markdown">Markdown</Link>
-      <Link href="/star-wars">Data Fetching</Link>
-      <Link href="/hello">Routing</Link>
-    </div>
-    <div class="content"><slot /></div>
-  </div>
-</template>
+<script setup lang="ts">
 
-<script lang="ts" setup>
-import Link from './Link.vue'
+// import BackgroundTurquoise from '~/assets/bg-turquoise.svg?component'
+// import BackgroundMoblieLeft from '~/assets/bg-hero-left-mobile.svg?component' blur-[120px]
+
 </script>
 
-<style>
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-* {
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-}
-code {
-  font-family: monospace;
-  background-color: #eaeaea;
-  padding: 3px 5px;
-  border-radius: 4px;
-}
-</style>
-
-<style scoped>
-.layout {
-  display: flex;
-  max-width: 900px;
-  margin: auto;
-}
-.content {
-  padding: 20px;
-  padding-bottom: 50px;
-  min-height: 100vh;
-}
-.navigation {
-  padding: 20px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.8em;
-  border-right: 2px solid #eee;
-}
-.logo {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.content {
-  transition: opacity 0.1s ease-in;
-}
-.content.page-transition {
-  opacity: 0;
-}
-</style>
+<template>
+  <div class="layout ">
+    <div class="page-content relative">
+      <div
+        class="bg-turquoise-100/80 pointer-events-none rounded-full blur-[120px] h-[28.125rem] w-[28.125rem] absolute -left-50 -top-18 md:w-[43.75rem] md:h-[43.75rem] md:-left-90 md:top-26 md:blur-[240px]" />
+      <div
+        class="bg-turquoise-200 pointer-events-none rounded-full blur-[120px] h-[12.5rem] w-[12.5rem] absolute -right-15 -top-17 md:h-[18.75rem] md:w-[18.75rem] md:blur-200px" />
+    </div>
+    <TheLayoutNavbar />
+    <div class="content">
+      <slot />
+    </div>
+  </div>
+</template>

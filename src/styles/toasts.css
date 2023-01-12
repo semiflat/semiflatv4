@@ -1,0 +1,24 @@
+.app-toast-wrap {
+  @apply text-gray-800 text-[0.875rem] leading-[1.5] p-4 flex items-center;
+}
+
+.app-toast-wrap .Vue-Toastification__icon,
+.app-toast-wrap .Vue-Toastification__close-button {
+  @apply hidden;
+}
+
+.app-toast-error-wrap {
+  background: linear-gradient(0deg, rgba(251, 15, 1, 0.2), rgba(251, 15, 1, 0.2)), #ffffff;
+}
+
+.app-toast-success-wrap {
+  background: linear-gradient(0deg, rgba(37, 211, 102, 0.1), rgba(37, 211, 102, 0.1)), #ffffff;
+}
+
+.app-toast-body {
+  @apply font-sans;
+}
+
+.app-toast__content {
+  @apply flex items-center gap-x-2;
+}

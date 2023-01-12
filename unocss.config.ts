@@ -12,6 +12,10 @@ import {
 export default defineConfig({
   shortcuts: [
     [
+      'page-content',
+      'max-w-[69rem] mx-auto px-6 lg:px-0',
+    ],
+    [
       'btn',
       'px-4 py-1 rounded inline-block bg-teal-700 text-white cursor-pointer hover:bg-teal-800 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50',
     ],
@@ -46,6 +50,16 @@ export default defineConfig({
         '-webkit-box-shadow': '0px 0px 0px 3px #25D366',
       },
     ],
+    [
+      'gradient-text',
+      {
+        'background': 'linear-gradient(225deg, #407A7A 0%, #002832 100%)',
+        '-webkit-background-clip': 'text',
+        '-webkit-text-fill-color': 'transparent',
+        'background-clip': 'text',
+        'text-fill-color': 'transparent',
+      },
+    ],
   ],
   presets: [
     presetUno(),
@@ -61,7 +75,7 @@ export default defineConfig({
     presetTypography(),
     presetWebFonts({
       fonts: {
-        sans: 'Poppins',
+        sans: 'Archia',
         serif: 'DM Serif Display',
         mono: 'DM Mono',
       },
@@ -80,7 +94,17 @@ export default defineConfig({
       xxl: '1920px',
     },
     colors: {
-      primary: '#25D366',
+      primary: '#002832',
+      blue: {
+        100: '#ADBFBF',
+        200: '#577578',
+        300: '#002832',
+      },
+      turquoise: {
+        100: '#C9F7E8',
+        200: '#96EBD6',
+        400: '#54ABA3'
+      },
       gray: {
         0: '#F2F2F2',
         100: '#EEEEEE',

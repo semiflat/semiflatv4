@@ -1,2 +1,12 @@
-/node_modules/
-/dist/
+.DS_Store
+.vite-ssg-dist
+.vite-ssg-temp
+*.local
+dist
+dist-ssr
+node_modules
+.idea/
+*.log
+/test-results/
+/playwright-report/
+/playwright/.cache/
