@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <div class="layout ">
+  <div class="layout overflow-hidden">
     <div class="page-content relative">
       <div
         class="bg-turquoise-100/80 pointer-events-none rounded-full blur-[120px] h-[28.125rem] w-[28.125rem] absolute -left-50 -top-18 md:w-[43.75rem] md:h-[43.75rem] md:-left-90 md:top-26 md:blur-[240px]" />

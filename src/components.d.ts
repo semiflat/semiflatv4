@@ -18,6 +18,7 @@ declare module '@vue/runtime-core' {
     AppLink: typeof import('./components/AppLink.vue')['default']
     AppMultistepContainer: typeof import('./components/utility/AppMultistepContainer.vue')['default']
     AppPhoneInput: typeof import('./components/inputs/AppPhoneInput.vue')['default']
+    AppSlider: typeof import('./components/utility/AppSlider.vue')['default']
     AppSpinner: typeof import('./components/utility/AppSpinner.vue')['default']
     AppStepper: typeof import('./components/utility/AppStepper.vue')['default']
     AppToastError: typeof import('./components/toasts/AppToastError.vue')['default']

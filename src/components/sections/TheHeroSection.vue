@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SwiperSlide } from 'swiper/vue'
 import BackgroundMobileLeft from '~/assets/bg-left-mobile.svg?component'
 import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
 import SisuLogo from '~/assets/logos/sisu.svg?component'
@@ -8,6 +9,7 @@ import DefaultLogo from '~/assets/logos/default.svg?component'
 import ClickmagicLogo from '~/assets/logos/clickmagick.svg?component'
 import PocusLogo from '~/assets/logos/pocus.svg?component'
 import YuzedataLogo from '~/assets/logos/yuzedata.svg?component'
+import { useBreakpoints } from '~/composables/useBreakpoints'
 
 const logos = [
     OdonataLogo,
@@ -19,6 +21,28 @@ const logos = [
     YuzedataLogo
 ]
 
+const breakpoints = useBreakpoints()
+const swiperBreakpoints = {
+    [breakpoints.lg]: {
+        slidesPerView: 'auto',
+        watchSlidesVisibility: true,
+
+    },
+}
+
+
+const swiperOptions = computed(() => ({
+    slidesPerView: 'auto',
+    //   spaceBetween: 16,
+    navigation: false,
+    loop: true,
+    watchSlidesVisibility: true,
+    // autoplay: {
+    //     delay: 2000,
+    // },
+    // breakpoints: swiperBreakpoints,
+}))
+
 </script>
 
 <template>
@@ -26,7 +50,7 @@ const logos = [
         <BackgroundMobileLeft class="absolute pointer-events-none top-28 left-0 md:hidden" />
         <BackgroundDesktop class="hidden pointer-events-none absolute -left-42 md:block -top-60" />
         <div class=" mt-3.5rem md:mt-40 md:text-center">
-            <h1 class="hero-title md:text-[2.5rem]  md:mt-6">Product design for SaaS startups_</h1>
+            <h1 class="hero-title md:text-[2.5rem] md:leading-[120%]  md:mt-6">Product design for SaaS startups_</h1>
             <p class="mt-6 text-blue-200 ">Semiflat is a full-service design agency specialized in solving complex
                 problems through design. <br /> We design tools that help millions of professionals
                 be more effective at their job.</p>
@@ -35,10 +59,14 @@ const logos = [
                 <AppButton text>See our work</AppButton>
             </div>
         </div>
-        <div class="flex items-center mt-16 grayscale md:mt-40">
-            <div v-for="(logo, i) in logos" :key="i" class="w-[180px] shrink-0 mx-auto flex items-center justify-center">
-                <component :is="logo" class="h-[38px]"/>
-            </div>
+        <div class="">
+            <AppSlider class="mt-16 md:mt-40 " :swiper-options="swiperOptions">
+                <SwiperSlide
+v-for="(logo, i) in logos" :key="i"
+                    class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center">
+                    <component :is="logo" class="h-[38px] grayscale" />
+                </SwiperSlide>
+            </AppSlider>
         </div>
     </div>
 </template>
@@ -46,5 +74,11 @@ const logos = [
 <style>
 .hero-title {
     @apply text-[1.75rem] font-semibold leading-[34px] gradient-text;
+}
+
+
+.swiper-slide-visible::nth-of-type(1) {
+  opacity: 1;
+  background-color: red;
 }
 </style> 

@@ -83,11 +83,11 @@ const services = [
 </script>
 
 <template>
-    <div class="page-content mt-28 pb-20 relative">
+    <div class="page-content pt-28 pb-20 md:pb-[12.5rem] relative overflow-y-clip">
         <div
-            class="bg-turquoise-100 pointer-events-none rounded-full absolute -left-40  w-[43.75rem] h-[43.75rem] blur-[240px] top-6" />
+            class="bg-turquoise-100 pointer-events-none rounded-full absolute -left-40 w-[43.75rem] h-[43.75rem] blur-[240px]  top-6 md:-left-100 md:top-70" />
         <div
-            class="bg-turquoise-200 pointer-events-none rounded-full absolute  w-[18.75rem] h-[18.75rem] bottom-46 -right-16 blur-[200px]" />
+            class="bg-turquoise-200 pointer-events-none rounded-full absolute  w-[18.75rem] h-[18.75rem] bottom-46 -right-16 md:-bottom-20 md:left-70 blur-[200px]" />
         <div class="relative z-10 md:flex md:items-start md:justify-between">
             <div>
                 <SmallLogo />
