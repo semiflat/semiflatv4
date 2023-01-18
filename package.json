@@ -11,6 +11,7 @@
   "dependencies": {
     "@chenfengyuan/vue-countdown": "^2.1.0",
     "@cloudflare/kv-asset-handler": "^0.2.0",
+    "@formkit/auto-animate": "1.0.0-beta.5",
     "@headlessui/vue": "^1.7.5",
     "@lbgm/phone-number-input": "^1.1.5",
     "@unocss/reset": "^0.47.6",

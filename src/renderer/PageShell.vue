@@ -17,5 +17,6 @@
     <div class="content">
       <slot />
     </div>
+    <TheLayoutFooter />
   </div>
 </template>

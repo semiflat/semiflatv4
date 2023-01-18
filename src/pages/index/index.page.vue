@@ -1,4 +1,7 @@
 
+import TheFaqSection from '~/components/sections/TheFaqSection.vue';
+
+
 import TheTestimonialsSection from '~/components/sections/TheTestimonialsSection.vue';
 
 
@@ -9,11 +12,12 @@ import TheWeHelpSection from '~/components/sections/TheWeHelpSection.vue';
 
 <template>
   <div >
-    <TheHeroSection />
-    <TheCaseStudySection />
+    <!-- <TheHeroSection /> -->
+    <!-- <TheCaseStudySection /> -->
     <TheExpertiseSection />
     <TheWeHelpSection />
     <TheAboutSection />
     <TheTestimonialsSection />
+    <TheFaqSection />
   </div>
 </template>
