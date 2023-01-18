@@ -37,10 +37,10 @@ const swiperOptions = computed(() => ({
     navigation: false,
     loop: true,
     watchSlidesVisibility: true,
-    // autoplay: {
-    //     delay: 2000,
-    // },
-    // breakpoints: swiperBreakpoints,
+    autoplay: {
+        delay: 2000,
+    },
+    breakpoints: swiperBreakpoints,
 }))
 
 </script>
@@ -60,7 +60,8 @@ const swiperOptions = computed(() => ({
             </div>
         </div>
         <div class="">
-            <AppSlider class="mt-16 md:mt-40 " :swiper-options="swiperOptions">
+            <AppSlider
+class="mt-16 md:mt-40 " style="" :swiper-options="swiperOptions">
                 <SwiperSlide
 v-for="(logo, i) in logos" :key="i"
                     class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center">
@@ -76,9 +77,23 @@ v-for="(logo, i) in logos" :key="i"
     @apply text-[1.75rem] font-semibold leading-[34px] gradient-text;
 }
 
-
-.swiper-slide-visible::nth-of-type(1) {
-  opacity: 1;
-  background-color: red;
+.swiper {
+    mask-image: linear-gradient(
+    270deg,
+    rgba(242, 242, 242, 0) 0%,
+    rgba(245, 245, 245, 1) 15%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(244, 244, 244, 1) 85%,
+    rgba(242, 242, 242, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    270deg,
+    rgba(242, 242, 242, 0) 0%,
+    rgba(245, 245, 245, 1) 15%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(244, 244, 244, 1) 85%,
+    rgba(242, 242, 242, 0) 100%
+  ) 
 }
+
 </style> 
