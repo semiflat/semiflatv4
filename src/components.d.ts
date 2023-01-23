@@ -38,6 +38,7 @@ declare module '@vue/runtime-core' {
     TheHostListItem: typeof import('./components/TheHostListItem.vue')['default']
     TheLayoutFooter: typeof import('./components/layout/TheLayoutFooter.vue')['default']
     TheLayoutNavbar: typeof import('./components/layout/TheLayoutNavbar.vue')['default']
+    ThePerkComponent: typeof import('./components/testimonial/ThePerkComponent.vue')['default']
     TheSelectDayItem: typeof import('./components/TheSelectDayItem.vue')['default']
     TheTestimonialComponent: typeof import('./components/testimonial/TheTestimonialComponent.vue')['default']
     TheTestimonialsSection: typeof import('./components/sections/index/TheTestimonialsSection.vue')['default']
