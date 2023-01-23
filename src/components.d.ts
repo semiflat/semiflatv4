@@ -25,6 +25,8 @@ declare module '@vue/runtime-core' {
     AppToastSuccess: typeof import('./components/toasts/AppToastSuccess.vue')['default']
     ClientOnly: typeof import('./components/utility/ClientOnly.vue')['default']
     MainSection: typeof import('./components/MainSection.vue')['default']
+    TheAboutAboutSection: typeof import('./components/sections/about/TheAboutAboutSection.vue')['default']
+    TheAboutComponent: typeof import('./components/about/TheAboutComponent.vue')['default']
     TheAboutHeroSection: typeof import('./components/sections/about/TheAboutHeroSection.vue')['default']
     TheAboutPerksSection: typeof import('./components/sections/about/TheAboutPerksSection.vue')['default']
     TheAboutSection: typeof import('./components/sections/index/TheAboutSection.vue')['default']
