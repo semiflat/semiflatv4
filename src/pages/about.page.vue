@@ -1,4 +1,10 @@
 
+import TheAboutEmplyeesSection from '~/components/sections/about/TheAboutEmplyeesSection.vue';
+
+
+import TheOperateSection from '~/components/sections/about/TheOperateSection.vue';
+
+
 import TheAboutAboutSection from '~/components/sections/about/TheAboutAboutSection.vue';
 
 
@@ -9,6 +15,8 @@ import TheAboutPerksSection from '~/components/sections/about/TheAboutPerksSecti
       <TheAboutHeroSection />
       <TheAboutPerksSection />
       <TheAboutAboutSection />
+      <TheAboutOperateSection />
+      <TheAboutEmployeesSection />
       <!-- <TheCaseStudySection />
       <TheExpertiseSection />
       <TheWeHelpSection />

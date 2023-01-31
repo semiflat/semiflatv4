@@ -11,6 +11,8 @@ import FlawlessIllustration from '~/assets/illustrations/flawless-illustration.s
 import breakpointsConst from "~/constants/breakpoints";
 
 
+
+
 const breakpoints =  useBreakpoints(breakpointsConst) 
 const md = ref(breakpoints.smaller('md'))
 

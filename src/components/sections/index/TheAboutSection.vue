@@ -24,5 +24,5 @@ const content = [
 </script>
 
 <template>
-    <TheAboutComponent :content="content" :icon="HandsIcon"  />
+    <TheAboutComponent :content="content" :icon="HandsIcon" />
 </template>
