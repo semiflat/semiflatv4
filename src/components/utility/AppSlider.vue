@@ -42,7 +42,7 @@ const slideNext = () => {
       type="button"
       @click="slidePrev"
     >
-      <IconSliderArrowLeft />
+      <!-- <IconSliderArrowLeft /> -->
     </button>
     <Swiper
       v-bind="{ ...props.swiperOptions, navigation: false }"
