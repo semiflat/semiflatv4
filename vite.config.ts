@@ -9,6 +9,8 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import yaml from '@rollup/plugin-yaml'
 import svgLoader from 'vite-svg-loader'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+
 
 
 const config: UserConfig = {
@@ -16,6 +18,20 @@ const config: UserConfig = {
     vue(),
     ssr(),
     Unocss(),
+    ViteImageOptimizer({
+      png: {
+        // https://sharp.pixelplumbing.com/api-output#png
+        quality: 70,
+      },
+      jpeg: {
+        // https://sharp.pixelplumbing.com/api-output#jpeg
+        quality: 70,
+      },
+      jpg: {
+        // https://sharp.pixelplumbing.com/api-output#jpeg
+        quality: 70,
+      },
+    }),
     VitePluginFonts({
       google: {
         families: ['Poppins:wght@400;500;600;700;800'],

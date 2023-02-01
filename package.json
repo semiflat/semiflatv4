@@ -52,10 +52,12 @@
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.7.1",
+    "sharp": "^0.31.3",
     "taze": "^0.8.4",
     "unocss": "^0.47.6",
     "unplugin-auto-import": "^0.12.1",
     "unplugin-vue-components": "^0.22.12",
+    "vite-plugin-image-optimizer": "^1.0.7",
     "vite-svg-loader": "^3.6.0"
   },
   "engines": {
