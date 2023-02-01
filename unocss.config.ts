@@ -103,6 +103,7 @@ export default defineConfig({
       turquoise: {
         100: '#C9F7E8',
         200: '#96EBD6',
+        300: '#64DCC8',
         400: '#54ABA3'
       },
       gray: {
