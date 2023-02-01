@@ -37,7 +37,7 @@ class="text-blue-300 font-semibold shrink-0"
                         :class="{ 'invisible': event.date === (i > 0 ? timeline[i - 1].date : timeline[timeline.length - 1].date) }">
                         {{ event.date }}</p>
                     <div class="flex gap-4 md:gap-8">
-                        <div class="bg-turquoise-300 w-3 h-3 rounded-full shrink-0 m-1.5" />
+                        <div class="bg-turquoise-300 w-3 h-3 rounded-full shrink-0 m-1.5 !mr-1.25" />
                         <div class="">
                             <div>
                                 <h3 class="text-blue-300 font-semibold">{{ event.header }}</h3>
@@ -51,7 +51,7 @@ class="text-blue-300 font-semibold shrink-0"
                 <div class="flex gap-4">
                 <p class="text-blue-300 font-semibold shrink-0 invisible">Q1 2020</p>
                 <div class="flex gap-4">
-                    <div class="bg-turquoise-300 w-3 h-3 rounded-full shrink-0 m-1.5" />
+                    <div class="bg-turquoise-300 w-3 h-3 rounded-full shrink-0 m-1.5 !mr-1.25" />
                     <div class="md:w-[41.812rem]">
                         <div>
                             <AppButton text class="!text-turquoise-400 font-semibold !py-0 !px-0">Read more history</AppButton>
