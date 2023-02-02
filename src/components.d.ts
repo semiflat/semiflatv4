@@ -38,5 +38,9 @@ declare module '@vue/runtime-core' {
     TheTestimonialComponent: typeof import('./components/testimonial/TheTestimonialComponent.vue')['default']
     TheTestimonialsSection: typeof import('./components/sections/index/TheTestimonialsSection.vue')['default']
     TheWeHelpSection: typeof import('./components/sections/index/TheWeHelpSection.vue')['default']
+    TheWorkCaseStudySection: typeof import('./components/sections/work/TheWorkCaseStudySection.vue')['default']
+    TheWorkEploreServicesSection: typeof import('./components/sections/work/TheWorkEploreServicesSection.vue')['default']
+    TheWorkExploreServicesSection: typeof import('./components/sections/work/TheWorkExploreServicesSection.vue')['default']
+    TheWorkHeroSection: typeof import('./components/sections/work/TheWorkHeroSection.vue')['default']
   }
 }

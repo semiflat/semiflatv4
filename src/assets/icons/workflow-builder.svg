@@ -1,0 +1,23 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_780_52848)">
+<path d="M16.25 8.75L23.75 8.75C24.4404 8.75 25 8.19036 25 7.5V2.5C25 1.80964 24.4404 1.25 23.75 1.25L16.25 1.25C15.5596 1.25 15 1.80964 15 2.5V7.5C15 8.19036 15.5596 8.75 16.25 8.75Z" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M16.25 38.75H23.75C24.4404 38.75 25 38.1904 25 37.5V32.5C25 31.8096 24.4404 31.25 23.75 31.25H16.25C15.5596 31.25 15 31.8096 15 32.5V37.5C15 38.1904 15.5596 38.75 16.25 38.75Z" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M20 8.75V13.75" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M20 26.25V31.25" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M20 16.25V23.75" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M23.75 20H16.25" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M6.25 16.25V7.5C6.25 6.80963 6.80963 6.25 7.5 6.25H11.25" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M33.75 16.25V7.5C33.75 6.80963 33.1904 6.25 32.5 6.25H28.75" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M2.5 23.75H10C10.6904 23.75 11.25 23.1904 11.25 22.5V17.5C11.25 16.8096 10.6904 16.25 10 16.25H2.5C1.80964 16.25 1.25 16.8096 1.25 17.5V22.5C1.25 23.1904 1.80964 23.75 2.5 23.75Z" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M30 23.75H37.5C38.1904 23.75 38.75 23.1904 38.75 22.5V17.5C38.75 16.8096 38.1904 16.25 37.5 16.25H30C29.3096 16.25 28.75 16.8096 28.75 17.5V22.5C28.75 23.1904 29.3096 23.75 30 23.75Z" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M33.75 27.5V37.5" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M37.5 33.75L33.75 37.5L30 33.75" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M6.25 27.5V33.75" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M6.25 38.75C7.63071 38.75 8.75 37.6307 8.75 36.25C8.75 34.8693 7.63071 33.75 6.25 33.75C4.86929 33.75 3.75 34.8693 3.75 36.25C3.75 37.6307 4.86929 38.75 6.25 38.75Z" stroke="#54ABA3" stroke-width="2" stroke-miterlimit="10"/>
+</g>
+<defs>
+<clipPath id="clip0_780_52848">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
