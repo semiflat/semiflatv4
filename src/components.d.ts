@@ -30,6 +30,8 @@ declare module '@vue/runtime-core' {
     TheAboutTimeline: typeof import('./components/sections/about/TheAboutTimeline.vue')['default']
     TheCaseStudySection: typeof import('./components/sections/index/TheCaseStudySection.vue')['default']
     TheExpertiseSection: typeof import('./components/sections/index/TheExpertiseSection.vue')['default']
+    TheFaqComponent: typeof import('./components/utility/TheFaqComponent.vue')['default']
+    TheFaqItem: typeof import('./components/utility/TheFaqItem.vue')['default']
     TheFaqSection: typeof import('./components/sections/index/TheFaqSection.vue')['default']
     TheHeroSection: typeof import('./components/sections/index/TheHeroSection.vue')['default']
     TheLayoutFooter: typeof import('./components/layout/TheLayoutFooter.vue')['default']
@@ -39,8 +41,10 @@ declare module '@vue/runtime-core' {
     TheTestimonialsSection: typeof import('./components/sections/index/TheTestimonialsSection.vue')['default']
     TheWeHelpSection: typeof import('./components/sections/index/TheWeHelpSection.vue')['default']
     TheWorkCaseStudySection: typeof import('./components/sections/work/TheWorkCaseStudySection.vue')['default']
+    TheWorkClientsSection: typeof import('./components/sections/work/TheWorkClientsSection.vue')['default']
     TheWorkEploreServicesSection: typeof import('./components/sections/work/TheWorkEploreServicesSection.vue')['default']
     TheWorkExploreServicesSection: typeof import('./components/sections/work/TheWorkExploreServicesSection.vue')['default']
+    TheWorkFaqSection: typeof import('./components/sections/work/TheWorkFaqSection.vue')['default']
     TheWorkHeroSection: typeof import('./components/sections/work/TheWorkHeroSection.vue')['default']
   }
 }

@@ -1,4 +1,7 @@
 
+import TheWorkFaqSection from '~/components/sections/work/TheWorkFaqSection.vue';
+
+
 import TheWorkExploreServicesSection from '~/components/sections/work/TheWorkExploreServicesSection.vue';
 
 
@@ -12,5 +15,7 @@ import TheWorkHeroSection from '~/components/sections/work/TheWorkHeroSection.vu
       <TheWorkHeroSection />
       <TheWorkCaseStudySection />
       <TheWorkExploreServicesSection />
+      <TheWorkClientsSection />
+      <TheWorkFaqSection />
     </div>
   </template>

@@ -7,11 +7,6 @@ const faqs = reactive([
         isOpen: false
     },
     {
-        header: 'What are the next steps to work with you?',
-        text: 'Click the ‘Get in touch’ button in the top right corner or message hello@semiflat.com outlining your high-level design needs. We’ll reply and work out a time for an introductory call where you’ll ask us anything that’s on your mind. From there we’ll work towards defining the scope, timeline of the engagement. ',
-        isOpen: false
-    },
-    {
         header: 'What is the timeline to launch an MVP?',
         text: 'We can help you turn your product idea into an actionable design project plan.',
         isOpen: false

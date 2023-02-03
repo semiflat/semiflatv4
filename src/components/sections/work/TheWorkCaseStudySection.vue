@@ -45,7 +45,7 @@ const illustrations = [
 </script>
 
 <template>
-    <div class="page-content mt-16 md:mt-46 grid md:grid-cols-2 gap-6 md:gap-8">
+    <div class="page-content mt-16 md:mt-46 grid md:grid-cols-2 gap-6 md:gap-8 justify-center">
         <AppCaseStudyCard v-for="(card, i) in illustrations" :key="i" :data="card"/> 
     </div>
 </template>
