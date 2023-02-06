@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Expertise from '~/assets/case/Illustration-expertise.svg?component'
+import Expertise from '~/assets/case/Illustration-expertise.svg?url'
 </script>
 
 <template>

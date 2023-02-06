@@ -1,12 +1,12 @@
 <script setup lang='ts'>
-import YuzeData from '~/assets/case/Illustration-YuzeData-mobile.svg?component'
-import Pocus from '~/assets/case/Illustration-Pocus.svg?component'
-import Useful from '~/assets/case/Illustration-Useful.svg?component'
-import Odonata from '~/assets/case/Illustration-Odonata.svg?component'
-import Onward from '~/assets/case/Illustration-Onward.svg?component'
-import Phenom from '~/assets/case/Illustration-Phenom.svg?component'
-import Default from '~/assets/case/Illustration-Default.svg?component'
-import Halycon from '~/assets/case/Illustration-Halycon.svg?component'
+import YuzeData from '~/assets/case/Illustration-YuzeData-mobile.svg?url'
+import Pocus from '~/assets/case/Illustration-Pocus.svg?url'
+import Useful from '~/assets/case/Illustration-Useful.svg?url'
+import Odonata from '~/assets/case/Illustration-Odonata.svg?url'
+import Onward from '~/assets/case/Illustration-Onward.svg?url'
+import Phenom from '~/assets/case/Illustration-Phenom.svg?url'
+import Default from '~/assets/case/Illustration-Default.svg?url'
+import Halycon from '~/assets/case/Illustration-Halycon.svg?url'
 
 const illustrations = [
     {
@@ -46,6 +46,6 @@ const illustrations = [
 
 <template>
     <div class="page-content mt-16 md:mt-46 grid md:grid-cols-2 gap-6 md:gap-8 justify-center">
-        <AppCaseStudyCard v-for="(card, i) in illustrations" :key="i" :data="card"/> 
+        <AppCaseStudyCard v-for="(card, i) in illustrations" :key="i" :data="card"/>
     </div>
 </template>
