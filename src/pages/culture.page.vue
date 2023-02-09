@@ -1,4 +1,7 @@
 
+import TheCultureImagesSlider from '~/components/sections/culture/TheCultureImagesSlider.vue';
+
+
 import TheCultureOpenRoles from '~/components/sections/culture/TheCultureOpenRoles.vue';
 
 
@@ -21,6 +24,7 @@ import TheCultureHeroSection from '~/components/sections/culture/TheCultureHeroS
         <TheCultureOurServices />
         <TheCultureSeeOurWork />
         <TheCultureOpenRoles />
+        <TheCultureImagesSlider />
         <TheCultureFaqSections />
     </div>
   </template>

@@ -32,6 +32,7 @@ declare module '@vue/runtime-core' {
     TheCultureAboutSection: typeof import('./components/sections/culture/TheCultureAboutSection.vue')['default']
     TheCultureFaqSections: typeof import('./components/sections/culture/TheCultureFaqSections.vue')['default']
     TheCultureHeroSection: typeof import('./components/sections/culture/TheCultureHeroSection.vue')['default']
+    TheCultureImagesSlider: typeof import('./components/sections/culture/TheCultureImagesSlider.vue')['default']
     TheCultureOpenRoles: typeof import('./components/sections/culture/TheCultureOpenRoles.vue')['default']
     TheCultureOurServices: typeof import('./components/sections/culture/TheCultureOurServices.vue')['default']
     TheCulturePerksSection: typeof import('./components/sections/culture/TheCulturePerksSection.vue')['default']
