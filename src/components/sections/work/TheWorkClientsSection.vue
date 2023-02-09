@@ -1,19 +1,19 @@
 <script setup lang='ts'>
-import SisuLogo from '~/assets/logos/sisu.svg?url'
-import OdonataLogo from '~/assets/logos/odonata.svg?url'
-import PhenomLogo from '~/assets/logos/phenom.svg?url'
-import DefaultLogo from '~/assets/logos/default.svg?url'
-import ClickmagicLogo from '~/assets/logos/clickmagick.svg?url'
-import PocusLogo from '~/assets/logos/pocus.svg?url'
-import YuzedataLogo from '~/assets/logos/yuzedata.svg?url'
-import StepsizeLogo from '~/assets/logos/stepsize.svg?url'
-import CloudstoreLogo from '~/assets/logos/cloudstore.svg?url'
-import LhotseLogo from '~/assets/logos/lhotse.svg?url'
-import UsefulLogo from '~/assets/logos/useful.svg?url'
-import JeticLogo from '~/assets/logos/jetic.svg?url'
-import HalyconLogo from '~/assets/logos/halycon.svg?url'
-import CoreLogo from '~/assets/logos/core.svg?url'
-import OnwardLogo from '~/assets/logos/onward.svg?url'
+import SisuLogo from '~/assets/logos/sisu.svg?component'
+import OdonataLogo from '~/assets/logos/odonata.svg?component'
+import PhenomLogo from '~/assets/logos/phenom.svg?component'
+import DefaultLogo from '~/assets/logos/default.svg?component'
+import ClickmagicLogo from '~/assets/logos/clickmagick.svg?component'
+import PocusLogo from '~/assets/logos/pocus.svg?component'
+// import YuzedataLogo from '~/assets/logos/yuzedata.svg?component'
+import StepsizeLogo from '~/assets/logos/stepsize.svg?component'
+import CloudstoreLogo from '~/assets/logos/cloudstore.svg?component'
+import LhotseLogo from '~/assets/logos/lhotse.svg?component'
+import UsefulLogo from '~/assets/logos/useful.svg?component'
+import JeticLogo from '~/assets/logos/jetic.svg?component'
+import HalyconLogo from '~/assets/logos/halycon.svg?component'
+import CoreLogo from '~/assets/logos/core.svg?component'
+import OnwardLogo from '~/assets/logos/onward.svg?component'
 
 
 const logos = [
@@ -47,17 +47,17 @@ const logos = [
         </div>
         <div class="mt-20 hidden lg:flex flex-col gap-8 mask">
             <div class="flex">
-                <div v-for="logo in logos.slice(0, 5)" :key="logo" class="w-[15rem] py-5">
+                <div v-for="(logo, i) in logos.slice(0, 5)" :key="i" class="w-[15rem] py-5">
                     <component :is="logo" class="mx-auto h-38px grayscale" />
                 </div>
             </div>
             <div class="flex justify-center">
-                <div v-for="logo in logos.slice(5, 9)" :key="logo" class="w-[15rem] py-5">
+                <div v-for="(logo, i) in logos.slice(5, 9)" :key="i" class="w-[15rem] py-5">
                     <component :is="logo" class="mx-auto h-38px grayscale" />
                 </div>
             </div>
             <div class="flex justify-center">
-                <div v-for="logo in logos.slice(9, 12)" :key="logo" class="w-[15rem] py-5">
+                <div v-for="(logo, i) in logos.slice(9, 12)" :key="i" class="w-[15rem] py-5">
                     <component :is="logo" class="mx-auto h-38px grayscale" />
                 </div>
             </div>

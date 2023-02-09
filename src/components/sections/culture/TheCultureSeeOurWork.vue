@@ -1,19 +1,14 @@
 <script setup lang="ts">
-import SeeOurWorkIll from '~/assets/illustrations/see-our-work-illustration.svg?component'
-import CompaniesVideo from '~/assets/companies.webm'
+import CompaniesVideo from '~/assets/webm/Companies.webm'
 
 </script>
 
 <template>
     <div class="page-content mt-16 md:mt-40 relative">
         <div class="expertise text-white rounded-4 md:flex max-w-[914px] mx-auto relative">
-            <!-- <SeeOurWorkIll class="max-w-[19.5rem] mx-auto " /> -->
-            <!-- <video :src="CompaniesVideo" autoplay loop></video> -->
-            <video playsinline autoplay muted loop class="max-w-[19.5rem]">
+            <video playsinline autoplay muted loop class="max-w-[19.5rem] mx-auto">
                 <source :src="CompaniesVideo" type="video/webm">
-
             </video>
-
             <div class="p-8 md:py-20 md:px-14">
                 <h2 class="font-semibold text-xl mb-4 md:text-[1.75rem] leading-[120%]">Get a feel for what you can be
                     working on</h2>

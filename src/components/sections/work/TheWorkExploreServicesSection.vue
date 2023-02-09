@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Expertise from '~/assets/case/Illustration-expertise.svg?url'
+import PolygonVideo from '~/assets/webm/polygon.webm'
 </script>
 
 <template>
@@ -8,13 +8,16 @@ import Expertise from '~/assets/case/Illustration-expertise.svg?url'
       <div class="p-8 md:py-20 md:px-14 relative">
         <h2 class="font-semibold text-xl mb-4 md:text-[1.75rem]">Explore our services range</h2>
         <p class="text-blue-100 mb-8 text-sm md:text-base">
-          Problem solving is our strong suit. We live and breathe design and have helped dozens of startups solve complex problems in their respective niches.
+          Problem solving is our strong suit. We live and breathe design and have helped dozens of startups solve
+          complex problems in their respective niches.
         </p>
         <div class="md:flex">
           <AppButton class="!bg-white !text-blue-300">Learn about our services</AppButton>
         </div>
       </div>
-      <Expertise class="relative " />
+      <video playsinline autoplay muted loop class="max-w-[19.5rem] mx-auto relative md:mr-6">
+        <source :src="PolygonVideo" type="video/webm">
+      </video>
     </div>
   </div>
 </template>
