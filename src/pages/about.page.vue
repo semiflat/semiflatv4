@@ -21,12 +21,6 @@ import TheAboutPerksSection from '~/components/sections/about/TheAboutPerksSecti
       <TheAboutOperateSection />
       <TheAboutEmployeesSection />
       <TheAboutTimeline />
-      <!-- <TheCaseStudySection />
-      <TheExpertiseSection />
-      <TheWeHelpSection />
-      <TheAboutSection />
-      <TheTestimonialsSection />
-      <TheFaqSection /> -->
     </div>
   </template>
   
