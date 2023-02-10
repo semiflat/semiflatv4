@@ -16,5 +16,7 @@ import TheServicesHeroSection from '~/components/sections/services/TheServicesHe
         <TheServicesIntroductionSection />
         <TheServicesOurServices />
         <TheServicesProsAndConsSection />
+        <TheServicesQuestionsSection />
+        <TheServicesFaqSection />
     </div>
 </template>

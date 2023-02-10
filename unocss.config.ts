@@ -39,8 +39,8 @@ export default defineConfig({
     [
       'shadow-medium',
       {
-        'box-shadow': '0px 4px 8px rgba(0, 0, 0, 0.15)',
-        '-webkit-box-shadow': '0px 4px 8px rgba(0, 0, 0, 0.15)',
+        'box-shadow': '0px 0px 1px rgba(17, 24, 28, 0.16), 0px 1px 4px rgba(17, 24, 28, 0.16)',
+        '-webkit-box-shadow': '0px 0px 1px rgba(17, 24, 28, 0.16), 0px 1px 4px rgba(17, 24, 28, 0.16)',
       },
     ],
     [
