@@ -17,5 +17,6 @@ import TheWorkHeroSection from '~/components/sections/work/TheWorkHeroSection.vu
       <TheWorkExploreServicesSection />
       <TheWorkClientsSection />
       <TheWorkFaqSection />
+      <TheCTABottomSection />
     </div>
   </template>

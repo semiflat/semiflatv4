@@ -20,10 +20,6 @@ const links = [
         path: '/services'
     },
     {
-        label: 'Process',
-        path: '/process'
-    },
-    {
         label: 'Culture',
         path: '/culture'
     },

@@ -29,6 +29,7 @@ declare module '@vue/runtime-core' {
     TheAboutSection: typeof import('./components/sections/index/TheAboutSection.vue')['default']
     TheAboutTimeline: typeof import('./components/sections/about/TheAboutTimeline.vue')['default']
     TheCaseStudySection: typeof import('./components/sections/index/TheCaseStudySection.vue')['default']
+    TheCTABottomSection: typeof import('./components/sections/TheCTABottomSection.vue')['default']
     TheCultureAboutSection: typeof import('./components/sections/culture/TheCultureAboutSection.vue')['default']
     TheCultureFaqSections: typeof import('./components/sections/culture/TheCultureFaqSections.vue')['default']
     TheCultureHeroSection: typeof import('./components/sections/culture/TheCultureHeroSection.vue')['default']

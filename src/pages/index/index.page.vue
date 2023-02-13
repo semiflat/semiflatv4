@@ -1,3 +1,6 @@
+
+import TheCTABottomSection from '~/components/sections/TheCTABottomSection.vue';
+
 <template>
   <div class="overflow-hidden">
     <TheHeroSection />
@@ -7,5 +10,6 @@
     <TheAboutSection />
     <TheTestimonialsSection />
     <TheFaqSection />
+    <TheCTABottomSection />
   </div>
 </template>
