@@ -11,31 +11,42 @@ import InterfaceIcon from '~/assets/experiences/interface.svg?component'
 import DesignIcon from '~/assets/experiences/design.svg?component'
 import SupportIcon from '~/assets/experiences/support.svg?component'
 import breakpointsConst from "~/constants/breakpoints";
+import type { ServiceTypes } from '~/types/service'
 
+defineProps<{
+    modelValue?: ServiceTypes
+}>()
+const emit = defineEmits(['update:modelValue'])
 const discovery = [
     {
         icon: WorkshopsIcon,
-        label: 'Workshops & analysis'
+        label: 'Workshops & analysis',
+        value: 'workshops'
     },
     {
         icon: ResearchIcon,
-        label: 'User research'
+        label: 'User research',
+        value: 'research'
     },
     {
         icon: UXIcon,
-        label: 'User experience design'
+        label: 'User experience design',
+        value: 'experience'
     },
     {
         icon: InterfaceIcon,
-        label: 'User interface design'
+        label: 'User interface design',
+        value: 'interface'
     },
     {
         icon: DesignIcon,
-        label: 'Design system'
+        label: 'Design system',
+        value: 'design'
     },
     {
         icon: SupportIcon,
-        label: 'Continuous support'
+        label: 'Continuous support',
+        value: 'support'
     },
 
 ]
@@ -54,6 +65,8 @@ const swiperOptions = computed(() => ({
     },
 }))
 
+
+
 </script>
 
 <template>
@@ -61,10 +74,12 @@ const swiperOptions = computed(() => ({
         <BackgroundMobileLeft class="absolute pointer-events-none top-28 left-0 md:hidden" />
         <BackgroundDesktop class="hidden pointer-events-none absolute -left-42 md:block -top-60" />
         <div class=" mt-3.5rem md:mt-40 md:text-center">
-            <h1 class="hero-title md:text-[2.5rem] md:leading-[120%]  md:mt-6">We are a full-service product design agency_
+            <h1 class="hero-title md:text-[2.5rem] md:leading-[120%]  md:mt-6">We are a full-service product design
+                agency_
             </h1>
             <p class="mt-6 text-blue-200">
-                Our main focus from the beginning was to bring world-class design to emerging superstars in the SaaS space. <br class="hidden md:block" /> From workflow builders to CRM systems, we’ve done it before.  
+                Our main focus from the beginning was to bring world-class design to emerging superstars in the SaaS
+                space. <br class="hidden md:block" /> From workflow builders to CRM systems, we’ve done it before.
             </p>
             <div class="mt-2.5rem">
                 <AppButton>Set up a discovery call</AppButton>
@@ -75,20 +90,21 @@ const swiperOptions = computed(() => ({
             <AppSlider v-if="md" class="mt-14 relative" style="" :swiper-options="swiperOptions">
                 <SwiperSlide v-for="(el, i) in discovery" :key="i" class="z-10">
                     <div class="shrink-0 mx-auto flex items-center justify-center">
-                        <div
-                            class="py-6 px-8 transition-all duration-300 bg-white rounded-4 outline outline-1  outline-[#BCDCDC]/100 shadow-primary my-0.25">
+                        <div class="py-6 px-8 transition-all duration-300 bg-white rounded-4 outline outline-1 min-w-[13.75rem]  outline-[#BCDCDC]/100 shadow-primary my-0.25 mx-auto"
+                            @click="emit('update:modelValue', el.value)">
                             <component :is="el.icon" class="mx-auto mb-4" />
-                            <p class="font-semibold leading-[150%] cursor-pointer">{{ el.label }}</p>
+                            <p class="font-semibold leading-[150%] cursor-pointer text-center">{{ el.label }}</p>
                         </div>
                     </div>
                 </SwiperSlide>
             </AppSlider>
             <div v-else class="grid grid-cols-3 gap-x-8 gap-y-4 mt-40 z-10 relative">
-                <div
-v-for="(el, i) in discovery" :key="i"
-                    class="text-center p-6 w-full transition-all duration-300 hover:bg-white rounded-4 outline outline-1 outline-[#BCDCDC]/0 hover:outline-[#BCDCDC]/100 hover:shadow-primary">
+                <div v-for="(el, i) in discovery" :key="i"
+                    class="text-center p-6 w-full transition-all cursor-pointer duration-300 hover:bg-white rounded-4 outline outline-1 outline-[#BCDCDC]/0 hover:outline-[#BCDCDC]/100 hover:shadow-primary"
+                    @click="emit('update:modelValue', el.value)">
                     <component :is="el.icon" class="mx-auto mb-4" />
-                    <p class="font-semibold leading-[150%] cursor-pointer transition-all duration-300 hover:gradient-text">{{ el.label }}</p>
+                    <p class="font-semibold leading-[150%] transition-all duration-300 hover:gradient-text">
+                        {{ el.label }}</p>
                 </div>
             </div>
         </div>
