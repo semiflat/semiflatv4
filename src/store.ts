@@ -1,16 +1,14 @@
 import { ref } from 'vue'
 import { createGlobalState } from '@vueuse/core'
 
-export const useGlobalState = createGlobalState(
-  () => {
-    // state
-    const servicesSection = ref('workshops')
+export const useGlobalState = createGlobalState(() => {
+  // state
+  const layoutAccent = ref('green')
 
-    // actions
-    function changeSection(value: string) {
-        servicesSection.value = value
-    }
-
-    return { servicesSection, changeSection }
+  // actions
+  function changeAccent(value: string) {
+    layoutAccent.value = value
   }
-)
+
+  return { layoutAccent, changeAccent }
+})

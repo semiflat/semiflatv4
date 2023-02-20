@@ -11,10 +11,7 @@ import {
 
 export default defineConfig({
   shortcuts: [
-    [
-      'page-content',
-      'max-w-[69rem] mx-auto px-6 lg:px-0',
-    ],
+    ['page-content', 'max-w-[69rem] mx-auto px-6 lg:px-0'],
     [
       'btn',
       'px-4 py-1 rounded inline-block bg-teal-700 text-white cursor-pointer hover:bg-teal-800 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50',
@@ -40,7 +37,8 @@ export default defineConfig({
       'shadow-medium',
       {
         'box-shadow': '0px 0px 1px rgba(17, 24, 28, 0.16), 0px 1px 4px rgba(17, 24, 28, 0.16)',
-        '-webkit-box-shadow': '0px 0px 1px rgba(17, 24, 28, 0.16), 0px 1px 4px rgba(17, 24, 28, 0.16)',
+        '-webkit-box-shadow':
+          '0px 0px 1px rgba(17, 24, 28, 0.16), 0px 1px 4px rgba(17, 24, 28, 0.16)',
       },
     ],
     [
@@ -53,7 +51,7 @@ export default defineConfig({
     [
       'gradient-text',
       {
-        'background': 'linear-gradient(225deg, #407A7A 0%, #002832 100%)',
+        background: 'linear-gradient(225deg, #407A7A 0%, #002832 100%)',
         '-webkit-background-clip': 'text',
         '-webkit-text-fill-color': 'transparent',
         'background-clip': 'text',
@@ -104,7 +102,7 @@ export default defineConfig({
         100: '#C9F7E8',
         200: '#96EBD6',
         300: '#64DCC8',
-        400: '#54ABA3'
+        400: '#54ABA3',
       },
       gray: {
         0: '#F2F2F2',
@@ -113,7 +111,7 @@ export default defineConfig({
         300: '#DADADA',
         400: '#C9C9C9',
         500: '#B1B1B1',
-        600: '#929292',
+        600: '#545959',
         700: '#6A6A6A',
         800: '#3C3C3C',
         850: '#1F1F1F',

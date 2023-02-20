@@ -3,7 +3,7 @@ import { pipeToNodeWritable, pipeToWebWritable } from '@vue/server-renderer'
 import { escapeInject, stampPipe } from 'vite-plugin-ssr'
 import { createApp } from './app'
 import type { PageContextServer } from './types'
-import faviconUrl from "~//assets/favicon.ico";
+import faviconUrl from '~//assets/favicon.ico'
 
 // See https://vite-plugin-ssr.com/data-fetching
 export const passToClient = ['pageProps', 'urlPathname', 'locale']
@@ -12,7 +12,8 @@ async function render(pageContext: PageContextServer) {
   const app = await createApp(pageContext)
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext.exports
-  const title = (documentProps && documentProps.title) || 'Discover The Greatest Webinar Software Ever! - Attix'
+  const title =
+    (documentProps && documentProps.title) || 'Discover The Greatest Webinar Software Ever! - Attix'
   const desc = (documentProps && documentProps.description) || 'Attix'
 
   // Streaming is optional: we can use renderToString() instead.

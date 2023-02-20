@@ -1,0 +1,62 @@
+<script setup lang='ts'>
+import QueryHelperIllDesktop from '~/assets/pocus/query-helper-desktop.svg?url'
+import QueryHelperIllMobile from '~/assets/pocus/query-helper-mobile.svg?url'
+import Interface from '~/assets/experiences/interface.svg?component'
+import Design from '~/assets/experiences/design.svg?component'
+import Support from '~/assets/experiences/support.svg?component'
+
+const helped = [
+    {
+        icon: Interface,
+        header: 'User interface design',
+        text: 'We worked closely with the co-founder of Pocus to propose the initial look & feel of the app.'
+    },
+    {
+        icon: Design,
+        header: 'Component library',
+        text: 'The design was consistent with the React library Pocus was using at the time. This helped cut down development time.'
+    },
+    {
+        icon: Support,
+        header: 'Ongoing support',
+        text: 'We regularly ideated multiple versions of new features as the product grew.'
+    },
+]
+
+</script>
+
+<template>
+    <div class="page-content mt-16 md:mt-40">
+        <div class="bg-violet-gradient rounded-4 max-w-[57.125rem] mx-auto">
+            <div class=" text-white md:flex items-center gap-8 lg:gap-0">
+                <div class="pt-8 px-8 md:pr-0 md:pb-8 lg:py-20 pl-14 lg:max-w-[26rem]">
+                    <h2 class="text-white text-lg font-semibold lg:text-[1.75rem]">How we’ve helped_</h2>
+                    <div class="flex flex-col gap-6 lg:gap-8 mt-12">
+                        <div v-for="el in helped" :key="el.header" class="">
+                            <div class="flex gap-4 mb-2">
+                                <component :is="el.icon" class="h-7.5 w-7.5 p-[0.187rem]" />
+                                <h3 class="font-semibold">{{ el.header }}</h3>
+                            </div>
+                            <p class="opacity-80">{{ el.text }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(min-width: 1366px)" :srcset="QueryHelperIllDesktop" />
+                        <img :src="QueryHelperIllMobile" class="mx-auto md:max-w-[600px] lg:w-500px" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+.bg-violet-gradient {
+    background: radial-gradient(57.03% 76.98% at 100% 0%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), #481B97;
+    background-blend-mode: overlay, normal, normal;
+
+    box-shadow: 0px 4px 12px -2px rgba(17, 24, 28, 0.12), 0px 1px 2px rgba(17, 24, 28, 0.16);
+}
+</style>
