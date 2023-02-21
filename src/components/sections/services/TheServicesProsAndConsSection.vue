@@ -2,27 +2,6 @@
 import CheckIcon from '~/assets/icons/check-icon.svg?component'
 import CloseIcon from '~/assets/icons/close-icon.svg?component'
 
-// const pros = [
-//     {
-//         header: 'Building solid understanding of the problem and target user',
-//         text: 'We work with companies across different niche industries. Many of them are highly technical and require special knowledge to comfortably operate in. In order to be able to propose the most optimal solutions later on, it’s crucial for us to get as good of an understanding of your goal, vision and business landscape as possible.'
-//     },
-//     {
-//         header: 'Analyzing current competitors',
-//         text: 'This gives us further background on the industry standards, as well as an idea of any low hanging fruit that we can implement in your project to give you advantage over competitors.'
-//     },
-//     {
-//         header: 'Defining the design challanges',
-//         text: 'Any project needs clear objective definition in order to succeed. Conducing the analysis phase allows us to identify the challenges and objective early on so that you can know what you can expect moving forward.'
-//     }
-// ]
-
-// const cons = [
-//     {
-//         header: 'Lack of context in the later stages',
-//         text: 'Skipping the initial discovery phase is likely to catch up with us at laters stages of the project and ultimately slow down the process or require your detailed guidance. Not taking the time to learn the terminology, problems and general reality of your industry will prevent us from being proactive in suggesting optimal solutions as the project moves forward.'
-//     }
-// ]
 
 defineProps<{
     prosAndCons: any
