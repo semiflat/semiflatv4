@@ -7,7 +7,7 @@ import PocusCEO from '~/assets/pocus/pocus-ceo.jpeg'
 <template>
     <div class="page-content mt-16 md:mt-40">
         <div class="bg-violet-transparent p-8 border border-[#D8DFE5] rounded-3 max-w-[57.125rem] mx-auto md:pt-0 md:pb-12">
-            <video playsinline autoplay muted loop class="mb-8 mx-auto max-w-[23rem] md:mb-0">
+            <video playsinline autoplay muted loop class="mb-8 mx-auto max-w-[20rem] md:mb-0 md:mt-5">
                 <source :src="PocusTestimonialVideo" type="video/webm">
             </video>
             <p class="max-w-45.375rem md:mx-auto md:text-center md:text-[1.25rem]">“We are very happy with the work Nic and

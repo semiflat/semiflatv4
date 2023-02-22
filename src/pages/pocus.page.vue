@@ -1,4 +1,22 @@
 
+import ThePocusLookingForMvpSection from '~/components/sections/pocus/ThePocusLookingForMvpSection.vue';
+
+
+import ThePocusMoreScreensSection from '~/components/sections/pocus/ThePocusMoreScreensSection.vue';
+
+
+import ThePocusProjectOutcomeSection from '~/components/sections/pocus/ThePocusProjectOutcomeSection.vue';
+
+
+import ThePocusFunctionsSection from '~/components/sections/pocus/ThePocusFunctionsSection.vue';
+
+
+import ThePocusCompaniesLoveSection from '~/components/sections/pocus/ThePocusCompaniesLoveSection.vue';
+
+
+import ThePocusStepByStepSection from '~/components/sections/pocus/ThePocusStepByStepSection.vue';
+
+
 import ThePocusTestimonialSection from '~/components/sections/pocus/ThePocusTestimonialSection.vue';
 
 
@@ -18,5 +36,11 @@ import ThePocusHelpCompaniesSection from '~/components/sections/pocus/ThePocusHe
         <ThePocusProjectBackgroundSection />
         <ThePocusScreensSection />
         <ThePocusTestimonialSection />
+        <ThePocusStepByStepSection />
+        <ThePocusCompaniesLoveSection />
+        <ThePocusFunctionsSection />
+        <ThePocusProjectOutcomeSection />
+        <ThePocusMoreScreensSection />
+        <ThePocusLookingForMvpSection />
     </div>
 </template>
