@@ -1,6 +1,6 @@
 <script setup lang='ts'>
-import CTA1 from '~/assets/illustrations/cta.svg?component'
-import CTA2 from '~/assets/webm/CTA-circles.webm'
+import CTA1 from '~/assets/webm/cta-hex.webm'
+import CTA2 from '~/assets/webm/cta-spheres.webm'
 
 
 </script>
@@ -20,7 +20,9 @@ import CTA2 from '~/assets/webm/CTA-circles.webm'
                 </div>
             </div>
             <div class="bg-gradient text-white rounded-4 md:flex w-full mx-auto relative">
-                <CTA1 class="absolute right-0" />
+                <video playsinline autoplay muted loop class="absolute right-0 h-[12.75rem]">
+                    <source :src="CTA1" type="video/webm">
+                </video>
                 <div class="p-8 md:py-10 px-6 relative">
                     <h2 class="font-semibold text-xl mb-8">Want to learn more about <br class="hidden md:block" /> our
                         services?

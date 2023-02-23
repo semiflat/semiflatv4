@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PolygonVideo from '~/assets/webm/polygon.webm'
+import PolygonVideo from '~/assets/webm/polygon1.webm'
 </script>
 
 <template>
