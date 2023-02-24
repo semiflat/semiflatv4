@@ -61,11 +61,8 @@ const testimonials = [
 </script>
 
 <template>
-    <!-- <div class="mask max-w-80rem mx-auto bg-red"> -->
     <div class="page-content mt-16 md:mt-40 relative">
-        <!-- <div class="absolute w-120% left-1/2 transform -translate-x-1/2  h-full top-16 mask" /> -->
-        <h2
-            class="text-xl gradient-text font-semibold mb-12 md:text-[1.75rem] md:leading-[120%] md:text-center md:mb-[5rem]">
+        <h2 class="text-xl gradient-text font-semibold mb-12 md:text-[1.75rem] md:leading-[120%] md:text-center md:mb-0">
             Dozens of trailblazing startups loving our work <br class="hidden md:block" /> can’t be wrong_</h2>
         <div class="grid gap-6 md:grid-cols-3 md:hidden">
             <TheTestimonialComponent v-for="(testimonial, i) in testimonials" :key="i" :testimonial="testimonial" />
@@ -78,7 +75,9 @@ const testimonials = [
 
             </div>
         </div>
-        <div class="hidden md:flex gap-8">
+    </div>
+    <div class="relative mask-testimonial pt-5rem pb-5rem max-w-86rem mx-auto hidden md:block px-6 lg:px-0">
+        <div class="hidden md:flex gap-8 max-w-69rem mx-auto">
             <div class="flex flex-col gap-8 max-w-[346px] justify-center relative">
                 <div class="h-[360px] w-full  absolute -top-78 rounded-4 rotating-border" />
                 <TheTestimonialComponent :testimonial="testimonials[0]" />
@@ -92,7 +91,7 @@ const testimonials = [
                 <TheTestimonialComponent :testimonial="testimonials[2]" />
                 <div class="px-8 py-10 bg-dark-blue rounded-4 relative">
                     <p class="text-white text-xl mb-8 font-semibold">Want to see what the buzz is all about?</p>
-                    <AppButton class="!bg-white !text-blue-300">See our work</AppButton>
+                    <AppButton class="!bg-white !text-blue-300 relative z-1">See our work</AppButton>
                     <video playsinline autoplay muted loop class="absolute right-6 bottom-4 h-22">
                         <source :src="CirclesBackground" type="video/webm">
                     </video>
@@ -111,7 +110,6 @@ const testimonials = [
             </div>
         </div>
     </div>
-    <!-- </div> -->
 </template>
 
 <style scoped>
@@ -133,11 +131,9 @@ const testimonials = [
 
 }
 
-.mask-test {
-    /* mask-image: radial-gradient(242.44% 50% at 50% 50%, #D9D9D9 0%, rgba(217, 217, 217, 0.9) 57.81%, rgba(217, 217, 217, 0) 92.71%); */
-    /* -webkit-mask-image: radial-gradient(242.44% 50% at 50% 50%, #D9D9D9 0%, rgba(217, 217, 217, 0.9) 57.81%, rgba(217, 217, 217, 0) 92.71%); */
-    -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #D9D9D9 55.46%, rgba(217, 217, 217, 0) 100%);
-    width: 1600px;
+
+.mask-testimonial {
+    -webkit-mask-image: radial-gradient(50% 46% at 50% 50%, #D9D9D9 84.46%, rgba(217, 217, 217, 0) 122%);
 
 }
 

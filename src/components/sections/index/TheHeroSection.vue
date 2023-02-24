@@ -2,23 +2,59 @@
 import { SwiperSlide } from 'swiper/vue'
 import BackgroundMobileLeft from '~/assets/bg-left-mobile.svg?component'
 import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
-import SisuLogo from '~/assets/logos/sisu.svg?component'
-import OdonataLogo from '~/assets/logos/odonata.svg?component'
-import PhenomLogo from '~/assets/logos/phenom.svg?component'
-import DefaultLogo from '~/assets/logos/default.svg?component'
-import ClickmagicLogo from '~/assets/logos/clickmagick.svg?component'
-import PocusLogo from '~/assets/logos/pocus.svg?component'
-import YuzedataLogo from '~/assets/logos/yuzedata.svg?component'
+import ahana from '~/assets/tint-logos/logo-ahana.svg?component'
+import appfleet from '~/assets/tint-logos/logo-appfleet.svg?component'
+import clickmagick from '~/assets/tint-logos/logo-clickmagick.svg?component'
+import cloudstore from '~/assets/tint-logos/logo-cloudstore.svg?component'
+import defaultLogo from '~/assets/tint-logos/logo-default.svg?component'
+import devzero from '~/assets/tint-logos/logo-devzero.svg?component'
+import doss from '~/assets/tint-logos/logo-doss.svg?component'
+import gcore from '~/assets/tint-logos/logo-gcore.svg?component'
+import gyaan from '~/assets/tint-logos/logo-gyaan.svg?component'
+import halycon from '~/assets/tint-logos/logo-halycon.svg?component'
+import jetic from '~/assets/tint-logos/logo-jetic.svg?component'
+import lhotse from '~/assets/tint-logos/logo-lhotse.svg?component'
+import metlo from '~/assets/tint-logos/logo-metlo.svg?component'
+import onward from '~/assets/tint-logos/logo-onward.svg?component'
+import phenom from '~/assets/tint-logos/logo-phenom.svg?component'
+import pocus from '~/assets/tint-logos/logo-pocus.svg?component'
+import runchise from '~/assets/tint-logos/logo-runchise.svg?component'
+import scholaris from '~/assets/tint-logos/logo-scholaris.svg?component'
+import simplero from '~/assets/tint-logos/logo-simplero.svg?component'
+import sisu from '~/assets/tint-logos/logo-sisu.svg?component'
+import stepsize from '~/assets/tint-logos/logo-stepsize.svg?component'
+import tagvenue from '~/assets/tint-logos/logo-tagvenue.svg?component'
+import tau from '~/assets/tint-logos/logo-tau.svg?component'
+import useful from '~/assets/tint-logos/logo-useful.svg?component'
+import yuzedata from '~/assets/tint-logos/logo-yuzedata.svg?component'
 import { useBreakpoints } from '~/composables/useBreakpoints'
 
 const logos = [
-  OdonataLogo,
-  SisuLogo,
-  PhenomLogo,
-  DefaultLogo,
-  ClickmagicLogo,
-  PocusLogo,
-  YuzedataLogo,
+  ahana,
+  appfleet,
+  clickmagick,
+  cloudstore,
+  defaultLogo,
+  devzero,
+  doss,
+  gcore,
+  gyaan,
+  halycon,
+  jetic,
+  lhotse,
+  metlo,
+  onward,
+  phenom,
+  pocus,
+  runchise,
+  scholaris,
+  simplero,
+  sisu,
+  stepsize,
+  tagvenue,
+  tau,
+  useful,
+  yuzedata,
 ]
 
 const breakpoints = useBreakpoints()
@@ -64,10 +100,10 @@ const swiperOptions = computed(() => ({
       </div>
     </div>
     <div class="">
-      <AppSlider class="mt-16 md:mt-40" style="" :swiper-options="swiperOptions">
+      <AppSlider class="mt-16 md:mt-40 hero-slider" style="" :swiper-options="swiperOptions">
         <SwiperSlide v-for="(logo, i) in logos" :key="i"
           class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center">
-          <component :is="logo" class="h-[38px] grayscale" />
+          <component :is="logo" class="h-[4.375rem] " />
         </SwiperSlide>
       </AppSlider>
     </div>
@@ -79,7 +115,7 @@ const swiperOptions = computed(() => ({
   @apply text-[1.75rem] font-semibold leading-[34px] gradient-text;
 }
 
-.swiper {
+.hero-slider .swiper {
   mask-image: linear-gradient(270deg,
       rgba(242, 242, 242, 0) 0%,
       rgba(245, 245, 245, 1) 15%,
