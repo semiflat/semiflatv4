@@ -25,22 +25,22 @@ const servicesData = ref({
                 {
                     icon: WorkshopsIcon,
                     header: 'Strong foundation for the project',
-                    text: 'We can help you turn your product idea into an actionable design project plan.'
+                    text: 'Conducting a Workshops & analysis phase lets us build an understanding of your business, ICPs, current problems so that we can better serve you down the line.'
                 },
                 {
                     icon: ResearchIcon,
                     header: 'Independence and design leadership',
-                    text: 'Find out what your users want. We’ll recruit and interview respondents matching your target persona.'
+                    text: 'We want to lead the effort and guide you in our process. To make that possible we need to dig deep into your product or idea to make sure we understand all ins and outs.'
                 },
                 {
                     icon: UXIcon,
                     header: 'Smooth partnership',
-                    text: 'Intuitive user experience will make or break your product. We’re here to make ensure the former.'
+                    text: 'This phase is also where we ask any questions/clear up any confusion surrounding your business which helps avoid miscommunication in the future.'
                 },
                 {
                     icon: UXIcon,
                     header: 'Faster delivery',
-                    text: 'Intuitive user experience will make or break your product. We’re here to make ensure the former.'
+                    text: 'Building an understanding of your product helps reduce time needed for answering questions and in turn helps us move much faster.'
                 },
             ],
         },
@@ -85,17 +85,17 @@ const servicesData = ref({
                 {
                     icon: WorkshopsIcon,
                     header: 'Knowing your user’s needs',
-                    text: 'We can help you turn your product idea into an actionable design project plan.'
+                    text: 'Conducting user research will give you an opportunity to uncover the needs of your existing users or ICPs. '
                 },
                 {
                     icon: ResearchIcon,
                     header: 'Validating your assumptions',
-                    text: 'Find out what your users want. We’ll recruit and interview respondents matching your target persona.'
+                    text: 'We can recruit potential users to validate your assumptions regarding needs and pains.'
                 },
                 {
                     icon: UXIcon,
                     header: 'Saving time',
-                    text: 'Intuitive user experience will make or break your product. We’re here to make ensure the former.'
+                    text: 'Gain direction confidence by interviewing your ICPs before implementing a feature or coming out with a new product.ś'
                 },
             ],
         },
@@ -140,27 +140,27 @@ const servicesData = ref({
                 {
                     icon: WorkshopsIcon,
                     header: 'Attracting new users',
-                    text: 'We can help you turn your product idea into an actionable design project plan.'
+                    text: 'Word of good UX spreads like wildfire. Creating an application that is easy to use and beautiful is likely to gain you some product evangelists.'
                 },
                 {
                     icon: ResearchIcon,
                     header: 'Increasing user retention',
-                    text: 'Find out what your users want. We’ll recruit and interview respondents matching your target persona.'
+                    text: 'Good UX will also help keep the users that you already have. If they can solve their problems fast and easy - why would they go somewhere else?'
                 },
                 {
                     icon: UXIcon,
                     header: 'Providing an intuitive experience',
-                    text: 'Intuitive user experience will make or break your product. We’re here to make ensure the former.'
+                    text: 'User experience is all about intuitiveness. Ideally your product won’t require a tutorial of any kind. User will just get it.'
                 },
                 {
                     icon: WorkshopsIcon,
                     header: 'Increasing user loyalty',
-                    text: 'We can help you turn your product idea into an actionable design project plan.'
+                    text: 'Users are more likely to stay loyal to the product that consistently provides value and doesn’t add frustration. '
                 },
                 {
                     icon: ResearchIcon,
                     header: 'Reducing customer support',
-                    text: 'Find out what your users want. We’ll recruit and interview respondents matching your target persona.'
+                    text: 'Intuitive UX will ensure your product is self-explanatory. This will reduce time spent on answering ‘How can I do X’ types of questions.'
                 },
             ],
         },
@@ -205,22 +205,22 @@ const servicesData = ref({
                 {
                     icon: WorkshopsIcon,
                     header: 'Breaking into a saturated market with style and confidence',
-                    text: 'We can help you turn your product idea into an actionable design project plan.'
+                    text: 'These days users are accustomed to beautifully designed UI and they expect it from all companies - big and small.'
                 },
                 {
                     icon: ResearchIcon,
                     header: 'Building a strong brand',
-                    text: 'Find out what your users want. We’ll recruit and interview respondents matching your target persona.'
+                    text: 'A polished user interface will make users more familiar with your logo, brand colors and messaging.'
                 },
                 {
                     icon: UXIcon,
                     header: 'Increasing user loyalty',
-                    text: 'Intuitive user experience will make or break your product. We’re here to make ensure the former.'
+                    text: 'An interface that’s pleasant on the eye will likely be one of the factors your loyal users keep using the product.'
                 },
                 {
                     icon: WorkshopsIcon,
                     header: 'Increasing user confidence',
-                    text: 'We can help you turn your product idea into an actionable design project plan.'
+                    text: 'Users will be more drawn to a product with professionally designed interface as it indicates there’s a team of highly invested people behind it.'
                 },
             ],
         },
@@ -269,17 +269,17 @@ const servicesData = ref({
                 {
                     icon: WorkshopsIcon,
                     header: 'Consistency now and forever',
-                    text: 'We can help you turn your product idea into an actionable design project plan.'
+                    text: 'A design system will ensure that your product’s design is consistent across its many features. It will also make it easy to scale in the future.'
                 },
                 {
                     icon: ResearchIcon,
                     header: 'Stronger brand',
-                    text: 'Find out what your users want. We’ll recruit and interview respondents matching your target persona.'
+                    text: 'Building and implementing a design system will ensure that all your products are consistent, which will strengthen familiarity and brand among users.'
                 },
                 {
                     icon: UXIcon,
                     header: 'Faster development',
-                    text: 'Intuitive user experience will make or break your product. We’re here to make ensure the former.'
+                    text: 'Implementing the component library in your codebase will save you time in the future when you want to expand your product.'
                 },
             ],
         },
@@ -328,17 +328,17 @@ const servicesData = ref({
                 {
                     icon: WorkshopsIcon,
                     header: 'Growing your team without the hassles of recruitment',
-                    text: 'We can help you turn your product idea into an actionable design project plan.'
+                    text: 'If your internal team is not keeping up with the demands for new features or products, we’re happy to step in and provide a designer or a team to support your needs.'
                 },
                 {
                     icon: ResearchIcon,
                     header: 'Delivering more projects simultaneously',
-                    text: 'Find out what your users want. We’ll recruit and interview respondents matching your target persona.'
+                    text: 'Working with your dedicated project team on an ongoing basis will give you the ability to deliver more features to your users in a shorter timeframe. '
                 },
                 {
                     icon: UXIcon,
                     header: 'Scaling the resources according to your needs',
-                    text: 'Intuitive user experience will make or break your product. We’re here to make ensure the former.'
+                    text: 'You’re able to scale the design effort up or down on a monthly basis, depending on your current needs.'
                 },
             ],
         },

@@ -13,8 +13,8 @@ async function render(pageContext: PageContextServer) {
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext.exports
   const title =
-    (documentProps && documentProps.title) || 'Discover The Greatest Webinar Software Ever! - Attix'
-  const desc = (documentProps && documentProps.description) || 'Attix'
+    (documentProps && documentProps.title) || 'Semiflat.com'
+  const desc = (documentProps && documentProps.description) || 'Semiflat.com'
 
   // Streaming is optional: we can use renderToString() instead.
   const pipe = isWorker()
