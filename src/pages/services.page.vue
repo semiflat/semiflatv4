@@ -5,9 +5,27 @@ import InterfaceIll from '~/assets/services/illustration-interface.svg?url'
 import ExperienceIll from '~/assets/services/illustration-experience.svg?url'
 import DesignIll from '~/assets/services/illustration-design.svg?url'
 import SupportIll from '~/assets/services/illustration-support.svg?url'
-import WorkshopsIcon from '~/assets/experiences/workshops.svg?component'
-import ResearchIcon from '~/assets/experiences/research.svg?component'
-import UXIcon from '~/assets/experiences/UX.svg?component'
+import FasterIcon from '~/assets/services/icons/faster.svg?component'
+import FoundationIcon from '~/assets/services/icons/foundation.svg?component'
+import LeadershipIcon from '~/assets/services/icons/leadership.svg?component'
+import PartnershipIcon from '~/assets/services/icons/partnership.svg?component'
+import NeedsIcon from '~/assets/services/icons/needs.svg?component'
+import TimeIcon from '~/assets/services/icons/time.svg?component'
+import AssumptionsIcon from '~/assets/services/icons/assumptions.svg?component'
+import AttractingIcon from '~/assets/services/icons/attracting.svg?component'
+import LoyaltyIcon from '~/assets/services/icons/loyalty.svg?component'
+import RetentionIcon from '~/assets/services/icons/retention.svg?component'
+import SupportIcon from '~/assets/services/icons/support.svg?component'
+import BrandIcon from '~/assets/services/icons/brand.svg?component'
+import BreakingIntoIcon from '~/assets/services/icons/breakingInto.svg?component'
+import ConfidenceIcon from '~/assets/services/icons/confidence.svg?component'
+import IntuitiveIcon from "~/assets/icons/intuitive.svg?component";
+import ConsistencyIcon from '~/assets/services/icons/consistency.svg?component'
+import StrongerBrandIcon from '~/assets/services/icons/strongerBrand.svg?component'
+import GrowingIcon from '~/assets/services/icons/grwoing.svg?component'
+import ScalingIcon from '~/assets/services/icons/scaling.svg?component'
+import SimultaneouslyIcon from '~/assets/services/icons/simultaneously.svg?component'
+
 import { ServiceTypes } from '~/types/service'
 
 
@@ -23,22 +41,22 @@ const servicesData = ref({
             header: 'How will your organization benefit from research & analysis_',
             experiencesArr: [
                 {
-                    icon: WorkshopsIcon,
+                    icon: FoundationIcon,
                     header: 'Strong foundation for the project',
                     text: 'Conducting a Workshops & analysis phase lets us build an understanding of your business, ICPs, current problems so that we can better serve you down the line.'
                 },
                 {
-                    icon: ResearchIcon,
+                    icon: LeadershipIcon,
                     header: 'Independence and design leadership',
                     text: 'We want to lead the effort and guide you in our process. To make that possible we need to dig deep into your product or idea to make sure we understand all ins and outs.'
                 },
                 {
-                    icon: UXIcon,
+                    icon: PartnershipIcon,
                     header: 'Smooth partnership',
                     text: 'This phase is also where we ask any questions/clear up any confusion surrounding your business which helps avoid miscommunication in the future.'
                 },
                 {
-                    icon: UXIcon,
+                    icon: FasterIcon,
                     header: 'Faster delivery',
                     text: 'Building an understanding of your product helps reduce time needed for answering questions and in turn helps us move much faster.'
                 },
@@ -83,17 +101,17 @@ const servicesData = ref({
             header: 'How will your organization benefit from user research_',
             experiencesArr: [
                 {
-                    icon: WorkshopsIcon,
+                    icon: NeedsIcon,
                     header: 'Knowing your user’s needs',
                     text: 'Conducting user research will give you an opportunity to uncover the needs of your existing users or ICPs. '
                 },
                 {
-                    icon: ResearchIcon,
+                    icon: AssumptionsIcon,
                     header: 'Validating your assumptions',
                     text: 'We can recruit potential users to validate your assumptions regarding needs and pains.'
                 },
                 {
-                    icon: UXIcon,
+                    icon: TimeIcon,
                     header: 'Saving time',
                     text: 'Gain direction confidence by interviewing your ICPs before implementing a feature or coming out with a new product.ś'
                 },
@@ -138,27 +156,27 @@ const servicesData = ref({
             header: 'How will your organization benefit from user experience design_',
             experiencesArr: [
                 {
-                    icon: WorkshopsIcon,
+                    icon: AttractingIcon,
                     header: 'Attracting new users',
                     text: 'Word of good UX spreads like wildfire. Creating an application that is easy to use and beautiful is likely to gain you some product evangelists.'
                 },
                 {
-                    icon: ResearchIcon,
+                    icon: RetentionIcon,
                     header: 'Increasing user retention',
                     text: 'Good UX will also help keep the users that you already have. If they can solve their problems fast and easy - why would they go somewhere else?'
                 },
                 {
-                    icon: UXIcon,
+                    icon: IntuitiveIcon,
                     header: 'Providing an intuitive experience',
                     text: 'User experience is all about intuitiveness. Ideally your product won’t require a tutorial of any kind. User will just get it.'
                 },
                 {
-                    icon: WorkshopsIcon,
+                    icon: LoyaltyIcon,
                     header: 'Increasing user loyalty',
                     text: 'Users are more likely to stay loyal to the product that consistently provides value and doesn’t add frustration. '
                 },
                 {
-                    icon: ResearchIcon,
+                    icon: SupportIcon,
                     header: 'Reducing customer support',
                     text: 'Intuitive UX will ensure your product is self-explanatory. This will reduce time spent on answering ‘How can I do X’ types of questions.'
                 },
@@ -203,22 +221,22 @@ const servicesData = ref({
             header: 'How will your organization benefit from user interface design_',
             experiencesArr: [
                 {
-                    icon: WorkshopsIcon,
+                    icon: BreakingIntoIcon,
                     header: 'Breaking into a saturated market with style and confidence',
                     text: 'These days users are accustomed to beautifully designed UI and they expect it from all companies - big and small.'
                 },
                 {
-                    icon: ResearchIcon,
+                    icon: BrandIcon,
                     header: 'Building a strong brand',
                     text: 'A polished user interface will make users more familiar with your logo, brand colors and messaging.'
                 },
                 {
-                    icon: UXIcon,
+                    icon: LoyaltyIcon,
                     header: 'Increasing user loyalty',
                     text: 'An interface that’s pleasant on the eye will likely be one of the factors your loyal users keep using the product.'
                 },
                 {
-                    icon: WorkshopsIcon,
+                    icon: ConfidenceIcon,
                     header: 'Increasing user confidence',
                     text: 'Users will be more drawn to a product with professionally designed interface as it indicates there’s a team of highly invested people behind it.'
                 },
@@ -267,17 +285,17 @@ const servicesData = ref({
             header: 'How will your organization benefit from implementing a design system_',
             experiencesArr: [
                 {
-                    icon: WorkshopsIcon,
+                    icon: ConsistencyIcon,
                     header: 'Consistency now and forever',
                     text: 'A design system will ensure that your product’s design is consistent across its many features. It will also make it easy to scale in the future.'
                 },
                 {
-                    icon: ResearchIcon,
+                    icon: StrongerBrandIcon,
                     header: 'Stronger brand',
                     text: 'Building and implementing a design system will ensure that all your products are consistent, which will strengthen familiarity and brand among users.'
                 },
                 {
-                    icon: UXIcon,
+                    icon: FasterIcon,
                     header: 'Faster development',
                     text: 'Implementing the component library in your codebase will save you time in the future when you want to expand your product.'
                 },
@@ -326,17 +344,17 @@ const servicesData = ref({
             header: 'How will your organization benefit from continuous support_',
             experiencesArr: [
                 {
-                    icon: WorkshopsIcon,
+                    icon: GrowingIcon,
                     header: 'Growing your team without the hassles of recruitment',
                     text: 'If your internal team is not keeping up with the demands for new features or products, we’re happy to step in and provide a designer or a team to support your needs.'
                 },
                 {
-                    icon: ResearchIcon,
+                    icon: SimultaneouslyIcon,
                     header: 'Delivering more projects simultaneously',
                     text: 'Working with your dedicated project team on an ongoing basis will give you the ability to deliver more features to your users in a shorter timeframe. '
                 },
                 {
-                    icon: UXIcon,
+                    icon: ScalingIcon,
                     header: 'Scaling the resources according to your needs',
                     text: 'You’re able to scale the design effort up or down on a monthly basis, depending on your current needs.'
                 },
