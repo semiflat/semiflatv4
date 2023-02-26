@@ -22,7 +22,7 @@ import ConfidenceIcon from '~/assets/services/icons/confidence.svg?component'
 import IntuitiveIcon from "~/assets/icons/intuitive.svg?component";
 import ConsistencyIcon from '~/assets/services/icons/consistency.svg?component'
 import StrongerBrandIcon from '~/assets/services/icons/strongerBrand.svg?component'
-import GrowingIcon from '~/assets/services/icons/grwoing.svg?component'
+import GrowingIcon from '~/assets/services/icons/growing.svg?component'
 import ScalingIcon from '~/assets/services/icons/scaling.svg?component'
 import SimultaneouslyIcon from '~/assets/services/icons/simultaneously.svg?component'
 

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AboutUsVideo from '~/assets/webm/aboutus.webm'
+import AboutUsVideoMp4 from '~/assets/mp4/aboutus.mp4'
 
 </script>
 
@@ -7,6 +8,7 @@ import AboutUsVideo from '~/assets/webm/aboutus.webm'
     <div class="page-content mt-16 md:mt-40 relative">
         <div class="expertise text-white rounded-4 md:flex max-w-[914px] mx-auto relative">
             <video playsinline autoplay muted loop class="max-w-[19.5rem] mx-auto">
+                <source :src="AboutUsVideoMp4" type="video/mp4;codecs=hvc1">
                 <source :src="AboutUsVideo" type="video/webm">
             </video>
             <div class="p-8 md:py-20 md:px-14">

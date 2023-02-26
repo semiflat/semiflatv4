@@ -33,10 +33,10 @@ const pageContext = usePageContext()
         <LogoDesktop class="hidden md:block" />
         <LogoMobile class="md:hidden" />
         <ul class="gap-6 text-sm hidden md:flex text-primary font-semibold">
-            <li v-for="link in links" :key="link.path"
-                class="cursor-pointer py-1.5 px-4 rounded-[8rem] outline outline-turquoise-100/0 transition-all duration-700 hover:outline-turquoise-100/100"
-                :class="{ 'bg-turquoise-100': pageContext.urlPathname === link.path }">
-                <a :href="link.path">
+            <li v-for="link in links" :key="link.path">
+                <a :href="link.path"
+                   class="cursor-pointer py-1.5 px-4 rounded-[8rem] outline outline-turquoise-100/0 transition-all duration-700 hover:outline-turquoise-100/100"
+                   :class="{ 'bg-turquoise-100': pageContext.urlPathname === link.path }">
                     {{ link.label }}
                 </a>
             </li>

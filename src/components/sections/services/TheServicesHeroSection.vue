@@ -78,8 +78,7 @@ const swiperOptions = computed(() => ({
                 agency_
             </h1>
             <p class="mt-6 text-blue-200">
-                Our main focus from the beginning was to bring world-class design to emerging superstars in the SaaS
-                space. <br class="hidden md:block" /> From workflow builders to CRM systems, we’ve done it before.
+              Our approach to design is technical - not purely aesthetic. Every design decision is process and data-driven <br class="hidden md:block" />  to deliver an intuitive and delightful experience for your users.
             </p>
             <div class="mt-2.5rem">
                 <AppButton>Set up a discovery call</AppButton>
@@ -115,4 +114,4 @@ const swiperOptions = computed(() => ({
 .hero-title {
     @apply text-[1.75rem] font-semibold leading-[34px] gradient-text;
 }
-</style> 
+</style>

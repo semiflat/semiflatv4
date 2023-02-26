@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import CompaniesVideo from '~/assets/webm/Companies.webm'
+import CompaniesVideoMp4 from '~/assets/mp4/companies.mp4'
 
 </script>
 
@@ -7,6 +8,7 @@ import CompaniesVideo from '~/assets/webm/Companies.webm'
     <div class="page-content mt-16 md:mt-40 relative">
         <div class="expertise text-white rounded-4 md:flex max-w-[914px] mx-auto relative">
             <video playsinline autoplay muted loop class="max-w-[19.5rem] mx-auto">
+                <source :src="CompaniesVideoMp4" type="video/mp4;codecs=hvc1">
                 <source :src="CompaniesVideo" type="video/webm">
             </video>
             <div class="p-8 md:py-20 md:px-14">

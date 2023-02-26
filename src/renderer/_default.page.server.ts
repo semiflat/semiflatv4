@@ -3,7 +3,7 @@ import { pipeToNodeWritable, pipeToWebWritable } from '@vue/server-renderer'
 import { escapeInject, stampPipe } from 'vite-plugin-ssr'
 import { createApp } from './app'
 import type { PageContextServer } from './types'
-import faviconUrl from '~//assets/favicon.ico'
+import faviconUrl from '~//assets/semiflat-favicon.png'
 
 // See https://vite-plugin-ssr.com/data-fetching
 export const passToClient = ['pageProps', 'urlPathname', 'locale']

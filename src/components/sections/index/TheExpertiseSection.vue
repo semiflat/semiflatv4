@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PolygonVideo from '~/assets/webm/polygon1.webm'
+import PolygonVideoMp4 from '~/assets/mp4/polygon.mp4'
 
 </script>
 
@@ -26,6 +27,7 @@ import PolygonVideo from '~/assets/webm/polygon1.webm'
         </div>
       </div>
       <video playsinline autoplay muted loop class="max-w-[19.5rem] mx-auto relative md:mr-6">
+        <source :src="PolygonVideoMp4" type="video/mp4;codecs=hvc1">
         <source :src="PolygonVideo" type="video/webm">
       </video>
     </div>

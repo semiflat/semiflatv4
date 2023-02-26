@@ -1,6 +1,8 @@
 <script setup lang='ts'>
 import CTA1 from '~/assets/webm/cta-hex.webm'
+import CTA1Mp4 from '~/assets/mp4/cta-hex.mp4'
 import CTA2 from '~/assets/webm/cta-spheres.webm'
+import CTA2Mp4 from '~/assets/mp4/cta-spheres.mp4'
 
 
 </script>
@@ -10,6 +12,7 @@ import CTA2 from '~/assets/webm/cta-spheres.webm'
         <div class="grid gap-6 md:grid-cols-2">
             <div class="bg-gradient text-white rounded-4 md:flex mx-auto relative w-full">
                 <video playsinline autoplay muted loop class="absolute right-0 h-[12.75rem]">
+                    <source :src="CTA2Mp4" type="video/mp4;codecs=hvc1">
                     <source :src="CTA2" type="video/webm">
                 </video>
                 <div class="p-8 md:py-10 px-6 relative">
@@ -21,6 +24,7 @@ import CTA2 from '~/assets/webm/cta-spheres.webm'
             </div>
             <div class="bg-gradient text-white rounded-4 md:flex w-full mx-auto relative">
                 <video playsinline autoplay muted loop class="absolute right-0 h-[12.75rem]">
+                    <source :src="CTA1Mp4" type="video/mp4;codecs=hvc1">
                     <source :src="CTA1" type="video/webm">
                 </video>
                 <div class="p-8 md:py-10 px-6 relative">
