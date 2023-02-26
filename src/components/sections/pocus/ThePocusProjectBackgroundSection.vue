@@ -27,7 +27,7 @@ import CubesIll from '~/assets/pocus/cubes.svg?component'
                             feel as well as the conceptual design of certain features. What followed was a many-month-long
                             and-counting iterative collaboration as the product continued to grow.
                         </p>
-                        <div class="p-8 bg-violet-gradient text-white rounded-4 relative md:p-10">
+                        <div class="hidden p-8 bg-violet-gradient text-white rounded-4 relative md:p-10">
                             <h3 class="font-semibold mb-1 leading-[150%]">Don’t know how to start the project? </h3>
                             <p class="mb-8 md:pr-8 leading-[150%]">We have a video that explains everything you need to
                                 successfully kick

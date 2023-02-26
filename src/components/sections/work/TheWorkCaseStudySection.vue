@@ -15,7 +15,9 @@ const illustrations = [
     },
     {
         picture: Pocus,
-        caption: 'Designing Pocus - product-led sales tool that raised a $23M series A.'
+        caption: 'Designing Pocus - product-led sales tool that raised a $23M series A.',
+        link: '/pocus'
+
     },
     {
         picture: Useful,

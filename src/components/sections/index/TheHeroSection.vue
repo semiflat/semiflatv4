@@ -83,8 +83,8 @@ const swiperOptions = computed(() => ({
 
 <template>
   <div class="relative page-content">
-    <BackgroundMobileLeft class="absolute pointer-events-none top-28 left-0 md:hidden" />
-    <BackgroundDesktop class="hidden pointer-events-none absolute -left-42 md:block -top-60" />
+    <BackgroundMobileLeft class="absolute top-28 left-0 md:hidden" />
+    <BackgroundDesktop class="hidden absolute -left-42 md:block -top-60" />
     <div class="mt-3.5rem md:mt-40 md:text-center">
       <h1 class="hero-title md:text-[2.5rem] md:leading-[120%] md:mt-6">
         Product design for SaaS startups_
@@ -95,8 +95,8 @@ const swiperOptions = computed(() => ({
         We design tools that help millions of professionals be more effective at their job.
       </p>
       <div class="mt-2.5rem">
-        <AppButton>Discuss your project</AppButton>
-        <AppButton text>See our work</AppButton>
+        <AppButton href="mailto:hello@semiflat.com">Get in touch</AppButton>
+        <AppButton text href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction" target="_blank">Schedule a call</AppButton>
       </div>
     </div>
     <div class="">

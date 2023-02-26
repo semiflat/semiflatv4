@@ -13,7 +13,7 @@ import PolygonVideoMp4 from '~/assets/mp4/polygon.mp4'
           complex problems in their respective niches.
         </p>
         <div class="md:flex">
-          <AppButton class="!bg-white !text-blue-300">Learn about our services</AppButton>
+          <AppButton class="!bg-white !text-blue-300" href="/services">Learn about our services</AppButton>
         </div>
       </div>
       <video playsinline autoplay muted loop class="max-w-[19.5rem] mx-auto relative md:mr-6">

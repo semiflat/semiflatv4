@@ -12,6 +12,7 @@ import ErinAvatar from '~/assets/avatars/erin.png'
 import NicoAvatar from '~/assets/avatars/nico.png'
 import ColemanAvatar from '~/assets/avatars/coleman.png'
 import CirclesBackground from '~/assets//webm/circles-horiz.webm'
+import CirclesBackgroundMp4 from '~/assets//mp4/cta-hex.mp4'
 
 const testimonials = [
     {
@@ -68,8 +69,9 @@ const testimonials = [
             <TheTestimonialComponent v-for="(testimonial, i) in testimonials" :key="i" :testimonial="testimonial" />
             <div class="px-8 py-10 bg-dark-blue rounded-4 relative md:static">
                 <p class="text-white text-xl mb-8 font-semibold">Want to see what the buzz is all about?</p>
-                <AppButton class="!bg-white !text-blue-300">See our work</AppButton>
+                <AppButton class="!bg-white !text-blue-300" href="/work">See our work</AppButton>
                 <video playsinline autoplay muted loop class="absolute right-6 bottom-4 h-22">
+                    <source :src="CirclesBackgroundMp4" type="video/mp4;codecs=hvc1">
                     <source :src="CirclesBackground" type="video/webm">
                 </video>
 
@@ -91,8 +93,9 @@ const testimonials = [
                 <TheTestimonialComponent :testimonial="testimonials[2]" />
                 <div class="px-8 py-10 bg-dark-blue rounded-4 relative">
                     <p class="text-white text-xl mb-8 font-semibold">Want to see what the buzz is all about?</p>
-                    <AppButton class="!bg-white !text-blue-300 relative z-1">See our work</AppButton>
+                    <AppButton class="!bg-white !text-blue-300 relative z-1" href="/work">See our work</AppButton>
                     <video playsinline autoplay muted loop class="absolute right-6 bottom-4 h-22">
+                        <source :src="CirclesBackgroundMp4" type="video/mp4;codecs=hvc1">
                         <source :src="CirclesBackground" type="video/webm">
                     </video>
                 </div>

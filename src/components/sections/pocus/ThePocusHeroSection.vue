@@ -18,7 +18,7 @@ import PocusLogo from '~/assets/pocus/pocus-logo.svg?component'
                 relying on engineers.
             </p>
             <div class="mt-2.5rem">
-                <AppButton class="!bg-[#481B97]">See the live version</AppButton>
+                <AppButton class="!bg-[#481B97]" href="https://pocus.com" target="_blank">See the live version</AppButton>
                 <AppButton text>Read testimonial</AppButton>
             </div>
         </div>

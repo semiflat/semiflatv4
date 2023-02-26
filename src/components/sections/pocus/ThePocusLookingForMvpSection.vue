@@ -8,7 +8,7 @@ import RightBg from '~/assets/pocus/right-cubes.svg?component'
     <div class="page-content mt-16 md:mt-40">
         <div
             class="bg-violet-gradient p-8 text-white rounded-3 relative md:px-[7.125rem] md:py-[6.125rem] max-w-[57.125rem] mx-auto">
-            <div class="absolute w-full h-full top-0 left-0 z-1 card-mask">
+            <div class="w-full h-full top-0 left-0 z-1 card-mask">
                 <component :is="RightBg" class="absolute top-0 right-0 md:w-[170px] md:h-[170px] md:top-4" />
                 <component :is="LeftBg" class="absolute bottom-0 md:w-[250px] md:h-[250px]" />
             </div>
@@ -19,8 +19,8 @@ import RightBg from '~/assets/pocus/right-cubes.svg?component'
                 <p class="mb-10">Reach out with more details about your project so we can prepare for an introductory call.
                     We’ll schedule
                     it within 24 hours from receiving your message.</p>
-                <AppButton class="!bg-white !text-blue-300">Set up a discovery call</AppButton>
-
+                <AppButton class="!bg-white !text-blue-300" href="mailto:hello@semiflat.com">Get in touch</AppButton>
+                <AppButton class="!text-white" text href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction">Schedule a call</AppButton>
             </div>
         </div>
     </div>

@@ -40,8 +40,8 @@ const employees = [
 
 <template>
     <div class="relative page-content">
-        <BackgroundMobileLeft class="absolute pointer-events-none top-28 left-0 md:hidden" />
-        <BackgroundDesktop class="hidden pointer-events-none absolute -left-42 md:block -top-57" />
+        <BackgroundMobileLeft class="absolute top-28 left-0 md:hidden" />
+        <BackgroundDesktop class="hidden absolute -left-42 md:block -top-57" />
         <div class=" mt-3.5rem md:hidden">
             <h1 class="hero-title md:text-[2.5rem] md:leading-[120%]  md:mt-6">Meet the team behind your next project_
             </h1>
@@ -50,7 +50,7 @@ const employees = [
                 to <br /> world’s most innovative startups.
             </p>
             <div class="mt-2.5rem">
-                <AppButton>See open positions</AppButton>
+                <AppButton href="mailto:careers@semiflat.com">Get in touch</AppButton>
             </div>
         </div>
         <div class="hidden md:block ">
@@ -62,7 +62,7 @@ const employees = [
                     work <br /> tirelessly to make sure they proudly call Semiflat their home.
                 </p>
                 <div class="mt-2.5rem">
-                    <AppButton>See open positions</AppButton>
+                    <AppButton href="mailto:careers@semiflat.com">Get in touch</AppButton>
                 </div>
             </div>
             <div class="md:mt-40 relative z-1">
@@ -85,4 +85,4 @@ v-for="person in employees.slice(10, 15)" :key="person" :src="person"
 .hero-title {
     @apply text-[1.75rem] font-semibold leading-[34px] gradient-text;
 }
-</style> 
+</style>

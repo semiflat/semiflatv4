@@ -41,7 +41,7 @@ const pageContext = usePageContext()
                 </a>
             </li>
         </ul>
-        <AppButton class="!hidden md:!inline-flex">Send email</AppButton>
+        <AppButton class="!hidden md:!inline-flex" to="mailto:hello@semiflat.com">Get in touch</AppButton>
         <HamburgerMenu class="md:hidden" />
     </nav>
 </template>

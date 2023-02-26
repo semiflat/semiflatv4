@@ -71,8 +71,8 @@ const swiperOptions = computed(() => ({
 
 <template>
     <div class="relative page-content">
-        <BackgroundMobileLeft class="absolute pointer-events-none top-28 left-0 md:hidden" />
-        <BackgroundDesktop class="hidden pointer-events-none absolute -left-42 md:block -top-60" />
+        <BackgroundMobileLeft class="absolute top-28 left-0 md:hidden" />
+        <BackgroundDesktop class="hidden absolute -left-42 md:block -top-60" />
         <div class=" mt-3.5rem md:mt-40 md:text-center">
             <h1 class="hero-title md:text-[2.5rem] md:leading-[120%]  md:mt-6">We are a full-service product design
                 agency_
@@ -81,8 +81,8 @@ const swiperOptions = computed(() => ({
               Our approach to design is technical - not purely aesthetic. Every design decision is process and data-driven <br class="hidden md:block" />  to deliver an intuitive and delightful experience for your users.
             </p>
             <div class="mt-2.5rem">
-                <AppButton>Set up a discovery call</AppButton>
-                <AppButton text>Learn about us</AppButton>
+                <AppButton href="mailto:hello@semiflat.com">Get in touch</AppButton>
+                <AppButton text href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction">Schedule a call</AppButton>
             </div>
         </div>
         <div>

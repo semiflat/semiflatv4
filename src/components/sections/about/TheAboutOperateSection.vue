@@ -15,7 +15,7 @@ import AboutUsVideoMp4 from '~/assets/mp4/aboutus.mp4'
                 <h2 class="font-semibold text-xl mb-4 md:text-[1.75rem] leading-[120%]">We’re a design firm but operate like a startup</h2>
                 <p class="text-blue-100 mb-8 text-sm md:text-base md:mb-8">Startup culture is ingrained in Semiflat’s DNA. We <br class="hidden md:block"> worked at startups before and have worked with dozens of them since. </p>
                 <div class="md:flex">
-                    <AppButton class="!bg-white !text-blue-300">Learn about our culture</AppButton>
+                    <AppButton class="!bg-white !text-blue-300" href="/culture">Learn about our culture</AppButton>
 
                 </div>
             </div>

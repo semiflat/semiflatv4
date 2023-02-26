@@ -7,7 +7,7 @@ import PolygonVideoMp4 from '~/assets/mp4/polygon.mp4'
 <template>
   <div class="page-content mt-16 md:mt-40 relative">
     <div
-      class="bg-gradient bg-turquoise-100/80 pointer-events-none rounded-full hidden md:block absolute -right-100 -top-18 w-[43.75rem] h-[43.75rem] blur-[240px]" />
+      class="bg-gradient bg-turquoise-100/80 rounded-full hidden md:block absolute -right-100 -top-18 w-[43.75rem] h-[43.75rem] blur-[240px]" />
     <div class="expertise text-white rounded-4 md:flex max-w-[914px] mx-auto relative">
       <div class="p-8 md:py-20 md:px-14 relative">
         <h2 class="font-semibold text-xl mb-4 md:text-[1.75rem]">Our expertise drives results</h2>

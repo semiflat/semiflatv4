@@ -19,7 +19,7 @@ import CTA2Mp4 from '~/assets/mp4/cta-spheres.mp4'
                     <h2 class="font-semibold text-xl mb-8">Interested in working with <br class="hidden md:block" /> us
                         on your SaaS project?
                     </h2>
-                    <AppButton class="!bg-white !text-blue-300">Send an inquiry</AppButton>
+                    <AppButton class="!bg-white !text-blue-300" href="mailto:hello@semiflat.com">Get in touch</AppButton>
                 </div>
             </div>
             <div class="bg-gradient text-white rounded-4 md:flex w-full mx-auto relative">
@@ -31,7 +31,7 @@ import CTA2Mp4 from '~/assets/mp4/cta-spheres.mp4'
                     <h2 class="font-semibold text-xl mb-8">Want to learn more about <br class="hidden md:block" /> our
                         services?
                     </h2>
-                    <AppButton class="!bg-white !text-blue-300">Learn more</AppButton>
+                    <AppButton class="!bg-white !text-blue-300" href="/services">Learn more</AppButton>
                 </div>
             </div>
         </div>

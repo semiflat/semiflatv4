@@ -46,7 +46,7 @@ const deliverables = [
                             <h3 class="font-semibold mb-1 leading-[150%]">Have a project in mind similar to Pocus?</h3>
                             <p class="mb-8 md:pr-8 leading-[150%]">Ask us about a dedicated senior designer long-term
                                 collaboration model.</p>
-                            <AppButton class="!bg-white !text-black">Get in touch</AppButton>
+                            <AppButton class="!bg-white !text-black" href="mailto:hello@semiflat.com">Get in touch</AppButton>
                             <component :is="CubesIll" class="absolute top-0 right-1 sm:-top-6" />
                         </div>
                     </div>

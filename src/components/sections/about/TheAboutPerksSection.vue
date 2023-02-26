@@ -13,7 +13,7 @@ import breakpointsConst from "~/constants/breakpoints";
 
 
 
-const breakpoints =  useBreakpoints(breakpointsConst) 
+const breakpoints =  useBreakpoints(breakpointsConst)
 const md = ref(breakpoints.smaller('md'))
 
 const perks = [
@@ -50,7 +50,7 @@ const perks = [
             <ThePerkComponent v-for="(perk, i) in perks" :key="i" :perk="perk" />
             <div class="px-8 py-10 bg-dark-blue rounded-4 relative md:static">
                     <p class="text-white text-xl mb-8 font-semibold">Want to see how we apply these in practice?</p>
-                    <AppButton class="!bg-white !text-blue-300">See our work</AppButton>
+                    <AppButton class="!bg-white !text-blue-300" href="/work">See our work</AppButton>
                     <CirclesBackground class="absolute bottom-0 right-0" />
                 </div>
         </div>
@@ -62,7 +62,7 @@ const perks = [
                 <ThePerkComponent :perk="perks[1]" />
                 <div class="px-8 py-10 bg-dark-blue rounded-4 relative">
                     <p class="text-white text-xl mb-8 font-semibold">Want to see how we apply these in practice?</p>
-                    <AppButton class="!bg-white !text-blue-300">See our work</AppButton>
+                    <AppButton class="!bg-white !text-blue-300" href="/work">See our work</AppButton>
                     <CirclesBackground2 class="absolute bottom-0 right-0" />
                 </div>
                 <ThePerkComponent :perk="perks[2]" />

@@ -18,7 +18,7 @@ import CompaniesVideoMp4 from '~/assets/mp4/companies.mp4'
                     and breathe design and have helped dozens of startups solve complex problems in their respective
                     niches. </p>
                 <div class="md:flex">
-                    <AppButton class="!bg-white !text-blue-300">See our work</AppButton>
+                    <AppButton class="!bg-white !text-blue-300" href="/work">See our work</AppButton>
 
                 </div>
             </div>

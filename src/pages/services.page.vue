@@ -408,8 +408,8 @@ const selectedService = computed(() => servicesData.value[selectedServiceModel.v
         <TheServicesIntroductionSection :introduction="selectedService.introduction" />
         <TheServicesOurServices :experiences="selectedService.experiences" />
         <TheServicesProsAndConsSection :pros-and-cons="selectedService.prosAndCons" />
-        <TheServicesQuestionsSection v-model="selectedServiceModel" :examples="selectedService.examples" />
-        <TheServicesFaqSection />
+<!--        <TheServicesQuestionsSection v-model="selectedServiceModel" :examples="selectedService.examples" /> -->
+<!--        <TheServicesFaqSection /> -->
         <TheCTABottomSection />
     </div>
 </template>

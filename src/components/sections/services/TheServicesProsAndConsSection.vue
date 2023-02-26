@@ -19,7 +19,7 @@ defineProps<{
             </div>
             <div class="mt-8 grid gap-8 md:mt-0">
                 <div v-for="(el, i) in prosAndCons.pros" :key="i" class="flex gap-6">
-                    <component :is="CheckIcon" class="shrink-0" />
+                    <component :is="CheckIcon" class="shrink-0 text-turquoise-400" />
                     <div class="md:pr-2">
                         <h3 class="font-semibold text-blue-300 mb-2">{{ el.header }}</h3>
                         <p class="text-blue-200"> {{ el.text }} </p>
