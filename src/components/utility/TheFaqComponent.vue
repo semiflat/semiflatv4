@@ -25,10 +25,12 @@ const toggleFaq = (item: FaqItem) => {
                     <ChevronDown class="shrink-0 cursor-pointer transition-all duration-300 text-turquoise-300 select-none"
                         :class="{ 'rotate-180 !text-turquoise-400': faq.isOpen }" @click="toggleFaq(faq)" />
                 </div>
-                <p class="text-blue-200 max-w-[49rem] mt-6 max-h-0 overflow-hidden transition-all translate-x-20  ease-linear opacity-0 duration-250 select-none"
-                    :class="{ '!max-h-100rem pb-6 md:pb-8 opacity-100 !translate-x-0': faq.isOpen, '!duration-250': faq.isOpen }">
-                    {{
-                        faq.text }} </p>
+                <div class="text-blue-200 max-w-[49rem] mt-6 max-h-0 overflow-hidden transition-all   ease-linear duration-0 select-none"
+                    :class="{ '!max-h-100rem': faq.isOpen, '!duration-2000': faq.isOpen }">
+                    <p class="pb-6 md:pb-8 transition-all translate-x-20 opacity-0"
+                        :class="{ 'opacity-100 !translate-x-0': faq.isOpen, '!duration-250': faq.isOpen }"> {{ faq.text }}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
