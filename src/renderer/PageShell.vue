@@ -14,7 +14,7 @@ const context = usePageContext()
         :class="[context.pageProps?.pageShell.smallGradient]" />
     </div>
     <TheLayoutNavbar />
-    <div class="content">
+    <div class="content pt-3.5rem md:pt-0">
       <slot />
     </div>
     <TheLayoutFooter />

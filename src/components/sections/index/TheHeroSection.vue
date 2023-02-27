@@ -70,7 +70,7 @@ const swiperOptions = computed(() => ({
   //   spaceBetween: 16,
   navigation: false,
   loop: true,
-  speed: 1000,
+  speed: 5000,
   watchSlidesVisibility: true,
   autoplay: {
     delay: 1,
@@ -96,7 +96,8 @@ const swiperOptions = computed(() => ({
       </p>
       <div class="mt-2.5rem">
         <AppButton href="mailto:hello@semiflat.com">Get in touch</AppButton>
-        <AppButton text href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction" target="_blank">Schedule a call</AppButton>
+        <AppButton text href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction" target="_blank">
+          Schedule a call</AppButton>
       </div>
     </div>
     <div class="">
