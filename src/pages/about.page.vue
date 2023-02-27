@@ -1,4 +1,7 @@
 
+import TheAboutImagesSlider from '~/components/sections/about/TheAboutImagesSlider.vue';
+
+
 import TheAboutTimeline from '~/components/sections/about/TheAboutTimeline.vue';
 
 
@@ -14,14 +17,15 @@ import TheAboutAboutSection from '~/components/sections/about/TheAboutAboutSecti
 import TheAboutPerksSection from '~/components/sections/about/TheAboutPerksSection.vue';
 
 <template>
-    <div class="overflow-hidden">
-      <TheAboutHeroSection />
-      <TheAboutPerksSection />
-      <TheAboutAboutSection />
-      <TheAboutOperateSection />
-      <TheAboutEmployeesSection />
-      <TheAboutTimeline />
-      <TheCTABottomSection />
-    </div>
-  </template>
+  <div class="overflow-hidden">
+    <TheAboutHeroSection />
+    <TheAboutImagesSlider />
+    <TheAboutPerksSection />
+    <TheAboutAboutSection />
+    <TheAboutOperateSection />
+    <TheAboutEmployeesSection />
+    <!-- <TheAboutTimeline /> -->
+    <TheCTABottomSection />
+  </div>
+</template>
   

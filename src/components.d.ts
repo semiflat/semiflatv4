@@ -24,6 +24,7 @@ declare module '@vue/runtime-core' {
     TheAboutComponent: typeof import('./components/about/TheAboutComponent.vue')['default']
     TheAboutEmployeesSection: typeof import('./components/sections/about/TheAboutEmployeesSection.vue')['default']
     TheAboutHeroSection: typeof import('./components/sections/about/TheAboutHeroSection.vue')['default']
+    TheAboutImagesSlider: typeof import('./components/sections/about/TheAboutImagesSlider.vue')['default']
     TheAboutOperateSection: typeof import('./components/sections/about/TheAboutOperateSection.vue')['default']
     TheAboutPerksSection: typeof import('./components/sections/about/TheAboutPerksSection.vue')['default']
     TheAboutSection: typeof import('./components/sections/index/TheAboutSection.vue')['default']

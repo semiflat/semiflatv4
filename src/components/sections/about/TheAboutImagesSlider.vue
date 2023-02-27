@@ -1,11 +1,11 @@
 
 <script setup lang="ts">
 import { SwiperSlide } from 'swiper/vue'
-import img1 from '~/assets/culture-slider/1.jpeg'
-import img2 from '~/assets/culture-slider/2.jpeg'
-import img3 from '~/assets/culture-slider/3.jpeg'
-import img4 from '~/assets/culture-slider/4.jpeg'
-import img5 from '~/assets/culture-slider/5.jpeg'
+import img1 from '~/assets/about-slider/1.jpeg'
+import img2 from '~/assets/about-slider/2.jpeg'
+import img3 from '~/assets/about-slider/3.jpeg'
+import img4 from '~/assets/about-slider/4.jpeg'
+import img5 from '~/assets/about-slider/5.jpeg'
 
 
 
@@ -30,7 +30,7 @@ const swiperBreakpoints = {
 
 const swiperOptions = computed(() => ({
     slidesPerView: 'auto',
-    spaceBetween: 24,
+    // spaceBetween: 24,
     navigation: false,
     loop: true,
     speed: 5000,
@@ -38,6 +38,7 @@ const swiperOptions = computed(() => ({
     autoplay: {
         delay: 1,
         disableOnInteraction: false
+
     },
     breakpoints: swiperBreakpoints,
 }))

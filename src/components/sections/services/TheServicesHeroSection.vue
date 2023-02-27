@@ -78,11 +78,13 @@ const swiperOptions = computed(() => ({
                 agency_
             </h1>
             <p class="mt-6 text-blue-200">
-              Our approach to design is technical - not purely aesthetic. Every design decision is process and data-driven <br class="hidden md:block" />  to deliver an intuitive and delightful experience for your users.
+                Our approach to design is technical - not purely aesthetic. Every design decision is process and data-driven
+                <br class="hidden md:block" /> to deliver an intuitive and delightful experience for your users.
             </p>
             <div class="mt-2.5rem">
                 <AppButton href="mailto:hello@semiflat.com">Get in touch</AppButton>
-                <AppButton text href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction">Schedule a call</AppButton>
+                <AppButton text href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction">Schedule a
+                    call</AppButton>
             </div>
         </div>
         <div>
@@ -91,7 +93,7 @@ const swiperOptions = computed(() => ({
                     <div class="shrink-0 mx-auto flex items-center justify-center">
                         <div class="py-6 px-8 transition-all duration-300 bg-white rounded-4 outline outline-1 min-w-[13.75rem]  outline-[#BCDCDC]/100 shadow-primary my-0.25 mx-auto"
                             @click="emit('update:modelValue', el.value)">
-                            <component :is="el.icon" class="mx-auto mb-4" />
+                            <component :is="el.icon" class="mx-auto mb-4 text-turquoise-400" />
                             <p class="font-semibold leading-[150%] cursor-pointer text-center">{{ el.label }}</p>
                         </div>
                     </div>
@@ -101,7 +103,7 @@ const swiperOptions = computed(() => ({
                 <div v-for="(el, i) in discovery" :key="i"
                     class="text-center p-6 w-full transition-all cursor-pointer duration-300 hover:bg-white rounded-4 outline outline-1 outline-[#BCDCDC]/0 hover:outline-[#BCDCDC]/100 hover:shadow-primary"
                     @click="emit('update:modelValue', el.value)">
-                    <component :is="el.icon" class="mx-auto mb-4" />
+                    <component :is="el.icon" class="mx-auto mb-4 text-turquoise-400" />
                     <p class="font-semibold leading-[150%] transition-all duration-300 hover:gradient-text">
                         {{ el.label }}</p>
                 </div>

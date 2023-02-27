@@ -23,9 +23,9 @@ import TheCultureHeroSection from '~/components/sections/culture/TheCultureHeroS
         <TheCultureAboutSection />
         <TheCultureOurServices />
         <TheCultureSeeOurWork />
-        <TheCultureOpenRoles />
+        <!-- <TheCultureOpenRoles /> -->
         <TheCultureImagesSlider />
         <TheCultureFaqSections />
         <TheCTABottomSection />
     </div>
-  </template>
+</template>

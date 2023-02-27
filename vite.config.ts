@@ -9,29 +9,12 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import yaml from '@rollup/plugin-yaml'
 import svgLoader from 'vite-svg-loader'
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
-
-
 
 const config: UserConfig = {
   plugins: [
     vue(),
     ssr(),
     Unocss(),
-    ViteImageOptimizer({
-      png: {
-        // https://sharp.pixelplumbing.com/api-output#png
-        quality: 70,
-      },
-      jpeg: {
-        // https://sharp.pixelplumbing.com/api-output#jpeg
-        quality: 70,
-      },
-      jpg: {
-        // https://sharp.pixelplumbing.com/api-output#jpeg
-        quality: 70,
-      },
-    }),
     VitePluginFonts({
       google: {
         families: ['Poppins:wght@400;500;600;700;800'],
@@ -57,47 +40,44 @@ const config: UserConfig = {
       dts: 'src/components.d.ts',
     }),
     {
-      name: "fix-swipper-css",
-      enforce: "pre",
+      name: 'fix-swipper-css',
+      enforce: 'pre',
       resolveId(id) {
-        if (id === "swiper.css") return "fix-swiper.css";
+        if (id === 'swiper.css') return 'fix-swiper.css'
       },
       async load(id) {
-        if (id === "fix-swiper.css") {
-          return await fsPromises.readFile(
-            "./node_modules/swiper/swiper.min.css",
-            "utf-8",
-          );
+        if (id === 'fix-swiper.css') {
+          return await fsPromises.readFile('./node_modules/swiper/swiper.min.css', 'utf-8')
         }
       },
     },
     {
-      name: "fix-swipper-navigation-css",
-      enforce: "pre",
+      name: 'fix-swipper-navigation-css',
+      enforce: 'pre',
       resolveId(id) {
-        if (id === "swiper-navigation.css") return "fix-swiper-navigation.css";
+        if (id === 'swiper-navigation.css') return 'fix-swiper-navigation.css'
       },
       async load(id) {
-        if (id === "fix-swiper-navigation.css") {
+        if (id === 'fix-swiper-navigation.css') {
           return await fsPromises.readFile(
-            "./node_modules/swiper/modules/navigation/navigation.min.css",
-            "utf-8",
-          );
+            './node_modules/swiper/modules/navigation/navigation.min.css',
+            'utf-8'
+          )
         }
       },
     },
     {
-      name: "fix-swipper-autoplay-css",
-      enforce: "pre",
+      name: 'fix-swipper-autoplay-css',
+      enforce: 'pre',
       resolveId(id) {
-        if (id === "swiper-autoplay.css") return "fix-swiper-autoplay.css";
+        if (id === 'swiper-autoplay.css') return 'fix-swiper-autoplay.css'
       },
       async load(id) {
-        if (id === "fix-swiper-autoplay.css") {
+        if (id === 'fix-swiper-autoplay.css') {
           return await fsPromises.readFile(
-            "./node_modules/swiper/modules/autoplay/autoplay.min.css",
-            "utf-8",
-          );
+            './node_modules/swiper/modules/autoplay/autoplay.min.css',
+            'utf-8'
+          )
         }
       },
     },
