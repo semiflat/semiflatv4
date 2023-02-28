@@ -72,7 +72,7 @@ const tag = computed(() => {
       :class="[props.contentClass, props.loading ? 'opacity-0' : 'opacity-100']"
     >
       <slot />
-      <AppArrow v-if="!props.text" />
+      <AppArrow v-if="!props.text" class="inline-block translate-y-[-0.5px]" />
     </div>
     <AppSpinner
       :size="24"
