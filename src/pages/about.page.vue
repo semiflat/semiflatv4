@@ -1,20 +1,11 @@
+<script setup lang="ts">
+import { gsap } from 'gsap'
+import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin'
 
-import TheAboutImagesSlider from '~/components/sections/about/TheAboutImagesSlider.vue';
-
-
-import TheAboutTimeline from '~/components/sections/about/TheAboutTimeline.vue';
-
-
-import TheAboutEmplyeesSection from '~/components/sections/about/TheAboutEmplyeesSection.vue';
-
-
-import TheOperateSection from '~/components/sections/about/TheOperateSection.vue';
-
-
-import TheAboutAboutSection from '~/components/sections/about/TheAboutAboutSection.vue';
-
-
-import TheAboutPerksSection from '~/components/sections/about/TheAboutPerksSection.vue';
+if (!import.meta.env.SSR) {
+  gsap.registerPlugin(DrawSVGPlugin)
+}
+</script>
 
 <template>
   <div class="overflow-hidden">
@@ -28,4 +19,3 @@ import TheAboutPerksSection from '~/components/sections/about/TheAboutPerksSecti
     <TheCTABottomSection />
   </div>
 </template>
-  

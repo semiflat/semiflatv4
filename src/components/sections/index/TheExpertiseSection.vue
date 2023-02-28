@@ -4,10 +4,15 @@ import ExpertiseHexagon from '~/assets/svg-animated/expertise-hexagon.svg?compon
 
 const hexagonRef = ref()
 
+const getLines = () => hexagonRef.value.$el.querySelector(`.glow-line`)
 const getLine = (id: string | number) => hexagonRef.value.$el.querySelector(`.glow-line-${id}`)
 
 onMounted(() => {
   if (!hexagonRef.value) return
+
+  gsap.set(getLines(), {
+    drawSVG: '0% 0%',
+  })
 
   const tl = gsap.timeline({
     ease: 'power2.out',
