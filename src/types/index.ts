@@ -4,7 +4,12 @@ import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client' // When u
 import type { App, ComponentPublicInstance } from 'vue'
 
 type Page = ComponentPublicInstance // https://stackoverflow.com/questions/63985658/how-to-type-vue-instance-out-of-definecomponent-in-vue-3/63986086#63986086
-interface PageProps {}
+interface PageProps {
+  pageShell: {
+    smallGradient?: string
+    bigGradient?: string
+  }
+}
 
 export interface PageContextCustom {
   Page: Page
@@ -36,10 +41,8 @@ interface AppContext {
 
 export type UserModule = (ctx: AppContext) => void
 
-
 export enum WebinarStatus {
-    IN_PROGRESS = 'IN_PROGRESS',
-    FINISHED = 'FINISHED',
-    CREATED = 'CREATED',
-  }
-  
+  IN_PROGRESS = 'IN_PROGRESS',
+  FINISHED = 'FINISHED',
+  CREATED = 'CREATED',
+}

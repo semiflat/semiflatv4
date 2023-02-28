@@ -51,6 +51,7 @@ onMounted(() => {
 
 <style lang="postcss" scoped>
 .bg-gradient {
+  will-change: transform;
   animation: gradient-scale 7s ease-in-out infinite alternate;
 }
 

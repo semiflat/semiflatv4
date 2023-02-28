@@ -67,16 +67,13 @@ const swiperBreakpoints = {
 
 const swiperOptions = computed(() => ({
   slidesPerView: 'auto',
-  //   spaceBetween: 16,
   navigation: false,
   loop: true,
   speed: 5000,
-  watchSlidesVisibility: true,
   autoplay: {
     delay: 1,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
-
   breakpoints: swiperBreakpoints,
 }))
 </script>
@@ -96,15 +93,23 @@ const swiperOptions = computed(() => ({
       </p>
       <div class="mt-2.5rem">
         <AppButton href="mailto:hello@semiflat.com">Get in touch</AppButton>
-        <AppButton text href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction" target="_blank">
-          Schedule a call</AppButton>
+        <AppButton
+          text
+          href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction"
+          target="_blank"
+        >
+          Schedule a call</AppButton
+        >
       </div>
     </div>
     <div class="">
       <AppSlider class="mt-16 md:mt-40 hero-slider" style="" :swiper-options="swiperOptions">
-        <SwiperSlide v-for="(logo, i) in logos" :key="i"
-          class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center">
-          <component :is="logo" class="h-[4.375rem] " />
+        <SwiperSlide
+          v-for="(logo, i) in logos"
+          :key="i"
+          class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center"
+        >
+          <component :is="logo" class="h-[4.375rem]" />
         </SwiperSlide>
       </AppSlider>
     </div>
@@ -117,22 +122,25 @@ const swiperOptions = computed(() => ({
 }
 
 .hero-slider .swiper {
-  mask-image: linear-gradient(270deg,
-      rgba(242, 242, 242, 0) 0%,
-      rgba(245, 245, 245, 1) 15%,
-      rgba(255, 255, 255, 1) 50%,
-      rgba(244, 244, 244, 1) 85%,
-      rgba(242, 242, 242, 0) 100%);
-  -webkit-mask-image: linear-gradient(270deg,
-      rgba(242, 242, 242, 0) 0%,
-      rgba(245, 245, 245, 1) 15%,
-      rgba(255, 255, 255, 1) 50%,
-      rgba(244, 244, 244, 1) 85%,
-      rgba(242, 242, 242, 0) 100%);
+  mask-image: linear-gradient(
+    270deg,
+    rgba(242, 242, 242, 0) 0%,
+    rgba(245, 245, 245, 1) 15%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(244, 244, 244, 1) 85%,
+    rgba(242, 242, 242, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    270deg,
+    rgba(242, 242, 242, 0) 0%,
+    rgba(245, 245, 245, 1) 15%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(244, 244, 244, 1) 85%,
+    rgba(242, 242, 242, 0) 100%
+  );
 }
 
-
-.swiper>.swiper-wrapper {
+.swiper > .swiper-wrapper {
   transition-timing-function: linear;
 }
 </style>

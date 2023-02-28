@@ -1,22 +1,7 @@
 // Environment: Node.js
 // @unocss-include
-import type { PageContext } from '~/renderer/types'
 
-export async function onBeforeRender(pageContext: PageContext) {
-  // The route parameter of /star-wars/@movieId is available at pageContext.routeParams
-  // if (!pageContext.routeParams?.id) {
-  //   return
-  // }
-
-  // const { id } = pageContext.routeParams
-  // // .page.server.js files always run in Node.js; we could use SQL/ORM queries here.
-  // const response = await fetch(https://api.dev.attix.com/rest-api/webinars/${id})
-  // const webinar = await response.json()
-
-  // // Our render and hydrate functions we defined earlier pass pageContext.pageProps to
-  // // the root Vue component Page; this is where we define pageProps.
-  // const pageProps = { webinar }
-
+export async function onBeforeRender() {
   // We make pageProps available as pageContext.pageProps
   return {
     pageContext: {

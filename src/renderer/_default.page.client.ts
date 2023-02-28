@@ -1,5 +1,5 @@
 import { createApp } from './app'
-import type { PageContextClient } from './types'
+import type { PageContextClient } from '~/types'
 
 async function render(pageContext: PageContextClient) {
   const app = await createApp(pageContext)

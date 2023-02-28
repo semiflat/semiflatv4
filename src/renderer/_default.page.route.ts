@@ -1,12 +1,10 @@
-export { onBeforeRoute };
-
-import { extractLocale } from "~/i18n/extractLocale";
-import { PageContext } from "./types";
+import type { PageContext } from '~/types'
+import { extractLocale } from '~/i18n/extractLocale'
 
 async function onBeforeRoute(pageContext: PageContext) {
-  let urlMod = pageContext.urlOriginal;
-  const { urlWithoutLocale, locale } = extractLocale(String(urlMod));
-  urlMod = urlWithoutLocale;
+  let urlMod = pageContext.urlOriginal
+  const { urlWithoutLocale, locale } = extractLocale(String(urlMod))
+  urlMod = urlWithoutLocale
   return {
     pageContext: {
       // We make `locale` available as `pageContext.locale`.
@@ -16,5 +14,7 @@ async function onBeforeRoute(pageContext: PageContext) {
       // We overwrite the original URL
       urlOriginal: urlMod,
     },
-  };
+  }
 }
+
+export { onBeforeRoute }
