@@ -13,7 +13,6 @@ declare module '@vue/runtime-core' {
     AppDialog: typeof import('./components/utility/AppDialog.vue')['default']
     AppInput: typeof import('./components/inputs/AppInput.vue')['default']
     AppMultistepContainer: typeof import('./components/utility/AppMultistepContainer.vue')['default']
-    AppPhoneInput: typeof import('./components/inputs/AppPhoneInput.vue')['default']
     AppSlider: typeof import('./components/utility/AppSlider.vue')['default']
     AppSpinner: typeof import('./components/utility/AppSpinner.vue')['default']
     AppStepper: typeof import('./components/utility/AppStepper.vue')['default']

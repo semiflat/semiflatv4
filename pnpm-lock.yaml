@@ -2,11 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.27.0
-  '@chenfengyuan/vue-countdown': ^2.1.0
   '@cloudflare/kv-asset-handler': ^0.2.0
-  '@formkit/auto-animate': 1.0.0-beta.5
   '@headlessui/vue': ^1.7.5
-  '@lbgm/phone-number-input': ^1.1.5
   '@rollup/plugin-yaml': ^4.0.1
   '@types/compression': ^1.7.2
   '@types/express': ^4.17.14
@@ -18,9 +15,7 @@ specifiers:
   '@vitejs/plugin-vue': ^3.0.3
   '@vue/compiler-sfc': ^3.2.33
   '@vue/server-renderer': ^3.2.33
-  '@vuepic/vue-datepicker': ^3.6.3
   '@vueuse/core': ^9.6.0
-  add-to-calendar-button-vue: ^1.2.3
   compression: ^1.7.4
   cross-env: ^7.0.3
   eslint: ^8.25.0
@@ -53,19 +48,14 @@ specifiers:
   zod: ^3.20.2
 
 dependencies:
-  '@chenfengyuan/vue-countdown': 2.1.0_vue@3.2.45
   '@cloudflare/kv-asset-handler': 0.2.0
-  '@formkit/auto-animate': 1.0.0-beta.5
   '@headlessui/vue': 1.7.5_vue@3.2.45
-  '@lbgm/phone-number-input': 1.1.5
   '@unocss/reset': 0.47.6
   '@vee-validate/zod': 4.7.3_f2btg7zmr5jfq4gp3vvwlannri
   '@vitejs/plugin-vue': 3.2.0_vite@3.2.5+vue@3.2.45
   '@vue/compiler-sfc': 3.2.45
   '@vue/server-renderer': 3.2.45_vue@3.2.45
-  '@vuepic/vue-datepicker': 3.6.3_vue@3.2.45
   '@vueuse/core': 9.6.0_vue@3.2.45
-  add-to-calendar-button-vue: 1.2.3_vue@3.2.45
   compression: 1.7.4
   cross-env: 7.0.3
   express: 4.18.2
@@ -279,14 +269,6 @@ packages:
     resolution: {integrity: sha512-zn90Jwy9TKrBSB45ikPMmxvnGRRfrreeGKtb0DWbKrxlFf+0dOPSmPxxgO7EKBahQJAC8XxeUSMKcPwPmR1b4Q==}
     dev: false
 
-  /@chenfengyuan/vue-countdown/2.1.0_vue@3.2.45:
-    resolution: {integrity: sha512-Emk66FULb1Q31tz7sLRvQIBMW8k46EeQu2pv4DUppPUNSmpp+5bGLQLNLLfwohL3r6a4dzqB5PGSmu8P5nD4qQ==}
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      vue: 3.2.45
-    dev: false
-
   /@cloudflare/kv-asset-handler/0.2.0:
     resolution: {integrity: sha512-MVbXLbTcAotOPUj0pAMhVtJ+3/kFkwJqc5qNOleOZTv6QkZZABDMS21dSrSlVswEHwrpWC03e4fWytjqKvuE2A==}
     dependencies:
@@ -350,10 +332,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /@formkit/auto-animate/1.0.0-beta.5:
-    resolution: {integrity: sha512-WoSwyhAZPOe6RB/IgicOtCHtrWwEpfKIZ/H/nxpKfnZL9CB6hhhBGU5bCdMRw7YpAUF2CDlQa+WWh+gCqz5lDg==}
-    dev: false
 
   /@gar/promisify/1.1.3:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
@@ -441,15 +419,6 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
-    dev: false
-
-  /@lbgm/phone-number-input/1.1.5:
-    resolution: {integrity: sha512-388FpI997X4nTlciis1erSP6i3yLHSqMdiNxT25ZhOQx6/a+CS9gP4jJP4MCDGgn5ycKhCdaCBX0rB68cKDiYA==}
-    engines: {node: '>=14.18.3', npm: '>=6.14.15'}
-    dependencies:
-      libphonenumber-js: 1.10.15
-      sass: 1.56.2
-      vue: 3.2.45
     dev: false
 
   /@miniflare/cache/2.11.0:
@@ -1288,17 +1257,6 @@ packages:
   /@vue/shared/3.2.45:
     resolution: {integrity: sha512-Ewzq5Yhimg7pSztDV+RH1UDKBzmtqieXQlpTVm2AwraoRL/Rks96mvd8Vgi7Lj+h+TH8dv7mXD3FRZR3TUvbSg==}
 
-  /@vuepic/vue-datepicker/3.6.3_vue@3.2.45:
-    resolution: {integrity: sha512-ODNmHNFmoPIkoYWLxpS8ipYGBuStJk5ilVQkiszV3bEEnJgHi7jyIt1C7ovw1dn5tWEdUpGHKwVNQRGcKV7bMQ==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      vue: '>=3.2.0'
-    dependencies:
-      date-fns: 2.29.3
-      date-fns-tz: 1.3.7_date-fns@2.29.3
-      vue: 3.2.45
-    dev: false
-
   /@vueuse/core/9.6.0_vue@3.2.45:
     resolution: {integrity: sha512-qGUcjKQXHgN+jqXEgpeZGoxdCbIDCdVPz3QiF1uyecVGbMuM63o96I1GjYx5zskKgRI0FKSNsVWM7rwrRMTf6A==}
     dependencies:
@@ -1355,23 +1313,6 @@ packages:
     resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-
-  /add-to-calendar-button-vue/1.2.3_vue@3.2.45:
-    resolution: {integrity: sha512-KAuZbgTHHnoP/CoHPt4AVA8mtCW7EwzGvhVocFA5p6FMT6waahX8prVSlE7pRrvNgpdpYOFurv93ga9+r1Nz3g==}
-    engines: {node: '>=14.20.0'}
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      add-to-calendar-button: 1.18.8
-      vue: 3.2.45
-    dev: false
-
-  /add-to-calendar-button/1.18.8:
-    resolution: {integrity: sha512-k8kI85fW7vl5VMhLGnTxXmfjKntcTDgc1P4Tcd79SBHTcbGW3nYHmk8+95fSPufs2BSHx54AXjyw39biYWBLLw==}
-    engines: {node: '>=14.20.0'}
-    dependencies:
-      timezones-ical-library: 1.5.1
-    dev: false
 
   /agent-base/6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -1894,19 +1835,6 @@ packages:
 
   /csstype/2.6.21:
     resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
-
-  /date-fns-tz/1.3.7_date-fns@2.29.3:
-    resolution: {integrity: sha512-1t1b8zyJo+UI8aR+g3iqr5fkUHWpd58VBx8J/ZSQ+w7YrGlw80Ag4sA86qkfCXRBLmMc4I2US+aPMd4uKvwj5g==}
-    peerDependencies:
-      date-fns: '>=2.0.0'
-    dependencies:
-      date-fns: 2.29.3
-    dev: false
-
-  /date-fns/2.29.3:
-    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
-    engines: {node: '>=0.11'}
-    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -3458,10 +3386,6 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
-  /immutable/4.1.0:
-    resolution: {integrity: sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ==}
-    dev: false
-
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -3763,10 +3687,6 @@ packages:
       prelude-ls: 1.2.1
       type-check: 0.4.0
     dev: true
-
-  /libphonenumber-js/1.10.15:
-    resolution: {integrity: sha512-sLeVLmWX17VCKKulc+aDIRHS95TxoTsKMRJi5s5gJdwlqNzMWcBCtSHHruVyXjqfi67daXM2SnLf2juSrdx5Sg==}
-    dev: false
 
   /lines-and-columns/1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
@@ -4920,16 +4840,6 @@ packages:
   /safer-buffer/2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  /sass/1.56.2:
-    resolution: {integrity: sha512-ciEJhnyCRwzlBCB+h5cCPM6ie/6f8HrhZMQOf5vlU60Y1bI1rx5Zb0vlDZvaycHsg/MqFfF1Eq2eokAa32iw8w==}
-    engines: {node: '>=12.0.0'}
-    hasBin: true
-    dependencies:
-      chokidar: 3.5.3
-      immutable: 4.1.0
-      source-map-js: 1.0.2
-    dev: false
-
   /scule/1.0.0:
     resolution: {integrity: sha512-4AsO/FrViE/iDNEPaAQlb77tf0csuq27EsVpy6ett584EcRTp6pTDLoGWVxCD77y5iU5FauOvhsI4o1APwPoSQ==}
     dev: true
@@ -5341,11 +5251,6 @@ packages:
   /text-table/0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
-
-  /timezones-ical-library/1.5.1:
-    resolution: {integrity: sha512-0aj6q9cYRNAuS/mGh8/aWkST6b0V4uUIbTxRkOGk6uUDMlu/ARaL+SKzi7QMsY2C4yl5OfqAxO8i2qX9Ui2isw==}
-    engines: {node: '>=14.20.0'}
-    dev: false
 
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
