@@ -1,5 +1,11 @@
+<script setup lang="ts">
+import { gsap } from 'gsap'
+import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin'
 
-import TheCTABottomSection from '~/components/sections/TheCTABottomSection.vue';
+if (!import.meta.env.SSR) {
+  gsap.registerPlugin(DrawSVGPlugin)
+}
+</script>
 
 <template>
   <div class="overflow-hidden">

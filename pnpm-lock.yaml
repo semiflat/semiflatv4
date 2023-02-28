@@ -26,6 +26,7 @@ specifiers:
   eslint: ^8.25.0
   eslint-config-prettier: ^8.5.0
   express: ^4.18.1
+  gsap: file:gsap-bonus.tgz
   i18next: ^22.4.5
   luxon: ^3.1.1
   marked: ^4.2.4
@@ -68,6 +69,7 @@ dependencies:
   compression: 1.7.4
   cross-env: 7.0.3
   express: 4.18.2
+  gsap: file:gsap-bonus.tgz
   i18next: 22.4.5
   luxon: 3.1.1
   marked: 4.2.4
@@ -5983,4 +5985,10 @@ packages:
 
   /zod/3.20.2:
     resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
+    dev: false
+
+  file:gsap-bonus.tgz:
+    resolution: {integrity: sha512-5AkH7wHIL7415RmWdO38M+YmzmDVBgNKgEQkOkqs3EkERPUo341p0ZwMNCy2yku5+koGJjs0B1fSFv0abMb/lg==, tarball: file:gsap-bonus.tgz}
+    name: gsap
+    version: 3.11.4
     dev: false

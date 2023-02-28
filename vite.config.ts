@@ -87,6 +87,10 @@ const config: UserConfig = {
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
+  ssr: {
+    // format: 'esm',
+    noExternal: ['gsap'],
+  },
 }
 
 export default config

@@ -45,7 +45,6 @@ declare module '@vue/runtime-core' {
     TheHeroSection: typeof import('./components/sections/index/TheHeroSection.vue')['default']
     TheLayoutFooter: typeof import('./components/layout/TheLayoutFooter.vue')['default']
     TheLayoutNavbar: typeof import('./components/layout/TheLayoutNavbar.vue')['default']
-    TheLayoutNavbarLayoutMobile: typeof import('./components/layout/TheLayoutNavbarLayoutMobile.vue')['default']
     ThePerkComponent: typeof import('./components/testimonial/ThePerkComponent.vue')['default']
     ThePocusCompaniesLoveSection: typeof import('./components/sections/pocus/ThePocusCompaniesLoveSection.vue')['default']
     ThePocusFunctionsSection: typeof import('./components/sections/pocus/ThePocusFunctionsSection.vue')['default']
