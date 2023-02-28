@@ -116,24 +116,24 @@ const tag = computed(() => {
   @apply text-primary;
 }
 
-.button-arrow .arrow-icon {
+::v-deep(.button-arrow .arrow-icon) {
   overflow: visible;
   margin-left: 3px;
   width: 8px;
 }
-.button-arrow .arrow-head {
+::v-deep(.button-arrow .arrow-head) {
   transform: translateX(0);
   transition: transform 200ms ease-in-out 300ms;
 }
-.button-arrow .arrow-body {
+::v-deep(.button-arrow .arrow-body) {
   opacity: 0;
   transform: scaleX(1);
   transition: transform 200ms ease-in-out 300ms, opacity 200ms ease-in-out 300ms;
 }
-.button-arrow:hover .arrow-head {
+::v-deep(.button-arrow:hover .arrow-head) {
   transform: translateX(3px);
 }
-.button-arrow:hover .arrow-body {
+::v-deep(.button-arrow:hover .arrow-body) {
   opacity: 1;
   transform: scaleX(2);
 }
