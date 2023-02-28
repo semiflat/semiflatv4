@@ -2,7 +2,7 @@ import type { Writable } from 'stream'
 import { pipeToNodeWritable, pipeToWebWritable } from '@vue/server-renderer'
 import { escapeInject, stampPipe } from 'vite-plugin-ssr'
 import { createApp } from './app'
-import type { PageContextServer } from './types'
+import type { PageContextServer } from '~/types'
 import faviconUrl from '~//assets/semiflat-favicon.png'
 
 // See https://vite-plugin-ssr.com/data-fetching
@@ -12,8 +12,7 @@ async function render(pageContext: PageContextServer) {
   const app = await createApp(pageContext)
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext.exports
-  const title =
-    (documentProps && documentProps.title) || 'Semiflat.com'
+  const title = (documentProps && documentProps.title) || 'Semiflat.com'
   const desc = (documentProps && documentProps.description) || 'Semiflat.com'
 
   // Streaming is optional: we can use renderToString() instead.
@@ -30,6 +29,7 @@ async function render(pageContext: PageContextServer) {
   const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
       <head>
+        <style>html{opacity:0; transition: opacity 0.375s ease-in;}</style>
         <meta charset="UTF-8" />
         <link rel="icon" href="${faviconUrl}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,6 +38,7 @@ async function render(pageContext: PageContextServer) {
       </head>
       <body>
         <div id="app">${pipe}</div>
+        <style>html{opacity:1}</style>
       </body>
     </html>`
   return {
