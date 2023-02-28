@@ -11,8 +11,6 @@ import MikeAvatar from '~/assets/avatars/mike.png'
 import ErinAvatar from '~/assets/avatars/erin.png'
 import NicoAvatar from '~/assets/avatars/nico.png'
 import ColemanAvatar from '~/assets/avatars/coleman.png'
-import CirclesBackground from '~/assets//webm/circles-horiz.webm'
-import CirclesBackgroundMp4 from '~/assets//mp4/cta-hex.mp4'
 import StrokeLeft from '~/assets/index-strokes/stroke-left.svg?component'
 import StrokeTop from '~/assets/index-strokes/stroke-top.svg?component'
 
@@ -77,12 +75,9 @@ const testimonials = [
         :testimonial="testimonial"
       />
       <div class="px-8 py-10 bg-dark-blue rounded-4 relative md:static">
+        <AppCirclesHorizontal id="circles-sm" class="absolute right-0 bottom-0 h-51" />
         <p class="text-white text-xl mb-8 font-semibold">Want to see what the buzz is all about?</p>
         <AppButton secondary href="/work">See our work</AppButton>
-        <video playsinline autoplay muted loop class="absolute right-6 bottom-4 h-22">
-          <source :src="CirclesBackgroundMp4" type="video/mp4;codecs=hvc1" />
-          <source :src="CirclesBackground" type="video/webm" />
-        </video>
       </div>
     </div>
   </div>
@@ -114,10 +109,7 @@ const testimonials = [
           <AppButton class="!bg-white !text-blue-300 relative z-1" href="/work"
             >See our work</AppButton
           >
-          <video playsinline autoplay muted loop class="absolute right-6 bottom-4 h-22">
-            <source :src="CirclesBackgroundMp4" type="video/mp4;codecs=hvc1" />
-            <source :src="CirclesBackground" type="video/webm" />
-          </video>
+          <AppCirclesHorizontal id="circles-md" class="absolute right-0 bottom-0 h-51" />
         </div>
         <TheTestimonialComponent :testimonial="testimonials[3]" />
         <!-- <div class="h-[360px] w-full absolute -bottom-98 rounded-4 border-1 border-dashed border-[#BCDCDC]" /> -->

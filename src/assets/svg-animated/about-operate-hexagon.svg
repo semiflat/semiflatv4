@@ -4,10 +4,7 @@
             <!-- filter processes -->
             <feGaussianBlur in="SourceGraphic" stdDeviation="1" /><!-- stdDeviation is amount of blur -->
         </filter>
-        <linearGradient id="glow-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="transparent" />
-            <stop offset="100%" stop-color="red" />
-        </linearGradient>
+
     </defs>
     <mask id="mask0_2055_14302" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="346" height="380">
         <rect width="346" height="380" fill="url(#paint0_radial_2055_14302)" />

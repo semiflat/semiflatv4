@@ -1,15 +1,40 @@
 <script setup lang="ts">
-import CompaniesVideo from '~/assets/webm/Companies.webm'
-import CompaniesVideoMp4 from '~/assets/mp4/companies.mp4'
+import { gsap } from 'gsap'
+import WorkHexagon from '~/assets/svg-animated/companies-work-hexagon.svg?component'
+
+const hexagonRef = ref()
+
+const getLine = (id: string | number) => hexagonRef.value.$el.querySelector(`.glow-line-${id}`)
+const getLines = () => hexagonRef.value.$el.querySelector(`.glow-line`)
+
+onMounted(() => {
+  if (!hexagonRef.value) return
+
+  gsap.set(getLines(), {
+    drawSVG: '0% 0%',
+  })
+
+  const tl = gsap.timeline({
+    ease: 'power2.out',
+    repeat: -1,
+  })
+
+  const duration = 1
+  const delay = '<1.5'
+
+  tl.fromTo(getLine(1), { drawSVG: '8% 5%' }, { drawSVG: '-24% -25%', duration })
+    .fromTo(getLine(2), { drawSVG: '56% 59%' }, { drawSVG: '27% 26%', duration }, delay)
+    .fromTo(getLine(3), { drawSVG: '41% 44%' }, { drawSVG: '75% 76%', duration }, delay)
+    .fromTo(getLine(4), { drawSVG: '-7% -6%' }, { drawSVG: '24% 23%', duration }, delay)
+})
 </script>
 
 <template>
   <div class="page-content mt-16 md:mt-40 relative">
-    <div class="expertise text-white rounded-4 md:flex max-w-[914px] mx-auto relative">
-      <video playsinline autoplay muted loop class="max-w-[19.5rem] mx-auto">
-        <source :src="CompaniesVideoMp4" type="video/mp4;codecs=hvc1" />
-        <source :src="CompaniesVideo" type="video/webm" />
-      </video>
+    <div
+      class="expertise text-white rounded-4 md:flex md:items-center max-w-[914px] mx-auto relative"
+    >
+      <WorkHexagon ref="hexagonRef" class="max-w-[19.5rem] mx-auto w-full" />
       <div class="p-8 md:py-20 md:px-14">
         <h2 class="font-semibold text-xl mb-4 md:text-[1.75rem] leading-[120%]">
           Get a feel for what you can be working on
