@@ -38,9 +38,7 @@ onMounted(() => {
           startups solve complex problems in their respective niches.
         </p>
         <div class="md:flex">
-          <AppButton class="!bg-white !text-blue-300" href="/services"
-            >Learn about our services</AppButton
-          >
+          <AppButton secondary href="/services">Learn about our services</AppButton>
         </div>
       </div>
       <ExpertiseHexagon ref="hexagonRef" class="max-w-[19.5rem] mx-auto relative md:mr-6 w-full" />

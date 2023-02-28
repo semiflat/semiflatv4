@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 // import { SwiperSlide } from 'swiper/vue'
 import BackgroundMobileLeft from '~/assets/bg-left-mobile.svg?component'
@@ -8,8 +7,6 @@ import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
 // import img3 from '~/assets/about-slider/3.jpeg'
 // import img4 from '~/assets/about-slider/4.jpeg'
 // import img5 from '~/assets/about-slider/5.jpeg'
-
-
 
 // const aboutImgs = [
 //     img1,
@@ -29,7 +26,6 @@ import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
 //     },
 // }
 
-
 // const swiperOptions = computed(() => ({
 //     slidesPerView: 'auto',
 //     spaceBetween: 24,
@@ -41,27 +37,31 @@ import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
 //     },
 //     breakpoints: swiperBreakpoints,
 // }))
-
 </script>
 
 <template>
-    <div class="relative page-content">
-        <BackgroundMobileLeft class="absolute top-28 left-0 md:hidden" />
-        <BackgroundDesktop class="hidden absolute -left-42 md:block -top-60" />
-        <div class=" mt-3.5rem md:mt-40 md:text-center">
-            <h1 class="hero-title md:text-[2.5rem] md:leading-[120%]  md:mt-6">Meet the team behind your next project_
-            </h1>
-            <p class="mt-6 text-blue-200 ">
-                We are a remote team of 17 product designers, laser focused on delivering top tier SaaS product design
-                to <br /> world’s most innovative startups.
-            </p>
-            <div class="mt-2.5rem">
-                <AppButton href="mailto:hello@semiflat.com">Get in touch</AppButton>
-                <AppButton text href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction">Schedule a
-                    call</AppButton>
-            </div>
-        </div>
-        <!-- <div class="">
+  <div class="relative page-content">
+    <BackgroundMobileLeft class="absolute top-28 left-0 md:hidden" />
+    <BackgroundDesktop class="hidden absolute -left-42 md:block -top-60" />
+    <div class="mt-3.5rem md:mt-40 md:text-center">
+      <h1 class="hero-title md:text-[2.5rem] md:leading-[120%] md:mt-6">
+        Meet the team behind your next project_
+      </h1>
+      <p class="mt-6 text-blue-200">
+        We are a remote team of 17 product designers, laser focused on delivering top tier SaaS
+        product design to <br />
+        world’s most innovative startups.
+      </p>
+      <div class="mt-2.5rem">
+        <AppButton href="mailto:hello@semiflat.com">Get in touch</AppButton>
+        <AppButton
+          text
+          href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction"
+          >Schedule a call</AppButton
+        >
+      </div>
+    </div>
+    <!-- <div class="">
                 <AppSlider class="mt-16 md:mt-40 " style="" :swiper-options="swiperOptions">
                     <SwiperSlide v-for="(img, i) in aboutImgs" :key="i"
                         class=" shrink-0 mx-auto flex items-center justify-center"
@@ -70,11 +70,11 @@ import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
                     </SwiperSlide>
                 </AppSlider>
             </div> -->
-    </div>
+  </div>
 </template>
 
 <style>
 .hero-title {
-    @apply text-[1.75rem] font-semibold leading-[34px] gradient-text;
+  @apply text-[1.75rem] font-semibold leading-[34px] gradient-text;
 }
 </style>

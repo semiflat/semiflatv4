@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AppArrow: typeof import('./components/utility/AppArrow.vue')['default']
     AppButton: typeof import('./components/utility/AppButton.vue')['default']
     AppCard: typeof import('./components/utility/AppCard.vue')['default']
     AppCaseStudyCard: typeof import('./components/utility/AppCaseStudyCard.vue')['default']

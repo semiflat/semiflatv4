@@ -45,47 +45,52 @@ const tag = computed(() => {
 </script>
 
 <template>
-  <component :is="tag" ref="buttonRef" class="app-button" v-bind="$attrs" :class="[
-    props.block ? 'flex w-full' : 'inline-flex',
-    {
-      'has-error': props.error,
-      'has-success': props.success,
-      'is-disabled': props.disabled,
-      'is-secondary': props.secondary,
-      'is-text': props.text,
-      'is-bordered': props.bordered,
-    },
-  ]" :type="props.type" :disabled="props.disabled || props.loading" :to="props.to" :href="props.href">
+  <component
+    :is="tag"
+    ref="buttonRef"
+    class="app-button button button-arrow"
+    v-bind="$attrs"
+    :class="[
+      props.block ? 'flex w-full' : 'inline-flex',
+      {
+        'has-error': props.error,
+        'has-success': props.success,
+        'is-disabled': props.disabled,
+        'is-secondary': props.secondary,
+        'is-text': props.text,
+        'is-bordered': props.bordered,
+      },
+    ]"
+    :type="props.type"
+    :disabled="props.disabled || props.loading"
+    :to="props.to"
+    :href="props.href"
+  >
     <div class="button__hover-bg" />
-    <div class="button__content relative flex flex-nowrap justify-center items-center transition-opacity duration-200"
-      :class="[props.contentClass, props.loading ? 'opacity-0' : 'opacity-100']">
-      <div v-if="$slots.left" class="button__left mr-1.5 relative" :class="[props.leftSlotClass]">
-        <slot name="left" />
-      </div>
-      <div class="button__center relative flex flex-nowrap">
-        <slot />
-      </div>
-      <div v-if="$slots.right" class="button__right ml-1.5 relative">
-        <slot name="right" />
-      </div>
+    <div
+      class="button__content button-arrow relative flex flex-nowrap justify-center items-center transition-opacity gap-2 duration-200"
+      :class="[props.contentClass, props.loading ? 'opacity-0' : 'opacity-100']"
+    >
+      <slot />
+      <AppArrow v-if="!props.text" />
     </div>
-    <AppSpinner :size="24"
+    <AppSpinner
+      :size="24"
       class="transition-opacity duration-200 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-      :class="props.loading ? 'opacity-100' : 'opacity-0'" />
+      :class="props.loading ? 'opacity-100' : 'opacity-0'"
+    />
   </component>
 </template>
 
 <style lang="postcss" scoped>
 .app-button {
-  @apply relative justify-center items-center text-center py-1.5 px-4 bg-primary text-sm leading-[1.5] transition duration-400 transition-bg transition-bg-duration-200 bg-center overflow-hidden border-solid border-transparent border disabled:cursor-not-allowed rounded-[32px] text-white font-medium;
+  @apply relative justify-center items-center text-center py-1.5 px-4 bg-primary text-sm leading-[140%] transition duration-400 transition-bg transition-bg-duration-200 bg-center overflow-hidden border-solid border-transparent border disabled:cursor-not-allowed rounded-[32px] text-white font-medium;
 
   -webkit-appearance: none;
 }
 
 .app-button.is-secondary {
-  @apply bg-gray-0 text-gray-900 hover: bg-gray-200;
-
-  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+  @apply !bg-white !text-blue-300 !border !border-[#D7DBDF] shadow-primary hover:shadow-medium;
 }
 
 .app-button.is-text {
@@ -109,5 +114,27 @@ const tag = computed(() => {
 .app-button.is-secondary .button__left,
 .app-button.is-secondary .button__right {
   @apply text-primary;
+}
+
+.button-arrow .arrow-icon {
+  overflow: visible;
+  margin-left: 3px;
+  width: 8px;
+}
+.button-arrow .arrow-head {
+  transform: translateX(0);
+  transition: transform 200ms ease-in-out 300ms;
+}
+.button-arrow .arrow-body {
+  opacity: 0;
+  transform: scaleX(1);
+  transition: transform 200ms ease-in-out 300ms, opacity 200ms ease-in-out 300ms;
+}
+.button-arrow:hover .arrow-head {
+  transform: translateX(3px);
+}
+.button-arrow:hover .arrow-body {
+  opacity: 1;
+  transform: scaleX(2);
 }
 </style>

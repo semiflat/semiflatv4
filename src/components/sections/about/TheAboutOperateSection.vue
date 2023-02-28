@@ -39,9 +39,7 @@ onMounted(() => {
           worked at startups before and have worked with dozens of them since.
         </p>
         <div class="md:flex">
-          <AppButton class="!bg-white !text-blue-300" href="/culture"
-            >Learn about our culture</AppButton
-          >
+          <AppButton secondary href="/culture">Learn about our culture</AppButton>
         </div>
       </div>
     </div>
