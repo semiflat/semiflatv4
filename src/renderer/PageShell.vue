@@ -1,5 +1,12 @@
 <script setup lang="ts">
+import { gsap } from 'gsap'
+import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin'
+
 const context = usePageContext()
+
+if (!import.meta.env.SSR) {
+  gsap.registerPlugin(DrawSVGPlugin)
+}
 </script>
 
 <template>

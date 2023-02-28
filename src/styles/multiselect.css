@@ -85,7 +85,7 @@
 
 .multiselect-caret {
   @apply bg-center bg-no-repeat w-2.5 h-4 py-px box-content mr-3.5 relative z-10 opacity-40 flex-shrink-0 flex-grow-0 transition-transform transform pointer-events-none;
-  background-image: url('/src/assets/images/icons/kalai/chevron-down.svg');
+  /* background-image: url('/src/assets/images/icons/kalai/chevron-down.svg'); */
 }
 
 .multiselect-caret.is-open {
@@ -166,7 +166,7 @@
 
 .multiselect-option.is-selected {
   @apply text-gray-900 !bg-gray-200;
-  background: url('/src/assets/images/icons/kalai/check.svg') no-repeat 95% 50%;
+  /* background: url('/src/assets/images/icons/kalai/check.svg') no-repeat 95% 50%; */
 }
 
 .multiselect-option.is-disabled {
