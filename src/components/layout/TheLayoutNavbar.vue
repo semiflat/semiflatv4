@@ -92,7 +92,7 @@ onMounted(() => {
           </a>
         </li>
       </ul>
-      <AppButton class="!hidden md:!inline-flex" to="mailto:hello@semiflat.com"
+      <AppButton class="!hidden md:!inline-flex" href="mailto:hello@semiflat.com"
         >Get in touch</AppButton
       >
     </nav>
