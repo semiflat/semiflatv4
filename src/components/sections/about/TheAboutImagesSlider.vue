@@ -6,7 +6,23 @@ import img3 from '~/assets/about-slider/3.jpeg'
 import img4 from '~/assets/about-slider/4.jpeg'
 import img5 from '~/assets/about-slider/5.jpeg'
 
-const aboutImgs = [img1, img2, img3, img4, img5]
+const aboutImgs = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+]
 
 const breakpoints = useBreakpoints()
 const swiperBreakpoints = {
@@ -20,6 +36,8 @@ const swiperOptions = computed(() => ({
   grabCursor: true,
   navigation: false,
   loop: true,
+  loopedSlides: aboutImgs.length,
+  updateOnWindowResize: true,
   speed: 5000,
   autoplay: {
     delay: 1,

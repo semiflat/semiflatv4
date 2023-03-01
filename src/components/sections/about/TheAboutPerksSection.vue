@@ -3,8 +3,6 @@ import ExpertiseIcon from '~/assets/icons/expertise.svg?component'
 import TalentIcon from '~/assets/icons/talent.svg?component'
 import LeadershipIcon from '~/assets/icons/leadership.svg?component'
 import FlawlessIcon from '~/assets/icons/flawless.svg?component'
-import CirclesBackground from '~/assets/circles-bg1.svg?component'
-import CirclesBackground2 from '~/assets/circles-bg2.svg?component'
 import ExpertiseIllustration from '~/assets/illustrations/expertise-illustration.svg?component'
 import FlawlessIllustration from '~/assets/illustrations/flawless-illustration.svg?component'
 import StrokeLeft from '~/assets/index-strokes/stroke-left.svg?component'
@@ -56,7 +54,7 @@ const perks = [
     </div>
   </div>
   <div
-    class="relative mask-testimonial pt-5rem pb-5rem max-w-86rem mx-auto hidden md:block px-6 lg:px-0"
+    class="relative mask-testimonial pt-5rem pb-5rem max-w-86rem mx-auto hidden md:block px-6 lg:px-0 md:-mt-[5rem] md:-mb-[5rem]"
   >
     <div class="hidden md:flex gap-8 max-w-69rem mx-auto">
       <div class="flex flex-col gap-8 max-w-[346px] justify-center relative">
