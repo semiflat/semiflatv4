@@ -72,6 +72,7 @@ onMounted(() => {
 
 .expertise {
   @apply relative overflow-hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .expertise::before {

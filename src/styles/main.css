@@ -1,7 +1,7 @@
-@import "./markdown.css";
-@import "./toasts.css";
-@import "./multiselect.css";
-@import "./transitions.css";
+@import './markdown.css';
+@import './toasts.css';
+@import './multiselect.css';
+@import './transitions.css';
 
 html,
 body,
@@ -26,4 +26,11 @@ body,
   left: 0;
   width: 100%;
   height: 2px;
+}
+
+.safari-fix {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 }
