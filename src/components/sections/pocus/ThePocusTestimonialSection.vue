@@ -1,7 +1,40 @@
 <script setup lang="ts">
-import PocusTestimonialVideo from '~/assets/pocus/pocus-testimonial.webm'
-import PocusTestimonialVideoMp4 from '~/assets/mp4/pocus.mp4'
+import { gsap } from 'gsap'
 import PocusCEO from '~/assets/pocus/pocus-ceo.jpeg'
+import PocusTestimonalsImage from '~/assets/svg-animated/pocus-testimonials.svg?component'
+
+const animatedImageRef = ref()
+
+const getLine = () => animatedImageRef.value.$el.querySelector(`.glow-line`)
+
+onMounted(() => {
+  if (!animatedImageRef.value) return
+
+  const line = getLine()
+
+  gsap.set(line, {
+    drawSVG: '0% 0%',
+  })
+
+  const tl = gsap.timeline({
+    repeat: -1,
+  })
+
+  const duration = 2
+
+  // tl.from(animatedImageRef.value.$el.querySelector(`.glow`), {
+  //   motionPath: {
+  //     path: line,
+  //     align: line,
+  //     alignOrigin: [0.5, 0.75],
+  //     autoRotate: true,
+  //   },
+  //   duration: 5,
+  //   ease: 'none',
+  // })
+
+  tl.fromTo(line, { drawSVG: '0% 3%' }, { drawSVG: '100% 103%', duration, ease: 'none' })
+})
 </script>
 
 <template>
@@ -9,10 +42,10 @@ import PocusCEO from '~/assets/pocus/pocus-ceo.jpeg'
     <div
       class="bg-violet-transparent p-8 border border-[#D8DFE5] rounded-3 max-w-[57.125rem] mx-auto md:pt-0 md:pb-12"
     >
-      <video playsinline autoplay muted loop class="mb-8 mx-auto max-w-[20rem] md:mb-0 md:mt-5">
-        <source :src="PocusTestimonialVideoMp4" type="video/mp4;codecs=hvc1" />
-        <source :src="PocusTestimonialVideo" type="video/webm" />
-      </video>
+      <PocusTestimonalsImage
+        ref="animatedImageRef"
+        class="mb-8 mx-auto w-full max-w-[20rem] md:mb-0 md:mt-6 md:mb-4"
+      />
       <p class="max-w-45.375rem md:mx-auto md:text-center md:text-[1.25rem]">
         “We are very happy with the work Nic and his team have done. They’ve been involved in the
         design of our product from the very beginning and have been supporting our design needs ever
