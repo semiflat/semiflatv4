@@ -22,17 +22,6 @@ onMounted(() => {
 
   const duration = 2
 
-  // tl.from(animatedImageRef.value.$el.querySelector(`.glow`), {
-  //   motionPath: {
-  //     path: line,
-  //     align: line,
-  //     alignOrigin: [0.5, 0.75],
-  //     autoRotate: true,
-  //   },
-  //   duration: 5,
-  //   ease: 'none',
-  // })
-
   tl.fromTo(line, { drawSVG: '0% 3%' }, { drawSVG: '100% 103%', duration, ease: 'none' })
 })
 </script>

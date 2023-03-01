@@ -18,7 +18,6 @@
     <path class="glow-line"
         d="M153.5 91.9996C151.5 122.5 122.5 156 82 156C43.5 156 10 123.999 10 83.9996C10 44 43 11.9996 82 11.9996C121 11.9996 150.5 42 153.5 76.9996C153.836 85 154.5 92 154.5 92C158.5 114.5 179 132.5 202 132C224 132 250 114.5 250 83.9996C250 53.4992 224 35.9996 202 35.9996C180 35.9996 158 52 154.5 76.9996C154.055 79.7891 154 82 154 82C154 82 153.603 89.0708 153.5 91.9996Z"
         stroke="#D1B9F3" stroke-width="2" filter="url(#glow)" />
-    <!-- <path class="glow" d="M0 0 L 20 0" stroke="red" stroke-width="2" stroke-linecap="round" /> -->
     <g filter="url(#filter1_dd_5_93)">
         <rect x="50" y="52" width="64" height="64" rx="32" fill="white" shape-rendering="crispEdges" />
         <path
