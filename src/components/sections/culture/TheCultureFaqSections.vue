@@ -2,28 +2,23 @@
 
 const faqs = reactive([
     {
-        header: 'What deliverables will I receive?',
-        text: 'We can help you turn your product idea into an actionable design project plan.',
+        header: 'Can I work remotely?',
+        text: 'Yes, absolutely. All of our team members are currently remote.',
         isOpen: false
     },
     {
-        header: 'What is the timeline to launch an MVP?',
-        text: 'We can help you turn your product idea into an actionable design project plan.',
+        header: 'Will I get a Mac?',
+        text: 'If you need hardware, let us know, and we’ll send you one of our MacBooks. Let us know if you have any special requests, and we’ll figure it out!',
         isOpen: false
     },
     {
-        header: 'Do you implement the designs too?',
-        text: 'We can help you turn your product idea into an actionable design project plan.',
+        header: 'When will I meet everybody?',
+        text: 'At the nearest team retreat. We’re likely already planning it, but if you have any suggestions regarding the destination, drop them on Slack in #team-retreats. We typically plan 3 to 4 retreats every year, so no matter when you join, an unforgettable get-together is only a few short months away.',
         isOpen: false
     },
     {
-        header: 'What are the next steps to work with you?',
-        text: 'Click the ‘Get in touch’ button in the top right corner or message hello@semiflat.com outlining your high-level design needs. We’ll reply and work out a time for an introductory call where you’ll ask us anything that’s on your mind. From there we’ll work towards defining the scope, timeline of the engagement. ',
-        isOpen: false
-    },
-    {
-        header: 'How much should I budget for the project?',
-        text: 'Click the ‘Get in touch’ button in the top right corner or message hello@semiflat.com outlining your high-level design needs. We’ll reply and work out a time for an introductory call where you’ll ask us anything that’s on your mind. From there we’ll work towards defining the scope, timeline of the engagement. ',
+        header: 'How fast can I get a raise?',
+        text: 'Salary ranges at Semiflat are fully transparent and correlate directly with our internal skill matrix. There are currently six competency levels, each with its requirements. You can get a raise when your evaluation score puts you at a higher level. Don’t worry if it sounds complicated! We will always tell you what to work on to get to the next level and guide you as you move up the competence ladder. The evaluation process is simple - every teammate you’ve worked with will give you ratings across multiple categories every three months.',
         isOpen: false
     },
 ])
