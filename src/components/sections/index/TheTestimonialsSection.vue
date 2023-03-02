@@ -4,7 +4,7 @@ import DefaultLogo from '~/assets/logos/default.svg?component'
 import PocusLogo from '~/assets/logos/pocus.svg?component'
 import YuzedataLogo from '~/assets/logos/yuzedata.svg?component'
 import UsefulLogo from '~/assets/logos/useful.svg?component'
-import OnwardLogo from '~/assets/logos/onward.svg?component'
+import YeticLogo from '~/assets/logos/jetic.svg?component'
 import LithalAvatar from '~/assets/avatars/lithal.png'
 import IsaacAvatar from '~/assets/avatars/isaac.png'
 import MikeAvatar from '~/assets/avatars/mike.png'
@@ -51,10 +51,10 @@ const testimonials = [
     avatar: NicoAvatar,
   },
   {
-    logo: OnwardLogo,
-    text: `“We're super happy with the work the team is producing. Only regret is not working together sooner. I recommend Semiflat to all my founder friends!”`,
-    name: 'Coleman Oates',
-    position: 'Co-Founder',
+    logo: YeticLogo,
+    text: `“Everything, from scoping out and communication to final designs, was delivered with high quality. Our expectations were met and exceeded, and we keep coming back to Semiflat for continuous collaboration.”`,
+    name: 'Andre Sluczka',
+    position: 'Founder and CEO',
     avatar: ColemanAvatar,
   },
 ]
