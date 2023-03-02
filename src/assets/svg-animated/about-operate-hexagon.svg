@@ -9,8 +9,7 @@
     <mask id="mask0_2055_14302" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="346" height="380">
         <rect width="346" height="380" fill="url(#paint0_radial_2055_14302)" />
     </mask>
-    <path class="glow-line glow-line-1" d="M174 319V214L77 158L-18" stroke="#78FDFC" stroke-width="2"
-        filter="url(#glow)" />
+    <path class="glow-line glow-line-1" d="M174 319V214L77 158" stroke="#78FDFC" stroke-width="2" filter="url(#glow)" />
     <path class="glow-line glow-line-2" d="M77 221 L174 166 V61" stroke="#78FDFC" stroke-width="2"
         filter="url(#glow)" />
     <path class="glow-line glow-line-3" d="M174 319L174 214 L271 157" stroke="#78FDFC" stroke-width="2"
