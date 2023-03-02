@@ -22,7 +22,7 @@ onMounted(() => {
 
   const duration = 2
 
-  tl.fromTo(line, { drawSVG: '0% 3%' }, { drawSVG: '100% 103%', duration, ease: 'none' })
+  tl.fromTo(line, { drawSVG: '0% 4%' }, { drawSVG: '100% 104%', duration, ease: 'none' })
 })
 </script>
 
