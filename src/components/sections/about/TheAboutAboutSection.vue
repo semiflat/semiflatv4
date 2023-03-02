@@ -45,8 +45,6 @@ const details = [
 
 const selectedDetail = ref(details[0])
 
-// const breakpoints = useBreakpoints()
-
 const swiperOptions = computed(() => ({
   slidesPerView: 'auto',
   spaceBetween: 24,
@@ -74,7 +72,7 @@ const content = [
   },
 ]
 
-const changeImage = (card: typeof details[0]) => {
+const changeImage = (card: (typeof details)[0]) => {
   selectedDetail.value = card
   document.querySelector('#detail-image')?.classList.remove('fade-animation')
   setTimeout(() => document.querySelector('#detail-image')?.classList.add('fade-animation'), 0)

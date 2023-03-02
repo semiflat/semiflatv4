@@ -22,14 +22,17 @@ const aboutImgs = [
   img3,
   img4,
   img5,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
 ]
 
 const breakpoints = useBreakpoints()
 const swiperBreakpoints = {
   [breakpoints.lg]: {
-    slidesPerView: 'auto',
     spaceBetween: 32,
-    watchSlidesVisibility: true,
   },
 }
 
@@ -39,12 +42,10 @@ const swiperOptions = computed(() => ({
   navigation: false,
   loop: true,
   speed: 5000,
-  loopedSlides: aboutImgs.length,
   updateOnWindowResize: true,
   watchSlidesVisibility: true,
   autoplay: {
-    delay: 1,
-    disableOnInteraction: false,
+    delay: 0,
   },
   breakpoints: swiperBreakpoints,
 }))
@@ -57,7 +58,7 @@ const swiperOptions = computed(() => ({
         <SwiperSlide
           v-for="(img, i) in aboutImgs"
           :key="i"
-          class="shrink-0 mx-auto flex items-center justify-center"
+          class="shrink-0 flex items-center justify-center"
           :class="{ 'w-[144px] md:w-[240px]': i % 2 !== 0, 'w-[240px] md:w-[400px]': i % 2 === 0 }"
         >
           <img

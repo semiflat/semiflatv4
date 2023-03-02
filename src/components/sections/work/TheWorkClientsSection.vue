@@ -1,4 +1,4 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 import { SwiperSlide } from 'swiper/vue'
 import ahana from '~/assets/tint-logos/logo-ahana.svg?component'
 import appfleet from '~/assets/tint-logos/logo-appfleet.svg?component'
@@ -41,7 +41,6 @@ import yuzedata from '~/assets/tint-logos/logo-yuzedata.svg?component'
 // import CoreLogo from '~/assets/logos/core.svg?component'
 // import OnwardLogo from '~/assets/logos/onward.svg?component'
 
-
 // const logos = [
 //     OdonataLogo,
 //     SisuLogo,
@@ -60,144 +59,151 @@ import yuzedata from '~/assets/tint-logos/logo-yuzedata.svg?component'
 // ]
 
 const logos = [
-    ahana,
-    appfleet,
-    clickmagick,
-    cloudstore,
-    defaultLogo,
-    devzero,
-    doss,
-    gcore,
-    gyaan,
-    halycon,
-    jetic,
-    lhotse,
-    metlo,
-    onward,
-    phenom,
-    pocus,
-    runchise,
-    scholaris,
-    simplero,
-    sisu,
-    stepsize,
-    tagvenue,
-    tau,
-    useful,
-    yuzedata,
+  ahana,
+  appfleet,
+  clickmagick,
+  cloudstore,
+  defaultLogo,
+  devzero,
+  doss,
+  gcore,
+  gyaan,
+  halycon,
+  jetic,
+  lhotse,
+  metlo,
+  onward,
+  phenom,
+  pocus,
+  runchise,
+  scholaris,
+  simplero,
+  sisu,
+  stepsize,
+  tagvenue,
+  tau,
+  useful,
+  yuzedata,
 ]
 const logos1 = [
-    doss,
-    gcore,
-    gyaan,
-    ahana,
-    appfleet,
-    clickmagick,
-    cloudstore,
-    defaultLogo,
-    devzero,
-    doss,
-    tau,
-    useful,
-    yuzedata,
-    halycon,
-    jetic,
-    lhotse,
-    metlo,
-    onward,
-    phenom,
-    pocus,
-    runchise,
-    scholaris,
-    simplero,
-    sisu,
-    stepsize,
-    tagvenue,
+  doss,
+  gcore,
+  gyaan,
+  ahana,
+  appfleet,
+  clickmagick,
+  cloudstore,
+  defaultLogo,
+  devzero,
+  doss,
+  tau,
+  useful,
+  yuzedata,
+  halycon,
+  jetic,
+  lhotse,
+  metlo,
+  onward,
+  phenom,
+  pocus,
+  runchise,
+  scholaris,
+  simplero,
+  sisu,
+  stepsize,
+  tagvenue,
 ]
 
 const logosMobile = [
-    sisu,
-    phenom,
-    defaultLogo,
-    clickmagick,
-    pocus,
-    stepsize,
-    cloudstore,
-    lhotse,
-    useful,
-    jetic,
-    halycon,
-    gcore,
-    onward,
-    simplero
+  sisu,
+  phenom,
+  defaultLogo,
+  clickmagick,
+  pocus,
+  stepsize,
+  cloudstore,
+  lhotse,
+  useful,
+  jetic,
+  halycon,
+  gcore,
+  onward,
+  simplero,
 ]
 
 const breakpoints = useBreakpoints()
 const swiperBreakpoints = {
-    [breakpoints.lg]: {
-        slidesPerView: 'auto',
-        watchSlidesVisibility: true,
-    },
+  [breakpoints.lg]: {
+    slidesPerView: 'auto',
+    watchSlidesVisibility: true,
+  },
 }
 
 const swiperOptions = computed(() => ({
-    slidesPerView: 'auto',
-    //   spaceBetween: 16,
-    navigation: false,
-    loop: true,
-    speed: 5000,
-    watchSlidesVisibility: true,
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: false
-    },
-
-    breakpoints: swiperBreakpoints,
+  slidesPerView: 'auto',
+  //   spaceBetween: 16,
+  navigation: false,
+  loop: true,
+  speed: 5000,
+  watchSlidesVisibility: true,
+  autoplay: {
+    delay: 1,
+  },
+  breakpoints: swiperBreakpoints,
 }))
-
 </script>
 
 <template>
-    <div class="page-content mt-16 md:mt-40">
-        <div class="">
-            <h2
-                class="text-xl gradient-text font-semibold mb-12 md:text-[1.75rem] md:leading-[120%] md:text-center md:mb-[5rem]">
-                Meet some of the startups who we’ve supported_
-            </h2>
-        </div>
-        <div class="grid grid-cols-2 gap-y-8 md:grid-cols-3 mt-12 lg:hidden">
-            <component :is="logo" v-for="logo in logosMobile" :key="logo" class="mx-auto w-full" />
-        </div>
-        <div class="mt-20 hidden lg:flex flex-col gap-8 mask">
-            <AppSlider class="" style="" :swiper-options="swiperOptions">
-                <SwiperSlide v-for="(logo, i) in logos" :key="i"
-                    class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center">
-                    <component :is="logo" class="h-[4.375rem] " />
-                </SwiperSlide>
-            </AppSlider>
-            <AppSlider class="" style="" :swiper-options="{ ...swiperOptions, speed: 5500 }">
-                <SwiperSlide v-for="(logo, i) in logos1" :key="i"
-                    class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center">
-                    <component :is="logo" class="h-[4.375rem] " />
-                </SwiperSlide>
-            </AppSlider>
-            <AppSlider class="" style="" :swiper-options="{ ...swiperOptions, speed: 6000 }">
-                <SwiperSlide v-for="(logo, i) in logos.reverse()" :key="i"
-                    class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center">
-                    <component :is="logo" class="h-[4.375rem] " />
-                </SwiperSlide>
-            </AppSlider>
-        </div>
+  <div class="page-content mt-16 md:mt-40">
+    <div class="">
+      <h2
+        class="text-xl gradient-text font-semibold mb-12 md:text-[1.75rem] md:leading-[120%] md:text-center md:mb-[5rem]"
+      >
+        Meet some of the startups who we’ve supported_
+      </h2>
     </div>
+    <div class="grid grid-cols-2 gap-y-8 md:grid-cols-3 mt-12 lg:hidden">
+      <component :is="logo" v-for="logo in logosMobile" :key="logo" class="mx-auto w-full" />
+    </div>
+    <div class="mt-20 hidden lg:flex flex-col gap-8 mask">
+      <AppSlider class="" style="" :swiper-options="swiperOptions">
+        <SwiperSlide
+          v-for="(logo, i) in logos"
+          :key="i"
+          class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center"
+        >
+          <component :is="logo" class="h-[4.375rem]" />
+        </SwiperSlide>
+      </AppSlider>
+      <AppSlider class="" style="" :swiper-options="{ ...swiperOptions, speed: 5500 }">
+        <SwiperSlide
+          v-for="(logo, i) in logos1"
+          :key="i"
+          class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center"
+        >
+          <component :is="logo" class="h-[4.375rem]" />
+        </SwiperSlide>
+      </AppSlider>
+      <AppSlider class="" style="" :swiper-options="{ ...swiperOptions, speed: 6000 }">
+        <SwiperSlide
+          v-for="(logo, i) in logos.reverse()"
+          :key="i"
+          class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center"
+        >
+          <component :is="logo" class="h-[4.375rem]" />
+        </SwiperSlide>
+      </AppSlider>
+    </div>
+  </div>
 </template>
 
-<style >
+<style>
 .mask {
-    -webkit-mask-image: radial-gradient(circle at 50% -153%, black 71%, transparent 81%);
-    mask-image: radial-gradient(circle at 50% -153%, black 71%, transparent 81%);
+  -webkit-mask-image: radial-gradient(circle at 50% -153%, black 71%, transparent 81%);
+  mask-image: radial-gradient(circle at 50% -153%, black 71%, transparent 81%);
 }
 
-.swiper>.swiper-wrapper {
-    transition-timing-function: linear;
+.swiper > .swiper-wrapper {
+  transition-timing-function: linear;
 }
 </style>
