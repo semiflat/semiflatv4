@@ -47,7 +47,7 @@ const swiperOptions = computed(() => ({
   },
 }))
 
-const changeImage = (card: typeof details[0]) => {
+const changeImage = (card: (typeof details)[0]) => {
   selectedDetail.value = card
   document.querySelector('#detail-image')?.classList.remove('fade-animation')
   setTimeout(() => document.querySelector('#detail-image')?.classList.add('fade-animation'), 0)

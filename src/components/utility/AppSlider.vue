@@ -2,9 +2,6 @@
 import { Swiper } from 'swiper/vue'
 import { Pagination } from 'swiper'
 
-// import IconSliderArrowLeft from '~/assets/images/icons/slider-arrow-left.svg?component'
-// import IconSliderArrowRight from '~/assets/images/icons/slider-arrow-right.svg?component'
-
 const props = defineProps({
   swiperOptions: {
     type: Object,
@@ -43,11 +40,12 @@ const slideNext = () => {
       class="app-slider__nav-btn app-slider__nav-btn--left"
       type="button"
       @click="slidePrev"
-    >
-      <!-- <IconSliderArrowLeft /> -->
-    </button>
+    ></button>
     <Swiper
-      v-bind="{ ...props.swiperOptions, navigation: false }"
+      v-bind="{
+        ...props.swiperOptions,
+        navigation: false,
+      }"
       :class="swiperClasses"
       :modules="[Pagination]"
       @swiper="onSwiper"
@@ -59,9 +57,7 @@ const slideNext = () => {
       class="app-slider__nav-btn app-slider__nav-btn--right"
       type="button"
       @click="slideNext"
-    >
-      <!-- <IconSliderArrowRight /> -->
-    </button>
+    ></button>
   </div>
 </template>
 

@@ -71,7 +71,7 @@ const swiperOptions = computed(() => ({
   loop: true,
   speed: 5000,
   autoplay: {
-    delay: 1,
+    delay: 0,
     disableOnInteraction: false,
   },
   breakpoints: swiperBreakpoints,
