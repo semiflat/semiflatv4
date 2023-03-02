@@ -1,12 +1,12 @@
 <template>
   <div class="overflow-hidden">
-    <TheAboutHeroSection />
-    <TheAboutImagesSlider />
-    <TheAboutPerksSection />
-    <TheAboutAboutSection />
-    <TheAboutOperateSection />
-    <TheAboutEmployeesSection />
+    <TheAboutHeroSection class="section" />
+    <TheAboutImagesSlider class="section" />
+    <TheAboutPerksSection class="section" />
+    <TheAboutAboutSection class="section" />
+    <TheAboutOperateSection class="section" />
+    <TheAboutEmployeesSection class="section" />
     <!-- <TheAboutTimeline /> -->
-    <TheCTABottomSection />
+    <TheCTABottomSection class="section" />
   </div>
 </template>

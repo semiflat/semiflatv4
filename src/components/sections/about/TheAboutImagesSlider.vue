@@ -21,6 +21,7 @@ const aboutImgsComputed = computed(() => [...aboutImgs, ...aboutImgs, ...aboutIm
 const swiperOptions = computed(() => ({
   slidesPerView: 'auto',
   grabCursor: true,
+  spaceBetween: 24,
   navigation: false,
   loop: true,
   updateOnWindowResize: true,

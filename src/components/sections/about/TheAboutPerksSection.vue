@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useBreakpoints } from '@vueuse/core'
 import ExpertiseIcon from '~/assets/icons/expertise.svg?component'
 import TalentIcon from '~/assets/icons/talent.svg?component'
 import LeadershipIcon from '~/assets/icons/leadership.svg?component'
@@ -7,6 +8,10 @@ import ExpertiseIllustration from '~/assets/illustrations/expertise-illustration
 import FlawlessIllustration from '~/assets/illustrations/flawless-illustration.svg?component'
 import StrokeLeft from '~/assets/index-strokes/stroke-left.svg?component'
 import StrokeTop from '~/assets/index-strokes/stroke-top.svg?component'
+import breakpointsConst from '~/constants/breakpoints'
+
+const breakpoints = useBreakpoints(breakpointsConst)
+const md = ref(breakpoints.smaller('md'))
 
 const perks = [
   {
@@ -42,7 +47,7 @@ const perks = [
       We design tools that help millions of professionals <br class="hidden md:block" />
       be more effective at their job_
     </h2>
-    <div class="grid gap-6 md:grid-cols-3 md:hidden">
+    <div v-if="md" class="grid gap-6 md:grid-cols-3 md:hidden">
       <ThePerkComponent v-for="(perk, i) in perks" :key="i" :perk="perk" />
       <div class="px-8 py-10 bg-dark-blue rounded-4 relative md:static">
         <p class="text-white text-xl mb-8 font-semibold">
@@ -54,6 +59,7 @@ const perks = [
     </div>
   </div>
   <div
+    v-if="!md"
     class="relative mask-testimonial pt-5rem pb-5rem max-w-86rem mx-auto hidden md:block px-6 lg:px-0 md:-mt-[5rem] md:-mb-[5rem]"
   >
     <div class="hidden md:flex gap-8 max-w-69rem mx-auto">

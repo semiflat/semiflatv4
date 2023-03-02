@@ -53,7 +53,7 @@ const perks = [
         <p class="text-white text-xl mb-8 font-semibold">
           Want to see how we apply these in practice?
         </p>
-        <AppButton secondary href="/work">See our work</AppButton>
+        <AppButton href="mailto:hello@semiflat.com" secondary>Get in touch</AppButton>
         <AppCirclesHorizontal id="circles-sm" class="absolute right-0 bottom-0 h-51" />
       </div>
     </div>
@@ -77,7 +77,7 @@ const perks = [
           <p class="text-white text-xl mb-8 font-semibold">
             Sounds fun? Why don’t you try for yourself
           </p>
-          <AppButton secondary>See open positions</AppButton>
+          <AppButton href="mailto:hello@semiflat.com" secondary>Get in touch</AppButton>
         </div>
         <ThePerkComponent :perk="perks[2]" />
         <component :is="StrokeTop" class="absolute w-full -bottom-62 -scale-y-100" />

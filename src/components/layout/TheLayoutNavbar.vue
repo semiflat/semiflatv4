@@ -80,7 +80,9 @@ onMounted(() => {
     <nav
       class="items-center page-content justify-between h-3.5rem md:h-16 relative !hidden md:!flex"
     >
-      <LogoDesktop class="hidden md:block" />
+      <a href="/">
+        <LogoDesktop class="hidden md:block" />
+      </a>
       <ul class="gap-6 text-sm hidden md:flex text-primary font-semibold">
         <li v-for="link in links" :key="link.path">
           <a

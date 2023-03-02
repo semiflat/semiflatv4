@@ -1,53 +1,54 @@
-<script setup lang='ts'>
-import YuzeData from '~/assets/case/Illustration-YuzeData-mobile.svg?url'
-import Pocus from '~/assets/case/Illustration-Pocus.svg?url'
-import Useful from '~/assets/case/Illustration-Useful.svg?url'
-import Odonata from '~/assets/case/Illustration-Odonata.svg?url'
-import Onward from '~/assets/case/Illustration-Onward.svg?url'
-import Phenom from '~/assets/case/Illustration-Phenom.svg?url'
-import Default from '~/assets/case/Illustration-Default.svg?url'
-import Halycon from '~/assets/case/Illustration-Halycon.svg?url'
+<script setup lang="ts">
+import Pocus from '~/assets/case/Illustration-pocus.svg?url'
+import Useful from '~/assets/case/Illustration-useful.svg?url'
+import Phenom from '~/assets/case/Illustration-phenom.svg?url'
+import Appfleet from '~/assets/case/Illustration-appfleet.svg?url'
+import Scholaris from '~/assets/case/Illustration-scholaris.svg?url'
+import Jetic from '~/assets/case/Illustration-jetic.svg?url'
+import Doss from '~/assets/case/Illustration-doss.svg?url'
+import Sisu from '~/assets/case/Illustration-sisu.svg?url'
 
 const illustrations = [
-    {
-        picture: YuzeData,
-        caption: 'YuzeData - a machine intelligence automation platform.'
-    },
-    {
-        picture: Pocus,
-        caption: 'Designing Pocus - product-led sales tool that raised a $23M series A.',
-        link: '/pocus'
+  {
+    picture: Pocus,
+    caption: 'Designing Pocus - product-led sales tool that raised a $23M series A.',
+    link: '/pocus',
+  },
+  {
+    picture: Useful,
+    caption: 'Helping Useful raise $5M to empower continuous delivery tech teams.',
+  },
+  {
+    picture: Phenom,
+    caption: 'Supporting Phenom - an HR-Tech unicorn by building a dedicated design team.',
+  },
+  {
+    picture: Appfleet,
+    caption: 'Creating full product design for appfleet, an alternative for Kubernetes.',
+  },
 
-    },
-    {
-        picture: Useful,
-        caption: 'Helping Useful raise $5M to empower continuous delivery tech teams.'
-    },
-    {
-        picture: Odonata,
-        caption: 'Design for Odonata - collaborative cloud platform for operations teams.'
-    },
-    {
-        picture: Onward,
-        caption: 'Product design for Onward - the smartest way to manage your workday.'
-    },
-    {
-        picture: Phenom,
-        caption: 'Product design for Onward - the smartest way to manage your workday.'
-    },
-    {
-        picture: Default,
-        caption: 'Designing Default - the first all-in-one platform for lead qualification.'
-    },
-    {
-        picture: Halycon,
-        caption: 'Creating an MVP for Halycon to bring transparency to IT procurement.'
-    },
+  {
+    picture: Sisu,
+    caption: 'Supporting Sisu - a decision intelligence platform with a dedicated designer',
+  },
+  {
+    picture: Doss,
+    caption: 'MVP prototype and ongoing suport for Doss - a platform for operations teams.',
+  },
+
+  {
+    picture: Jetic,
+    caption: 'Designing Jetic - the only cloud-native iPaaS based on Apache Camel.',
+  },
+  {
+    picture: Scholaris,
+    caption: 'Designing the UX and UI  for Scholaris, a learning management system and more.',
+  },
 ]
 </script>
 
 <template>
-    <div class="page-content mt-16 md:mt-46 grid md:grid-cols-2 gap-6 md:gap-8 justify-center">
-        <AppCaseStudyCard v-for="(card, i) in illustrations" :key="i" :data="card"/>
-    </div>
+  <div class="page-content mt-16 md:mt-46 grid md:grid-cols-2 gap-6 md:gap-8 justify-center">
+    <AppCaseStudyCard v-for="(card, i) in illustrations" :key="i" :data="card" />
+  </div>
 </template>

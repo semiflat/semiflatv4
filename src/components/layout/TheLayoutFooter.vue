@@ -90,7 +90,7 @@ const services = [
 </script>
 
 <template>
-  <div class="page-content pt-28 pb-20 md:pb-[12.5rem] relative overflow-y-clip">
+  <div class="page-content pt-28 pb-20 md:pb-[12.5rem] md:mt-12 relative overflow-y-clip">
     <div
       class="bg-gradient bg-gradient-left bg-turquoise-100 rounded-full absolute -left-40 w-[43.75rem] h-[43.75rem] blur-[240px] top-6 md:-left-100 md:top-70"
       :class="[context.pageProps?.pageShell?.hide]"
@@ -104,8 +104,12 @@ const services = [
         <SmallLogo />
         <p class="mt-4 text-blue-300">Copyright © 2023. All rights reserved</p>
         <div class="flex gap-8 mt-10">
-          <div v-for="(social, i) in socials.filter((x) => x.url)" :key="i" class="">
-            <a :href="social.url">
+          <div
+            v-for="(social, i) in socials.filter((x) => x.url)"
+            :key="i"
+            class="opacity-70 transition-all duration-400 hover:opacity-100"
+          >
+            <a :href="social.url" target="_blank">
               <component :is="social.logo" />
             </a>
           </div>

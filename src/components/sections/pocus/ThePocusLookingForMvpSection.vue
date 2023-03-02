@@ -27,6 +27,7 @@ import RightBg from '~/assets/pocus/right-cubes.svg?component'
         <AppButton
           class="!text-white"
           text
+          target="_blank"
           href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction"
           >Schedule a call</AppButton
         >

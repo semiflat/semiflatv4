@@ -29,7 +29,7 @@ const swiperBreakpoints = {
 const swiperOptions = computed(() => ({
   slidesPerView: 'auto',
   spaceBetween: 24,
-  centeredSlides: true,
+  centeredSlides: false,
   navigation: false,
   pagination: {
     clickable: true,
@@ -59,7 +59,7 @@ const cases = [
 </script>
 
 <template>
-  <div class="mt-16 md:mt-46 gap-6 md:gap-8 px-6 sm:px-0">
+  <div class="mt-16 md:mt-46 gap-6 md:gap-8 page-content">
     <AppSlider class="" style="" :swiper-options="swiperOptions">
       <SwiperSlide v-for="el in cases" :key="el.caption" class="sm:max-w-[33.5rem]">
         <AppCaseStudyCard :data="el" />

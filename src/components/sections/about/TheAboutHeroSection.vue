@@ -6,7 +6,7 @@ import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
 <template>
   <div class="relative page-content">
     <BackgroundMobileLeft class="absolute top-28 left-0 md:hidden" />
-    <BackgroundDesktop class="hidden absolute -left-42 md:block -top-60" />
+    <BackgroundDesktop class="hidden absolute -left-42 md:block -top-60 -z-1" />
     <div class="mt-3.5rem md:mt-40 md:text-center">
       <h1 class="hero-title md:text-[2.5rem] md:leading-[120%] md:mt-6">
         Meet the team behind your next project_
@@ -20,6 +20,7 @@ import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
         <AppButton href="mailto:hello@semiflat.com">Get in touch</AppButton>
         <AppButton
           text
+          target="_blank"
           href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction"
           >Schedule a call</AppButton
         >

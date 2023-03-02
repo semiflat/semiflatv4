@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { SwiperSlide } from 'swiper/vue'
-import img1 from '~/assets/culture-slider/1.jpeg'
-import img2 from '~/assets/culture-slider/2.jpeg'
-import img3 from '~/assets/culture-slider/3.jpeg'
-import img4 from '~/assets/culture-slider/4.jpeg'
-import img5 from '~/assets/culture-slider/5.jpeg'
+import img1 from '~/assets/culture-slider/1.png'
+import img2 from '~/assets/culture-slider/2.png'
+import img3 from '~/assets/culture-slider/3.png'
+import img4 from '~/assets/culture-slider/4.png'
+import img5 from '~/assets/culture-slider/5.png'
+import img6 from '~/assets/culture-slider/6.png'
+import img7 from '~/assets/culture-slider/7.png'
 
 const aboutImgs = [
   img1,
@@ -12,21 +14,22 @@ const aboutImgs = [
   img3,
   img4,
   img5,
+  img6,
+  img7,
   img1,
   img2,
   img3,
   img4,
   img5,
+  img6,
+  img7,
   img1,
   img2,
   img3,
   img4,
   img5,
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
+  img6,
+  img7,
 ]
 
 const breakpoints = useBreakpoints()

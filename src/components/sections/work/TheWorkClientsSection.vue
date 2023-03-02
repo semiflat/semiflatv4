@@ -86,19 +86,7 @@ const logos = [
   yuzedata,
 ]
 const logos1 = [
-  doss,
-  gcore,
   gyaan,
-  ahana,
-  appfleet,
-  clickmagick,
-  cloudstore,
-  defaultLogo,
-  devzero,
-  doss,
-  tau,
-  useful,
-  yuzedata,
   halycon,
   jetic,
   lhotse,
@@ -108,11 +96,50 @@ const logos1 = [
   pocus,
   runchise,
   scholaris,
+  ahana,
+  appfleet,
+  clickmagick,
+  cloudstore,
+  defaultLogo,
+  devzero,
+  doss,
+  gcore,
   simplero,
   sisu,
   stepsize,
   tagvenue,
+  tau,
+  useful,
+  yuzedata,
 ]
+// const logos1 = [
+//   doss,
+//   gcore,
+//   gyaan,
+//   ahana,
+//   appfleet,
+//   clickmagick,
+//   cloudstore,
+//   defaultLogo,
+//   devzero,
+//   doss,
+//   tau,
+//   useful,
+//   yuzedata,
+//   halycon,
+//   jetic,
+//   lhotse,
+//   metlo,
+//   onward,
+//   phenom,
+//   pocus,
+//   runchise,
+//   scholaris,
+//   simplero,
+//   sisu,
+//   stepsize,
+//   tagvenue,
+// ]
 
 const logosMobile = [
   sisu,
@@ -176,7 +203,15 @@ const swiperOptions = computed(() => ({
           <component :is="logo" class="h-[4.375rem]" />
         </SwiperSlide>
       </AppSlider>
-      <AppSlider class="" style="" :swiper-options="{ ...swiperOptions, speed: 5500 }">
+      <AppSlider
+        class=""
+        style=""
+        :swiper-options="{
+          ...swiperOptions,
+          speed: 5500,
+          autoplay: { reverseDirection: true, delay: 0 },
+        }"
+      >
         <SwiperSlide
           v-for="(logo, i) in logos1"
           :key="i"

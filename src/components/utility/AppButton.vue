@@ -48,7 +48,7 @@ const tag = computed(() => {
   <component
     :is="tag"
     ref="buttonRef"
-    class="app-button button button-arrow"
+    class="app-button button"
     v-bind="$attrs"
     :class="[
       props.block ? 'flex w-full' : 'inline-flex',
@@ -130,10 +130,13 @@ const tag = computed(() => {
   transform: scaleX(1);
   transition: transform 200ms ease-in-out 300ms, opacity 200ms ease-in-out 300ms;
 }
-::v-deep(.button-arrow:hover .arrow-head) {
+</style>
+
+<style>
+.app-button:hover .arrow-head {
   transform: translateX(3px);
 }
-::v-deep(.button-arrow:hover .arrow-body) {
+.app-button:hover .arrow-body {
   opacity: 1;
   transform: scaleX(2);
 }

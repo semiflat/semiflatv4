@@ -10,7 +10,7 @@ import IsaacAvatar from '~/assets/avatars/isaac.png'
 import MikeAvatar from '~/assets/avatars/mike.png'
 import ErinAvatar from '~/assets/avatars/erin.png'
 import NicoAvatar from '~/assets/avatars/nico.png'
-import ColemanAvatar from '~/assets/avatars/coleman.png'
+import AndreAvatar from '~/assets/avatars/andre.png'
 import StrokeLeft from '~/assets/index-strokes/stroke-left.svg?component'
 import StrokeTop from '~/assets/index-strokes/stroke-top.svg?component'
 
@@ -55,7 +55,7 @@ const testimonials = [
     text: `“Everything, from scoping out and communication to final designs, was delivered with high quality. Our expectations were met and exceeded, and we keep coming back to Semiflat for continuous collaboration.”`,
     name: 'Andre Sluczka',
     position: 'Founder and CEO',
-    avatar: ColemanAvatar,
+    avatar: AndreAvatar,
   },
 ]
 </script>
@@ -86,20 +86,15 @@ const testimonials = [
   >
     <div class="hidden md:flex gap-8 max-w-69rem mx-auto">
       <div class="flex flex-col gap-8 max-w-[346px] justify-center relative">
-        <!-- <div class="h-[360px] w-full  absolute -top-78 rounded-4 border-1 border-dashed border-[#BCDCDC]" /> -->
         <component :is="StrokeTop" class="absolute w-full -top-42" />
 
         <TheTestimonialComponent :testimonial="testimonials[0]" />
-        <!-- <div
-                                                                                                                                                                                                class="h-[360px] w-full  absolute -left-[calc(100%+2rem)] rounded-4 border-1 border-dashed border-[#BCDCDC]" /> -->
         <component :is="StrokeLeft" class="absolute w-full -left-[calc(100%+2rem)]" />
 
         <TheTestimonialComponent :testimonial="testimonials[1]" />
-        <!-- <div class="h-[360px] w-full absolute -bottom-78 rounded-4 border-1 border-dashed border-[#BCDCDC]" /> -->
         <component :is="StrokeTop" class="absolute w-full -bottom-42 -scale-y-100" />
       </div>
       <div class="flex flex-col gap-8 max-w-[346px] relative">
-        <!-- <div class="h-[360px] w-full  absolute -top-98 rounded-4  border-1 border-dashed border-[#BCDCDC]" /> -->
         <component :is="StrokeTop" class="absolute w-full -top-62" />
         <TheTestimonialComponent :testimonial="testimonials[2]" />
         <div class="px-8 py-10 bg-dark-blue rounded-4 relative">
@@ -112,19 +107,14 @@ const testimonials = [
           <AppCirclesHorizontal id="circles-md" class="absolute right-0 bottom-0 h-51" />
         </div>
         <TheTestimonialComponent :testimonial="testimonials[3]" />
-        <!-- <div class="h-[360px] w-full absolute -bottom-98 rounded-4 border-1 border-dashed border-[#BCDCDC]" /> -->
         <component :is="StrokeTop" class="absolute w-full -bottom-62 -scale-y-100" />
       </div>
       <div class="flex flex-col gap-8 max-w-[346px] justify-center relative">
-        <!-- <div class="h-[360px] w-full absolute -top-74 rounded-4 border-1 border-dashed border-[#BCDCDC]" /> -->
-        <component :is="StrokeTop" class="absolute w-full -top-38" />
+        <component :is="StrokeTop" class="absolute w-full -top-44" />
         <TheTestimonialComponent :testimonial="testimonials[4]" />
-        <!-- <div
-                                                                                                                                                            class="h-[360px] w-full  absolute -right-[calc(100%+2rem)] rounded-4 border-1 border-dashed border-[#BCDCDC]" /> -->
         <component :is="StrokeLeft" class="absolute w-full -right-[calc(100%+2rem)] -scale-x-100" />
         <TheTestimonialComponent :testimonial="testimonials[5]" />
-        <!-- <div class="h-[360px] w-full absolute -bottom-74 rounded-4 border-1 border-dashed border-[#BCDCDC]" /> -->
-        <component :is="StrokeTop" class="absolute w-full -bottom-38 -scale-y-100" />
+        <component :is="StrokeTop" class="absolute w-full -bottom-44 -scale-y-100" />
       </div>
     </div>
   </div>
