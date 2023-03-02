@@ -41,7 +41,7 @@ const toggleFaq = (item: FaqItem) => {
         >
           <p
             class="pb-6 md:pb-8 transition-all translate-x-20 opacity-0"
-            :class="{ 'opacity-100 !translate-x-0': faq.isOpen, '!duration-250': faq.isOpen }"
+            :class="{ '!opacity-100 !translate-x-0': faq.isOpen, '!duration-250': faq.isOpen }"
           >
             {{ faq.text }}
           </p>
