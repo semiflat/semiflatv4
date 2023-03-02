@@ -6,26 +6,28 @@ import MLogo from '~/assets/socials/M.svg?component'
 import DribbleLogo from '~/assets/socials/dribbble.svg?component'
 import CLogo from '~/assets/socials/C.svg?component'
 
+const context = usePageContext()
+
 const socials = [
   {
     logo: LinkedinLogo,
-    url: 'https://www.linkedin.com/company/semiflat/'
+    url: 'https://www.linkedin.com/company/semiflat/',
   },
   {
     logo: InstagramLogo,
-    url: 'https://www.instagram.com/semiflat_/'
+    url: 'https://www.instagram.com/semiflat_/',
   },
   {
     logo: MLogo,
-    url: false
+    url: false,
   },
   {
     logo: DribbleLogo,
-    url: 'https://dribbble.com/semiflat'
+    url: 'https://dribbble.com/semiflat',
   },
   {
     logo: CLogo,
-    url: 'https://clutch.co/profile/semiflat'
+    url: 'https://clutch.co/profile/semiflat',
   },
 ]
 
@@ -91,16 +93,18 @@ const services = [
   <div class="page-content pt-28 pb-20 md:pb-[12.5rem] relative overflow-y-clip">
     <div
       class="bg-gradient bg-gradient-left bg-turquoise-100 rounded-full absolute -left-40 w-[43.75rem] h-[43.75rem] blur-[240px] top-6 md:-left-100 md:top-70"
+      :class="[context.pageProps?.pageShell?.hide]"
     />
     <div
       class="bg-gradient bg-gradient-right bg-turquoise-200 rounded-full absolute w-[18.75rem] h-[18.75rem] bottom-46 -right-16 md:-bottom-20 md:left-70 blur-[200px]"
+      :class="[context.pageProps?.pageShell?.hide]"
     />
     <div class="relative z-10 md:flex md:items-start md:justify-between">
       <div>
         <SmallLogo />
         <p class="mt-4 text-blue-300">Copyright © 2023. All rights reserved</p>
         <div class="flex gap-8 mt-10">
-          <div v-for="(social, i) in socials.filter(x => x.url)" :key="i" class="">
+          <div v-for="(social, i) in socials.filter((x) => x.url)" :key="i" class="">
             <a :href="social.url">
               <component :is="social.logo" />
             </a>

@@ -28,7 +28,7 @@ const links = [
   },
 ]
 
-const pageContext = usePageContext()
+const context = usePageContext()
 
 const openMenu = ref(false)
 
@@ -86,13 +86,16 @@ onMounted(() => {
           <a
             :href="link.path"
             class="cursor-pointer py-1.5 px-4 rounded-[8rem] transition-colors duration-500 hover:bg-turquoise-100/50"
-            :class="{ 'bg-turquoise-100': pageContext.urlPathname === link.path }"
+            :class="{ 'bg-turquoise-100': context.urlPathname === link.path }"
           >
             {{ link.label }}
           </a>
         </li>
       </ul>
-      <AppButton class="!hidden md:!inline-flex" href="mailto:hello@semiflat.com"
+      <AppButton
+        class="!hidden md:!inline-flex"
+        href="mailto:hello@semiflat.com"
+        :class="[context.pageProps?.pageShell?.button]"
         >Get in touch</AppButton
       >
     </nav>

@@ -6,14 +6,14 @@ import RightBg from '~/assets/pocus/right-cubes.svg?component'
 <template>
   <div class="page-content mt-16 md:mt-40">
     <div
-      class="bg-violet-gradient p-8 text-white rounded-3 relative md:px-[7.125rem] md:py-[6.125rem] max-w-[57.125rem] mx-auto"
+      class="bg-violet-gradient p-8 text-white rounded-6 relative md:px-[7.125rem] md:py-[6.125rem] mx-auto"
     >
-      <div class="w-full h-full top-0 left-0 z-1 card-mask">
+      <div class="absolute pointer-events-none w-full h-full opacity-70 top-0 left-0 z-1 card-mask">
         <component
           :is="RightBg"
           class="absolute top-0 right-0 md:w-[170px] md:h-[170px] md:top-4"
         />
-        <component :is="LeftBg" class="absolute bottom-0 md:w-[250px] md:h-[250px]" />
+        <component :is="LeftBg" class="absolute bottom-3 left-0 md:w-[250px] md:h-[250px]" />
       </div>
       <div class="md:max-w-[33.5rem] md:mx-auto md:text-center">
         <h3 class="text-[1.25rem] font-semibold mb-6 md:text-[2.5rem] md:leading-[120%]">
