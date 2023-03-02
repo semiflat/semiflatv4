@@ -1,7 +1,7 @@
 <script setup lang='ts'>
-import Function1 from '~/assets/pocus/function-1.png'
-import Function2 from '~/assets/pocus/function-2.svg?component'
-import Function3 from '~/assets/pocus/function-3.svg?component'
+import Function1 from '~/assets/pocus/illustration-1.svg'
+import Function2 from '~/assets/pocus/illustration-2.svg?component'
+import Function3 from '~/assets/pocus/illustration-3.svg?component'
 
 </script>
 
@@ -13,7 +13,7 @@ import Function3 from '~/assets/pocus/function-3.svg?component'
                 based on multiple
                 conditions across their data
                 stack. </p>
-            <img :src="Function1" class="-mt-16" />
+            <component :is="Function1" class="-mt-16" />
         </div>
         <div class="grid grid-cols-2 gap-8 mt-8">
             <div class="bg-[#F6F7F9] rounded-6 text-center border border-[#D8DFE5]">
