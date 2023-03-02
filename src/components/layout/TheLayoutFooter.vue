@@ -156,10 +156,12 @@ const services = [
 <style lang="postcss" scoped>
 .bg-gradient {
   animation: gradient-scale 4s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 .bg-gradient-right {
   animation: gradient-scale 6s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 @keyframes gradient-scale {
