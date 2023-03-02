@@ -81,6 +81,21 @@ const config: UserConfig = {
         }
       },
     },
+    {
+      name: 'fix-swipper-pagination-css',
+      enforce: 'pre',
+      resolveId(id) {
+        if (id === 'swiper-pagination.css') return 'fix-swiper-pagination.css'
+      },
+      async load(id) {
+        if (id === 'fix-swiper-pagination.css') {
+          return await fsPromises.readFile(
+            './node_modules/swiper/modules/pagination/pagination.min.css',
+            'utf-8'
+          )
+        }
+      },
+    },
   ],
   resolve: {
     alias: {

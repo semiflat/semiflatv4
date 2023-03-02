@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import { Swiper } from 'swiper/vue'
+import { Pagination } from 'swiper'
+
 // import IconSliderArrowLeft from '~/assets/images/icons/slider-arrow-left.svg?component'
 // import IconSliderArrowRight from '~/assets/images/icons/slider-arrow-right.svg?component'
 
@@ -47,6 +49,7 @@ const slideNext = () => {
     <Swiper
       v-bind="{ ...props.swiperOptions, navigation: false }"
       :class="swiperClasses"
+      :modules="[Pagination]"
       @swiper="onSwiper"
     >
       <slot></slot>
