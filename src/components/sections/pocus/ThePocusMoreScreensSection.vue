@@ -9,7 +9,7 @@ import Screen6 from '~/assets/pocus/screen-6.png'
     <div
       class="px-1.75rem py-10.5 bg-[#F6F7F9] rounded-3 border border-[#D8DFE5] mb-8 md:rounded-6 md:py-4.375rem md:px-24"
     >
-      <img :src="Screen4" />
+      <img :src="Screen4" class="custom-shadow rounded-3" />
     </div>
     <div class="grid gap-8 sm:grid-cols-2">
       <div
