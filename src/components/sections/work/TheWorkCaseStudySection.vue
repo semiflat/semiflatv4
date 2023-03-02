@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Pocus from '~/assets/case/Illustration-pocus.svg?url'
-import Useful from '~/assets/case/Illustration-useful.svg?url'
-import Phenom from '~/assets/case/Illustration-phenom.svg?url'
+import Pocus from '~/assets/case/Illustration-Pocus.svg?url'
+import Useful from '~/assets/case/Illustration-Useful.svg?url'
+import Phenom from '~/assets/case/Illustration-Phenom.svg?url'
 import Appfleet from '~/assets/case/Illustration-appfleet.svg?url'
 import Scholaris from '~/assets/case/Illustration-scholaris.svg?url'
 import Jetic from '~/assets/case/Illustration-jetic.svg?url'
