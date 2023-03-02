@@ -8,6 +8,8 @@ interface PageProps {
   pageShell: {
     smallGradient?: string
     bigGradient?: string
+    button?: string
+    hide?: string
   }
 }
 
