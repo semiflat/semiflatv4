@@ -5,28 +5,27 @@ import breakpointsConst from '~/constants/breakpoints'
 import Feature1Img from '~/assets/pocus/feature-1.png'
 import Feature2Img from '~/assets/pocus/feature-2.png'
 import Feature3Img from '~/assets/pocus/feature-3.png'
-import ConsistencyIcon from '~/assets/icons/consistency.svg?component'
-import ClickableIcon from '~/assets/icons/clickable.svg?component'
-import IntuitiveIcon from '~/assets/icons/intuitive.svg?component'
-
+import Feature1Svg from '~/assets/pocus/feature_1.svg?component'
+import Feature2Svg from '~/assets/pocus/feature_2.svg?component'
+import Feature3Svg from '~/assets/pocus/feature_3.svg?component'
 const breakpoints = useBreakpoints(breakpointsConst)
 const md = ref(breakpoints.smaller('md'))
 const details = [
   {
     img: Feature1Img,
-    icon: ConsistencyIcon,
+    icon: Feature1Svg,
     header: 'Scores',
     desc: 'Create custom groups of accounts, then create scores to define what constitutes an excellent vs. a good or a poor one.',
   },
   {
     img: Feature2Img,
-    icon: ClickableIcon,
+    icon: Feature2Svg,
     header: 'Playbooks',
     desc: 'Create a sales playbook in Pocus, then define a human or automated action sequence for qualified accounts.',
   },
   {
     img: Feature3Img,
-    icon: IntuitiveIcon,
+    icon: Feature3Svg,
     header: 'Lists',
     desc: 'Best local manufacturers and tons of love. That’s how our team gadgets are made.',
   },
@@ -102,7 +101,7 @@ const changeImage = (card: (typeof details)[0]) => {
           }"
           @click="changeImage(card)"
         >
-          <component :is="card.icon" class="mb-8" />
+          <component :is="card.icon" class="mb-8 color-[#481B97]"/>
           <p class="mb-1 gradient-text font-semibold">{{ card.header }}</p>
           <p class="text-[#545959]">{{ card.desc }}</p>
         </div>
