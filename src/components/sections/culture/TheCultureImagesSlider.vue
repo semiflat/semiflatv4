@@ -46,6 +46,7 @@ const swiperOptions = computed(() => ({
   watchSlidesVisibility: true,
   autoplay: {
     delay: 0,
+    disableOnInteraction: false,
   },
   breakpoints: swiperBreakpoints,
 }))
