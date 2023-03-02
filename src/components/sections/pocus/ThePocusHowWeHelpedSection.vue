@@ -1,6 +1,6 @@
 <script setup lang='ts'>
-import QueryHelperIllDesktop from '~/assets/pocus/query-helper-desktop.svg?url'
-import QueryHelperIllMobile from '~/assets/pocus/query-helper-mobile.svg?url'
+import QueryHelperIllDesktop from '~/assets/pocus/query-helper-desktop.png'
+import QueryHelperIllMobile from '~/assets/pocus/query-helper-desktop.png'
 import Interface from '~/assets/experiences/interface.svg?component'
 import Design from '~/assets/experiences/design.svg?component'
 import Support from '~/assets/experiences/support.svg?component'

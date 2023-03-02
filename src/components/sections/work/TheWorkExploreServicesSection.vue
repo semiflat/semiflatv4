@@ -73,6 +73,7 @@ onMounted(() => {
     #031c26;
   background-blend-mode: overlay, normal;
   animation: gradient-scale 12s ease-in-out infinite alternate;
+  will-change: transform;
 
   @apply absolute inset-0 rounded-4;
 }
