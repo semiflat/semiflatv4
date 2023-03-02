@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Screen4 from '~/assets/pocus/screen-4.png'
-import Screen5 from '~/assets/pocus/screen-5.png'
+import Screen5 from '~/assets/pocus/screen-5.svg?component'
 import Screen6 from '~/assets/pocus/screen-6.png'
 </script>
 
