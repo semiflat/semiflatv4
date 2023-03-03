@@ -12,8 +12,12 @@ async function render(pageContext: PageContextServer) {
   const app = await createApp(pageContext)
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext.exports
-  const title = (documentProps && documentProps.title) || 'Semiflat.com'
-  const desc = (documentProps && documentProps.description) || 'Semiflat.com'
+  const title =
+    (documentProps && documentProps.title) ||
+    'Semiflat is a full-service design agency specialized in solving complex problems through design. '
+  const desc =
+    (documentProps && documentProps.description) ||
+    'We design tools that help millions of professionals be more effective at their job.'
 
   // Streaming is optional: we can use renderToString() instead.
   const pipe = isWorker()

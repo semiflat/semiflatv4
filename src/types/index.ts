@@ -10,6 +10,7 @@ interface PageProps {
     bigGradient?: string
     button?: string
     hide?: string
+    nav?: string
   }
 }
 

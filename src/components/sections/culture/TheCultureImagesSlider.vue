@@ -7,6 +7,7 @@ import img4 from '~/assets/culture-slider/4.png'
 import img5 from '~/assets/culture-slider/5.png'
 import img6 from '~/assets/culture-slider/6.png'
 import img7 from '~/assets/culture-slider/7.png'
+import img8 from '~/assets/culture-slider/8.png'
 
 const aboutImgs = [
   img1,
@@ -16,6 +17,7 @@ const aboutImgs = [
   img5,
   img6,
   img7,
+  img8,
   img1,
   img2,
   img3,
@@ -23,6 +25,7 @@ const aboutImgs = [
   img5,
   img6,
   img7,
+  img8,
   img1,
   img2,
   img3,
@@ -30,6 +33,7 @@ const aboutImgs = [
   img5,
   img6,
   img7,
+  img8,
 ]
 
 const breakpoints = useBreakpoints()

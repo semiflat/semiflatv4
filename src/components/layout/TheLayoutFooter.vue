@@ -49,7 +49,7 @@ const useCase = [
 const legal = [
   {
     label: 'Privacy policy',
-    url: '#',
+    url: '/privacy-policy',
   },
   {
     label: 'Terms & conditions',
@@ -132,7 +132,7 @@ const services = [
               :key="link.label"
               class="text-blue-200 cursor-pointer inline-block"
             >
-              {{ link.label }}
+              <a :href="link.url">{{ link.label }}</a>
             </li>
           </ul>
         </div>

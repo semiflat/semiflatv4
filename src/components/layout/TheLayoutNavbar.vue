@@ -93,6 +93,7 @@ onMounted(() => {
               'bg-turquoise-100': link.exact
                 ? context.urlPathname === link.path
                 : context.urlPathname.startsWith(link.path),
+              [context.pageProps?.pageShell?.navHover]: context.pageProps?.pageShell?.navHover,
             }"
           >
             {{ link.label }}

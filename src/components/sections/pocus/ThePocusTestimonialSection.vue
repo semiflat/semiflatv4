@@ -27,7 +27,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="page-content mt-16 md:mt-40">
+  <div id="testimonial" class="page-content mt-16 md:mt-40">
     <div
       class="bg-violet-transparent p-8 border border-[#D8DFE5] rounded-3 max-w-[57.125rem] mx-auto md:pt-0 md:pb-12"
     >

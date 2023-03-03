@@ -1,6 +1,12 @@
 <script lang="ts" setup>
 import Dashboard from '~/assets/pocus/pocus-dashboard.png'
 import PocusLogo from '~/assets/pocus/pocus-logo.svg?component'
+
+const scrollToTestimonial = () => {
+  document?.getElementById('testimonial')?.scrollIntoView({
+    behavior: 'smooth',
+  })
+}
 </script>
 
 <template>
@@ -20,7 +26,7 @@ import PocusLogo from '~/assets/pocus/pocus-logo.svg?component'
         <AppButton class="!bg-[#481B97]" href="https://pocus.com" target="_blank"
           >See the live version</AppButton
         >
-        <AppButton text>Read testimonial</AppButton>
+        <AppButton text @click="scrollToTestimonial">Read testimonial</AppButton>
       </div>
     </div>
   </div>

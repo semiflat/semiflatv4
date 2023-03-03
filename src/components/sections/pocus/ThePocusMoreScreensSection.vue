@@ -18,7 +18,7 @@ import Screen6 from '~/assets/pocus/screen-6.png'
         <component :is="Screen5" class="md:-ml-2 w-full" />
       </div>
       <div
-        class="pl-8 md:pl-12 bg-[#F6F7F9] rounded-3 border border-[#D8DFE5] md:rounded-6 max-h-[15.875rem] md:max-h-[25.875rem] overflow-hidden"
+        class="bg-[#F6F7F9] rounded-3 border border-[#D8DFE5] md:rounded-6 max-h-[15.875rem] md:max-h-[25.875rem] overflow-hidden"
       >
         <img :src="Screen6" class="h-full ml-auto" />
       </div>

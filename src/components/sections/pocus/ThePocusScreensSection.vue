@@ -12,14 +12,10 @@ import Screen3 from '~/assets/pocus/screen-3.png'
       <img :src="Screen1" class="custom-shadow rounded-3" />
     </div>
     <div class="grid gap-8 sm:grid-cols-2">
-      <div
-        class="pl-1.812rem pt-1.812rem bg-[#F6F7F9] rounded-3 border border-[#D8DFE5] md:rounded-6 md:pl-12 md:pt-12 overflow-hidden"
-      >
+      <div class="bg-[#F6F7F9] rounded-3 border border-[#D8DFE5] md:rounded-6 overflow-hidden">
         <img :src="Screen2" />
       </div>
-      <div
-        class="pl-1.812rem pt-1.812rem bg-[#F6F7F9] rounded-3 border border-[#D8DFE5] md:rounded-6 md:pl-12 md:pt-12 overflow-hidden"
-      >
+      <div class="bg-[#F6F7F9] rounded-3 border border-[#D8DFE5] md:rounded-6 overflow-hidden">
         <img :src="Screen3" />
       </div>
     </div>

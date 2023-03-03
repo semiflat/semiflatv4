@@ -28,6 +28,10 @@ body,
   height: 2px;
 }
 
+body {
+  @apply overflow-x-hidden;
+}
+
 .safari-fix {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

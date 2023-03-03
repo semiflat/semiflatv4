@@ -13,6 +13,7 @@ export async function onBeforeRender() {
             '!bg-[#F0EDFE] md:!blur-[200px] md:w-[67.5rem] md:h-[67.5rem] md:!-top-[10rem]',
           hide: '!hidden',
           button: '!bg-[#481B97]',
+          navHover: 'hover:!bg-black/08',
         },
       },
     },
