@@ -9,23 +9,24 @@
         </filter>
     </defs>
     <g mask="url(#mask0_2055_12850)">
-
+        <circle cx="199" cy="265" r="122" stroke="#0A5F81" />
+        <circle cx="147" cy="265" r="122" stroke="#0A5F81" />
+        <circle cx="147" cy="125" r="122" stroke="#0A5F81" />
+        <circle cx="199" cy="125" r="122" stroke="#0A5F81" />
         <circle cx="51" cy="265" r="122" stroke="#1FDFFF" />
         <circle class="glow-line glow-line-1" cx="51" cy="265" r="122" stroke="#78FDFC" stroke-width="2"
             filter="url(#glow)" />
         <circle cx="295" cy="265" r="122" stroke="#1FDFFF" />
         <circle class="glow-line glow-line-4" cx="295" cy="265" r="122" stroke="#78FDFC" stroke-width="2"
             filter="url(#glow)" />
-        <circle cx="199" cy="265" r="122" stroke="#0A5F81" />
-        <circle cx="147" cy="265" r="122" stroke="#0A5F81" />
+
         <circle cx="295" cy="125" r="122" stroke="#1FDFFF" />
         <circle class="glow-line glow-line-3" cx="295" cy="125" r="122" stroke="#78FDFC" stroke-width="2"
             filter="url(#glow)" />
         <circle cx="51" cy="125" r="122" stroke="#1FDFFF" />
         <circle class="glow-line glow-line-2" cx="51" cy="125" r="122" stroke="#78FDFC" stroke-width="2"
             filter="url(#glow)" />
-        <circle cx="147" cy="125" r="122" stroke="#0A5F81" />
-        <circle cx="199" cy="125" r="122" stroke="#0A5F81" />
+
     </g>
     <path d="M77 247L174 303L269 247V142L174 87L77 142V247Z" stroke="#0F8BBD" />
     <rect x="53" y="119" width="48" height="48" rx="24" fill="white" />

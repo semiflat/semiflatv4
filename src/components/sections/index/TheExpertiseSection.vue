@@ -19,10 +19,10 @@ onMounted(() => {
     repeat: -1,
   })
 
-  tl.fromTo(getLine(1), { drawSVG: '0% 2%' }, { drawSVG: '-27% -26%', duration: 1.75 })
-    .fromTo(getLine(2), { drawSVG: '23% 25%' }, { drawSVG: '-5% -4%', duration: 1.75 })
-    .fromTo(getLine(3), { drawSVG: '23% 25%' }, { drawSVG: '53% 54%', duration: 1.75 })
-    .fromTo(getLine(4), { drawSVG: '45% 47%' }, { drawSVG: '73% 74%', duration: 1.75 })
+  tl.fromTo(getLine(1), { drawSVG: '0% 2%' }, { drawSVG: '-27% -24%', duration: 1.75 })
+    .fromTo(getLine(2), { drawSVG: '23% 25%' }, { drawSVG: '-5% -2%', duration: 1.75 })
+    .fromTo(getLine(3), { drawSVG: '23% 25%' }, { drawSVG: '53% 56%', duration: 1.75 })
+    .fromTo(getLine(4), { drawSVG: '45% 47%' }, { drawSVG: '73% 76%', duration: 1.75 })
 })
 </script>
 
