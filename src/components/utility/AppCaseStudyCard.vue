@@ -9,6 +9,8 @@ interface IllustrationCard {
 defineProps<{
   data?: IllustrationCard
 }>()
+
+const isHovering = ref(false)
 </script>
 
 <template>
@@ -20,13 +22,20 @@ defineProps<{
           data?.caption
         }}
       </caption>
-      <a
+      <div
         v-if="data?.link"
-        :href="data?.link"
-        class="button button-arrow flex mt-4 pl-1 pr-2 cursor-pointer group case-study-btn transition duration-300 font-semibold text-turquoise-400 hover:bg-turquoise-400 hover:text-white md:text-base inline-flex gap-1 items-center md:mt-6"
-        >Read Case study
-        <AppArrow />
-      </a>
+        class="case-study-btn-wrapper mt-4 md:mt-6"
+        :class="{ 'case-study-btn-wrapper-active': isHovering }"
+        @mouseover="isHovering = true"
+        @mouseout="isHovering = false"
+      >
+        <a
+          :href="data?.link"
+          class="case-study-btn"
+          :class="{ 'case-study-btn-active': isHovering }"
+          >Read Case study
+        </a>
+      </div>
       <div
         v-else
         class="mt-4 inline-block px-0.5 font-semibold opacity-50 text-turquoise-400 md:text-base md:mt-6"
@@ -38,25 +47,40 @@ defineProps<{
 </template>
 
 <style>
-.button-arrow .arrow-icon {
-  overflow: visible;
-  margin-left: 3px;
-  width: 8px;
+.case-study-btn-wrapper {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+  /* Content/Accent */
+  display: inline-flex;
+  position: relative;
 }
-.button-arrow .arrow-head {
-  transform: translateX(0);
-  transition: transform 200ms ease-in-out 300ms;
+.case-study-btn-wrapper .case-study-btn {
+  display: inline-block;
+  background-image: linear-gradient(86.76deg, #407a7a, #54aba3, #fff, #fff, #fff);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  transition: 0.75s all;
+  z-index: 2;
 }
-.button-arrow .arrow-body {
-  opacity: 0;
-  transform: scaleX(1);
-  transition: transform 200ms ease-in-out 300ms, opacity 200ms ease-in-out 300ms;
+.case-study-btn-wrapper:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(86.76deg, #407a7a 0%, #54aba3 100%);
+  transform: translateY(0.8em) scaleY(0.1);
+  transition: 0.2s all;
 }
-.button-arrow:hover .arrow-head {
-  transform: translateX(3px);
+
+.case-study-btn-wrapper-active:after {
+  transform: none;
 }
-.button-arrow:hover .arrow-body {
-  opacity: 1;
-  transform: scaleX(2);
+.case-study-btn-active {
+  background-position: 75% 100%;
+  padding: 0 5px;
 }
 </style>
