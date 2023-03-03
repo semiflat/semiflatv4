@@ -28,7 +28,7 @@ import SimultaneouslyIcon from '~/assets/services/icons/simultaneously.svg?compo
 
 import { ServiceTypes } from '~/types/service'
 
-const servicesData = ref({
+const servicesData = {
   [ServiceTypes.workshops]: {
     introduction: {
       img: WorkshopIll,
@@ -390,20 +390,44 @@ const servicesData = ref({
       header: 'Examples of projects we’ve supported with an ongoing collaboration_',
     },
   },
-})
+}
 
-const selectedServiceModel = ref(ServiceTypes.workshops)
-const selectedService = computed(() => servicesData.value[selectedServiceModel.value])
+const pageContext = usePageContext()
+const selectedServiceModel = ref(
+  pageContext.routeParams?.id && Object.keys(servicesData).includes(pageContext.routeParams?.id)
+    ? (pageContext.routeParams?.id as keyof typeof servicesData)
+    : ServiceTypes.workshops
+)
+const selectedService = computed(() => servicesData[selectedServiceModel.value])
+
+const redirect = (v: string) => {
+  window.history.replaceState({}, '', `${window.location.origin}/services/${v}`)
+  selectedServiceModel.value = v as keyof typeof servicesData
+}
 </script>
 
 <template>
   <div class="overflow-hidden">
-    <TheServicesHeroSection v-model="selectedServiceModel" class="section" />
-    <TheServicesIntroductionSection :introduction="selectedService.introduction" class="section" />
-    <TheServicesOurServices :experiences="selectedService.experiences" class="section" />
-    <TheServicesProsAndConsSection :pros-and-cons="selectedService.prosAndCons" class="section" />
-    <!--        <TheServicesQuestionsSection v-model="selectedServiceModel" :examples="selectedService.examples" /> -->
-    <!--        <TheServicesFaqSection /> -->
-    <TheCTABottomSection class="section" />
+    <TheServicesHeroSection
+      :model-value="selectedServiceModel"
+      class="section"
+      @update:model-value="redirect"
+    />
+    <Transition name="fade" mode="out-in">
+      <div :key="selectedServiceModel">
+        <TheServicesIntroductionSection
+          :introduction="selectedService.introduction"
+          class="section"
+        />
+        <TheServicesOurServices :experiences="selectedService.experiences" class="section" />
+        <TheServicesProsAndConsSection
+          :pros-and-cons="selectedService.prosAndCons"
+          class="section"
+        />
+        <!--        <TheServicesQuestionsSection v-model="selectedServiceModel" :examples="selectedService.examples" /> -->
+        <!--        <TheServicesFaqSection /> -->
+        <TheCTABottomSection class="section" />
+      </div>
+    </Transition>
   </div>
 </template>

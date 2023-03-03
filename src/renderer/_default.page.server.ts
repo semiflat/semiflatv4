@@ -6,7 +6,7 @@ import type { PageContextServer } from '~/types'
 import faviconUrl from '~//assets/semiflat-favicon.png'
 
 // See https://vite-plugin-ssr.com/data-fetching
-export const passToClient = ['pageProps', 'urlPathname', 'locale']
+export const passToClient = ['pageProps', 'urlPathname', 'locale', 'routeParams']
 
 async function render(pageContext: PageContextServer) {
   const app = await createApp(pageContext)

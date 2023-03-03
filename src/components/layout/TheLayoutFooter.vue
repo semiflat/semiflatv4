@@ -2,9 +2,9 @@
 import SmallLogo from '~/assets/small-logo.svg?component'
 import LinkedinLogo from '~/assets/socials/Linkedin.svg?component'
 import InstagramLogo from '~/assets/socials/instagram.svg?component'
-import MLogo from '~/assets/socials/M.svg?component'
 import DribbleLogo from '~/assets/socials/dribbble.svg?component'
 import CLogo from '~/assets/socials/C.svg?component'
+import { ServiceTypes } from '~/types/service'
 
 const context = usePageContext()
 
@@ -16,10 +16,6 @@ const socials = [
   {
     logo: InstagramLogo,
     url: 'https://www.instagram.com/semiflat_/',
-  },
-  {
-    logo: MLogo,
-    url: false,
   },
   {
     logo: DribbleLogo,
@@ -64,27 +60,27 @@ const legal = [
 const services = [
   {
     label: 'Workshops & analysis',
-    url: '/services',
+    url: `/services/${ServiceTypes.workshops}`,
   },
   {
     label: 'User research',
-    url: '/services',
+    url: `/services/${ServiceTypes.research}`,
   },
   {
     label: 'User experience design',
-    url: '/services',
+    url: `/services/${ServiceTypes.experience}`,
   },
   {
     label: 'User interface design',
-    url: '/services',
+    url: `/services/${ServiceTypes.interface}`,
   },
   {
     label: 'Design system',
-    url: '/services',
+    url: `/services/${ServiceTypes.design}`,
   },
   {
     label: 'Continous support',
-    url: '/services',
+    url: `/services/${ServiceTypes.support}`,
   },
 ]
 </script>

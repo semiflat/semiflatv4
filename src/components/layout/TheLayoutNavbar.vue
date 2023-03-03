@@ -9,6 +9,7 @@ const links = [
   {
     label: 'Home',
     path: '/',
+    exact: true,
   },
   {
     label: 'About',
@@ -88,7 +89,11 @@ onMounted(() => {
           <a
             :href="link.path"
             class="cursor-pointer py-1.5 px-4 rounded-[8rem] transition-colors duration-500 hover:bg-turquoise-100/50"
-            :class="{ 'bg-turquoise-100': context.urlPathname === link.path }"
+            :class="{
+              'bg-turquoise-100': link.exact
+                ? context.urlPathname === link.path
+                : context.urlPathname.startsWith(link.path),
+            }"
           >
             {{ link.label }}
           </a>
