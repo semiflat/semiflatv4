@@ -29,7 +29,7 @@ if (!import.meta.env.SSR) {
         :class="[context.pageProps?.pageShell?.bigGradient]"
       />
       <div
-        class="safari-fix bg-gradient-right bg-turquoise-200 rounded-full blur-[120px] h-[12.5rem] w-[12.5rem] absolute -right-15 -top-17 md:h-[18.75rem] md:w-[18.75rem] md:blur-200px"
+        class="safari-fix bg-gradient-right bg-turquoise-200 rounded-full blur-[120px] h-[12.5rem] w-[12.5rem] absolute right-0 -top-17 md:h-[18.75rem] md:w-[18.75rem] md:blur-200px"
         :class="[context.pageProps?.pageShell?.smallGradient]"
       />
     </div>
