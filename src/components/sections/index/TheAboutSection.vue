@@ -16,7 +16,7 @@ const content = [
     },
     {
         title: 'Always looking for the next big thing in tech.',
-        text: 'Team retreats at Semiflat are legendary. As a remote team we get together every couple of months.',
+        text: 'We stay up to date with industry trends by participating in conferences and constantly exploring new technologies.',
         bgImage: `url(${meetup})`
     },
 ]
