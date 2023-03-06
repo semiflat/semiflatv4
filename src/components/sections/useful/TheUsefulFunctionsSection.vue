@@ -1,7 +1,7 @@
 <script setup lang='ts'>
-import Function1 from '~/assets/useful/illustration-1.svg'
-import Function2 from '~/assets/useful/illustration-2.svg?component'
-import Function3 from '~/assets/useful/illustration-3.svg?component'
+import Function1 from '~/assets/useful/illustration-1.svg?url'
+import Function2 from '~/assets/useful/illustration-2.svg?url'
+import Function3 from '~/assets/useful/illustration-3.svg?url'
 
 </script>
 

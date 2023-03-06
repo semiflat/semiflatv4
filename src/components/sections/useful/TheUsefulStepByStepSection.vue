@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import WorkshopsIcon from '~/assets/experiences/workshops.svg?component'
-import InterfaceIcon from '~/assets/experiences/interface.svg?component'
-import UX from '~/assets/experiences/UX.svg?component'
-import SupportIcon from '~/assets/experiences/support.svg?component'
-import FlawlessIcon from '~/assets/icons/flawless.svg?component'
+import WorkshopsIcon from '~/assets/experiences/workshops.svg?url'
+import InterfaceIcon from '~/assets/experiences/interface.svg?url'
+import UX from '~/assets/experiences/UX.svg?url'
+import SupportIcon from '~/assets/experiences/support.svg?url'
+import FlawlessIcon from '~/assets/icons/flawless.svg?url'
 
 const services = [
     {

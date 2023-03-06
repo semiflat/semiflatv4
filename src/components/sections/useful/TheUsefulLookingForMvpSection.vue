@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import LeftBg from '~/assets/pocus/left-cubes.svg?component'
-import RightBg from '~/assets/pocus/right-cubes.svg?component'
+import LeftBg from '~/assets/pocus/left-cubes.svg?url'
+import RightBg from '~/assets/pocus/right-cubes.svg?url'
 </script>
 
 <template>

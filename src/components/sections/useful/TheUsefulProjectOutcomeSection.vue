@@ -1,6 +1,6 @@
 <script setup lang='ts'>
-import CubesIll from '~/assets/pocus/cubes.svg?component'
-import CheckIcon from '~/assets/icons/check-icon.svg?component'
+import CubesIll from '~/assets/pocus/cubes.svg?url'
+import CheckIcon from '~/assets/icons/check-icon.svg?url'
 
 const deliverables = [
   {

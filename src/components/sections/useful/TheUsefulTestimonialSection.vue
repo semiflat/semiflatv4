@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {gsap} from 'gsap'
 import UsefulCEO from '~/assets/useful/useful-ceo.png'
-import PocusTestimonalsImage from '~/assets/svg-animated/pocus-testimonials.svg?component'
+import PocusTestimonalsImage from '~/assets/svg-animated/pocus-testimonials.svg?url'
 
 const animatedImageRef = ref()
 

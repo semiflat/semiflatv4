@@ -1,10 +1,10 @@
 <script setup lang='ts'>
 import QueryHelperIllDesktop from '~/assets/useful/query-helper-desktop.png'
 import QueryHelperIllMobile from '~/assets/useful/query-helper-desktop.png'
-import DiscoveryAndWorkshops from '~/assets/experiences/discovery-and-workshops.svg?component'
-import Design from '~/assets/experiences/design.svg?component'
-import UserInterfaceDesign from '~/assets/experiences/user-interface-design.svg?component'
-import UserExperienceDesign from '~/assets/experiences/user-experience-design.svg?component'
+import DiscoveryAndWorkshops from '~/assets/experiences/discovery-and-workshops.svg?url'
+import Design from '~/assets/experiences/design.svg?url'
+import UserInterfaceDesign from '~/assets/experiences/user-interface-design.svg?url'
+import UserExperienceDesign from '~/assets/experiences/user-experience-design.svg?url'
 
 const helped = [
     {
