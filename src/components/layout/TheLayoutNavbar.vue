@@ -103,7 +103,7 @@ onMounted(() => {
       <AppButton
         class="!hidden md:!inline-flex"
         href="mailto:hello@semiflat.com"
-        :class="[context.pageProps?.pageShell?.button]"
+        :class="[context.pageProps?.pageShell?.bgColor]"
         >Get in touch</AppButton
       >
     </nav>

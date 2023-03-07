@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import Dashboard from '~/assets/useful/useful-dashboard.png'
 import UsefulLogo from '~/assets/useful/useful-logo.svg?component'
+const context = usePageContext()
 
 const scrollToTestimonial = () => {
   document?.getElementById('testimonial')?.scrollIntoView({
@@ -27,7 +28,12 @@ const scrollToTestimonial = () => {
         customers will love.
       </p>
       <div class="mt-2.5rem">
-        <AppButton class="!bg-[#481B97]" href="https://useful.com" target="_blank">See the live version</AppButton>
+        <AppButton
+          :class="[context.pageProps?.pageShell?.bgColor]"
+          href="https://useful.com"
+          target="_blank"
+          >See the live version</AppButton
+        >
         <AppButton text @click="scrollToTestimonial">Read testimonial</AppButton>
       </div>
     </div>

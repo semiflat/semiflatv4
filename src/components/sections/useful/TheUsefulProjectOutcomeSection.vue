@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import CubesIll from '~/assets/pocus/cubes.svg?url'
 import CheckIcon from '~/assets/icons/check-icon.svg?component'
+const context = usePageContext()
 
 const deliverables = [
   {
@@ -51,7 +52,7 @@ const deliverables = [
               The application is currently in the last stages of development, serving first users
               through an early-access program.
             </p>
-            <div class="p-8 bg-violet-gradient text-white rounded-4 relative md:p-10">
+            <div class="p-8 bg-violet-light-gradient text-white rounded-4 relative md:p-10">
               <h3 class="font-semibold mb-1 leading-[150%]">
                 Have a project in mind similar to Useful?
               </h3>
@@ -80,7 +81,11 @@ const deliverables = [
       </div>
       <div class="mt-8 grid gap-8 md:mt-0">
         <div v-for="(el, i) in deliverables" :key="i" class="flex gap-6">
-          <component :is="CheckIcon" class="shrink-0 text-[#481B97]" />
+          <component
+            :is="CheckIcon"
+            class="shrink-0 text-[#481B97]"
+            :class="[context.pageProps?.pageShell?.textColor]"
+          />
           <div class="md:pr-2">
             <h3 class="font-semibold text-blue-300 mb-2">{{ el.header }}</h3>
             <p class="text-[#545959] leading-[170%]">{{ el.text }}</p>
@@ -92,14 +97,14 @@ const deliverables = [
 </template>
 
 <style>
-.bg-violet-gradient {
+.bg-violet-light-gradient {
   background: radial-gradient(
         57.03% 76.98% at 100% 0%,
         rgba(255, 255, 255, 0.8) 0%,
         rgba(255, 255, 255, 0) 100%
       )
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-    linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), #481b97;
+    linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), #6f2de7;
   background-blend-mode: overlay, normal, normal;
 }
 </style>

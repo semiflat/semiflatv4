@@ -8,6 +8,9 @@ import Feature3Img from '~/assets/useful/feature-3.png'
 import Feature1Svg from '~/assets/pocus/feature_1.svg?component'
 import Feature2Svg from '~/assets/pocus/feature_2.svg?component'
 import Feature3Svg from '~/assets/pocus/feature_3.svg?component'
+
+const context = usePageContext()
+
 const breakpoints = useBreakpoints(breakpointsConst)
 const md = ref(breakpoints.smaller('md'))
 const details = [
@@ -46,7 +49,7 @@ const swiperOptions = computed(() => ({
   },
 }))
 
-const changeImage = (card: (typeof details)[0]) => {
+const changeImage = (card: typeof details[0]) => {
   selectedDetail.value = card
   document.querySelector('#detail-image')?.classList.remove('fade-animation')
   setTimeout(() => document.querySelector('#detail-image')?.classList.add('fade-animation'), 0)
@@ -84,7 +87,11 @@ const changeImage = (card: (typeof details)[0]) => {
             <div
               class="p-6 border border-[#D8DFE5] rounded-3 md:border-none max-w-[21.687rem] object-cover shadow-select"
             >
-              <component :is="card.icon" class="mb-8" />
+              <component
+                :is="card.icon"
+                class="mb-8"
+                :class="[context.pageProps?.pageShell?.bgColor]"
+              />
               <p class="mb-1 gradient-text font-semibold">{{ card.header }}</p>
               <p class="text-[#545959]">{{ card.desc }}</p>
             </div>
@@ -102,7 +109,11 @@ const changeImage = (card: (typeof details)[0]) => {
           }"
           @click="changeImage(card)"
         >
-          <component :is="card.icon" class="mb-8 color-[#481B97]"/>
+          <component
+            :is="card.icon"
+            class="mb-8 color-[#481B97]"
+            :class="[context.pageProps?.pageShell?.textColor]"
+          />
           <p class="mb-1 gradient-text font-semibold">{{ card.header }}</p>
           <p class="text-[#545959]">{{ card.desc }}</p>
         </div>
