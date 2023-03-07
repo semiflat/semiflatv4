@@ -8,9 +8,10 @@ interface PageProps {
   pageShell: {
     smallGradient?: string
     bigGradient?: string
-    button?: string
+    bgColor?: string
     hide?: string
     nav?: string
+    textColor?: string
   }
 }
 

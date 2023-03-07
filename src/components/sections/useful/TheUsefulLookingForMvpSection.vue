@@ -6,7 +6,7 @@ import RightBg from '~/assets/pocus/right-cubes.svg?url'
 <template>
   <div class="page-content mt-16 md:mt-40">
     <div
-      class="bg-violet-gradient p-8 text-white rounded-6 relative md:px-[7.125rem] md:py-[6.125rem] mx-auto"
+      class="bg-violet-light-gradient p-8 text-white rounded-6 relative md:px-[7.125rem] md:py-[6.125rem] mx-auto"
     >
       <div class="absolute pointer-events-none w-full h-full opacity-70 top-0 left-0 z-1 card-mask">
         <img :src="RightBg" class="absolute top-0 right-0 md:w-[170px] md:h-[170px] md:top-4" />
@@ -34,13 +34,14 @@ import RightBg from '~/assets/pocus/right-cubes.svg?url'
 </template>
 
 <style scoped>
-.bg-violet-gradient {
+.bg-violet-light-gradient {
   background: radial-gradient(
-      57.03% 76.98% at 100% 0%,
-      rgba(255, 255, 255, 0.8) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), #481b97;
+        57.03% 76.98% at 100% 0%,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), #6f2de7;
   background-blend-mode: overlay, normal, normal;
 
   box-shadow: 0px 4px 12px -2px rgba(17, 24, 28, 0.12), 0px 1px 2px rgba(17, 24, 28, 0.16);

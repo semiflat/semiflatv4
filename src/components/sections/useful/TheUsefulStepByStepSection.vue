@@ -4,6 +4,7 @@ import InterfaceIcon from '~/assets/experiences/interface.svg?component'
 import UX from '~/assets/experiences/UX.svg?component'
 import SupportIcon from '~/assets/experiences/support.svg?component'
 import FlawlessIcon from '~/assets/icons/flawless.svg?component'
+const context = usePageContext()
 
 const services = [
   {
@@ -43,7 +44,11 @@ const services = [
     </h2>
     <div class="grid md:grid-cols-3 mt-12 md:mt-20 gap-10 md:gap-16">
       <div v-for="service in services" :key="service.title">
-        <component :is="service.icon" class="text-[#481B97]" />
+        <component
+          :is="service.icon"
+          class="text-[#481B97]"
+          :class="[context.pageProps?.pageShell?.textColor]"
+        />
         <h3 class="mt-8 font-semibold text-blue-300">{{ service.title }}</h3>
         <p class="mt-2 text-[#545959]">{{ service.text }}</p>
       </div>
