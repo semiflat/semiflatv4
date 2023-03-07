@@ -33,18 +33,6 @@ import RightBg from '~/assets/pocus/right-cubes.svg?component'
           <div class="h-[38px]">
             <component :is="Ususual" class="max-w-full h-[18px] lg:h-[24px] mx-auto" />
           </div>
-          <div class="h-[38px]">
-            <component :is="Clockwise" class="max-w-full h-[20px] lg:h-[28px] mx-auto" />
-          </div>
-          <div class="h-[38px]">
-            <component :is="Linear" class="max-w-full h-[24px] lg:h-[28px] mx-auto" />
-          </div>
-          <div class="h-[38px]">
-            <component :is="Quicknode" class="max-w-full h-[26px] lg:h-[32px] mx-auto" />
-          </div>
-          <div class="h-[38px]">
-            <component :is="Miro" class="max-w-full h-[22px] lg:h-[26px] mx-auto" />
-          </div>
         </div>
         <div class="h-[38px] mt-8">
           <component :is="Webflow" class="max-w-full h-[24px] lg:h-[28px] mx-auto" />
@@ -57,23 +45,6 @@ import RightBg from '~/assets/pocus/right-cubes.svg?component'
           </div>
           <div class="h-[40px]">
             <component :is="Ususual" class="max-w-full lg:h-[24px] mx-auto" />
-          </div>
-          <div class="h-[40px]">
-            <component :is="Clockwise" class="max-w-full lg:h-[28px] mx-auto" />
-          </div>
-          <div class="h-[40px]">
-            <component :is="Linear" class="max-w-full lg:h-[28px] mx-auto" />
-          </div>
-        </div>
-        <div class="flex gap-12 justify-center">
-          <div class="h-[40px]">
-            <component :is="Quicknode" class="lg:h-[38px] mx-auto -mt-1" />
-          </div>
-          <div class="h-[40px]">
-            <component :is="Miro" class="max-w-full lg:h-[24px] mx-auto" />
-          </div>
-          <div class="h-[40px]">
-            <component :is="Webflow" class="max-w-full lg:h-[28px] mx-auto" />
           </div>
         </div>
       </div>
