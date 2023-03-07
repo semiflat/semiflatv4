@@ -17,6 +17,7 @@ const illustrations = [
   {
     picture: Useful,
     caption: 'Helping Useful raise $5M to empower continuous delivery tech teams.',
+    link: '/useful'
   },
   {
     picture: Phenom,

@@ -46,6 +46,7 @@ const cases = [
   {
     picture: Useful,
     caption: 'Helping Useful raise $5M empower continuous delivery tech teams.',
+    link: '/useful',
   },
   {
     picture: Phenom,
