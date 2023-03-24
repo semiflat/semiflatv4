@@ -85,5 +85,6 @@ declare module '@vue/runtime-core' {
     TheWorkExploreServicesSection: typeof import('./components/sections/work/TheWorkExploreServicesSection.vue')['default']
     TheWorkFaqSection: typeof import('./components/sections/work/TheWorkFaqSection.vue')['default']
     TheWorkHeroSection: typeof import('./components/sections/work/TheWorkHeroSection.vue')['default']
+    UsefulBg: typeof import('./components/utility/animations/UsefulBg.vue')['default']
   }
 }

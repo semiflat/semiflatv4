@@ -15,7 +15,10 @@ defineProps<{
 <template>
   <div class="case-study-card" :class="{ 'case-study-card--clickable': !!data?.link }">
     <div class="case-study-card__image-wrapper">
-      <component v-if="data?.background" :is="data?.background" class="case-study-card__image-bg" />
+      <div class="case-study-card__image-bg">
+          <component v-if="data?.background" :is="data?.background"  />
+      </div>
+    
       <img :src="data?.picture" class="case-study-card__image" />
     </div>
 
@@ -76,7 +79,7 @@ defineProps<{
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
   }
 
   &__image {
