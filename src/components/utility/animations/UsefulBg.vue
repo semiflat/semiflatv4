@@ -44,13 +44,18 @@ import Asset from '~/assets/home/case-studies/useful-bg.svg'
 
 @keyframes rocket-up {
   0% {
-    transform: translateY(80px) rotate(270deg);
+    transform: translateY(80px) rotate(-90deg);
     opacity: 1;
   }
 
+  60% {
+    transform: translateY(-400px) rotate(-90deg);
+    opacity: .5;
+  }
+
   100% {
-    transform: translateY(-400px) rotate(270deg);
-    opacity: .7;
+    transform: translateY(-400px) rotate(-90deg);
+    opacity: 0;
   }
 }
 
@@ -79,17 +84,17 @@ import Asset from '~/assets/home/case-studies/useful-bg.svg'
   }
 
   .bg__vertical-rocket {
-    width: 80px;
-    left: 9%;
+    width: 15%;
+    left: 7.8%;
     bottom: 0;
-    transform: translateY(80pc) rotate(-90deg);
+    transform: translateY(80px) rotate(-90deg);
     transform-origin: center;
-    animation: rocket-up .8s 3s $easing infinite;
+    animation: rocket-up 1.2s $easing infinite;
   }
 
   &::before {
     left: 0;
-    top: 60%;
+    top: 59.8%;
     transform: translateX(-100%);
     animation: rocket-to-right 1s 2s $easing infinite;
   }
