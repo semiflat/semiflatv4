@@ -15,7 +15,6 @@ defineProps<{
                 <h2 class="text-xl text-blue-300 font-semibold md:text-[1.75rem] leading-[120%]">{{
                     prosAndCons.prosHeader
                 }}</h2>
-                <p class="mt-4 text-blue-200">Custom design system</p>
             </div>
             <div class="mt-8 grid gap-8 md:mt-0">
                 <div v-for="(el, i) in prosAndCons.pros" :key="i" class="flex gap-6">
@@ -33,7 +32,6 @@ defineProps<{
                 <h2 class="text-xl text-blue-300 font-semibold md:text-[1.75rem] leading-[120%]">{{
                     prosAndCons.consHeader
                 }}</h2>
-                <p class="mt-4 text-blue-200">Custom design system</p>
             </div>
             <div class="mt-8 grid gap-8 md:mt-0">
                 <div v-for="(el, i) in     prosAndCons.cons" :key="i" class="flex gap-6">
