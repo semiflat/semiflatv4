@@ -2,14 +2,15 @@
 import type { Component } from 'vue'
 
 import Doss from '~/assets/home/case-studies/doss.png'
+import Phenom from '~/assets/home/case-studies/phenom.png'
 import Pocus from '~/assets/home/case-studies/pocus.png'
 import Useful from '~/assets/home/case-studies/useful.png'
-import Phenom from '~/assets/home/case-studies/phenom.png'
 
 import DossBg from '~/assets/home/case-studies/doss-bg.svg'
-import PocusBg from '~/assets/home/case-studies/pocus-bg.svg'
-import UsefulBg from '~/components/utility/animations/UsefulBg.vue'
 import PhenomBg from '~/assets/home/case-studies/phenom-bg.svg'
+import PocusBg from '~/components/utility/animations/PocusBg.vue'
+import UsefulBg from '~/components/utility/animations/UsefulBg.vue'
+
 
 interface IllustrationCard {
   picture: Component

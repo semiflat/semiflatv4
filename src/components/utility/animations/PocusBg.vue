@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Asset from '~/assets/home/case-studies/useful-bg.svg'
+import Asset from '~/assets/home/case-studies/pocus-bg.svg'
 </script>
 
 <template>
@@ -35,23 +35,23 @@ import Asset from '~/assets/home/case-studies/useful-bg.svg'
 
   .bg__vertical-rocket {
     width: 15%;
-    left: 7.8%;
+    left: 3.6%;
     bottom: 0;
     transform: translateY(80px) rotate(-90deg);
     transform-origin: center;
-    animation: rocket-up 1.2s $easing infinite;
+    animation: rocket-up 1.4s $easing infinite;
   }
 
   &::before {
     left: 0;
-    top: 59.8%;
+    top: 60.5%;
     transform: translateX(-100%);
     animation: rocket-to-right 1.15s 2s $easing infinite;
   }
 
   &::after {
     right: 0;
-    top: 20%;
+    top: 23.9%;
     transform: translateX(100%) rotate(180deg);
     animation: rocket-to-left 1.35s 4s $easing infinite;
   }

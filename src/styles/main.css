@@ -2,6 +2,7 @@
 @import './toasts.css';
 @import './multiselect.css';
 @import './transitions.css';
+@import './keyframes.css';
 
 @font-face {
   font-family: 'Archia';
