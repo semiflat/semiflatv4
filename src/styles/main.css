@@ -13,6 +13,7 @@
        url('../fonts/archia-regular-webfont.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +25,7 @@
        url('../fonts/archia-semibold-webfont.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -35,6 +37,7 @@
        url('../fonts/archia-regular-webfont.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {

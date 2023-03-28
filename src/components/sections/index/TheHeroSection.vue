@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { SwiperSlide } from 'swiper/vue'
 import BackgroundMobileLeft from '~/assets/bg-left-mobile.svg?component'
 import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
 import ahana from '~/assets/tint-logos/logo-ahana.svg?component'
@@ -27,7 +26,6 @@ import tagvenue from '~/assets/tint-logos/logo-tagvenue.svg?component'
 import tau from '~/assets/tint-logos/logo-tau.svg?component'
 import useful from '~/assets/tint-logos/logo-useful.svg?component'
 import yuzedata from '~/assets/tint-logos/logo-yuzedata.svg?component'
-import { useBreakpoints } from '~/composables/useBreakpoints'
 
 const logos = [
   ahana,
@@ -56,41 +54,19 @@ const logos = [
   useful,
   yuzedata,
 ]
-
-const breakpoints = useBreakpoints()
-const swiperBreakpoints = {
-  [breakpoints.lg]: {
-    slidesPerView: 'auto',
-    watchSlidesVisibility: true,
-  },
-}
-
-const swiperOptions = computed(() => ({
-  slidesPerView: 'auto',
-  navigation: false,
-  loop: true,
-  speed: 5000,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  breakpoints: swiperBreakpoints,
-}))
 </script>
 
 <template>
-  <div class="relative page-content">
+  <div class="hero relative page-content">
     <BackgroundMobileLeft class="absolute top-28 left-0 md:hidden" />
     <BackgroundDesktop class="hidden absolute -left-42 md:block -top-60 -z-1" />
     <div class="mt-3.5rem md:mt-40 md:text-center">
-      <h1 class="hero-title md:text-[2.5rem] md:leading-[120%] md:mt-6">
-        Product design for SaaS startups_
-      </h1>
-      <p class="mt-6 text-blue-200">
+      <h1 class="hero__title">Product design for SaaS startups_</h1>
+      <p class="hero__lead mt-6 text-blue-200">
         Semiflat is a full-service design agency specialized in solving complex problems through
-        design. <br />
-        We design tools that help millions of professionals be more effective at their job.
+        design. We design tools that help millions of professionals be more effective at their job.
       </p>
+
       <div class="mt-2.5rem">
         <AppButton href="mailto:hello@semiflat.com">Get in touch</AppButton>
         <AppButton
@@ -102,26 +78,49 @@ const swiperOptions = computed(() => ({
         >
       </div>
     </div>
-    <div class="">
-      <AppSlider class="mt-16 md:mt-40 hero-slider" style="" :swiper-options="swiperOptions">
-        <SwiperSlide
-          v-for="(logo, i) in logos"
-          :key="i"
-          class="w-[180px] md:w-[240px] shrink-0 mx-auto flex items-center justify-center"
-        >
-          <component :is="logo" class="h-[4.375rem]" />
-        </SwiperSlide>
-      </AppSlider>
+    <div class="hero-slider">
+      <div v-for="i in 2" :key="i" class="hero-slider__inner">
+        <component v-for="logo in logos" :is="logo" class="hero-slider__logo" />
+      </div>
     </div>
   </div>
 </template>
 
-<style>
-.hero-title {
-  @apply text-[1.75rem] font-semibold leading-[34px] gradient-text;
+<style lang="scss">
+@keyframes marquee {
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-.hero-slider .swiper {
+.hero {
+  &__lead {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80ch;
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    background: linear-gradient(225deg, #407a7a 0%, #002832 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.hero-slider {
+  display: flex;
+  overflow: hidden;
+  margin-top: 4rem;
   mask-image: linear-gradient(
     270deg,
     rgba(242, 242, 242, 0) 0%,
@@ -138,9 +137,29 @@ const swiperOptions = computed(() => ({
     rgba(244, 244, 244, 1) 85%,
     rgba(242, 242, 242, 0) 100%
   );
-}
 
-.swiper > .swiper-wrapper {
-  transition-timing-function: linear;
+  @media (min-width: 768px) {
+    margin-top: 10rem;
+  }
+
+  &__inner {
+    display: flex;
+    flex: 0 0 auto;
+    animation: marquee 90s linear infinite;
+
+    @media (min-width: 768px) {
+      animation-duration: 130s;
+    }
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    width: 180px;
+    object-fit: contain;
+
+    @media (min-width: 768px) {
+      width: 240px;
+    }
+  }
 }
 </style>
