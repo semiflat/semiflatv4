@@ -2,6 +2,29 @@
 @import './toasts.css';
 @import './multiselect.css';
 @import './transitions.css';
+@import './keyframes.css';
+
+@font-face {
+  font-family: 'Archia';
+  src: url('../fonts/archia-regular-webfont.eot');
+  src: url('../fonts/archia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/archia-regular-webfont.woff2') format('woff2'),
+       url('../fonts/archia-regular-webfont.woff') format('woff'),
+       url('../fonts/archia-regular-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url('../fonts/archia-semibold-webfont.eot');
+  src: url('../fonts/archia-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/archia-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/archia-semibold-webfont.woff') format('woff'),
+       url('../fonts/archia-semibold-webfont.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
 
 html,
 body,

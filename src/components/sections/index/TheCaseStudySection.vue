@@ -1,11 +1,16 @@
 <script lang="ts" setup>
 import type { Component } from 'vue'
-import { SwiperSlide } from 'swiper/vue'
 
-import YuzeData from '~/assets/case/Illustration-YuzeData-mobile.svg?url'
-import Pocus from '~/assets/case/Illustration-Pocus.svg?url'
-import Useful from '~/assets/case/Illustration-Useful.svg?url'
-import Phenom from '~/assets/case/Illustration-Phenom.svg?url'
+import Doss from '~/assets/home/case-studies/doss.png'
+import Phenom from '~/assets/home/case-studies/phenom.png'
+import Pocus from '~/assets/home/case-studies/pocus.png'
+import Useful from '~/assets/home/case-studies/useful.png'
+
+import DossBg from '~/assets/home/case-studies/doss-bg.svg'
+import PhenomBg from '~/assets/home/case-studies/phenom-bg.svg'
+import PocusBg from '~/components/utility/animations/PocusBg.vue'
+import UsefulBg from '~/components/utility/animations/UsefulBg.vue'
+
 
 interface IllustrationCard {
   picture: Component
@@ -15,72 +20,65 @@ interface IllustrationCard {
 defineProps<{
   data?: IllustrationCard
 }>()
-const breakpoints = useBreakpoints()
-
-const swiperBreakpoints = {
-  [breakpoints.lg]: {
-    slidesPerView: 'auto',
-    spaceBetween: 32,
-    updateOnWindowResize: true,
-    watchSlidesVisibility: true,
-  },
-}
-
-const swiperOptions = computed(() => ({
-  slidesPerView: 'auto',
-  spaceBetween: 24,
-  centeredSlides: false,
-  navigation: false,
-  pagination: {
-    clickable: true,
-  },
-  breakpoints: swiperBreakpoints,
-}))
 
 const cases = [
   {
     picture: Pocus,
+    background: PocusBg,
     caption: 'Designing Pocus - product-led sales tool that raised a $23M Series A.',
     link: '/pocus',
   },
   {
-    picture: Useful,
-    caption: 'Helping Useful raise $5M empower continuous delivery tech teams.',
-    link: '/useful',
-  },
-  {
     picture: Phenom,
+    background: PhenomBg,
     caption: 'Supporting Phenom - an HR-Tech unicorn by building a dedicated design team.',
   },
   {
-    picture: YuzeData,
-    caption: 'YuzeData - a machine intelligence automation platform.',
+    picture: Useful,
+    background: UsefulBg,
+    caption: 'Helping Useful raise $5M to empower continuous delivery tech teams.',
+    link: '/useful',
+  },
+  {
+    picture: Doss,
+    background: DossBg,
+    caption: 'MVP prototype and ongoing suport for Doss - a platform for operations teams.',
   },
 ]
 </script>
 
 <template>
   <div class="mt-16 md:mt-46 gap-6 md:gap-8 page-content">
-    <AppSlider class="" style="" :swiper-options="swiperOptions">
-      <SwiperSlide v-for="el in cases" :key="el.caption" class="sm:max-w-[33.5rem]">
-        <AppCaseStudyCard :data="el" />
-      </SwiperSlide>
-    </AppSlider>
+    <div class="case-study-section">
+      <ul class="case-study-section__list">
+        <li class="case-study-section__card" v-for="el in cases">
+          <AppCaseStudyCard :data="el" />
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
-<style>
-.swiper {
-  @apply !overflow-visible;
-}
-.swiper-pagination {
-  @apply !-bottom-12;
-}
+<style lang="scss">
+.case-study-section {
 
-.swiper-pagination-bullet {
-  @apply !bg-black/40;
-}
-.swiper-pagination-bullet-active {
-  @apply !bg-black/80;
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(12, 1fr);
+
+      > * {
+        grid-column: span 5;
+        
+        &:nth-child(2),
+        &:nth-child(3) {
+          grid-column: span 7;
+        }
+      }
+    }
+  }
 }
 </style>

@@ -2,6 +2,7 @@
 import type { Component } from 'vue'
 
 interface IllustrationCard {
+  background?: Component
   picture: Component
   caption: string
   link?: string
@@ -9,46 +10,130 @@ interface IllustrationCard {
 defineProps<{
   data?: IllustrationCard
 }>()
-
-const isHovering = ref(false)
 </script>
 
 <template>
-  <div class="border-1 rounded-3 border-[#BCDCDC] min-w-[308px] max-w-[33.5rem] select-none">
-    <img :src="data?.picture" class="w-full" />
-    <div class="px-6 pb-8 text-sm md:pb-14 md:px-14">
-      <caption class="block text-left font-semibold md:text-xl">
-        {{
-          data?.caption
-        }}
-      </caption>
-      <div
-        v-if="data?.link"
-        class="case-study-btn-wrapper mt-4 md:mt-6"
-        :class="{ 'case-study-btn-wrapper-active': isHovering }"
-        @mouseover="isHovering = true"
-        @mouseout="isHovering = false"
-      >
-        <a
-          :href="data?.link"
-          class="case-study-btn"
-          :class="{ 'case-study-btn-active': isHovering }"
-          >Read Case study
-        </a>
+  <div class="case-study-card" :class="{ 'case-study-card--clickable': !!data?.link }">
+    <div class="case-study-card__image-wrapper">
+      <div class="case-study-card__image-bg">
+          <component v-if="data?.background" :is="data?.background"  />
       </div>
-      <div
-        v-else
-        class="mt-4 inline-block px-0.5 font-semibold opacity-50 text-turquoise-400 md:text-base md:mt-6"
-      >
-        Coming Soon
-      </div>
+    
+      <img :src="data?.picture" class="case-study-card__image" />
+    </div>
+
+    <div class="case-study-card__text-wrapper">
+      <a v-if="data?.link" class="case-study-card__link" :href="data.link">
+        <h3 class="case-study-card__title">
+          {{ data?.caption }}
+        </h3>
+        <div class="case-study-btn-wrapper">
+          <span class="case-study-btn">Read Case study</span>
+        </div>
+      </a>
+      <template v-else>
+        <h3 class="case-study-card__title">
+          {{ data?.caption }}
+        </h3>
+        <p class="case-study-card__subtitle">Coming Soon</p>
+      </template>
     </div>
   </div>
 </template>
 
-<style>
+<style lang="scss">
+.case-study-card {
+  $block: &;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #bcdcdc;
+  border-radius: 1.5rem;
+
+  @media (hover: hover) {
+    &--clickable {
+      &:hover {
+        #{$block}__image-bg {
+          opacity: 1;
+        }
+
+        .case-study-btn-wrapper::after {
+          transform: none;
+        }
+
+        .case-study-btn {
+          background-position: 75% 100%;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+  }
+
+  &__image-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__image {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__text-wrapper {
+    padding: 2rem 1.5rem;
+
+    @media (min-width: 1200px) {
+      padding: 2.5rem 3rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #002832;
+
+    @media (min-width: 1200px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__subtitle {
+    color: rgba(#54aba3, .5);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.5;
+
+    @media (min-width: 1200px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__link {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      cursor: pointer;
+    }
+  }
+}
+
 .case-study-btn-wrapper {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 28px;
   /* identical to box height, or 175% */
@@ -67,7 +152,7 @@ const isHovering = ref(false)
   transition: 0.75s all;
   z-index: 2;
 }
-.case-study-btn-wrapper:after {
+.case-study-btn-wrapper::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -76,11 +161,7 @@ const isHovering = ref(false)
   transition: 0.2s all;
 }
 
-.case-study-btn-wrapper-active:after {
+.case-study-btn-wrapper:hover::after {
   transform: none;
-}
-.case-study-btn-active {
-  background-position: 75% 100%;
-  padding: 0 5px;
 }
 </style>

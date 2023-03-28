@@ -21,6 +21,7 @@ declare module '@vue/runtime-core' {
     AppToastError: typeof import('./components/toasts/AppToastError.vue')['default']
     AppToastSuccess: typeof import('./components/toasts/AppToastSuccess.vue')['default']
     ClientOnly: typeof import('./components/utility/ClientOnly.vue')['default']
+    PocusBg: typeof import('./components/utility/animations/PocusBg.vue')['default']
     TheAboutAboutSection: typeof import('./components/sections/about/TheAboutAboutSection.vue')['default']
     TheAboutComponent: typeof import('./components/about/TheAboutComponent.vue')['default']
     TheAboutEmployeesSection: typeof import('./components/sections/about/TheAboutEmployeesSection.vue')['default']
@@ -85,5 +86,6 @@ declare module '@vue/runtime-core' {
     TheWorkExploreServicesSection: typeof import('./components/sections/work/TheWorkExploreServicesSection.vue')['default']
     TheWorkFaqSection: typeof import('./components/sections/work/TheWorkFaqSection.vue')['default']
     TheWorkHeroSection: typeof import('./components/sections/work/TheWorkHeroSection.vue')['default']
+    UsefulBg: typeof import('./components/utility/animations/UsefulBg.vue')['default']
   }
 }

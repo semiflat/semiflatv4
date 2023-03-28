@@ -1,0 +1,29 @@
+<svg width="441" height="335" viewBox="0 0 441 335" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2479_22682" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="441" height="335">
+<rect width="441" height="335" fill="url(#paint0_radial_2479_22682)"/>
+</mask>
+<g mask="url(#mask0_2479_22682)">
+<rect x="48" y="1" width="1" height="335" fill="#BCDCDC"/>
+<rect x="48" y="1" width="1" height="335" fill="#BCDCDC"/>
+<rect x="171" y="1" width="1" height="335" fill="#BCDCDC"/>
+<rect x="171" y="1" width="1" height="335" fill="#BCDCDC"/>
+<rect x="344" y="1" width="1" height="335" fill="#BCDCDC"/>
+<rect x="344" y="1" width="1" height="335" fill="#BCDCDC"/>
+<rect x="392" y="1" width="1" height="335" fill="#BCDCDC"/>
+<rect x="392" y="1" width="1" height="335" fill="#BCDCDC"/>
+<rect width="441" height="1" transform="matrix(1 0 0 -1 0 81)" fill="#BCDCDC"/>
+<rect width="441" height="1" transform="matrix(1 0 0 -1 0 81)" fill="#BCDCDC"/>
+<rect width="441" height="1" transform="matrix(1 0 0 -1 0 204)" fill="#BCDCDC"/>
+<rect width="441" height="1" transform="matrix(1 0 0 -1 0 204)" fill="#BCDCDC"/>
+<rect width="441" height="1" transform="matrix(1 0 0 -1 0 249)" fill="#BCDCDC"/>
+<rect width="441" height="1" transform="matrix(1 0 0 -1 0 249)" fill="#BCDCDC"/>
+<rect width="441" height="1" transform="matrix(1 0 0 -1 0 288)" fill="#BCDCDC"/>
+<rect width="441" height="1" transform="matrix(1 0 0 -1 0 288)" fill="#BCDCDC"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_2479_22682" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(221 149) rotate(90) scale(186 334.355)">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
