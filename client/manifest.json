@@ -1,0 +1,1015 @@
+{
+  "src/assets/employees/nic.jpeg": {
+    "file": "assets/nic.b2827e9a.jpeg",
+    "src": "src/assets/employees/nic.jpeg"
+  },
+  "src/assets/employees/ewa.jpeg": {
+    "file": "assets/ewa.e0f418ad.jpeg",
+    "src": "src/assets/employees/ewa.jpeg"
+  },
+  "src/assets/employees/apolonia.jpeg": {
+    "file": "assets/apolonia.c75384b8.jpeg",
+    "src": "src/assets/employees/apolonia.jpeg"
+  },
+  "src/assets/employees/chrystian.jpeg": {
+    "file": "assets/chrystian.a679fcb6.jpeg",
+    "src": "src/assets/employees/chrystian.jpeg"
+  },
+  "src/assets/employees/paulina.jpeg": {
+    "file": "assets/paulina.5ed600ca.jpeg",
+    "src": "src/assets/employees/paulina.jpeg"
+  },
+  "src/assets/employees/natalia.jpeg": {
+    "file": "assets/natalia.062d2fcc.jpeg",
+    "src": "src/assets/employees/natalia.jpeg"
+  },
+  "src/assets/employees/magda.jpeg": {
+    "file": "assets/magda.275c989b.jpeg",
+    "src": "src/assets/employees/magda.jpeg"
+  },
+  "src/assets/employees/maciej.jpeg": {
+    "file": "assets/maciej.2bc2d400.jpeg",
+    "src": "src/assets/employees/maciej.jpeg"
+  },
+  "src/assets/employees/arek.jpeg": {
+    "file": "assets/arek.c1893cd4.jpeg",
+    "src": "src/assets/employees/arek.jpeg"
+  },
+  "src/assets/employees/kuba.jpeg": {
+    "file": "assets/kuba.d5f37356.jpeg",
+    "src": "src/assets/employees/kuba.jpeg"
+  },
+  "src/assets/employees/martyna.jpeg": {
+    "file": "assets/martyna.05d5fb14.jpeg",
+    "src": "src/assets/employees/martyna.jpeg"
+  },
+  "src/assets/employees/marcin.jpeg": {
+    "file": "assets/marcin.22876260.jpeg",
+    "src": "src/assets/employees/marcin.jpeg"
+  },
+  "src/assets/employees/patrycja.jpeg": {
+    "file": "assets/patrycja.aa1fbbf2.jpeg",
+    "src": "src/assets/employees/patrycja.jpeg"
+  },
+  "src/assets/employees/barry.png": {
+    "file": "assets/barry.0e562be7.png",
+    "src": "src/assets/employees/barry.png"
+  },
+  "src/assets/employees/sarah.png": {
+    "file": "assets/sarah.0187388c.png",
+    "src": "src/assets/employees/sarah.png"
+  },
+  "src/assets/culture-slider/4.png": {
+    "file": "assets/4.a56e405c.png",
+    "src": "src/assets/culture-slider/4.png"
+  },
+  "src/assets/culture-slider/2.png": {
+    "file": "assets/2.777acc6a.png",
+    "src": "src/assets/culture-slider/2.png"
+  },
+  "src/assets/culture-slider/8.png": {
+    "file": "assets/8.0829c8bf.png",
+    "src": "src/assets/culture-slider/8.png"
+  },
+  "src/assets/culture-slider/1.png": {
+    "file": "assets/1.4c67e9ba.png",
+    "src": "src/assets/culture-slider/1.png"
+  },
+  "src/assets/culture-slider/3.png": {
+    "file": "assets/3.bc49f160.png",
+    "src": "src/assets/culture-slider/3.png"
+  },
+  "src/assets/culture-slider/6.png": {
+    "file": "assets/6.2611ed03.png",
+    "src": "src/assets/culture-slider/6.png"
+  },
+  "src/assets/culture-slider/7.png": {
+    "file": "assets/7.5881c700.png",
+    "src": "src/assets/culture-slider/7.png"
+  },
+  "src/assets/culture-slider/5.png": {
+    "file": "assets/5.41465091.png",
+    "src": "src/assets/culture-slider/5.png"
+  },
+  "src/assets/illustrations/illustration-workshop.svg": {
+    "file": "assets/illustration-workshop.6defe8db.svg",
+    "src": "src/assets/illustrations/illustration-workshop.svg"
+  },
+  "src/assets/services/illustration-interface.svg": {
+    "file": "assets/illustration-interface.490d000f.svg",
+    "src": "src/assets/services/illustration-interface.svg"
+  },
+  "src/assets/services/illustration-experience.svg": {
+    "file": "assets/illustration-experience.0690679d.svg",
+    "src": "src/assets/services/illustration-experience.svg"
+  },
+  "src/assets/services/illustration-support.svg": {
+    "file": "assets/illustration-support.303598e8.svg",
+    "src": "src/assets/services/illustration-support.svg"
+  },
+  "src/assets/services/illustration-design.svg": {
+    "file": "assets/illustration-design.959c3acc.svg",
+    "src": "src/assets/services/illustration-design.svg"
+  },
+  "src/assets/smiling-person.jpeg": {
+    "file": "assets/smiling-person.e5e6f2dd.jpeg",
+    "src": "src/assets/smiling-person.jpeg"
+  },
+  "src/assets/about-slider/2.png": {
+    "file": "assets/2.3a27549b.png",
+    "src": "src/assets/about-slider/2.png"
+  },
+  "src/assets/girls.jpeg": {
+    "file": "assets/girls.9e0d5c62.jpeg",
+    "src": "src/assets/girls.jpeg"
+  },
+  "src/assets/about-slider/1.png": {
+    "file": "assets/1.481ee1db.png",
+    "src": "src/assets/about-slider/1.png"
+  },
+  "src/assets/about-slider/4.png": {
+    "file": "assets/4.1de6d8a3.png",
+    "src": "src/assets/about-slider/4.png"
+  },
+  "src/assets/about-slider/6.png": {
+    "file": "assets/6.edf45b72.png",
+    "src": "src/assets/about-slider/6.png"
+  },
+  "src/assets/about-slider/8.png": {
+    "file": "assets/8.0a104db9.png",
+    "src": "src/assets/about-slider/8.png"
+  },
+  "src/assets/about-slider/3.png": {
+    "file": "assets/3.bd6c04d8.png",
+    "src": "src/assets/about-slider/3.png"
+  },
+  "src/assets/about-slider/5.png": {
+    "file": "assets/5.583ccafe.png",
+    "src": "src/assets/about-slider/5.png"
+  },
+  "src/assets/box.jpeg": {
+    "file": "assets/box.60bb5222.jpeg",
+    "src": "src/assets/box.jpeg"
+  },
+  "src/assets/about-slider/7.png": {
+    "file": "assets/7.33a86059.png",
+    "src": "src/assets/about-slider/7.png"
+  },
+  "src/assets/convent.jpeg": {
+    "file": "assets/convent.633e1e9f.jpeg",
+    "src": "src/assets/convent.jpeg"
+  },
+  "src/assets/pocus/screen-4.png": {
+    "file": "assets/screen-4.8804a53d.png",
+    "src": "src/assets/pocus/screen-4.png"
+  },
+  "src/assets/pocus/screen-6.jpeg": {
+    "file": "assets/screen-6.a6791256.jpeg",
+    "src": "src/assets/pocus/screen-6.jpeg"
+  },
+  "src/assets/services/illustration-research.svg": {
+    "file": "assets/illustration-research.952cbe4b.svg",
+    "src": "src/assets/services/illustration-research.svg"
+  },
+  "src/assets/pocus/pocus-ceo.jpeg": {
+    "file": "assets/pocus-ceo.a10082c9.jpeg",
+    "src": "src/assets/pocus/pocus-ceo.jpeg"
+  },
+  "src/assets/gadgets-img.png": {
+    "file": "assets/gadgets-img.b715cccd.png",
+    "src": "src/assets/gadgets-img.png"
+  },
+  "src/assets/retreats-img.png": {
+    "file": "assets/retreats-img.44cefe89.png",
+    "src": "src/assets/retreats-img.png"
+  },
+  "src/assets/pocus/screen-2.png": {
+    "file": "assets/screen-2.b5842217.png",
+    "src": "src/assets/pocus/screen-2.png"
+  },
+  "src/assets/pocus/screen-1.png": {
+    "file": "assets/screen-1.63f2c14d.png",
+    "src": "src/assets/pocus/screen-1.png"
+  },
+  "src/assets/pocus/screen-3.png": {
+    "file": "assets/screen-3.c9d4732e.png",
+    "src": "src/assets/pocus/screen-3.png"
+  },
+  "src/assets/pocus/feature-1.png": {
+    "file": "assets/feature-1.61efd4d0.png",
+    "src": "src/assets/pocus/feature-1.png"
+  },
+  "src/assets/pocus/feature-2.png": {
+    "file": "assets/feature-2.13f5daac.png",
+    "src": "src/assets/pocus/feature-2.png"
+  },
+  "src/assets/pocus/feature-3.png": {
+    "file": "assets/feature-3.1f67cec9.png",
+    "src": "src/assets/pocus/feature-3.png"
+  },
+  "src/assets/about-image.png": {
+    "file": "assets/about-image.d99d7a21.png",
+    "src": "src/assets/about-image.png"
+  },
+  "src/assets/pocus/query-helper-desktop.png": {
+    "file": "assets/query-helper-desktop.4e1a4ae8.png",
+    "src": "src/assets/pocus/query-helper-desktop.png"
+  },
+  "src/assets/pocus/pocus-dashboard.png": {
+    "file": "assets/pocus-dashboard.c4a18476.png",
+    "src": "src/assets/pocus/pocus-dashboard.png"
+  },
+  "src/assets/useful/screen-4.png": {
+    "file": "assets/screen-4.11a87ed8.png",
+    "src": "src/assets/useful/screen-4.png"
+  },
+  "src/assets/useful/screen-5.png": {
+    "file": "assets/screen-5.e0b64cdf.png",
+    "src": "src/assets/useful/screen-5.png"
+  },
+  "src/assets/useful/screen-6.png": {
+    "file": "assets/screen-6.a6bc2b29.png",
+    "src": "src/assets/useful/screen-6.png"
+  },
+  "src/assets/pocus/left-cubes.svg": {
+    "file": "assets/left-cubes.d7d1ccff.svg",
+    "src": "src/assets/pocus/left-cubes.svg"
+  },
+  "src/assets/pocus/right-cubes.svg": {
+    "file": "assets/right-cubes.84b830e5.svg",
+    "src": "src/assets/pocus/right-cubes.svg"
+  },
+  "src/assets/useful/illustration-1.svg": {
+    "file": "assets/illustration-1.4125e0b8.svg",
+    "src": "src/assets/useful/illustration-1.svg"
+  },
+  "src/assets/useful/illustration-2.svg": {
+    "file": "assets/illustration-2.cb31c899.svg",
+    "src": "src/assets/useful/illustration-2.svg"
+  },
+  "src/assets/useful/illustration-3.svg": {
+    "file": "assets/illustration-3.cb0696c3.svg",
+    "src": "src/assets/useful/illustration-3.svg"
+  },
+  "src/assets/pocus/cubes.svg": {
+    "file": "assets/cubes.8ed0c2f9.svg",
+    "src": "src/assets/pocus/cubes.svg"
+  },
+  "src/assets/useful/screen-2.png": {
+    "file": "assets/screen-2.695ae390.png",
+    "src": "src/assets/useful/screen-2.png"
+  },
+  "src/assets/useful/screen-3.png": {
+    "file": "assets/screen-3.f0b96e36.png",
+    "src": "src/assets/useful/screen-3.png"
+  },
+  "src/assets/useful/useful-ceo.png": {
+    "file": "assets/useful-ceo.dccf05f7.png",
+    "src": "src/assets/useful/useful-ceo.png"
+  },
+  "src/assets/useful/screen-1.png": {
+    "file": "assets/screen-1.af9f8c19.png",
+    "src": "src/assets/useful/screen-1.png"
+  },
+  "src/assets/svg-animated/pocus-testimonials.svg": {
+    "file": "assets/pocus-testimonials.ce2b01e9.svg",
+    "src": "src/assets/svg-animated/pocus-testimonials.svg"
+  },
+  "src/assets/useful/feature-2.png": {
+    "file": "assets/feature-2.eb48e6ba.png",
+    "src": "src/assets/useful/feature-2.png"
+  },
+  "src/assets/useful/feature-3.png": {
+    "file": "assets/feature-3.1cbac0cf.png",
+    "src": "src/assets/useful/feature-3.png"
+  },
+  "src/assets/useful/query-helper-desktop.png": {
+    "file": "assets/query-helper-desktop.33ad7f64.png",
+    "src": "src/assets/useful/query-helper-desktop.png"
+  },
+  "src/assets/useful/feature-1.png": {
+    "file": "assets/feature-1.e8694978.png",
+    "src": "src/assets/useful/feature-1.png"
+  },
+  "src/assets/useful/useful-dashboard.png": {
+    "file": "assets/useful-dashboard.1059fe77.png",
+    "src": "src/assets/useful/useful-dashboard.png"
+  },
+  "src/assets/home/case-studies/doss.png": {
+    "file": "assets/doss.12dd61ab.png",
+    "src": "src/assets/home/case-studies/doss.png"
+  },
+  "src/assets/home/case-studies/pocus.png": {
+    "file": "assets/pocus.3ae172ef.png",
+    "src": "src/assets/home/case-studies/pocus.png"
+  },
+  "src/assets/home/case-studies/phenom.png": {
+    "file": "assets/phenom.30efa5a6.png",
+    "src": "src/assets/home/case-studies/phenom.png"
+  },
+  "src/assets/home/case-studies/useful.png": {
+    "file": "assets/useful.7c14c2a3.png",
+    "src": "src/assets/home/case-studies/useful.png"
+  },
+  "src/assets/avatars/lithal.png": {
+    "file": "assets/lithal.f98842a7.png",
+    "src": "src/assets/avatars/lithal.png"
+  },
+  "src/assets/avatars/mike.png": {
+    "file": "assets/mike.79d9c34c.png",
+    "src": "src/assets/avatars/mike.png"
+  },
+  "src/assets/avatars/isaac.png": {
+    "file": "assets/isaac.69a3160e.png",
+    "src": "src/assets/avatars/isaac.png"
+  },
+  "src/assets/avatars/erin.png": {
+    "file": "assets/erin.2d19de2b.png",
+    "src": "src/assets/avatars/erin.png"
+  },
+  "src/assets/avatars/nico.png": {
+    "file": "assets/nico.3fcf76b7.png",
+    "src": "src/assets/avatars/nico.png"
+  },
+  "src/assets/avatars/andre.png": {
+    "file": "assets/andre.db7ac02d.png",
+    "src": "src/assets/avatars/andre.png"
+  },
+  "src/assets/case/Illustration-Pocus.svg": {
+    "file": "assets/Illustration-Pocus.4f41469e.svg",
+    "src": "src/assets/case/Illustration-Pocus.svg"
+  },
+  "src/assets/case/Illustration-appfleet.svg": {
+    "file": "assets/Illustration-appfleet.d59abedb.svg",
+    "src": "src/assets/case/Illustration-appfleet.svg"
+  },
+  "src/assets/case/Illustration-scholaris.svg": {
+    "file": "assets/Illustration-scholaris.5e0cbfa9.svg",
+    "src": "src/assets/case/Illustration-scholaris.svg"
+  },
+  "src/assets/case/Illustration-jetic.svg": {
+    "file": "assets/Illustration-jetic.3c440cf1.svg",
+    "src": "src/assets/case/Illustration-jetic.svg"
+  },
+  "src/assets/case/Illustration-doss.svg": {
+    "file": "assets/Illustration-doss.b47924a6.svg",
+    "src": "src/assets/case/Illustration-doss.svg"
+  },
+  "src/assets/case/Illustration-sisu.svg": {
+    "file": "assets/Illustration-sisu.ac72937b.svg",
+    "src": "src/assets/case/Illustration-sisu.svg"
+  },
+  "src/assets/case/Illustration-Useful.svg": {
+    "file": "assets/Illustration-Useful.6036008a.svg",
+    "src": "src/assets/case/Illustration-Useful.svg"
+  },
+  "src/assets/case/Illustration-Phenom.svg": {
+    "file": "assets/Illustration-Phenom.92834803.svg",
+    "src": "src/assets/case/Illustration-Phenom.svg"
+  },
+  "src/assets/meetup.jpeg": {
+    "file": "assets/meetup.01d41737.jpeg",
+    "src": "src/assets/meetup.jpeg"
+  },
+  "src/assets/people.jpeg": {
+    "file": "assets/people.9a7cd44c.jpeg",
+    "src": "src/assets/people.jpeg"
+  },
+  "src/fonts/archia-regular-webfont.eot": {
+    "file": "assets/archia-regular-webfont.7eabf519.eot",
+    "src": "src/fonts/archia-regular-webfont.eot"
+  },
+  "src/fonts/archia-semibold-webfont.eot": {
+    "file": "assets/archia-semibold-webfont.f30ac62c.eot",
+    "src": "src/fonts/archia-semibold-webfont.eot"
+  },
+  "src/fonts/archia-regular-webfont.woff2": {
+    "file": "assets/archia-regular-webfont.1e851f75.woff2",
+    "src": "src/fonts/archia-regular-webfont.woff2"
+  },
+  "src/fonts/archia-semibold-webfont.woff2": {
+    "file": "assets/archia-semibold-webfont.29977f87.woff2",
+    "src": "src/fonts/archia-semibold-webfont.woff2"
+  },
+  "src/fonts/archia-regular-webfont.woff": {
+    "file": "assets/archia-regular-webfont.640bd427.woff",
+    "src": "src/fonts/archia-regular-webfont.woff"
+  },
+  "src/fonts/archia-semibold-webfont.woff": {
+    "file": "assets/archia-semibold-webfont.048f993a.woff",
+    "src": "src/fonts/archia-semibold-webfont.woff"
+  },
+  "src/fonts/archia-regular-webfont.ttf": {
+    "file": "assets/archia-regular-webfont.2eeb8288.ttf",
+    "src": "src/fonts/archia-regular-webfont.ttf"
+  },
+  "src/fonts/archia-semibold-webfont.ttf": {
+    "file": "assets/archia-semibold-webfont.0d4f6dfd.ttf",
+    "src": "src/fonts/archia-semibold-webfont.ttf"
+  },
+  "src/pages/about.page.vue": {
+    "file": "assets/src/pages/about.page.fbe06a5e.js",
+    "src": "src/pages/about.page.vue",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-d294b171.js",
+      "_chunk-34bda37d.js",
+      "_chunk-5d141d5a.js",
+      "_chunk-9a2d4bc9.js",
+      "_chunk-ea976db9.js",
+      "_chunk-cbfff0b9.js",
+      "_chunk-8a9cf4bc.js",
+      "_chunk-0dd50045.js",
+      "_chunk-ec3d23ef.js",
+      "_chunk-7fd8dc9b.js",
+      "_chunk-844da7b9.js",
+      "_chunk-c95f122c.js"
+    ],
+    "css": [
+      "assets/about.page.6ed32d84.css"
+    ],
+    "assets": [
+      "assets/box.60bb5222.jpeg",
+      "assets/convent.633e1e9f.jpeg",
+      "assets/about-image.d99d7a21.png",
+      "assets/gadgets-img.b715cccd.png",
+      "assets/retreats-img.44cefe89.png",
+      "assets/1.481ee1db.png",
+      "assets/2.3a27549b.png",
+      "assets/3.bd6c04d8.png",
+      "assets/4.1de6d8a3.png",
+      "assets/5.583ccafe.png",
+      "assets/6.edf45b72.png",
+      "assets/7.33a86059.png",
+      "assets/8.0a104db9.png"
+    ]
+  },
+  "src/pages/culture.page.vue": {
+    "file": "assets/src/pages/culture.page.13644bfe.js",
+    "src": "src/pages/culture.page.vue",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-d294b171.js",
+      "_chunk-c7f6798c.js",
+      "_chunk-5d141d5a.js",
+      "_chunk-cbfff0b9.js",
+      "_chunk-7fd8dc9b.js",
+      "_chunk-9a2d4bc9.js",
+      "_chunk-ea976db9.js",
+      "_chunk-0dd50045.js",
+      "_chunk-34bda37d.js",
+      "_chunk-8a9cf4bc.js",
+      "_chunk-844da7b9.js",
+      "_chunk-c95f122c.js"
+    ],
+    "css": [
+      "assets/culture.page.d48400ae.css"
+    ],
+    "assets": [
+      "assets/1.4c67e9ba.png",
+      "assets/2.777acc6a.png",
+      "assets/3.bc49f160.png",
+      "assets/4.a56e405c.png",
+      "assets/5.41465091.png",
+      "assets/6.2611ed03.png",
+      "assets/7.5881c700.png",
+      "assets/8.0829c8bf.png",
+      "assets/smiling-person.e5e6f2dd.jpeg",
+      "assets/girls.9e0d5c62.jpeg"
+    ]
+  },
+  "src/pages/pocus.page.vue": {
+    "file": "assets/src/pages/pocus.page.df537bc3.js",
+    "src": "src/pages/pocus.page.vue",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9a2d4bc9.js",
+      "_chunk-747d452a.js",
+      "_chunk-5d141d5a.js",
+      "_chunk-a3e2cba5.js",
+      "_chunk-76c2be4f.js",
+      "_chunk-ec3d23ef.js",
+      "_chunk-ea976db9.js",
+      "_chunk-cbfff0b9.js",
+      "_chunk-8a9cf4bc.js"
+    ],
+    "css": [
+      "assets/pocus.page.8b84bc01.css"
+    ],
+    "assets": [
+      "assets/screen-4.8804a53d.png",
+      "assets/screen-6.a6791256.jpeg",
+      "assets/pocus-ceo.a10082c9.jpeg",
+      "assets/screen-1.63f2c14d.png",
+      "assets/screen-2.b5842217.png",
+      "assets/screen-3.c9d4732e.png",
+      "assets/feature-1.61efd4d0.png",
+      "assets/feature-2.13f5daac.png",
+      "assets/feature-3.1f67cec9.png",
+      "assets/query-helper-desktop.4e1a4ae8.png",
+      "assets/pocus-dashboard.c4a18476.png"
+    ]
+  },
+  "src/pages/privacy-policy.page.vue": {
+    "file": "assets/src/pages/privacy-policy.page.17132754.js",
+    "src": "src/pages/privacy-policy.page.vue",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-844da7b9.js",
+      "_chunk-5d141d5a.js"
+    ],
+    "css": [
+      "assets/privacy-policy.page.b1e4bb8d.css"
+    ]
+  },
+  "src/pages/services.page.vue": {
+    "file": "assets/src/pages/services.page.13393177.js",
+    "src": "src/pages/services.page.vue",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-d294b171.js",
+      "_chunk-a3e2cba5.js",
+      "_chunk-5d141d5a.js",
+      "_chunk-cbfff0b9.js",
+      "_chunk-9a2d4bc9.js",
+      "_chunk-8a9cf4bc.js",
+      "_chunk-844da7b9.js",
+      "_chunk-76c2be4f.js",
+      "_chunk-650d4c37.js",
+      "_chunk-e601333d.js",
+      "_chunk-f9e1ae2a.js",
+      "_chunk-c95f122c.js",
+      "_chunk-f057e02d.js",
+      "_chunk-ea976db9.js"
+    ],
+    "css": [
+      "assets/services.page.b1e4bb8d.css"
+    ],
+    "assets": [
+      "assets/illustration-workshop.6defe8db.svg",
+      "assets/illustration-research.952cbe4b.svg",
+      "assets/illustration-interface.490d000f.svg",
+      "assets/illustration-experience.0690679d.svg",
+      "assets/illustration-design.959c3acc.svg",
+      "assets/illustration-support.303598e8.svg"
+    ]
+  },
+  "src/pages/useful.page.vue": {
+    "file": "assets/src/pages/useful.page.9f6b6793.js",
+    "src": "src/pages/useful.page.vue",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9a2d4bc9.js",
+      "_chunk-5d141d5a.js",
+      "_chunk-f9e1ae2a.js",
+      "_chunk-a3e2cba5.js",
+      "_chunk-747d452a.js",
+      "_chunk-76c2be4f.js",
+      "_chunk-e601333d.js",
+      "_chunk-ec3d23ef.js",
+      "_chunk-cbfff0b9.js",
+      "_chunk-8a9cf4bc.js"
+    ],
+    "css": [
+      "assets/useful.page.dcf17cf8.css"
+    ],
+    "assets": [
+      "assets/left-cubes.d7d1ccff.svg",
+      "assets/right-cubes.84b830e5.svg",
+      "assets/screen-4.11a87ed8.png",
+      "assets/screen-5.e0b64cdf.png",
+      "assets/screen-6.a6bc2b29.png",
+      "assets/cubes.8ed0c2f9.svg",
+      "assets/illustration-1.4125e0b8.svg",
+      "assets/illustration-2.cb31c899.svg",
+      "assets/illustration-3.cb0696c3.svg",
+      "assets/useful-ceo.dccf05f7.png",
+      "assets/pocus-testimonials.ce2b01e9.svg",
+      "assets/screen-1.af9f8c19.png",
+      "assets/screen-2.695ae390.png",
+      "assets/screen-3.f0b96e36.png",
+      "assets/feature-1.e8694978.png",
+      "assets/feature-2.eb48e6ba.png",
+      "assets/feature-3.1cbac0cf.png",
+      "assets/query-helper-desktop.33ad7f64.png",
+      "assets/useful-dashboard.1059fe77.png"
+    ]
+  },
+  "src/pages/work.page.vue": {
+    "file": "assets/src/pages/work.page.c9ebae4b.js",
+    "src": "src/pages/work.page.vue",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-d294b171.js",
+      "_chunk-c7f6798c.js",
+      "_chunk-5d141d5a.js",
+      "_chunk-cbfff0b9.js",
+      "_chunk-7fd8dc9b.js",
+      "_chunk-9a2d4bc9.js",
+      "_chunk-0822a5aa.js",
+      "_chunk-ea976db9.js",
+      "_chunk-844da7b9.js"
+    ],
+    "css": [
+      "assets/work.page.ea017868.css"
+    ],
+    "assets": [
+      "assets/Illustration-Pocus.4f41469e.svg",
+      "assets/Illustration-Useful.6036008a.svg",
+      "assets/Illustration-Phenom.92834803.svg",
+      "assets/Illustration-appfleet.d59abedb.svg",
+      "assets/Illustration-scholaris.5e0cbfa9.svg",
+      "assets/Illustration-jetic.3c440cf1.svg",
+      "assets/Illustration-doss.b47924a6.svg",
+      "assets/Illustration-sisu.ac72937b.svg"
+    ]
+  },
+  "src/renderer/_default.page.client.ts": {
+    "file": "assets/src/renderer/_default.page.client.b7f296dc.js",
+    "src": "src/renderer/_default.page.client.ts",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-9a2d4bc9.js",
+      "_chunk-c95f122c.js",
+      "_chunk-5d141d5a.js",
+      "_chunk-f9e1ae2a.js",
+      "_chunk-f057e02d.js",
+      "_chunk-ea976db9.js",
+      "_chunk-b172dbbb.js",
+      "_chunk-346a75ce.js"
+    ],
+    "dynamicImports": [
+      "src/i18n/translations/en.yml",
+      "src/i18n/translations/pl.yml"
+    ],
+    "css": [
+      "assets/_default.page.client.40461d17.css"
+    ],
+    "assets": [
+      "assets/archia-regular-webfont.7eabf519.eot",
+      "assets/archia-regular-webfont.1e851f75.woff2",
+      "assets/archia-regular-webfont.640bd427.woff",
+      "assets/archia-regular-webfont.2eeb8288.ttf",
+      "assets/archia-semibold-webfont.f30ac62c.eot",
+      "assets/archia-semibold-webfont.29977f87.woff2",
+      "assets/archia-semibold-webfont.048f993a.woff",
+      "assets/archia-semibold-webfont.0d4f6dfd.ttf",
+      "assets/card-cubes.451565a1.svg",
+      "assets/pocus-funding.23230516.svg",
+      "assets/pocus-location.1e6b7cc5.svg",
+      "assets/pocus-timeline.bdbce415.svg",
+      "assets/card-cubes-desktop.4c78f60e.svg"
+    ]
+  },
+  "src/renderer/_error.page.vue": {
+    "file": "assets/src/renderer/_error.page.065ea27e.js",
+    "src": "src/renderer/_error.page.vue",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "src/pages/index/index.page.vue": {
+    "file": "assets/src/pages/index/index.page.cd5c91c2.js",
+    "src": "src/pages/index/index.page.vue",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-d294b171.js",
+      "_chunk-c7f6798c.js",
+      "_chunk-5d141d5a.js",
+      "_chunk-9a2d4bc9.js",
+      "_chunk-0dd50045.js",
+      "_chunk-76c2be4f.js",
+      "_chunk-650d4c37.js",
+      "_chunk-e601333d.js",
+      "_chunk-ea976db9.js",
+      "_chunk-0822a5aa.js",
+      "_chunk-cbfff0b9.js",
+      "_chunk-844da7b9.js",
+      "_chunk-7fd8dc9b.js",
+      "_chunk-c95f122c.js"
+    ],
+    "css": [
+      "assets/index.page.27c3bedd.css"
+    ],
+    "assets": [
+      "assets/lithal.f98842a7.png",
+      "assets/isaac.69a3160e.png",
+      "assets/mike.79d9c34c.png",
+      "assets/erin.2d19de2b.png",
+      "assets/nico.3fcf76b7.png",
+      "assets/andre.db7ac02d.png",
+      "assets/people.9a7cd44c.jpeg",
+      "assets/meetup.01d41737.jpeg",
+      "assets/doss.12dd61ab.png",
+      "assets/phenom.30efa5a6.png",
+      "assets/pocus.3ae172ef.png",
+      "assets/useful.7c14c2a3.png"
+    ]
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
+    "file": "assets/entry-client-routing.3f832eb9.js",
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-bba9744b.js",
+      "_chunk-b172dbbb.js",
+      "_chunk-346a75ce.js"
+    ],
+    "dynamicImports": [
+      "src/pages/about.page.vue",
+      "src/pages/culture.page.vue",
+      "src/pages/index/index.page.vue",
+      "src/pages/pocus.page.vue",
+      "src/pages/privacy-policy.page.vue",
+      "src/pages/services.page.vue",
+      "src/pages/useful.page.vue",
+      "src/pages/work.page.vue",
+      "src/renderer/_error.page.vue",
+      "src/renderer/_default.page.client.ts"
+    ]
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
+    "file": "assets/entry-server-routing.3abb56fe.js",
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-bba9744b.js",
+      "_chunk-b172dbbb.js"
+    ],
+    "dynamicImports": [
+      "src/pages/about.page.vue",
+      "src/pages/culture.page.vue",
+      "src/pages/index/index.page.vue",
+      "src/pages/pocus.page.vue",
+      "src/pages/privacy-policy.page.vue",
+      "src/pages/services.page.vue",
+      "src/pages/useful.page.vue",
+      "src/pages/work.page.vue",
+      "src/renderer/_error.page.vue",
+      "src/renderer/_default.page.client.ts"
+    ]
+  },
+  "_chunk-d294b171.js": {
+    "file": "assets/chunk-d294b171.js",
+    "imports": [
+      "_chunk-9a2d4bc9.js",
+      "_chunk-ea976db9.js",
+      "_chunk-5d141d5a.js"
+    ],
+    "css": [
+      "assets/TheCTABottomSection.e903a277.css"
+    ]
+  },
+  "_chunk-9a2d4bc9.js": {
+    "file": "assets/chunk-9a2d4bc9.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ],
+    "css": [
+      "assets/create-element-if-not-defined.a7eb941b.css"
+    ]
+  },
+  "_chunk-5d141d5a.js": {
+    "file": "assets/chunk-5d141d5a.js"
+  },
+  "_chunk-34bda37d.js": {
+    "file": "assets/chunk-34bda37d.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ],
+    "assets": [
+      "assets/nic.b2827e9a.jpeg",
+      "assets/ewa.e0f418ad.jpeg",
+      "assets/apolonia.c75384b8.jpeg",
+      "assets/chrystian.a679fcb6.jpeg",
+      "assets/paulina.5ed600ca.jpeg",
+      "assets/natalia.062d2fcc.jpeg",
+      "assets/magda.275c989b.jpeg",
+      "assets/barry.0e562be7.png",
+      "assets/maciej.2bc2d400.jpeg",
+      "assets/sarah.0187388c.png",
+      "assets/arek.c1893cd4.jpeg",
+      "assets/martyna.05d5fb14.jpeg",
+      "assets/kuba.d5f37356.jpeg",
+      "assets/marcin.22876260.jpeg",
+      "assets/patrycja.aa1fbbf2.jpeg"
+    ]
+  },
+  "_chunk-ea976db9.js": {
+    "file": "assets/chunk-ea976db9.js"
+  },
+  "_chunk-0dd50045.js": {
+    "file": "assets/chunk-0dd50045.js",
+    "imports": [
+      "_chunk-c95f122c.js",
+      "_chunk-5d141d5a.js",
+      "_chunk-9a2d4bc9.js",
+      "_chunk-ea976db9.js"
+    ],
+    "css": [
+      "assets/stroke-top.2508da1e.css"
+    ]
+  },
+  "_chunk-8a9cf4bc.js": {
+    "file": "assets/chunk-8a9cf4bc.js",
+    "imports": [
+      "_chunk-cbfff0b9.js",
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-ec3d23ef.js": {
+    "file": "assets/chunk-ec3d23ef.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-cbfff0b9.js": {
+    "file": "assets/chunk-cbfff0b9.js",
+    "imports": [
+      "_chunk-5d141d5a.js",
+      "_chunk-9a2d4bc9.js"
+    ],
+    "css": [
+      "assets/breakpoints.b8460aac.css"
+    ]
+  },
+  "_chunk-7fd8dc9b.js": {
+    "file": "assets/chunk-7fd8dc9b.js",
+    "imports": [
+      "_chunk-cbfff0b9.js",
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-844da7b9.js": {
+    "file": "assets/chunk-844da7b9.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-c95f122c.js": {
+    "file": "assets/chunk-c95f122c.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-c7f6798c.js": {
+    "file": "assets/chunk-c7f6798c.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-a3e2cba5.js": {
+    "file": "assets/chunk-a3e2cba5.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-76c2be4f.js": {
+    "file": "assets/chunk-76c2be4f.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-747d452a.js": {
+    "file": "assets/chunk-747d452a.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-f9e1ae2a.js": {
+    "file": "assets/chunk-f9e1ae2a.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-f057e02d.js": {
+    "file": "assets/chunk-f057e02d.js"
+  },
+  "_chunk-650d4c37.js": {
+    "file": "assets/chunk-650d4c37.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-e601333d.js": {
+    "file": "assets/chunk-e601333d.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ]
+  },
+  "_chunk-0822a5aa.js": {
+    "file": "assets/chunk-0822a5aa.js",
+    "imports": [
+      "_chunk-5d141d5a.js"
+    ],
+    "css": [
+      "assets/AppCaseStudyCard.3a596df4.css"
+    ]
+  },
+  "_chunk-b172dbbb.js": {
+    "file": "assets/chunk-b172dbbb.js"
+  },
+  "_chunk-346a75ce.js": {
+    "file": "assets/chunk-346a75ce.js"
+  },
+  "_chunk-bba9744b.js": {
+    "file": "assets/chunk-bba9744b.js"
+  },
+  "src/i18n/translations/en.yml": {
+    "file": "assets/en.04236f37.js",
+    "src": "src/i18n/translations/en.yml",
+    "isDynamicEntry": true
+  },
+  "src/i18n/translations/pl.yml": {
+    "file": "assets/pl.91a94dd1.js",
+    "src": "src/i18n/translations/pl.yml",
+    "isDynamicEntry": true
+  },
+  "stroke-top.css": {
+    "file": "assets/stroke-top.2508da1e.css",
+    "src": "stroke-top.css"
+  },
+  "src/pages/about.page.css": {
+    "file": "assets/about.page.6ed32d84.css",
+    "src": "src/pages/about.page.css"
+  },
+  "TheCTABottomSection.css": {
+    "file": "assets/TheCTABottomSection.e903a277.css",
+    "src": "TheCTABottomSection.css"
+  },
+  "src/pages/culture.page.css": {
+    "file": "assets/culture.page.d48400ae.css",
+    "src": "src/pages/culture.page.css"
+  },
+  "breakpoints.css": {
+    "file": "assets/breakpoints.b8460aac.css",
+    "src": "breakpoints.css"
+  },
+  "create-element-if-not-defined.css": {
+    "file": "assets/create-element-if-not-defined.a7eb941b.css",
+    "src": "create-element-if-not-defined.css"
+  },
+  "AppCaseStudyCard.css": {
+    "file": "assets/AppCaseStudyCard.3a596df4.css",
+    "src": "AppCaseStudyCard.css"
+  },
+  "src/pages/services.page.css": {
+    "file": "assets/services.page.b1e4bb8d.css",
+    "src": "src/pages/services.page.css"
+  },
+  "src/pages/index/index.page.css": {
+    "file": "assets/index.page.27c3bedd.css",
+    "src": "src/pages/index/index.page.css"
+  },
+  "src/pages/pocus.page.css": {
+    "file": "assets/pocus.page.8b84bc01.css",
+    "src": "src/pages/pocus.page.css"
+  },
+  "src/pages/work.page.css": {
+    "file": "assets/work.page.ea017868.css",
+    "src": "src/pages/work.page.css"
+  },
+  "src/pages/useful.page.css": {
+    "file": "assets/useful.page.dcf17cf8.css",
+    "src": "src/pages/useful.page.css"
+  },
+  "src/pages/privacy-policy.page.css": {
+    "file": "assets/privacy-policy.page.b1e4bb8d.css",
+    "src": "src/pages/privacy-policy.page.css"
+  },
+  "src/assets/pocus/pocus-funding.svg": {
+    "file": "assets/pocus-funding.23230516.svg",
+    "src": "src/assets/pocus/pocus-funding.svg"
+  },
+  "src/assets/pocus/pocus-timeline.svg": {
+    "file": "assets/pocus-timeline.bdbce415.svg",
+    "src": "src/assets/pocus/pocus-timeline.svg"
+  },
+  "src/assets/card-cubes.svg": {
+    "file": "assets/card-cubes.451565a1.svg",
+    "src": "src/assets/card-cubes.svg"
+  },
+  "src/assets/pocus/pocus-location.svg": {
+    "file": "assets/pocus-location.1e6b7cc5.svg",
+    "src": "src/assets/pocus/pocus-location.svg"
+  },
+  "src/assets/card-cubes-desktop.svg": {
+    "file": "assets/card-cubes-desktop.4c78f60e.svg",
+    "src": "src/assets/card-cubes-desktop.svg"
+  },
+  "src/renderer/_default.page.client.css": {
+    "file": "assets/_default.page.client.40461d17.css",
+    "src": "src/renderer/_default.page.client.css"
+  }
+}
