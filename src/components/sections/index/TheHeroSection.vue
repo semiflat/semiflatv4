@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import BackgroundMobileLeft from '~/assets/bg-left-mobile.svg?component'
-import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
 import ahana from '~/assets/tint-logos/logo-ahana.svg?component'
 import appfleet from '~/assets/tint-logos/logo-appfleet.svg?component'
 import clickmagick from '~/assets/tint-logos/logo-clickmagick.svg?component'
@@ -54,66 +52,40 @@ const logos = [
   useful,
   yuzedata,
 ]
+
+const hero = {
+  title: 'Product design for SaaS startups_',
+  description:
+    'Semiflat is a full-service design agency specialized in solving complex problems through design. We design tools that help millions of professionals be more effective at their job.',
+  buttons: [
+    {
+      label: 'Get in touch',
+      href: 'mailto:hello@semiflat.com',
+    },
+    {
+      label: 'Schedule a call',
+      href: 'https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction',
+      isTargetBlank: true,
+      isText: true,
+    },
+  ],
+}
 </script>
 
 <template>
-  <div class="hero relative page-content">
-    <BackgroundMobileLeft class="absolute top-28 left-0 md:hidden" />
-    <BackgroundDesktop class="hidden absolute -left-42 md:block -top-60 -z-1" />
-    <div class="mt-3.5rem md:mt-40 md:text-center">
-      <h1 class="hero__title">Product design for SaaS startups_</h1>
-      <p class="hero__lead mt-6 text-blue-200">
-        Semiflat is a full-service design agency specialized in solving complex problems through
-        design. We design tools that help millions of professionals be more effective at their job.
-      </p>
-
-      <div class="mt-2.5rem">
-        <AppButton href="mailto:hello@semiflat.com">Get in touch</AppButton>
-        <AppButton
-          text
-          href="https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction"
-          target="_blank"
-        >
-          Schedule a call</AppButton
-        >
-      </div>
-    </div>
+  <AppHero :title="hero.title" :description="hero.description" :buttons="hero.buttons">
     <div class="hero-slider">
       <div v-for="i in 2" :key="i" class="hero-slider__inner">
         <component v-for="logo in logos" :is="logo" class="hero-slider__logo" />
       </div>
     </div>
-  </div>
+  </AppHero>
 </template>
 
 <style lang="scss">
 @keyframes marquee {
   to {
     transform: translateX(-100%);
-  }
-}
-
-.hero {
-  &__lead {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80ch;
-  }
-
-  &__title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.2;
-    background: linear-gradient(225deg, #407a7a 0%, #002832 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    @media (min-width: 768px) {
-      font-size: 2.5rem;
-    }
   }
 }
 
