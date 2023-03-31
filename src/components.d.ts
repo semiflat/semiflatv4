@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     AppCaseStudyCard: typeof import('./components/utility/AppCaseStudyCard.vue')['default']
     AppCirclesHorizontal: typeof import('./components/svg/AppCirclesHorizontal.vue')['default']
     AppDialog: typeof import('./components/utility/AppDialog.vue')['default']
+    AppHero: typeof import('./components/common/AppHero.vue')['default']
     AppInput: typeof import('./components/inputs/AppInput.vue')['default']
     AppMultistepContainer: typeof import('./components/utility/AppMultistepContainer.vue')['default']
     AppSlider: typeof import('./components/utility/AppSlider.vue')['default']
