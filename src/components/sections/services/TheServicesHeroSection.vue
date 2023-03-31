@@ -118,8 +118,10 @@ const hero = {
 .services-list {
   --carousel-padding: 1.5rem;
 
+  position: relative;
+  z-index: 1;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-padding: 0 var(--carousel-padding);
@@ -127,6 +129,14 @@ const hero = {
   padding-inline-end: var(--carousel-padding);
   margin: 1.5rem -1.5rem 0;
   scrollbar-width: none;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 160px 0 0;
+  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -142,6 +152,11 @@ const hero = {
       display: block;
       width: 100%;
       height: 100%;
+    }
+
+    @media (min-width: 768px) {
+      width: 100%;
+      max-width: 100%;
     }
   }
 }

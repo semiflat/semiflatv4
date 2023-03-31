@@ -2,7 +2,7 @@
 const hero = {
   title: 'Meet the team behind your next project_',
   description:
-    'We are a remote team of 17 product designers, laser focused on delivering top tier SaaS product design to world’s most innovative startups.',
+    'We are a remote team of product designers, laser focused on delivering top tier SaaS product design to world’s most innovative startups.',
   buttons: [
     {
       label: 'Get in touch',

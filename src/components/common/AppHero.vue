@@ -121,7 +121,13 @@ const props = defineProps<{
   }
 
   &__buttons {
+    display: inline-flex;
+    gap: 0.5rem;
     margin-top: 2.5rem;
+
+    @media (min-width: 768px) {
+      gap: 1rem;
+    }
   }
 }
 </style>
