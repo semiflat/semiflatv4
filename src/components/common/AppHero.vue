@@ -63,7 +63,7 @@ const props = defineProps<{
     content: '';
     position: absolute;
     width: 200px;
-height: 200px;
+    height: 200px;
     left: 75vw;
     top: -40vw;
     filter: blur(32vw);
@@ -92,7 +92,7 @@ height: 200px;
     @media (min-width: 768px) {
       width: 50vw;
       height: 50vw;
-      right: 75vw;
+      right: 78vw;
       top: 15rem;
       filter: blur(16vw);
     }

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import BackgroundMobileLeft from '~/assets/bg-left-mobile.svg?component'
-import BackgroundDesktop from '~/assets/bg-hero-desktop.svg?component'
 import NicImage from '~/assets/employees/nic.jpeg'
 import EwaImage from '~/assets/employees/ewa.jpeg'
 import ApoloniaImage from '~/assets/employees/apolonia.jpeg'
@@ -34,39 +32,23 @@ const employees = [
   MarcinImage,
   PatrycjaImage,
 ]
+
+const hero = {
+  title: 'Designer, welcome home_',
+  description:
+    'Founded by a designer as a place where designers can thrive, we know the needs of creative minds and work tirelessly to make sure they proudly call Semiflat their home.',
+  buttons: [
+    {
+      label: 'Get in touch',
+      href: 'mailto:careers@semiflat.com',
+    },
+  ],
+}
 </script>
 
 <template>
-  <div class="relative page-content">
-    <BackgroundMobileLeft class="absolute top-28 left-0 md:hidden" />
-    <BackgroundDesktop class="hidden absolute -left-42 md:block -top-57 -z-1" />
-    <div class="mt-3.5rem md:hidden">
-      <h1 class="hero-title md:text-[2.5rem] md:leading-[120%] md:mt-6">
-        Meet the team behind your next project_
-      </h1>
-      <p class="mt-6 text-blue-200">
-        We are a remote team of 17 product designers, laser focused on delivering top tier SaaS
-        product design to <br />
-        world’s most innovative startups.
-      </p>
-      <div class="mt-2.5rem">
-        <AppButton href="mailto:careers@semiflat.com">Get in touch</AppButton>
-      </div>
-    </div>
+  <AppHero :title="hero.title" :description="hero.description" :buttons="hero.buttons">
     <div class="hidden md:block">
-      <div class="md:mt-40 md:text-center">
-        <h1 class="hero-title md:text-[2.5rem] md:leading-[120%] md:mt-6">
-          Designer, welcome home_
-        </h1>
-        <p class="mt-6 text-blue-200">
-          Founded by a designer as a place where designers can thrive, we know the needs of creative
-          minds and work <br />
-          tirelessly to make sure they proudly call Semiflat their home.
-        </p>
-        <div class="mt-2.5rem">
-          <AppButton href="mailto:careers@semiflat.com">Get in touch</AppButton>
-        </div>
-      </div>
       <div class="md:mt-40 relative z-1">
         <div class="flex gap-7 w-fit mx-auto">
           <img
@@ -86,11 +68,5 @@ const employees = [
         </div>
       </div>
     </div>
-  </div>
+  </AppHero>
 </template>
-
-<style>
-.hero-title {
-  @apply text-[1.75rem] font-semibold leading-[34px] gradient-text;
-}
-</style>
