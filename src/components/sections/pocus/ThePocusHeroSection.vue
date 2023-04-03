@@ -10,23 +10,25 @@ const scrollToTestimonial = () => {
 </script>
 
 <template>
-  <div class="relative page-content">
-    <div class="mt-3.5rem md:mt-30 md:text-center">
-      <PocusLogo class="mx-auto hidden md:block" />
-      <h1 class="hero-title md:text-[2.5rem] md:leading-[120%] md:mt-16">
-        Designing Pocus, a product-led sales tool <br class="hidden md:block" />
-        that raised a $23M series A.
-      </h1>
-      <p class="mt-6">
-        Pocus is a Product-Led Sales platform that gives go-to-market teams access to product
-        <br class="hidden md:block" />
-        usage data without relying on engineers.
-      </p>
-      <div class="mt-2.5rem">
-        <AppButton class="!bg-[#481B97]" href="https://pocus.com" target="_blank"
-          >See the live version</AppButton
-        >
-        <AppButton text @click="scrollToTestimonial">Read testimonial</AppButton>
+  <div class="page-content">
+    <div class="hero mt-3.5rem md:mt-30 md:text-center">
+      <div class="hero__inner">
+        <PocusLogo class="mx-auto hidden md:block" />
+        <h1 class="hero-title md:text-[2.5rem] md:leading-[120%] md:mt-16">
+          Designing Pocus, a product-led sales tool <br class="hidden md:block" />
+          that raised a $23M series A.
+        </h1>
+        <p class="mt-6">
+          Pocus is a Product-Led Sales platform that gives go-to-market teams access to product
+          <br class="hidden md:block" />
+          usage data without relying on engineers.
+        </p>
+        <div class="mt-2.5rem">
+          <AppButton class="!bg-[#481B97]" href="https://pocus.com" target="_blank"
+            >See the live version</AppButton
+          >
+          <AppButton text @click="scrollToTestimonial">Read testimonial</AppButton>
+        </div>
       </div>
     </div>
   </div>
@@ -70,6 +72,51 @@ const scrollToTestimonial = () => {
 </template>
 
 <style>
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 75vw;
+  top: -40vw;
+  filter: blur(32vw);
+  background: #A38DCB;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  right: 40vw;
+  top: -50vw;
+  filter: blur(32vw);
+  background: #DAD1EA;
+}
+
+@media (min-width: 768px) {
+  .hero::before {
+    width: 20vw;
+    height: 20vw;
+    left: 85vw;
+    top: -5vw;
+    filter: blur(14vw);
+  }
+
+  .hero::after {
+    width: 50vw;
+    height: 50vw;
+    right: 78vw;
+    top: 15rem;
+    filter: blur(16vw);
+  }
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-title {
   @apply text-[1.75rem] font-semibold leading-[34px];
 }

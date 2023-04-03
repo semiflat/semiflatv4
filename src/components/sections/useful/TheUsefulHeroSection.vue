@@ -11,30 +11,32 @@ const scrollToTestimonial = () => {
 </script>
 
 <template>
-  <div class="relative page-content">
-    <div class="mt-3.5rem md:mt-30 md:text-center">
-      <UsefulLogo class="mx-auto hidden md:block" />
-      <h1 class="hero-title md:text-[2.5rem] md:leading-[120%] md:mt-16">
-        Helping Useful raise $5M to
-        <br class="hidden md:block" />empower continuous delivery tech
-        <br class="hidden md:block" />
-        teams
-      </h1>
-      <p class="mt-6">
-        Turn customer calls into Product gold. Transcribe, highlight, and share important
-        <br class="hidden md:block" />
-        moments from customer calls. Excite and inform teammates to build products your
-        <br class="hidden md:block" />
-        customers will love.
-      </p>
-      <div class="mt-2.5rem">
-        <AppButton
-          :class="[context.pageProps?.pageShell?.bgColor]"
-          href="https://useful.com"
-          target="_blank"
-          >See the live version</AppButton
-        >
-        <AppButton text @click="scrollToTestimonial">Read testimonial</AppButton>
+  <div class="page-content">
+    <div class="hero mt-3.5rem md:mt-30 md:text-center">
+      <div class="hero__inner">
+        <UsefulLogo class="mx-auto hidden md:block" />
+        <h1 class="hero-title md:text-[2.5rem] md:leading-[120%] md:mt-16">
+          Helping Useful raise $5M to
+          <br class="hidden md:block" />empower continuous delivery tech
+          <br class="hidden md:block" />
+          teams
+        </h1>
+        <p class="mt-6">
+          Turn customer calls into Product gold. Transcribe, highlight, and share important
+          <br class="hidden md:block" />
+          moments from customer calls. Excite and inform teammates to build products your
+          <br class="hidden md:block" />
+          customers will love.
+        </p>
+        <div class="mt-2.5rem">
+          <AppButton
+            :class="[context.pageProps?.pageShell?.bgColor]"
+            href="https://useful.com"
+            target="_blank"
+            >See the live version</AppButton
+          >
+          <AppButton text @click="scrollToTestimonial">Read testimonial</AppButton>
+        </div>
       </div>
     </div>
   </div>
@@ -79,6 +81,51 @@ const scrollToTestimonial = () => {
 </template>
 
 <style>
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 75vw;
+  top: -40vw;
+  filter: blur(32vw);
+  background: #d2bef8;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  right: 40vw;
+  top: -50vw;
+  filter: blur(32vw);
+  background: #f2ecfd;
+}
+
+@media (min-width: 768px) {
+  .hero::before {
+    width: 20vw;
+    height: 20vw;
+    left: 85vw;
+    top: -5vw;
+    filter: blur(14vw);
+  }
+
+  .hero::after {
+    width: 50vw;
+    height: 50vw;
+    right: 78vw;
+    top: 15rem;
+    filter: blur(16vw);
+  }
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-title {
   @apply text-[1.75rem] font-semibold leading-[34px];
 }
