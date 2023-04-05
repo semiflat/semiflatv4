@@ -51,6 +51,11 @@
   font-style: normal;
 }
 
+:root {
+  --accent-color-dark: #002832;
+  --accent-color-light: #96ebd6;
+}
+
 html,
 body,
 #app {

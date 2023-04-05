@@ -84,11 +84,12 @@ const tag = computed(() => {
 
 <style lang="postcss" scoped>
 .app-button {
-  @apply relative justify-center items-center text-center py-1.5 px-4 bg-primary text-sm leading-[140%] transition duration-400 transition-bg transition-bg-duration-200 bg-center overflow-hidden border-solid border-transparent border disabled:cursor-not-allowed rounded-[32px] text-white font-medium;
+  @apply relative justify-center items-center text-center py-1.5 px-4 text-sm leading-[140%] transition duration-400 transition-bg transition-bg-duration-200 bg-center overflow-hidden border-solid border-transparent border disabled:cursor-not-allowed rounded-[32px] text-white font-medium;
 
   -webkit-appearance: none;
   white-space: nowrap;
   font-weight: 600;
+  background: var(--accent-color-dark);
 }
 
 .app-button.is-secondary {
