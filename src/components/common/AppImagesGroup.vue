@@ -19,3 +19,20 @@ const props = defineProps<{
     </picture>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.images-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+
+    > *:first-child {
+      grid-column: 1 / 3;
+    }
+  }
+}
+</style>

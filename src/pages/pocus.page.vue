@@ -16,6 +16,15 @@ import SupportIcon from '~/assets/experiences/support.svg?component'
 // product shots assets
 import PocusShotDesktop from '~/assets/pocus/product_shot_1_desktop.png'
 import PocusShotMobile from '~/assets/pocus/product_shot_1_mobile.png'
+import PocusShot2Desktop from '~/assets/pocus/product_shot_2_desktop.png'
+import PocusShot2Mobile from '~/assets/pocus/product_shot_2_mobile.png'
+import PocusShot3Desktop from '~/assets/pocus/product_shot_3_desktop.png'
+import PocusShot3Mobile from '~/assets/pocus/product_shot_3_mobile.png'
+import PocusShot4Desktop from '~/assets/pocus/product_shot_4_desktop.png'
+import PocusShot4Mobile from '~/assets/pocus/product_shot_4_mobile.png'
+
+// testimonial assets
+import PocusCEO from '~/assets/pocus/pocus-ceo.jpeg'
 
 // color theme
 const cssProps = {
@@ -85,16 +94,6 @@ const howWeHelped = {
   ],
 }
 
-const singleProductShot = {
-  images: [
-    {
-      urlDesktop: PocusShotDesktop,
-      urlMobile: PocusShotMobile,
-      altText: 'Semiflat Case Study: Pocus App dashboard',
-    },
-  ],
-}
-
 const caseDescription = {
   sections: [
     {
@@ -105,10 +104,51 @@ const caseDescription = {
     {
       title: 'The problem',
       lead: 'Why did Pocus approach us? What outcome were they looking for?',
-      body: '<p>Pocus had developers on board back when they approached us. They needed design help creating the MVP designs in weekly sprints that would ensure their dev team constantly has something to work on. The Co-founder of Pocus was looking for a designer to work with closely in order to produce multiple variations of one feature in a short period of time.</p>',
+      body: '<p>Pocus had developers on board back when they approached us. They needed design help creating the MVP designs in weekly sprints that would ensure their dev team constantly has something to work on. The Co-founder of Pocus was looking for a designer to work with closely in order to produce multiple variations of one feature in a short period of time.',
     },
   ],
 }
+
+const testimonial = {
+  quote:
+    '“We are very happy with the work Nic and his team have done. They’ve been involved in the design of our product from the very beginning and have been supporting our design needs ever since.”',
+  author: {
+    name: 'Isaac Pohl-Zaretsky',
+    role: 'Co-Founder, CTO',
+    imageUrl: PocusCEO,
+  },
+}
+
+const productShotsGalleries = [
+  {
+    images: [
+      {
+        urlDesktop: PocusShotDesktop,
+        urlMobile: PocusShotMobile,
+        altText: 'Semiflat Case Study: Pocus App dashboard',
+      },
+    ],
+  },
+  {
+    images: [
+      {
+        urlDesktop: PocusShot2Desktop,
+        urlMobile: PocusShot2Mobile,
+        altText: 'Semiflat Case Study: Pocus App dashboard',
+      },
+      {
+        urlDesktop: PocusShot3Desktop,
+        urlMobile: PocusShot3Mobile,
+        altText: 'Semiflat Case Study: Pocus App dashboard',
+      },
+      {
+        urlDesktop: PocusShot4Desktop,
+        urlMobile: PocusShot4Mobile,
+        altText: 'Semiflat Case Study: Pocus App dashboard',
+      },
+    ],
+  },
+]
 </script>
 
 <template>
@@ -118,18 +158,18 @@ const caseDescription = {
       <AppListBox v-bind="howWeHelped" />
     </TheCaseStudyBlock>
     <TheCaseStudyBlock>
-      <AppImagesGroup v-bind="singleProductShot" />
+      <AppImagesGroup v-bind="productShotsGalleries[0]" />
     </TheCaseStudyBlock>
     <TheCaseStudyBlock>
       <TheCaseStudyDescription v-bind="caseDescription" />
     </TheCaseStudyBlock>
-
     <TheCaseStudyBlock>
-
+      <TheCaseStudyTestimonial v-bind="testimonial" />
     </TheCaseStudyBlock>
-    
-    <ThePocusTestimonialSection />
-    <ThePocusScreensSection />
+    <TheCaseStudyBlock>
+      <AppImagesGroup v-bind="productShotsGalleries[1]" />
+    </TheCaseStudyBlock>
+
     <ThePocusStepByStepSection />
     <ThePocusCompaniesLoveSection />
     <ThePocusFunctionsSection />

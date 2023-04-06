@@ -68,7 +68,7 @@ $bg-color: #{var(--accent-color-dark)};
       padding: 3rem 0 4rem 3rem;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1024px) {
       padding: 4rem 0 4rem 5rem;
     }
   }
