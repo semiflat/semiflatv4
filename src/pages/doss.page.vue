@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 // hero assets
-import Dashboard from '~/assets/useful/dashboard.png'
-import DashboardDesktop from '~/assets/useful/dashboard-desktop.png'
-import FundingIcon from '~/assets/useful/funding.svg?url'
-import LocationIcon from '~/assets/useful/location.svg?url'
-import TimelineIcon from '~/assets/useful/timeline.svg?url'
+import Dashboard from '~/assets/doss/dashboard.png'
+import DashboardDesktop from '~/assets/doss/dashboard-desktop.png'
+import FundingIcon from '~/assets/doss/funding.svg?url'
+import LocationIcon from '~/assets/doss/location.svg?url'
+import TimelineIcon from '~/assets/doss/timeline.svg?url'
 
 // how we helped assets
 import HowWeHelpedImage from '~/assets/useful/how-we-helped-shot.png'
@@ -36,7 +36,7 @@ import ProductShot10Desktop from '~/assets/useful/product_shot_10_desktop.png'
 import ProductShot10Mobile from '~/assets/useful/product_shot_10_mobile.png'
 
 // testimonial assets
-import TestimonialAuthor from '~/assets/useful/useful-ceo.png'
+import TestimonialAuthor from '~/assets/doss/wiley-jones.jpg'
 
 // services icons
 import ServiceWorkshopsIcon from '~/assets/experiences/workshops.svg?component'
@@ -51,24 +51,24 @@ import CTABannerDesktopImage from '~/assets/pocus/cta_banner_desktop.png'
 
 // color theme
 const cssProps = {
-  '--accent-color-dark': '#6F2DE7',
-  '--accent-color-light': '#E0D1FA',
-  '--gradient-color': '#E0D1FA',
+  '--accent-color-dark': '#1952CE',
+  '--accent-color-light': '#C8D8F8',
+  '--gradient-color': '#C8D8F8',
 }
 
 const hero = {
   image: {
     urlMobile: Dashboard,
     urlDesktop: DashboardDesktop,
-    altText: 'Useful app dashboard, designed by Semiflat'
+    altText: 'Doss app dashboard, designed by Semiflat'
   },
-  title: 'Helping Useful raise $5M to empower continuous delivery tech teams',
+  title: 'MVP prototype and ongoing support for Doss - a platform for operations teams',
   description:
-    'Turn customer calls into Product gold. Transcribe, highlight, and share important moments from customer calls. Excite and inform teammates to build products your customers will love.',
+    'Doss Adaptive Resource Platform (ARP) combines the system of record of a traditional ERP with artificial intelligence and machine learning.',
   buttons: [
     {
       label: 'See live version',
-      href: 'https://useful.com/',
+      href: '#',
       isTargetBlank: true,
     },
     {
@@ -80,17 +80,17 @@ const hero = {
   details: [
     {
       title: 'Timeline',
-      value: '2 months',
+      value: 'Ongoing - 6m',
       iconUrl: TimelineIcon,
     },
     {
       title: 'Location',
-      value: 'Austin, TX',
+      value: 'San Francisco, CA',
       iconUrl: LocationIcon,
     },
     {
       title: 'Funding',
-      value: '$5M',
+      value: '$5.3M',
       iconUrl: FundingIcon,
     },
   ],
@@ -102,27 +102,39 @@ const howWeHelped = {
   list: [
     {
       icon: ResearchIcon,
-      title: 'Discovery Workshops',
+      title: 'User experience design',
       description:
-        'We’ve conducted an extensive Discovery phase to define all user stories and a complete navigation structure for the product.',
+        'We’ve designed the user experience for specific scenarios from scratch.',
     },
     {
       icon: ProcessIcon,
-      title: 'User experience design',
+      title: 'User interface design',
       description:
-        'We’ve translated the findings of the Discovery session into a set of low-fidelity wireframes..',
+        'We’ve come up with a subtle yet polished look & feel for the application. ',
     },
     {
       icon: InterfaceIcon,
-      title: 'User Interface Design',
+      title: 'Design system',
       description:
-        'We’ve proposed multiple style variations and translated all lo-fi mockups into the one Client loved most.',
+        'We’ve made sure all reusable components were reflected in the component library we’ve handed over to development.',
     },
     {
       icon: DesignIcon,
-      title: 'Design System',
+      title: 'Branding',
       description:
-        'We’ve built a comprehensive component library for all reusable elements within the design.',
+        'We’ve designed a few iterations of brand identity for Doss.',
+    },
+    {
+      icon: DesignIcon,
+      title: 'Website design and development',
+      description:
+        'We’ve designed and implemented a marketing page for Doss in Webflow.',
+    },
+    {
+      icon: DesignIcon,
+      title: 'Ongoing support',
+      description:
+        'We’ve worked closely with the founder in iterative sprints to create prototype scenarios.',
     },
   ],
 }
@@ -131,68 +143,65 @@ const caseDescription = {
   sections: [
     {
       title: 'Project background',
-      lead: 'What is Useful, and what have they managed to do before approaching Semiflat?',
-      body: '<p>The founders of Useful are product managers who previously worked at a big tech company. Their idea for an app was born from a shared struggle to stay on top of the customer discovery process. They realized organizing their work manually with spreadsheets provides little visibility and isn’t scalable. There had to be a better way!</p><p>After discovering that there was no solution on the market, they took matters into their own hands. They embarked on a mission to help companies build closer relationships with their customers and extract insights from their conversations.</p>',
+      lead: 'What is Doss, and what have they managed to do before approaching Semiflat?',
+      body: '<p>Doss is building an Adaptive Resource Platform (ARP), which serves as a system of record for companies with a physical operation. It’s an alternative to traditional ERP (Enterprise Resource Planning) software, allowing companies to onboard within minutes, without the need to implement, debug, and without huge set-up costs. Doss integrates with the operations tool stack like Shopify, Flexport, ShipStation, Xero, or Quickbooks. </p><p>The Founder of Doss was referred to us by another long-time customer. They were looking for an ongoing full-service design partner for a fixed timeframe (6 months) before they could hire an in-house designer.</p>',
     },
     {
       title: 'The problem',
-      lead: 'Why did Useful approach us? What outcome were they looking for?',
-      body: '<p>Useful approached us after conducing more than one hundred interviews with project managers, researchers and designers. They knew exactly what problems their potential users were facing but needed our help with translating their insights into features and user flows and a full MVP design.</p>',
+      lead: 'Why did Doss approach us? What outcome were they looking for?',
+      body: '<p>Doss had acquired funding and wanted to create an MVP prototype for their platform. They wanted to show their vision to the prospective customers they were talking to at the time. They knew that the vision for the product would likely evolve, so they were looking for ongoing support over an extended period, a design partner they could work with closely, and that would implement feedback and insights from their customers to create the best product-market fit.</p>',
     },
   ],
-  cta: {
-    title: 'Don’t know how to start the project?',
-    description:
-      'We have a video that explains everything you need to successfully kick of a collaboration with us.',
-    cta: {
-      href: 'mailto:hello@semiflat.com',
-      label: 'Get in touch',
-    },
-  },
 }
 
 const testimonial = {
   quote:
-    '“When we set out to work with a design studio, we were looking for true partnership, not just great execution. Paulina, Nic, and Ewa were all of that and more. They helped bring our vision to life and were real thought partners throughout the creative process. They gave us an incredible foundation to work with, and we’re excited to partner with the Semiflat team in the future.”',
+    '“Nic and the Semiflat team did a phenomenal job working with me to build out our landing page and iterate on product concept and design systems over the last couple of months. It was truly a pleasure working with them, I can’t recommend them enough. The whole team was extremely quick to understand requirements (even when I wasn’t as clear as I should be) and translate them into screens, mocks and research.”',
   author: {
-    name: 'Mike Ottavi-Brannon',
-    role: 'Co-Founder',
+    name: 'Wiley Jones',
+    role: 'Founder',
     imageUrl: TestimonialAuthor,
   },
 }
 
 const servicesSection = {
-  title: 'Step by step on how we’ve worked with Useful on their MVP design_',
+  title: 'Step by step on how we’ve worked with Doss on their application design_',
   services: [
     {
       icon: ServiceFlawlessIcon,
-      title: 'Discovery sessions',
+      title: 'Web design and development',
       description:
-        'Over several video sessions, we worked with Useful’s founders to establish user personas, user stories, core user flows, and navigation structure.',
+        'We’ve started the collaboration with a simple marketing page design project. We’ve then implemented our design using Webflow.',
     },
     {
       icon: ServiceWorkshopsIcon,
-      title: 'Workshops & analysis',
+      title: 'Client workshops',
       description:
-        'We’ve analyzed our notes and recordings from our meetings to ensure we’re moving into the next phase with a full understanding of business needs and goals.',
+        'In order to better understand the business and customer needs, we’ve held several workshop sessions.',
     },
     {
       icon: ServiceUXIcon,
       title: 'User experience design',
       description:
-        'The next and most time-intensive part of the project was translating all the findings of discovery sessions into a complete set of lo-fi wireframes.',
+        'After that came the next phase - iterative, low fidelity wireframing, where we’ve proposed solutions around information architecture and hierarchy.',
     },
     {
       icon: ServiceInterfaceIcon,
       title: 'User interface design',
       description:
-        'We’ve added a bit of magic to the low-fidelity mockups, proposing several look & feel variations and making sure even empty states were engaging and pleasant to look at.',
+        'We’ve proposed a visual identity for Doss and applied it across all wireframes, delivering a highly polished final design.',
     },
     {
       icon: ServiceDesignIcon,
       title: 'Design system design',
       description:
-        'We’ve built a starter design system so Useful can scale their product in the future without worrying about inconsistency.',
+        'Along with the user interface, we’ve built a component library of all reusable elements from the designs.',
+    },
+    {
+      icon: ServiceDesignIcon,
+      title: 'Ongoing, iterative collaboration',
+      description:
+        'Over six months, we’ve iterated on the application prototype to add features and implement ongoing customer feedback.',
     },
   ],
 }
@@ -201,40 +210,40 @@ const caseOutcomes = {
   sections: [
     {
       title: 'Project Outcome',
-      lead: 'What did Useful gain from working with us? Where is the project now?',
-      body: '<p>Over two months, we’ve delivered a complete user experience and a clickable application prototype. We wanted to make sure that Useful is set up for success, so we’ve also implemented a design system containing all of the components used across the interface.</p><p>Useful went on to raise a $5M financing round from Spark Capital and Unusual Ventures. The application is currently in the last stages of development, serving first users through an early-access program.</p>',
+      lead: 'What did Doss gain from working with us? Where is the project now?',
+      body: '<p>Doss recently hired an in-house designer to continue building on top of the work we’ve delivered. Working with Semiflat allowed them to generate initial buzz, go to market faster and create a prototype to gather customer feedback without going through the lengthy and expensive recruitment process. We’ve dedicated a team of designers who are familiar with the product and could generate solutions rapidly, often sharing updates daily.</p><p>Currently in beta, Doss is using a prototype we’ve built for them in Figma as the main product demo on their website.</p>',
     },
     {
       title: 'Deliverables',
-      lead: 'What are the tangible deliverables Useful received from us during the collaboration?',
+      lead: 'What are the tangible deliverables Doss received from us during the collaboration?',
     },
   ],
   deliverables: {
     items: [
       {
-        title: 'A whiteboard containing the summary of all Discovery sessions',
+        title: 'Website design and implementation',
         description:
-          'The outcome of the workshops was delivered to Useful as a FigJam - a whiteboard-like canvas containing sticky notes, diagrams, and tables filed with assumptions, business goals, and vision that we’ve gathered on our calls with the founders.',
+          'We’ve created a marketing website design in Figma that we’ve then handed over to an internal no-code developer to implement in Webflow.',
       },
       {
-        title: 'A low-fidelity Figma file containing all screens from the application',
+        title: 'A high-fidelity Figma file containing all screens from the prototype',
         description:
-          "Useful also got a separate Figma file containing all pages reflective of user flows established in the project's initial phase. We've worked on this file throughout the majority of the project in iterative sprints, focusing on one user flow at a time.",
+          "We’ve delivered a set of high-fidelity screens containing all states and steps in the user’s journey for specific scenarios we’ve identified beforehand.",
       },
       {
-        title: 'A high-fidelity Figma file containing all screens from the application',
+        title: 'A separate Figma file containing all custom components from the interface',
         description:
-          "Starting with the look & feel proposals, we've carried the established style to the previously designed low-fidelity wireframes to give them a final, polished look. We then handed over this file to the developers.",
+          "We’ve made sure that all of the custom components from the design were reflected in a separate design system file, along with all of their variants, for smooth implementation and consistency.",
       },
       {
-        title: 'A component library file',
+        title: 'An interactive Figma prototype',
         description:
-          "We know that a small MVP can quickly grow into a large product. With rapid user growth comes the demand for new features, which needs to be rapidly fulfilled. Startups in the early stages often rely solely on developers to modify existing designs which can easily lead to multiple versions of the same screen or component. We wanted to avoid this scenario, so we've equipped Useful with a separate file containing all reusable components to implement and build on top of in the future.",
+          "On top of designing the app screens, we’ve connected them into a clickable Figma prototype that the founder of Doss could then use to better explain his product's vision to potential users and customers.",
       },
       {
-        title: 'Clickable prototype',
+        title: 'Brand design',
         description:
-          "We’ve connected the key high fidelity pages into clickable sequences so Useful could not only tell investors and customers about their product but actually show it to them.",
+          "We’ve created a simple brand book with a new logo, logo mark, color palette, and typography for Doss.",
       },
     ],
   },
@@ -249,8 +258,8 @@ const caseOutcomes = {
 }
 
 const ctaBanner = {
-  title: 'Are you interested in working together?',
-  description: 'Reach out with more details about your project so we can prepare for an introductory call. We’ll schedule it within 24 hours from receiving your query.',
+  title: 'Want to partner with design experts in SaaS?',
+  description: 'We’re excited to talk to you about your project requirements and business goals.',
   buttons: [
     {
       href: 'mailto:hello@semiflat.com',
@@ -353,11 +362,7 @@ const productShotsGalleries = [
     </TheCaseStudyBlock>
 
     <TheCaseStudyBlock decor="top-left">
-      <TheCaseStudyDescription v-bind="caseDescription">
-        <template #section-1>
-          <TheCaseStudyCTACard v-bind="caseDescription.cta" />
-        </template>
-      </TheCaseStudyDescription>
+      <TheCaseStudyDescription v-bind="caseDescription" />
     </TheCaseStudyBlock>
 
     <TheCaseStudyBlock id="testimonial">

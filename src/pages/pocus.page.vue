@@ -52,6 +52,7 @@ import CTABannerDesktopImage from '~/assets/pocus/cta_banner_desktop.png'
 const cssProps = {
   '--accent-color-dark': '#481B97',
   '--accent-color-light': '#E1D4F7',
+  '--gradient-color': '#E1D4F7',
 }
 
 const hero = {

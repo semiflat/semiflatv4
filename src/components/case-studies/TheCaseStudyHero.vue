@@ -91,7 +91,7 @@ const props = defineProps<{
     left: 75vw;
     top: -40vw;
     filter: blur(32vw);
-    background: var(--accent-color-light);
+    background: var(--gradient-color);
 
     @media (min-width: 768px) {
       width: 20vw;
@@ -111,7 +111,7 @@ const props = defineProps<{
     right: 40vw;
     top: -50vw;
     filter: blur(32vw);
-    background: var(--accent-color-light);
+    background: var(--gradient-color);
 
     @media (min-width: 768px) {
       width: 50vw;

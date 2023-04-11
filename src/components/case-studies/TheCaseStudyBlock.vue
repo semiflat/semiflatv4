@@ -34,7 +34,7 @@ const props = defineProps<{
     display: block;
     width: 0;
     height: 0;
-    background: var(--accent-color-light);
+    background: var(--gradient-color);
   }
 
   &--decor-top-right,
