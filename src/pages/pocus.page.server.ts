@@ -9,6 +9,7 @@ export async function onBeforeRender() {
         pageShell: {
           hide: '!hidden',
           bgColor: '!bg-[#481B97]',
+          accentColor: '#481B97',
           navHover: 'hover:!bg-black/08',
         },
       },
