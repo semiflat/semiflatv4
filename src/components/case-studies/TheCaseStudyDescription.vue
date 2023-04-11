@@ -5,7 +5,6 @@ interface CaseStudyDescriptionSection {
   body?: any
 }
 
-
 const props = defineProps<{
   sections: CaseStudyDescriptionSection[]
 }>()
@@ -13,16 +12,22 @@ const props = defineProps<{
 
 <template>
   <div class="case-study-description">
-    <div v-for="section in props.sections" class="case-study-description__section">
+    <div
+      v-for="(section, index) in props.sections"
+      :key="index"
+      class="case-study-description__section"
+    >
       <div class="case-study-description__section-header">
-        <h2 class="case-study-description__section-title">
-          {{ section.title }}
-        </h2>
-        <p class="case-study-description__section-lead">{{ section.lead }}</p>
+        <div class="case-study-description__section-header-inner">
+          <h2 class="case-study-description__section-title">
+            {{ section.title }}
+          </h2>
+          <p class="case-study-description__section-lead">{{ section.lead }}</p>
+        </div>
       </div>
       <div class="case-study-description__section-body">
-        <div v-html="section.body"></div>
-        <slot></slot>
+        <div v-if="section.body" v-html="section.body"></div>
+        <slot :name="`section-${index + 1}`"></slot>
       </div>
     </div>
   </div>
@@ -54,6 +59,13 @@ const props = defineProps<{
     }
   }
 
+  &__section-header-inner {
+    @media (min-width: 1040px) {
+      position: sticky;
+      top: 2rem;
+    }
+  }
+
   &__section-title {
     margin-bottom: 1rem;
     font-size: 1.25rem;
@@ -67,6 +79,16 @@ const props = defineProps<{
   &__section-lead,
   &__section-body {
     color: #545959;
+  }
+
+  &__section-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+
+    @media (min-width: 1040px) {
+      grid-gap: 3rem;
+    }
 
     &:deep(p:not(:last-of-type)) {
       margin-bottom: 2rem;

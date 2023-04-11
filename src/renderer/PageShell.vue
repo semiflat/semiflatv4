@@ -34,6 +34,9 @@ if (!import.meta.env.SSR) {
 .layout {
   position: relative;
   width: 100%;
-  overflow: hidden;
+
+  @media (max-width: 1039px) {
+    overflow: hidden;
+  }
 }
 </style>
