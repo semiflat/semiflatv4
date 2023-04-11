@@ -86,16 +86,14 @@ const services = [
 </script>
 
 <template>
-  <footer class="footer">
+  <footer
+    class="footer"
+    :style="{
+      '--accent-color-dark': context.pageProps?.pageShell?.accentColor,
+      '--accent-color-light': context.pageProps?.pageShell?.accentColorLight,
+    }"
+  >
     <div class="page-content pt-28 pb-20 md:pb-[12.5rem] md:mt-12 relative overflow-y-clip">
-      <div
-        class="bg-gradient bg-gradient-left bg-turquoise-100 rounded-full absolute -left-40 w-[43.75rem] h-[43.75rem] blur-[240px] top-6 md:-left-100 md:top-70"
-        :class="[context.pageProps?.pageShell?.hide]"
-      />
-      <div
-        class="bg-gradient bg-gradient-right bg-turquoise-200 rounded-full absolute w-[18.75rem] h-[18.75rem] bottom-46 -right-16 md:-bottom-20 md:left-70 blur-[200px]"
-        :class="[context.pageProps?.pageShell?.hide]"
-      />
       <div class="relative z-10 md:flex md:items-start md:justify-between">
         <div>
           <SmallLogo />
@@ -156,26 +154,28 @@ const services = [
 </template>
 
 <style lang="scss" scoped>
-
 .footer {
-  overflow: hidden;
-}
-.bg-gradient {
-  animation: gradient-scale 4s ease-in-out infinite alternate;
-  will-change: transform;
-}
+  overflow-x: hidden;
 
-.bg-gradient-right {
-  animation: gradient-scale 6s ease-in-out infinite alternate;
-  will-change: transform;
-}
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 450px;
+    height: 450px;
+    right: 92vw;
+    left: auto;
+    top: 60vw;
+    filter: blur(32vw);
+    background: var(--accent-color-light);
 
-@keyframes gradient-scale {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(0.9);
+    @media (min-width: 768px) {
+      width: 45vw;
+      height: 45vw;
+      right: 86vw;
+      top: 28vw;
+      filter: blur(16vw);
+    }
   }
 }
 </style>

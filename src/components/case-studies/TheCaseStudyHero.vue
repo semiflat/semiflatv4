@@ -138,6 +138,10 @@ const props = defineProps<{
   &__text {
     max-width: 47rem;
     margin: 0 auto;
+
+    @media (min-width: 768px) and (max-width: 1039px) {
+      max-width: 40rem;
+    }
   }
 
   &__lead {

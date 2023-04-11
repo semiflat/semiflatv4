@@ -10,6 +10,7 @@ export async function onBeforeRender() {
           hide: '!hidden',
           bgColor: '!bg-[#481B97]',
           accentColor: '#481B97',
+          accentColorLight: '#E1D4F7',
           navHover: 'hover:!bg-black/08',
         },
       },

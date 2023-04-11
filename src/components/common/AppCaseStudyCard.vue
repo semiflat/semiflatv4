@@ -143,7 +143,7 @@ defineProps<{
 }
 .case-study-btn-wrapper .case-study-btn {
   display: inline-block;
-  background-image: linear-gradient(86.76deg, var(--accent-color-dark), var(--accent-color-medium), #fff, #fff, #fff);
+  background-image: linear-gradient(86.76deg, #407a7a, #54aba3, #fff, #fff, #fff);
   background-size: 400% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -156,7 +156,7 @@ defineProps<{
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(86.76deg, var(--accent-color-dark) 0%, var(--accent-color-medium) 100%);
+  background: linear-gradient(86.76deg, #407a7a 0%, #54aba3 100%);
   transform: translateY(0.8em) scaleY(0.1);
   transition: 0.2s all;
 }
