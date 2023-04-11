@@ -13,6 +13,8 @@ export async function onBeforeRender() {
             '!bg-[#F2EDFD] md:!blur-[200px] md:w-[67.5rem] md:h-[67.5rem] md:!-top-[10rem]',
           hide: '!hidden',
           bgColor: '!bg-[#6F2DE7]',
+          accentColor: '#6F2DE7',
+          accentColorLight: '#d3c0f7',
           textColor: '!text-[#6F2DE7]',
           navHover: 'hover:!bg-black/08',
         },

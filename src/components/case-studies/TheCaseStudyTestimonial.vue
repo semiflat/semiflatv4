@@ -40,6 +40,7 @@ const props = defineProps<{
 
   @media (min-width: 768px) {
     padding: 3rem 5rem;
+    gap: 2.5rem;
   }
 
   @media (min-width: 1024px) {

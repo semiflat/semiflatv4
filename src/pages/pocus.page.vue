@@ -52,7 +52,6 @@ import CTABannerDesktopImage from '~/assets/pocus/cta_banner_desktop.png'
 // color theme
 const cssProps = {
   '--accent-color-dark': '#481B97',
-  '--accent-color-medium': '#824EDF',
   '--accent-color-light': '#E1D4F7',
 }
 
@@ -128,7 +127,7 @@ const caseDescription = {
     {
       title: 'The problem',
       lead: 'Why did Pocus approach us? What outcome were they looking for?',
-      body: '<p>Pocus had developers on board back when they approached us. They needed design help creating the MVP designs in weekly sprints that would ensure their dev team constantly has something to work on. The Co-founder of Pocus was looking for a designer to work with closely in order to produce multiple variations of one feature in a short period of time.',
+      body: '<p>Pocus had developers on board back when they approached us. They needed design help creating the MVP designs in weekly sprints that would ensure their dev team constantly has something to work on. The Co-founder of Pocus was looking for a designer to work with closely in order to produce multiple variations of one feature in a short period of time.</p>',
     },
   ],
 }
@@ -329,7 +328,7 @@ const productShotsGalleries = [
       <TheCaseStudyDescription v-bind="caseDescription" />
     </TheCaseStudyBlock>
 
-    <TheCaseStudyBlock>
+    <TheCaseStudyBlock id="testimonial">
       <TheCaseStudyTestimonial v-bind="testimonial" />
     </TheCaseStudyBlock>
 

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { Component } from 'vue'
-
 interface HeroButton {
   href: string
   label: string
@@ -19,7 +17,6 @@ const props = defineProps<{
   description: string
   details: DetailsCard[]
   imageUrl: string
-  logotype: Component
   title: string
   videoUrl: string
 }>()
@@ -136,7 +133,7 @@ const props = defineProps<{
   }
 
   &__text {
-    max-width: 47rem;
+    max-width: 45rem;
     margin: 0 auto;
 
     @media (min-width: 768px) and (max-width: 1039px) {
