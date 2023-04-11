@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { Image } from '../common/AppImage.vue'
+
 interface HeroButton {
   href: string
   label: string
@@ -16,16 +18,14 @@ const props = defineProps<{
   buttons: HeroButton[]
   description: string
   details: DetailsCard[]
-  imageUrl: string
+  image: Image
   title: string
-  videoUrl: string
 }>()
 </script>
 
 <template>
   <div class="case-study-hero">
     <div class="case-study-hero__inner page-content">
-      <!--<Component v-if="props.logotype" :is="props.logotype" class="case-study-hero__logo" />-->
       <div class="case-study-hero__text">
         <h1 class="case-study-hero__title">
           {{ props.title }}
@@ -47,23 +47,26 @@ const props = defineProps<{
       </div>
 
       <div class="case-study-hero__image-wrapper">
-        <img :src="props.imageUrl" class="case-study-hero__image" />
-      </div>
-
-      <div class="case-study-hero__video-wrapper">
-        <video class="case-study-hero__video" playsinline autoplay muted>
-          <source :src="props.videoUrl" type="video/mp4" />
-        </video>
+        <AppImage class="case-study-hero__image" v-bind="props.image" />
       </div>
 
       <ul class="case-study-hero__details">
-        <AppDetailsCard v-for="card in details" :key="card.title" v-bind="card" />
+        <li v-for="card in details" :key="card.title">
+          <AppDetailsCard v-bind="card" />
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <style lang="scss">
+
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
 .case-study-hero {
   margin-top: 3.5rem;
   background: #fff;
@@ -133,7 +136,7 @@ const props = defineProps<{
   }
 
   &__text {
-    max-width: 45rem;
+    max-width: 48rem;
     margin: 0 auto;
 
     @media (min-width: 768px) and (max-width: 1039px) {
@@ -168,31 +171,31 @@ const props = defineProps<{
   }
 
   &__image-wrapper {
+    width: 100%;
     min-width: 520px;
+    aspect-ratio: 1104 / 688;
     margin: 5rem 0 0 2rem;
     border-radius: 12px;
     border: 1px solid var(--accent-color-light);
     overflow: hidden;
+    opacity: 0;
+    animation: fadein 1.2s .5s forwards;
 
     @media (min-width: 475px) {
       margin-left: 0;
       min-width: 0;
       width: 100%;
     }
-
-    @media (min-width: 768px) {
-      display: none;
-    }
   }
-  &__video-wrapper {
-    display: none;
-    margin: 5rem auto 0;
-    border-radius: 24px;
-    border: 1px solid var(--accent-color-light);
-    overflow: hidden;
 
-    @media (min-width: 768px) {
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @media (min-width: 1200px) {
       display: block;
+      width: 1104px; // hack for crispy png
     }
   }
 

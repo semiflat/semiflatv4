@@ -14,7 +14,7 @@ export async function onBeforeRender() {
           hide: '!hidden',
           bgColor: '!bg-[#6F2DE7]',
           accentColor: '#6F2DE7',
-          accentColorLight: '#d3c0f7',
+          accentColorLight: '#E0D1FA',
           textColor: '!text-[#6F2DE7]',
           navHover: 'hover:!bg-black/08',
         },

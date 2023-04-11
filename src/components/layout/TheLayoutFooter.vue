@@ -155,7 +155,7 @@ const services = [
 
 <style lang="scss" scoped>
 .footer {
-  overflow-x: hidden;
+  overflow: hidden;
 
   &::before {
     content: '';

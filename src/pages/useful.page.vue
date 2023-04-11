@@ -1,39 +1,39 @@
 <script lang="ts" setup>
 // hero assets
 import Dashboard from '~/assets/useful/dashboard.png'
-import DashboardVideo from '~/assets/useful/dashboard.mp4'
-import FundingIcon from '~/assets/pocus/funding.svg?url'
-import LocationIcon from '~/assets/pocus/location.svg?url'
-import TimelineIcon from '~/assets/pocus/timeline.svg?url'
+import DashboardDesktop from '~/assets/useful/dashboard-desktop.png'
+import FundingIcon from '~/assets/useful/funding.svg?url'
+import LocationIcon from '~/assets/useful/location.svg?url'
+import TimelineIcon from '~/assets/useful/timeline.svg?url'
 
 // how we helped assets
-import HowWeHelpedImage from '~/assets/pocus/how-we-helped-shot.png'
+import HowWeHelpedImage from '~/assets/useful/how-we-helped-shot.png'
 import ResearchIcon from '~/assets/experiences/workshops.svg?component'
 import InterfaceIcon from '~/assets/experiences/interface.svg?component'
 import DesignIcon from '~/assets/experiences/design.svg?component'
 import ProcessIcon from '~/assets/experiences/support.svg?component'
 
 // product shots assets
-import PocusShotDesktop from '~/assets/pocus/product_shot_1_desktop.png'
-import PocusShotMobile from '~/assets/pocus/product_shot_1_mobile.png'
-import PocusShot2Desktop from '~/assets/pocus/product_shot_2_desktop.png'
-import PocusShot2Mobile from '~/assets/pocus/product_shot_2_mobile.png'
-import PocusShot3Desktop from '~/assets/pocus/product_shot_3_desktop.png'
-import PocusShot3Mobile from '~/assets/pocus/product_shot_3_mobile.png'
-import PocusShot4Desktop from '~/assets/pocus/product_shot_4_desktop.png'
-import PocusShot4Mobile from '~/assets/pocus/product_shot_4_mobile.png'
-import PocusShot5Desktop from '~/assets/pocus/product_shot_5_desktop.png'
-import PocusShot5Mobile from '~/assets/pocus/product_shot_5_mobile.png'
-import PocusShot6Desktop from '~/assets/pocus/product_shot_6_desktop.png'
-import PocusShot6Mobile from '~/assets/pocus/product_shot_6_mobile.png'
-import PocusShot7Desktop from '~/assets/pocus/product_shot_7_desktop.png'
-import PocusShot7Mobile from '~/assets/pocus/product_shot_7_mobile.png'
-import PocusShot8Desktop from '~/assets/pocus/product_shot_8_desktop.png'
-import PocusShot8Mobile from '~/assets/pocus/product_shot_8_mobile.png'
-import PocusShot9Desktop from '~/assets/pocus/product_shot_9_desktop.png'
-import PocusShot9Mobile from '~/assets/pocus/product_shot_9_mobile.png'
-import PocusShot10Desktop from '~/assets/pocus/product_shot_10_desktop.png'
-import PocusShot10Mobile from '~/assets/pocus/product_shot_10_mobile.png'
+import ProductShotDesktop from '~/assets/useful/product_shot_1_desktop.png'
+import ProductShotMobile from '~/assets/useful/product_shot_1_mobile.png'
+import ProductShot2Desktop from '~/assets/useful/product_shot_2_desktop.png'
+import ProductShot2Mobile from '~/assets/useful/product_shot_2_mobile.png'
+import ProductShot3Desktop from '~/assets/useful/product_shot_3_desktop.png'
+import ProductShot3Mobile from '~/assets/useful/product_shot_3_mobile.png'
+import ProductShot4Desktop from '~/assets/useful/product_shot_4_desktop.png'
+import ProductShot4Mobile from '~/assets/useful/product_shot_4_mobile.png'
+import ProductShot5Desktop from '~/assets/useful/product_shot_5_desktop.png'
+import ProductShot5Mobile from '~/assets/useful/product_shot_5_mobile.png'
+import ProductShot6Desktop from '~/assets/useful/product_shot_6_desktop.png'
+import ProductShot6Mobile from '~/assets/useful/product_shot_6_mobile.png'
+import ProductShot7Desktop from '~/assets/useful/product_shot_7_desktop.png'
+import ProductShot7Mobile from '~/assets/useful/product_shot_7_mobile.png'
+import ProductShot8Desktop from '~/assets/useful/product_shot_8_desktop.png'
+import ProductShot8Mobile from '~/assets/useful/product_shot_8_mobile.png'
+import ProductShot9Desktop from '~/assets/useful/product_shot_9_desktop.png'
+import ProductShot9Mobile from '~/assets/useful/product_shot_9_mobile.png'
+import ProductShot10Desktop from '~/assets/useful/product_shot_10_desktop.png'
+import ProductShot10Mobile from '~/assets/useful/product_shot_10_mobile.png'
 
 // testimonial assets
 import TestimonialAuthor from '~/assets/useful/useful-ceo.png'
@@ -43,7 +43,6 @@ import ServiceWorkshopsIcon from '~/assets/experiences/workshops.svg?component'
 import ServiceInterfaceIcon from '~/assets/experiences/interface.svg?component'
 import ServiceUXIcon from '~/assets/experiences/UX.svg?component'
 import ServiceDesignIcon from '~/assets/experiences/design.svg?component'
-import ServiceSupportIcon from '~/assets/experiences/support.svg?component'
 import ServiceFlawlessIcon from '~/assets/icons/flawless.svg?component'
 
 // banner assets
@@ -53,12 +52,15 @@ import CTABannerDesktopImage from '~/assets/pocus/cta_banner_desktop.png'
 // color theme
 const cssProps = {
   '--accent-color-dark': '#6F2DE7',
-  '--accent-color-light': '#d3c0f7',
+  '--accent-color-light': '#E0D1FA',
 }
 
 const hero = {
-  imageUrl: Dashboard,
-  videoUrl: DashboardVideo,
+  image: {
+    urlMobile: Dashboard,
+    urlDesktop: DashboardDesktop,
+    altText: 'Useful app dashboard, designed by Semiflat'
+  },
   title: 'Helping Useful raise $5M to empower continuous delivery tech teams',
   description:
     'Turn customer calls into Product gold. Transcribe, highlight, and share important moments from customer calls. Excite and inform teammates to build products your customers will love.',
@@ -271,8 +273,8 @@ const productShotsGalleries = [
   {
     images: [
       {
-        urlDesktop: PocusShotDesktop,
-        urlMobile: PocusShotMobile,
+        urlDesktop: ProductShotDesktop,
+        urlMobile: ProductShotMobile,
         altText: 'Semiflat Case Study: Pocus App dashboard',
       },
     ],
@@ -280,37 +282,18 @@ const productShotsGalleries = [
   {
     images: [
       {
-        urlDesktop: PocusShot2Desktop,
-        urlMobile: PocusShot2Mobile,
+        urlDesktop: ProductShot2Desktop,
+        urlMobile: ProductShot2Mobile,
         altText: 'Semiflat Case Study: Pocus App dashboard',
       },
       {
-        urlDesktop: PocusShot3Desktop,
-        urlMobile: PocusShot3Mobile,
+        urlDesktop: ProductShot3Desktop,
+        urlMobile: ProductShot3Mobile,
         altText: 'Semiflat Case Study: Pocus App dashboard',
       },
       {
-        urlDesktop: PocusShot4Desktop,
-        urlMobile: PocusShot4Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
-      },
-    ],
-  },
-  {
-    images: [
-      {
-        urlDesktop: PocusShot8Desktop,
-        urlMobile: PocusShot8Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
-      },
-      {
-        urlDesktop: PocusShot9Desktop,
-        urlMobile: PocusShot9Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
-      },
-      {
-        urlDesktop: PocusShot10Desktop,
-        urlMobile: PocusShot10Mobile,
+        urlDesktop: ProductShot4Desktop,
+        urlMobile: ProductShot4Mobile,
         altText: 'Semiflat Case Study: Pocus App dashboard',
       },
     ],
@@ -318,18 +301,37 @@ const productShotsGalleries = [
   {
     images: [
       {
-        urlDesktop: PocusShot5Desktop,
-        urlMobile: PocusShot5Mobile,
+        urlDesktop: ProductShot8Desktop,
+        urlMobile: ProductShot8Mobile,
         altText: 'Semiflat Case Study: Pocus App dashboard',
       },
       {
-        urlDesktop: PocusShot6Desktop,
-        urlMobile: PocusShot6Mobile,
+        urlDesktop: ProductShot9Desktop,
+        urlMobile: ProductShot9Mobile,
         altText: 'Semiflat Case Study: Pocus App dashboard',
       },
       {
-        urlDesktop: PocusShot7Desktop,
-        urlMobile: PocusShot7Mobile,
+        urlDesktop: ProductShot10Desktop,
+        urlMobile: ProductShot10Mobile,
+        altText: 'Semiflat Case Study: Pocus App dashboard',
+      },
+    ],
+  },
+  {
+    images: [
+      {
+        urlDesktop: ProductShot5Desktop,
+        urlMobile: ProductShot5Mobile,
+        altText: 'Semiflat Case Study: Pocus App dashboard',
+      },
+      {
+        urlDesktop: ProductShot6Desktop,
+        urlMobile: ProductShot6Mobile,
+        altText: 'Semiflat Case Study: Pocus App dashboard',
+      },
+      {
+        urlDesktop: ProductShot7Desktop,
+        urlMobile: ProductShot7Mobile,
         altText: 'Semiflat Case Study: Pocus App dashboard',
       },
     ],

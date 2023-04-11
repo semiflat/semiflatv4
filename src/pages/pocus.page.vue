@@ -1,8 +1,7 @@
 <script lang="ts" setup>
 // hero assets
 import Dashboard from '~/assets/pocus/pocus-dashboard-tiny.png'
-import DashboardVideo from '~/assets/pocus/pocus-dashboard.mp4'
-import PocusLogo from '~/assets/pocus/pocus-logo.svg?component'
+import DashboardDesktop from '~/assets/pocus/dashboard-desktop.png'
 import FundingIcon from '~/assets/pocus/funding.svg?url'
 import LocationIcon from '~/assets/pocus/location.svg?url'
 import TimelineIcon from '~/assets/pocus/timeline.svg?url'
@@ -56,9 +55,11 @@ const cssProps = {
 }
 
 const hero = {
-  logotype: PocusLogo,
-  imageUrl: Dashboard,
-  videoUrl: DashboardVideo,
+  image: {
+    urlMobile: Dashboard,
+    urlDesktop: DashboardDesktop,
+    altText: 'Pocus app dashboard, designed by Semiflat'
+  },
   title: 'Designing Pocus, a product-led sales tool that raised a $23M series A',
   description:
     'Pocus is a Product-Led Sales platform that gives go-to-market teams access to product usage data without relying on engineers.',
