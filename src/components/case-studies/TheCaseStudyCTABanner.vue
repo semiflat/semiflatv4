@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import type { Image } from '../common/AppImage.vue'
 
-interface CaseStudyCTACard {
+interface CaseStudyCTABanner {
   title: string
   description: string
   buttons: any[]
   image: Image
 }
 
-const props = defineProps<CaseStudyCTACard>()
+const props = defineProps<CaseStudyCTABanner>()
 </script>
 
 <template>

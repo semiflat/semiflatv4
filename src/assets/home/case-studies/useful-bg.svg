@@ -3,22 +3,22 @@
 <rect width="631" height="357" fill="url(#paint0_radial_2479_22662)"/>
 </mask>
 <g mask="url(#mask0_2479_22662)">
-<rect x="96" width="1" height="357" fill="#BCDCDC"/>
-<rect x="96" width="1" height="357" fill="#BCDCDC"/>
-<rect x="156" width="1" height="357" fill="#BCDCDC"/>
-<rect x="156" width="1" height="357" fill="#BCDCDC"/>
-<rect x="287" width="1" height="357" fill="#BCDCDC"/>
-<rect x="287" width="1" height="357" fill="#BCDCDC"/>
-<rect x="534" width="1" height="357" fill="#BCDCDC"/>
-<rect x="534" width="1" height="357" fill="#BCDCDC"/>
-<rect width="631" height="1" transform="matrix(1 0 0 -1 0 73)" fill="#BCDCDC"/>
-<rect width="631" height="1" transform="matrix(1 0 0 -1 0 73)" fill="#BCDCDC"/>
-<rect width="631" height="1" transform="matrix(1 0 0 -1 0 214)" fill="#BCDCDC"/>
-<rect width="631" height="1" transform="matrix(1 0 0 -1 0 214)" fill="#BCDCDC"/>
-<rect width="631" height="1" transform="matrix(1 0 0 -1 0 325)" fill="#BCDCDC"/>
-<rect width="631" height="1" transform="matrix(1 0 0 -1 0 325)" fill="#BCDCDC"/>
-<rect width="631" height="1" transform="matrix(1 0 0 -1 0 325)" fill="#BCDCDC"/>
-<rect width="631" height="1" transform="matrix(1 0 0 -1 0 325)" fill="#BCDCDC"/>
+<rect x="96" width="1" height="357" fill="currentColor"/>
+<rect x="96" width="1" height="357" fill="currentColor"/>
+<rect x="156" width="1" height="357" fill="currentColor"/>
+<rect x="156" width="1" height="357" fill="currentColor"/>
+<rect x="287" width="1" height="357" fill="currentColor"/>
+<rect x="287" width="1" height="357" fill="currentColor"/>
+<rect x="534" width="1" height="357" fill="currentColor"/>
+<rect x="534" width="1" height="357" fill="currentColor"/>
+<rect width="631" height="1" transform="matrix(1 0 0 -1 0 73)" fill="currentColor"/>
+<rect width="631" height="1" transform="matrix(1 0 0 -1 0 73)" fill="currentColor"/>
+<rect width="631" height="1" transform="matrix(1 0 0 -1 0 214)" fill="currentColor"/>
+<rect width="631" height="1" transform="matrix(1 0 0 -1 0 214)" fill="currentColor"/>
+<rect width="631" height="1" transform="matrix(1 0 0 -1 0 325)" fill="currentColor"/>
+<rect width="631" height="1" transform="matrix(1 0 0 -1 0 325)" fill="currentColor"/>
+<rect width="631" height="1" transform="matrix(1 0 0 -1 0 325)" fill="currentColor"/>
+<rect width="631" height="1" transform="matrix(1 0 0 -1 0 325)" fill="currentColor"/>
 </g>
 <defs>
 <radialGradient id="paint0_radial_2479_22662" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(316.215 158.785) rotate(90) scale(198.215 478.408)">

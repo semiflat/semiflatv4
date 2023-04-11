@@ -45,13 +45,18 @@ import ServiceDesignIcon from '~/assets/experiences/design.svg?component'
 import ServiceSupportIcon from '~/assets/experiences/support.svg?component'
 import ServiceFlawlessIcon from '~/assets/icons/flawless.svg?component'
 
-// banner assets 
+// read more assets
+import Doss from '~/assets/home/case-studies/doss.png'
+import Useful from '~/assets/home/case-studies/useful.png'
+
+// banner assets
 import CTABannerMobileImage from '~/assets/pocus/cta_banner_mobile.png'
 import CTABannerDesktopImage from '~/assets/pocus/cta_banner_desktop.png'
 
 // color theme
 const cssProps = {
   '--accent-color-dark': '#481B97',
+  '--accent-color-medium': '#824EDF',
   '--accent-color-light': '#E1D4F7',
 }
 
@@ -220,6 +225,21 @@ const caseOutcomes = {
   },
 }
 
+const readMore = {
+  title: 'Read similar case studies_',
+  cards: [
+    {
+      picture: Useful,
+      caption: 'Helping Useful raise $5M to empower continuous delivery tech teams.',
+      link: '/useful',
+    },
+    {
+      picture: Doss,
+      caption: 'MVP prototype and ongoing suport for Doss - a platform for operations teams.',
+    },
+  ],
+}
+
 const ctaBanner = {
   title: 'Want to partner with design experts in SaaS?',
   description: 'We’re excited to talk to you about your project requirements and business goals.',
@@ -357,6 +377,10 @@ const productShotsGalleries = [
 
     <TheCaseStudyBlock>
       <AppImagesGroup v-bind="productShotsGalleries[3]" />
+    </TheCaseStudyBlock>
+
+    <TheCaseStudyBlock>
+      <TheCaseStudyReadMore v-bind="readMore" />
     </TheCaseStudyBlock>
 
     <TheCaseStudyBlock>

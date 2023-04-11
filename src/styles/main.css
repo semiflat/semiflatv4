@@ -53,7 +53,8 @@
 
 :root {
   --accent-color-dark: #002832;
-  --accent-color-light: #96ebd6;
+  --accent-color-medium: #54ABA3;
+  --accent-color-light: #BCDCDC;
 }
 
 html,
