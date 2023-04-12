@@ -48,7 +48,7 @@ onMounted(() => {
 
 <template>
   <div>
-    <nav class="relative md:hidden">
+    <nav class="relative md:hidden navbar">
       <div
         class="px-6 flex fixed -top-1px w-full items-center justify-between h-3.5rem z-20 duration-500 mobile-nav"
       >
@@ -79,7 +79,7 @@ onMounted(() => {
       </div>
     </nav>
     <nav
-      class="items-center page-content justify-between h-3.5rem md:h-16 relative !hidden md:!flex"
+      class="items-center page-content justify-between h-3.5rem md:h-16 relative !hidden md:!flex navbar"
     >
       <a href="/">
         <LogoDesktop class="hidden md:block" />
@@ -104,6 +104,7 @@ onMounted(() => {
         class="!hidden md:!inline-flex"
         href="mailto:hello@semiflat.com"
         :class="[context.pageProps?.pageShell?.bgColor]"
+        :style="{ background: context.pageProps?.pageShell?.accentColor }"
         >Get in touch</AppButton
       >
     </nav>
@@ -111,6 +112,11 @@ onMounted(() => {
 </template>
 
 <style>
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+
 .mobile-nav {
   transition-property: box-shadow, background-color;
   will-change: box-shadow, background-color;
