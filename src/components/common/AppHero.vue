@@ -38,13 +38,7 @@ const props = defineProps<{
   </div>
 </template>
 
-<style lang="scss">
-@keyframes marquee {
-  to {
-    transform: translateX(-100%);
-  }
-}
-
+<style lang="scss" scoped>
 .hero {
   margin-top: 3.5rem;
 

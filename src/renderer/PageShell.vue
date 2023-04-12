@@ -34,6 +34,6 @@ if (!import.meta.env.SSR) {
 .layout {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow: clip;
 }
 </style>
