@@ -94,6 +94,8 @@ const props = defineProps<CaseStudyCTABanner>()
   }
 
   &__image-wrapper {
+    padding-top: clamp(2.5rem, 7vw, 5rem);
+    padding-left: clamp(2rem, 10vw, 8rem);
     align-self: flex-end;
   }
 

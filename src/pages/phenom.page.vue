@@ -7,13 +7,12 @@ import LocationIcon from '~/assets/phenom/location.svg?url'
 import TimelineIcon from '~/assets/phenom/timeline.svg?url'
 
 // how we helped assets
-import HowWeHelpedImage from '~/assets/phenom/how-we-helped-desktop.png'
-import HowWeHelpedImageMobile from '~/assets/phenom/how-we-helped-mobile.png'
+import HowWeHelpedImage from '~/assets/phenom/how-we-helped.png'
 import ResearchIcon from '~/assets/experiences/workshops.svg?component'
 import InterfaceIcon from '~/assets/experiences/interface.svg?component'
 import DesignIcon from '~/assets/experiences/design.svg?component'
 import ProcessIcon from '~/assets/experiences/support.svg?component'
-import UXIcon from '~/assets/experiences/UX.svg?component'
+import SupportIcon from '~/assets/experiences/support.svg?component'
 
 // product shots assets
 import ProductShotDesktop from '~/assets/phenom/product_shot_1_desktop.png'
@@ -43,8 +42,7 @@ import ServiceDesignTeam from '~/assets/experiences/design-team.svg?component'
 import ServiceMotionDesign from '~/assets/experiences/motion-design.svg?component'
 
 // banner assets
-import CTABannerMobileImage from '~/assets/case-study/cta_banner_mobile.png'
-import CTABannerDesktopImage from '~/assets/case-study/cta_banner_desktop.png'
+import CTABannerDesktopImage from '~/assets/case-study/cta_banner.png'
 
 // color theme
 const cssProps = {
@@ -96,7 +94,6 @@ const hero = {
 const howWeHelped = {
   title: 'How we’ve helped_',
   image: {
-    urlMobile: HowWeHelpedImageMobile,
     urlDesktop: HowWeHelpedImage,
     altText: 'Phenom app dashboard detail, designed by Semiflat',
   },
@@ -125,8 +122,8 @@ const howWeHelped = {
         'Having an expansive product suite, consistency is important to Phenom. That’s why we’ve supported them with a dedicated full-time design system expert.',
     },
     {
-      icon: UXIcon,
-      title: 'Design System',
+      icon: SupportIcon,
+      title: 'Ongoing support',
       description:
         'We worked with multiple teams across Phenom. Each month team leaders were able to place orders for the number of hours and seniority level they were seeking for their project.',
     },
@@ -280,7 +277,6 @@ const ctaBanner = {
   ],
   image: {
     urlDesktop: CTABannerDesktopImage,
-    urlMobile: CTABannerMobileImage,
     altText: 'Semiflat Case Study: Pocus App dashboard',
   },
 }

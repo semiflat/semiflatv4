@@ -7,8 +7,7 @@ import LocationIcon from '~/assets/useful/location.svg?url'
 import TimelineIcon from '~/assets/useful/timeline.svg?url'
 
 // how we helped assets
-import HowWeHelpedImage from '~/assets/useful/how-we-helped-desktop.png'
-import HowWeHelpedImageMobile from '~/assets/useful/how-we-helped-mobile.png'
+import HowWeHelpedImage from '~/assets/useful/how-we-helped.png'
 import ResearchIcon from '~/assets/experiences/workshops.svg?component'
 import InterfaceIcon from '~/assets/experiences/interface.svg?component'
 import DesignIcon from '~/assets/experiences/design.svg?component'
@@ -47,8 +46,7 @@ import ServiceDesignIcon from '~/assets/experiences/design.svg?component'
 import ServiceFlawlessIcon from '~/assets/icons/flawless.svg?component'
 
 // banner assets
-import CTABannerMobileImage from '~/assets/case-study/cta_banner_mobile.png'
-import CTABannerDesktopImage from '~/assets/case-study/cta_banner_desktop.png'
+import CTABannerDesktopImage from '~/assets/case-study/cta_banner.png'
 
 // color theme
 const cssProps = {
@@ -101,7 +99,6 @@ const howWeHelped = {
   title: 'How we’ve helped_',
   image: {
     urlDesktop: HowWeHelpedImage,
-    urlMobile: HowWeHelpedImageMobile,
     altText: 'Detail of Useful app dashboard designed by Semiflat',
   },
   list: [
@@ -270,7 +267,6 @@ const ctaBanner = {
   ],
   image: {
     urlDesktop: CTABannerDesktopImage,
-    urlMobile: CTABannerMobileImage,
     altText: 'Semiflat Case Study: Useful app dashboard',
   },
 }

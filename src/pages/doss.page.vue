@@ -7,8 +7,7 @@ import LocationIcon from '~/assets/doss/location.svg?url'
 import TimelineIcon from '~/assets/doss/timeline.svg?url'
 
 // how we helped assets
-import HowWeHelpedImage from '~/assets/doss/how-we-helped-desktop.png'
-import HowWeHelpedImageMobile from '~/assets/doss/how-we-helped-mobile.png'
+import HowWeHelpedImage from '~/assets/doss/how-we-helped.png'
 import BrandingIcon from '~/assets/experiences/branding.svg?component'
 import WebsiteIcon from '~/assets/experiences/website.svg?component'
 import DesignIcon from '~/assets/experiences/design.svg?component'
@@ -50,8 +49,7 @@ import ServiceWebsiteIcon from '~/assets/experiences/website.svg?component'
 import ServiceSupportIcon from '~/assets/experiences/support.svg?component'
 
 // banner assets
-import CTABannerMobileImage from '~/assets/case-study/cta_banner_mobile.png'
-import CTABannerDesktopImage from '~/assets/case-study/cta_banner_desktop.png'
+import CTABannerDesktopImage from '~/assets/case-study/cta_banner.png'
 
 // color theme
 const cssProps = {
@@ -104,7 +102,6 @@ const howWeHelped = {
   title: 'How we’ve helped_',
   image: {
     urlDesktop: HowWeHelpedImage,
-    urlMobile: HowWeHelpedImageMobile,
     altText: 'Detail of Doss App dashboard designed by Semiflat',
   },
   list: [
@@ -282,7 +279,6 @@ const ctaBanner = {
   ],
   image: {
     urlDesktop: CTABannerDesktopImage,
-    urlMobile: CTABannerMobileImage,
     altText: 'Semiflat Case Study: Doss App dashboard',
   },
 }

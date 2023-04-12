@@ -96,13 +96,21 @@ $bg-color: #{var(--accent-color-dark)};
     }
   }
 
-  &__image {
-    width: 120%;
-    margin-left: -10%;
+  &__image-wrapper {
+    padding: 2.5rem 1.5rem;
 
     @media (min-width: 768px) {
-      width: 100%;
-      margin: 0;
+      padding: 5rem 3rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      display: block;
+      margin: 0 auto;
+      max-width: 370px;
     }
   }
 }

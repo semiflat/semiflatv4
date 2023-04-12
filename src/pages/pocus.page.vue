@@ -7,8 +7,7 @@ import LocationIcon from '~/assets/pocus/location.svg?url'
 import TimelineIcon from '~/assets/pocus/timeline.svg?url'
 
 // how we helped assets
-import HowWeHelpedImage from '~/assets/pocus/how-we-helped-shot.png'
-import HowWeHelpedImageMobile from '~/assets/pocus/how-we-helped-mobile.png'
+import HowWeHelpedImage from '~/assets/pocus/how-we-helped.png'
 import InterfaceIcon from '~/assets/experiences/interface.svg?component'
 import DesignIcon from '~/assets/experiences/design.svg?component'
 import SupportIcon from '~/assets/experiences/support.svg?component'
@@ -46,8 +45,7 @@ import ServiceSupportIcon from '~/assets/experiences/support.svg?component'
 import ServiceFlawlessIcon from '~/assets/icons/flawless.svg?component'
 
 // banner assets
-import CTABannerMobileImage from '~/assets/case-study/cta_banner_mobile.png'
-import CTABannerDesktopImage from '~/assets/case-study/cta_banner_desktop.png'
+import CTABannerDesktopImage from '~/assets/case-study/cta_banner.png'
 
 // color theme
 const cssProps = {
@@ -100,7 +98,6 @@ const howWeHelped = {
   title: 'How we’ve helped_',
   image: {
     urlDesktop: HowWeHelpedImage,
-    urlMobile: HowWeHelpedImageMobile,
     altText: 'Detail of Pocus App dashboard designed by Semiflat',
   },
   list: [
@@ -244,7 +241,6 @@ const ctaBanner = {
   ],
   image: {
     urlDesktop: CTABannerDesktopImage,
-    urlMobile: CTABannerMobileImage,
     altText: 'Semiflat Case Study: Pocus App dashboard',
   },
 }
