@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Component } from 'vue'
+import type { Image } from './AppImage.vue';
 
 interface ListBoxItem {
   icon: Component
@@ -8,7 +9,7 @@ interface ListBoxItem {
 }
 
 const props = defineProps<{
-  imageUrl: string
+  image: Image
   list: ListBoxItem[]
   title: string
 }>()
@@ -30,7 +31,7 @@ const props = defineProps<{
       </ul>
     </div>
     <div class="list-box__image-wrapper">
-      <img class="list-box__image" :src="imageUrl" alt="" loading="lazy" />
+      <AppImage class="list-box__image" v-bind="props.image" />
     </div>
   </div>
 </template>

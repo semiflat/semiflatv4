@@ -7,7 +7,8 @@ import LocationIcon from '~/assets/useful/location.svg?url'
 import TimelineIcon from '~/assets/useful/timeline.svg?url'
 
 // how we helped assets
-import HowWeHelpedImage from '~/assets/useful/how-we-helped-shot.png'
+import HowWeHelpedImage from '~/assets/useful/how-we-helped-desktop.png'
+import HowWeHelpedImageMobile from '~/assets/useful/how-we-helped-mobile.png'
 import ResearchIcon from '~/assets/experiences/workshops.svg?component'
 import InterfaceIcon from '~/assets/experiences/interface.svg?component'
 import DesignIcon from '~/assets/experiences/design.svg?component'
@@ -98,7 +99,11 @@ const hero = {
 
 const howWeHelped = {
   title: 'How we’ve helped_',
-  imageUrl: HowWeHelpedImage,
+  image: {
+    urlDesktop: HowWeHelpedImage,
+    urlMobile: HowWeHelpedImageMobile,
+    altText: 'Detail of Useful app dashboard designed by Semiflat',
+  },
   list: [
     {
       icon: ResearchIcon,

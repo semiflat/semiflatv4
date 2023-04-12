@@ -62,9 +62,7 @@ const props = defineProps<CaseStudyCTABanner>()
   }
 
   @media (min-width: 1200px) {
-    display: grid;
     grid-template-columns: auto 632px;
-    align-items: center;
   }
 
   &__text-wrapper {
@@ -93,6 +91,10 @@ const props = defineProps<CaseStudyCTABanner>()
     @media (min-width: 768px) {
       margin-top: 1.5rem;
     }
+  }
+
+  &__image-wrapper {
+    align-self: flex-end;
   }
 
   &__button {

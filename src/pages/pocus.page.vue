@@ -8,6 +8,7 @@ import TimelineIcon from '~/assets/pocus/timeline.svg?url'
 
 // how we helped assets
 import HowWeHelpedImage from '~/assets/pocus/how-we-helped-shot.png'
+import HowWeHelpedImageMobile from '~/assets/pocus/how-we-helped-mobile.png'
 import InterfaceIcon from '~/assets/experiences/interface.svg?component'
 import DesignIcon from '~/assets/experiences/design.svg?component'
 import SupportIcon from '~/assets/experiences/support.svg?component'
@@ -97,7 +98,11 @@ const hero = {
 
 const howWeHelped = {
   title: 'How we’ve helped_',
-  imageUrl: HowWeHelpedImage,
+  image: {
+    urlDesktop: HowWeHelpedImage,
+    urlMobile: HowWeHelpedImageMobile,
+    altText: 'Detail of Pocus App dashboard designed by Semiflat',
+  },
   list: [
     {
       icon: InterfaceIcon,
@@ -315,7 +320,7 @@ const productShotsGalleries = [
 </script>
 
 <template>
-  <div :style="cssProps">
+  <div :style="cssProps" class="case-study-page">
     <TheCaseStudyHero v-bind="hero" />
 
     <TheCaseStudyBlock decor="top-right">
@@ -366,3 +371,6 @@ const productShotsGalleries = [
     </TheCaseStudyBlock>
   </div>
 </template>
+
+<style lang="scss">
+</style>

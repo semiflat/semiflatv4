@@ -68,7 +68,7 @@ const hero = {
   buttons: [
     {
       label: 'See live version',
-      href: '#',
+      href: 'https://www.doss.com/',
       isTargetBlank: true,
     },
     {
