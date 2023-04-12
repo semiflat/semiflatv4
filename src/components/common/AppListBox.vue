@@ -90,6 +90,10 @@ $bg-color: #{var(--accent-color-dark)};
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1.5rem;
+
+    @media (min-width: 1040px) {
+      grid-gap: 2rem;
+    }
   }
 
   &__image {

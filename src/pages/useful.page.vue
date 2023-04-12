@@ -271,7 +271,7 @@ const ctaBanner = {
   image: {
     urlDesktop: CTABannerDesktopImage,
     urlMobile: CTABannerMobileImage,
-    altText: 'Semiflat Case Study: Pocus App dashboard',
+    altText: 'Semiflat Case Study: Useful app dashboard',
   },
 }
 
@@ -281,7 +281,7 @@ const productShotsGalleries = [
       {
         urlDesktop: ProductShotDesktop,
         urlMobile: ProductShotMobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Useful app dashboard',
       },
     ],
   },
@@ -290,17 +290,17 @@ const productShotsGalleries = [
       {
         urlDesktop: ProductShot2Desktop,
         urlMobile: ProductShot2Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Useful app dashboard',
       },
       {
         urlDesktop: ProductShot3Desktop,
         urlMobile: ProductShot3Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Useful app dashboard',
       },
       {
         urlDesktop: ProductShot4Desktop,
         urlMobile: ProductShot4Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Useful app dashboard',
       },
     ],
   },
@@ -309,17 +309,17 @@ const productShotsGalleries = [
       {
         urlDesktop: ProductShot8Desktop,
         urlMobile: ProductShot8Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Useful app dashboard',
       },
       {
         urlDesktop: ProductShot9Desktop,
         urlMobile: ProductShot9Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Useful app dashboard',
       },
       {
         urlDesktop: ProductShot10Desktop,
         urlMobile: ProductShot10Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Useful app dashboard',
       },
     ],
   },
@@ -328,17 +328,17 @@ const productShotsGalleries = [
       {
         urlDesktop: ProductShot5Desktop,
         urlMobile: ProductShot5Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Useful app dashboard',
       },
       {
         urlDesktop: ProductShot6Desktop,
         urlMobile: ProductShot6Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Useful app dashboard',
       },
       {
         urlDesktop: ProductShot7Desktop,
         urlMobile: ProductShot7Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Useful app dashboard',
       },
     ],
   },

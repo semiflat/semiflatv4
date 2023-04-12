@@ -7,33 +7,36 @@ import LocationIcon from '~/assets/doss/location.svg?url'
 import TimelineIcon from '~/assets/doss/timeline.svg?url'
 
 // how we helped assets
-import HowWeHelpedImage from '~/assets/useful/how-we-helped-shot.png'
-import ResearchIcon from '~/assets/experiences/workshops.svg?component'
-import InterfaceIcon from '~/assets/experiences/interface.svg?component'
+import HowWeHelpedImage from '~/assets/doss/how-we-helped-desktop.png'
+import HowWeHelpedImageMobile from '~/assets/doss/how-we-helped-mobile.png'
+import BrandingIcon from '~/assets/experiences/branding.svg?component'
+import WebsiteIcon from '~/assets/experiences/website.svg?component'
 import DesignIcon from '~/assets/experiences/design.svg?component'
-import ProcessIcon from '~/assets/experiences/support.svg?component'
+import SupportIcon from '~/assets/experiences/support.svg?component'
+import UXIcon from '~/assets/experiences/user-experience-design.svg?component'
+import UIIcon from '~/assets/experiences/user-interface-design.svg?component'
 
 // product shots assets
-import ProductShotDesktop from '~/assets/useful/product_shot_1_desktop.png'
-import ProductShotMobile from '~/assets/useful/product_shot_1_mobile.png'
-import ProductShot2Desktop from '~/assets/useful/product_shot_2_desktop.png'
-import ProductShot2Mobile from '~/assets/useful/product_shot_2_mobile.png'
-import ProductShot3Desktop from '~/assets/useful/product_shot_3_desktop.png'
-import ProductShot3Mobile from '~/assets/useful/product_shot_3_mobile.png'
-import ProductShot4Desktop from '~/assets/useful/product_shot_4_desktop.png'
-import ProductShot4Mobile from '~/assets/useful/product_shot_4_mobile.png'
-import ProductShot5Desktop from '~/assets/useful/product_shot_5_desktop.png'
-import ProductShot5Mobile from '~/assets/useful/product_shot_5_mobile.png'
-import ProductShot6Desktop from '~/assets/useful/product_shot_6_desktop.png'
-import ProductShot6Mobile from '~/assets/useful/product_shot_6_mobile.png'
-import ProductShot7Desktop from '~/assets/useful/product_shot_7_desktop.png'
-import ProductShot7Mobile from '~/assets/useful/product_shot_7_mobile.png'
-import ProductShot8Desktop from '~/assets/useful/product_shot_8_desktop.png'
-import ProductShot8Mobile from '~/assets/useful/product_shot_8_mobile.png'
-import ProductShot9Desktop from '~/assets/useful/product_shot_9_desktop.png'
-import ProductShot9Mobile from '~/assets/useful/product_shot_9_mobile.png'
-import ProductShot10Desktop from '~/assets/useful/product_shot_10_desktop.png'
-import ProductShot10Mobile from '~/assets/useful/product_shot_10_mobile.png'
+import ProductShotDesktop from '~/assets/doss/product_shot_1_desktop.png'
+import ProductShotMobile from '~/assets/doss/product_shot_1_mobile.png'
+import ProductShot2Desktop from '~/assets/doss/product_shot_2_desktop.png'
+import ProductShot2Mobile from '~/assets/doss/product_shot_2_mobile.png'
+import ProductShot3Desktop from '~/assets/doss/product_shot_3_desktop.png'
+import ProductShot3Mobile from '~/assets/doss/product_shot_3_mobile.png'
+import ProductShot4Desktop from '~/assets/doss/product_shot_4_desktop.png'
+import ProductShot4Mobile from '~/assets/doss/product_shot_4_mobile.png'
+import ProductShot5Desktop from '~/assets/doss/product_shot_5_desktop.png'
+import ProductShot5Mobile from '~/assets/doss/product_shot_5_mobile.png'
+import ProductShot6Desktop from '~/assets/doss/product_shot_6_desktop.png'
+import ProductShot6Mobile from '~/assets/doss/product_shot_6_mobile.png'
+import ProductShot7Desktop from '~/assets/doss/product_shot_7_desktop.png'
+import ProductShot7Mobile from '~/assets/doss/product_shot_7_mobile.png'
+import ProductShot8Desktop from '~/assets/doss/product_shot_8_desktop.png'
+import ProductShot8Mobile from '~/assets/doss/product_shot_8_mobile.png'
+import ProductShot9Desktop from '~/assets/doss/product_shot_9_desktop.png'
+import ProductShot9Mobile from '~/assets/doss/product_shot_9_mobile.png'
+import ProductShot10Desktop from '~/assets/doss/product_shot_10_desktop.png'
+import ProductShot10Mobile from '~/assets/doss/product_shot_10_mobile.png'
 
 // testimonial assets
 import TestimonialAuthor from '~/assets/doss/wiley-jones.jpg'
@@ -41,9 +44,13 @@ import TestimonialAuthor from '~/assets/doss/wiley-jones.jpg'
 // services icons
 import ServiceWorkshopsIcon from '~/assets/experiences/workshops.svg?component'
 import ServiceInterfaceIcon from '~/assets/experiences/interface.svg?component'
-import ServiceUXIcon from '~/assets/experiences/UX.svg?component'
+import ServiceUIIcon from '~/assets/experiences/user-interface-design.svg?component'
+import ServiceUXIcon from '~/assets/experiences/user-experience-design.svg?component'
 import ServiceDesignIcon from '~/assets/experiences/design.svg?component'
 import ServiceFlawlessIcon from '~/assets/icons/flawless.svg?component'
+import ServiceWebsiteIcon from '~/assets/experiences/website.svg?component'
+import ServiceSupportIcon from '~/assets/experiences/support.svg?component'
+import ServiceBranding from '~/assets/experiences/branding.svg?component'
 
 // banner assets
 import CTABannerMobileImage from '~/assets/pocus/cta_banner_mobile.png'
@@ -98,40 +105,44 @@ const hero = {
 
 const howWeHelped = {
   title: 'How we’ve helped_',
-  imageUrl: HowWeHelpedImage,
+  image: {
+    urlDesktop: HowWeHelpedImage,
+    urlMobile: HowWeHelpedImageMobile,
+    altText: 'Detail of Pocus App dashboard designed by Semiflat',
+  },
   list: [
     {
-      icon: ResearchIcon,
+      icon: UXIcon,
       title: 'User experience design',
       description:
         'We’ve designed the user experience for specific scenarios from scratch.',
     },
     {
-      icon: ProcessIcon,
+      icon: UIIcon,
       title: 'User interface design',
       description:
         'We’ve come up with a subtle yet polished look & feel for the application. ',
     },
     {
-      icon: InterfaceIcon,
+      icon: DesignIcon,
       title: 'Design system',
       description:
         'We’ve made sure all reusable components were reflected in the component library we’ve handed over to development.',
     },
     {
-      icon: DesignIcon,
+      icon: BrandingIcon,
       title: 'Branding',
       description:
         'We’ve designed a few iterations of brand identity for Doss.',
     },
     {
-      icon: DesignIcon,
+      icon: WebsiteIcon,
       title: 'Website design and development',
       description:
         'We’ve designed and implemented a marketing page for Doss in Webflow.',
     },
     {
-      icon: DesignIcon,
+      icon: SupportIcon,
       title: 'Ongoing support',
       description:
         'We’ve worked closely with the founder in iterative sprints to create prototype scenarios.',
@@ -168,7 +179,7 @@ const servicesSection = {
   title: 'Step by step on how we’ve worked with Doss on their application design_',
   services: [
     {
-      icon: ServiceFlawlessIcon,
+      icon: ServiceWebsiteIcon,
       title: 'Web design and development',
       description:
         'We’ve started the collaboration with a simple marketing page design project. We’ve then implemented our design using Webflow.',
@@ -186,7 +197,7 @@ const servicesSection = {
         'After that came the next phase - iterative, low fidelity wireframing, where we’ve proposed solutions around information architecture and hierarchy.',
     },
     {
-      icon: ServiceInterfaceIcon,
+      icon: ServiceUIIcon,
       title: 'User interface design',
       description:
         'We’ve proposed a visual identity for Doss and applied it across all wireframes, delivering a highly polished final design.',
@@ -198,7 +209,7 @@ const servicesSection = {
         'Along with the user interface, we’ve built a component library of all reusable elements from the designs.',
     },
     {
-      icon: ServiceDesignIcon,
+      icon: ServiceSupportIcon,
       title: 'Ongoing, iterative collaboration',
       description:
         'Over six months, we’ve iterated on the application prototype to add features and implement ongoing customer feedback.',
