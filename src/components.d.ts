@@ -29,6 +29,8 @@ declare module '@vue/runtime-core' {
     AppToastError: typeof import('./components/toasts/AppToastError.vue')['default']
     AppToastSuccess: typeof import('./components/toasts/AppToastSuccess.vue')['default']
     ClientOnly: typeof import('./components/utility/ClientOnly.vue')['default']
+    DossBg: typeof import('./components/utility/animations/DossBg.vue')['default']
+    PhenomBg: typeof import('./components/utility/animations/PhenomBg.vue')['default']
     PocusBg: typeof import('./components/utility/animations/PocusBg.vue')['default']
     TheAboutAboutSection: typeof import('./components/sections/about/TheAboutAboutSection.vue')['default']
     TheAboutComponent: typeof import('./components/about/TheAboutComponent.vue')['default']

@@ -22,6 +22,12 @@ const illustrations = [
   {
     picture: Phenom,
     caption: 'Supporting Phenom - an HR-Tech unicorn by building a dedicated design team.',
+    link: '/phenom'
+  },
+  {
+    picture: Doss,
+    caption: 'MVP prototype and ongoing suport for Doss - a platform for operations teams.',
+    link: '/doss'
   },
   {
     picture: Appfleet,
@@ -31,10 +37,6 @@ const illustrations = [
   {
     picture: Sisu,
     caption: 'Supporting Sisu - a decision intelligence platform with a dedicated designer',
-  },
-  {
-    picture: Doss,
-    caption: 'MVP prototype and ongoing suport for Doss - a platform for operations teams.',
   },
 
   {

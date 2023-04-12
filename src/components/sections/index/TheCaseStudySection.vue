@@ -6,11 +6,10 @@ import Phenom from '~/assets/home/case-studies/phenom.png'
 import Pocus from '~/assets/home/case-studies/pocus.png'
 import Useful from '~/assets/home/case-studies/useful.png'
 
-import DossBg from '~/assets/home/case-studies/doss-bg.svg'
-import PhenomBg from '~/assets/home/case-studies/phenom-bg.svg'
+import DossBg from '~/components/utility/animations/DossBg.vue'
+import PhenomBg from '~/components/utility/animations/PhenomBg.vue'
 import PocusBg from '~/components/utility/animations/PocusBg.vue'
 import UsefulBg from '~/components/utility/animations/UsefulBg.vue'
-
 
 interface IllustrationCard {
   picture: Component
@@ -32,6 +31,7 @@ const cases = [
     picture: Phenom,
     background: PhenomBg,
     caption: 'Supporting Phenom - an HR-Tech unicorn by building a dedicated design team.',
+    link: '/phenom',
   },
   {
     picture: Useful,
@@ -43,6 +43,7 @@ const cases = [
     picture: Doss,
     background: DossBg,
     caption: 'MVP prototype and ongoing suport for Doss - a platform for operations teams.',
+    link: '/doss',
   },
 ]
 </script>
@@ -61,7 +62,6 @@ const cases = [
 
 <style lang="scss">
 .case-study-section {
-
   &__list {
     display: grid;
     grid-template-columns: 1fr;
@@ -72,7 +72,7 @@ const cases = [
 
       > * {
         grid-column: span 5;
-        
+
         &:nth-child(2),
         &:nth-child(3) {
           grid-column: span 7;
