@@ -21,7 +21,7 @@ const props = defineProps<{
   padding-top: 3rem;
 
   @media (min-width: 768px) {
-    padding-top: 6rem;
+    padding-top: 8rem;
   }
 
   @media (min-width: 1040px) {

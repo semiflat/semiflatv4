@@ -24,6 +24,8 @@ const props = defineProps<Author>()
     display: flex;
     gap: 1em;
     text-align: left;
+    align-items: center;
+    max-width: 19rem;
 
     &__image {
         width: 3em;

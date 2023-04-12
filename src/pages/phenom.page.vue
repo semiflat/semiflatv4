@@ -7,7 +7,8 @@ import LocationIcon from '~/assets/phenom/location.svg?url'
 import TimelineIcon from '~/assets/phenom/timeline.svg?url'
 
 // how we helped assets
-import HowWeHelpedImage from '~/assets/useful/how-we-helped-shot.png'
+import HowWeHelpedImage from '~/assets/phenom/how-we-helped-desktop.png'
+import HowWeHelpedImageMobile from '~/assets/phenom/how-we-helped-mobile.png'
 import ResearchIcon from '~/assets/experiences/workshops.svg?component'
 import InterfaceIcon from '~/assets/experiences/interface.svg?component'
 import DesignIcon from '~/assets/experiences/design.svg?component'
@@ -15,40 +16,35 @@ import ProcessIcon from '~/assets/experiences/support.svg?component'
 import UXIcon from '~/assets/experiences/UX.svg?component'
 
 // product shots assets
-import ProductShotDesktop from '~/assets/useful/product_shot_1_desktop.png'
-import ProductShotMobile from '~/assets/useful/product_shot_1_mobile.png'
-import ProductShot2Desktop from '~/assets/useful/product_shot_2_desktop.png'
-import ProductShot2Mobile from '~/assets/useful/product_shot_2_mobile.png'
-import ProductShot3Desktop from '~/assets/useful/product_shot_3_desktop.png'
-import ProductShot3Mobile from '~/assets/useful/product_shot_3_mobile.png'
-import ProductShot4Desktop from '~/assets/useful/product_shot_4_desktop.png'
-import ProductShot4Mobile from '~/assets/useful/product_shot_4_mobile.png'
-import ProductShot5Desktop from '~/assets/useful/product_shot_5_desktop.png'
-import ProductShot5Mobile from '~/assets/useful/product_shot_5_mobile.png'
-import ProductShot6Desktop from '~/assets/useful/product_shot_6_desktop.png'
-import ProductShot6Mobile from '~/assets/useful/product_shot_6_mobile.png'
-import ProductShot7Desktop from '~/assets/useful/product_shot_7_desktop.png'
-import ProductShot7Mobile from '~/assets/useful/product_shot_7_mobile.png'
-import ProductShot8Desktop from '~/assets/useful/product_shot_8_desktop.png'
-import ProductShot8Mobile from '~/assets/useful/product_shot_8_mobile.png'
-import ProductShot9Desktop from '~/assets/useful/product_shot_9_desktop.png'
-import ProductShot9Mobile from '~/assets/useful/product_shot_9_mobile.png'
-import ProductShot10Desktop from '~/assets/useful/product_shot_10_desktop.png'
-import ProductShot10Mobile from '~/assets/useful/product_shot_10_mobile.png'
+import ProductShotDesktop from '~/assets/phenom/product_shot_1_desktop.png'
+import ProductShotMobile from '~/assets/phenom/product_shot_1_mobile.png'
+import ProductShot2Desktop from '~/assets/phenom/product_shot_2_desktop.png'
+import ProductShot2Mobile from '~/assets/phenom/product_shot_2_mobile.png'
+import ProductShot3Desktop from '~/assets/phenom/product_shot_3_desktop.png'
+import ProductShot3Mobile from '~/assets/phenom/product_shot_3_mobile.png'
+import ProductShot4Desktop from '~/assets/phenom/product_shot_4_desktop.png'
+import ProductShot4Mobile from '~/assets/phenom/product_shot_4_mobile.png'
+import ProductShot5Desktop from '~/assets/phenom/product_shot_5_desktop.png'
+import ProductShot5Mobile from '~/assets/phenom/product_shot_5_mobile.png'
+import ProductShot6Desktop from '~/assets/phenom/product_shot_6_desktop.png'
+import ProductShot6Mobile from '~/assets/phenom/product_shot_6_mobile.png'
 
 // testimonial assets
-import TestimonialAuthor from '~/assets/useful/useful-ceo.png'
+import TestimonialAuthor from '~/assets/phenom/hanan-hermelin.jpg'
 
 // services icons
-import ServiceWorkshopsIcon from '~/assets/experiences/workshops.svg?component'
-import ServiceInterfaceIcon from '~/assets/experiences/interface.svg?component'
-import ServiceUXIcon from '~/assets/experiences/UX.svg?component'
+import ServiceUIIcon from '~/assets/experiences/user-interface-design.svg?component'
+import ServiceUXIcon from '~/assets/experiences/user-experience-design.svg?component'
 import ServiceDesignIcon from '~/assets/experiences/design.svg?component'
 import ServiceFlawlessIcon from '~/assets/icons/flawless.svg?component'
+import ServiceSupportIcon from '~/assets/experiences/support.svg?component'
+import ServiceUserTesting from '~/assets/experiences/user-testing.svg?component'
+import ServiceDesignTeam from '~/assets/experiences/design-team.svg?component'
+import ServiceMotionDesign from '~/assets/experiences/motion-design.svg?component'
 
 // banner assets
-import CTABannerMobileImage from '~/assets/pocus/cta_banner_mobile.png'
-import CTABannerDesktopImage from '~/assets/pocus/cta_banner_desktop.png'
+import CTABannerMobileImage from '~/assets/case-study/cta_banner_mobile.png'
+import CTABannerDesktopImage from '~/assets/case-study/cta_banner_desktop.png'
 
 // color theme
 const cssProps = {
@@ -61,7 +57,7 @@ const hero = {
   image: {
     urlMobile: Dashboard,
     urlDesktop: DashboardDesktop,
-    altText: 'Useful app dashboard, designed by Semiflat'
+    altText: 'Useful app dashboard, designed by Semiflat',
   },
   title: 'Supporting Phenom - an HR-Tech unicorn by building a dedicated design team',
   description:
@@ -99,13 +95,16 @@ const hero = {
 
 const howWeHelped = {
   title: 'How we’ve helped_',
-  imageUrl: HowWeHelpedImage,
+  image: {
+    urlMobile: HowWeHelpedImageMobile,
+    urlDesktop: HowWeHelpedImage,
+    altText: 'Phenom app dashboard detail, designed by Semiflat',
+  },
   list: [
     {
       icon: ProcessIcon,
       title: 'User experience design',
-      description:
-        'We’ve supported Phenom with UX design services across multiple projects.',
+      description: 'We’ve supported Phenom with UX design services across multiple projects.',
     },
     {
       icon: ResearchIcon,
@@ -130,7 +129,7 @@ const howWeHelped = {
       title: 'Design System',
       description:
         'We worked with multiple teams across Phenom. Each month team leaders were able to place orders for the number of hours and seniority level they were seeking for their project.',
-    }
+    },
   ],
 }
 
@@ -146,7 +145,7 @@ const caseDescription = {
       lead: 'Why did Phenom approach us? What outcome were they looking for?',
       body: '<p>Initially, we were approached by the VP of Product Experience at Phenom to help improve the user experience of a product feature. Over time our collaboration grew into several large projects we’ve worked on simultaneously. Phenom had a large internal design team but needed to scale their efforts up quickly without recruiting in-house. They’ve worked with us to innovate faster, deliver more features and stay ahead of the competition.</p><p>On top of that, Phenom had ambitious plans to build a dedicated innovation team of top-tier talent who’d focus exclusively on developing new product features in the automation and AI spaces.</p>',
     },
-  ]
+  ],
 }
 
 const testimonial = {
@@ -169,19 +168,19 @@ const servicesSection = {
         'The first task we ever worked on with Phenom was improving the UX of a feature from one of their products.',
     },
     {
-      icon: ServiceWorkshopsIcon,
+      icon: ServiceUXIcon,
       title: 'User experience design',
       description:
         'We have continued this project after gaining Phenom’s trust and supporting them with ongoing UX design services across multiple products.',
     },
     {
-      icon: ServiceUXIcon,
+      icon: ServiceUIIcon,
       title: 'User interface design',
       description:
         'We’ve supported teams across Phenom by creating polished UI designs on an ongoing basis.',
     },
     {
-      icon: ServiceInterfaceIcon,
+      icon: ServiceUserTesting,
       title: 'User testing',
       description:
         'We’ve provided a dedicated user researcher who supported Phenom in learning their user’s needs over several months',
@@ -193,23 +192,23 @@ const servicesSection = {
         'A dedicated expert design system designer has spent several months updating and expanding the company’s Figma library.',
     },
     {
-      icon: ServiceDesignIcon,
+      icon: ServiceDesignTeam,
       title: 'Dedicated design teams',
       description:
         "No matter what Phenom's needs were, we always delivered - we’ve recruited specifically for their projects and even built dedicated teams for them.",
     },
     {
-      icon: ServiceDesignIcon,
+      icon: ServiceMotionDesign,
       title: 'Motion design',
       description:
         'We’ve facilitated a collaboration between Phenom and an animation studio to create a movement for one of their conceptual projects',
     },
     {
-      icon: ServiceDesignIcon,
+      icon: ServiceSupportIcon,
       title: 'Continuous design support',
       description:
         'We’ve maintained this collaboration model and, two years later, are still helping Phenom be more effective on the design front.',
-    }
+    },
   ],
 }
 
@@ -235,22 +234,22 @@ const caseOutcomes = {
       {
         title: 'Interactive POV prototypes in Figma',
         description:
-          "We’ve delivered multiple clickable prototypes for Phenom’s internal use - especially Proof of Value (POV) presentations,",
+          'We’ve delivered multiple clickable prototypes for Phenom’s internal use - especially Proof of Value (POV) presentations,',
       },
       {
         title: 'A complex design system Figma file',
         description:
-          "Our dedicated designer worked on Phenom’s design system file in their internal Figma workspace, rebuilding, updating, and expanding it over several months.",
+          'Our dedicated designer worked on Phenom’s design system file in their internal Figma workspace, rebuilding, updating, and expanding it over several months.',
       },
       {
         title: 'Interview transcriptions and insights in Dovetail',
         description:
-          "We’ve conducted user interviews for one of Phenom’s projects, then transcribed and analyzed them in Dovetail.",
+          'We’ve conducted user interviews for one of Phenom’s projects, then transcribed and analyzed them in Dovetail.',
       },
       {
         title: 'Multiple Figma files with polished UI designs',
         description:
-          "We have delivered dozens of high-fidelity design files for multiple teams and projects.",
+          'We have delivered dozens of high-fidelity design files for multiple teams and projects.',
       },
     ],
   },
@@ -288,6 +287,7 @@ const ctaBanner = {
 
 const productShotsGalleries = [
   {
+    title: 'Phenom helps a billion people find the right job_',
     images: [
       {
         urlDesktop: ProductShotDesktop,
@@ -313,29 +313,6 @@ const productShotsGalleries = [
         urlMobile: ProductShot4Mobile,
         altText: 'Semiflat Case Study: Pocus App dashboard',
       },
-    ],
-  },
-  {
-    images: [
-      {
-        urlDesktop: ProductShot8Desktop,
-        urlMobile: ProductShot8Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
-      },
-      {
-        urlDesktop: ProductShot9Desktop,
-        urlMobile: ProductShot9Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
-      },
-      {
-        urlDesktop: ProductShot10Desktop,
-        urlMobile: ProductShot10Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
-      },
-    ],
-  },
-  {
-    images: [
       {
         urlDesktop: ProductShot5Desktop,
         urlMobile: ProductShot5Mobile,
@@ -344,11 +321,6 @@ const productShotsGalleries = [
       {
         urlDesktop: ProductShot6Desktop,
         urlMobile: ProductShot6Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
-      },
-      {
-        urlDesktop: ProductShot7Desktop,
-        urlMobile: ProductShot7Mobile,
         altText: 'Semiflat Case Study: Pocus App dashboard',
       },
     ],
@@ -376,16 +348,12 @@ const productShotsGalleries = [
       <TheCaseStudyTestimonial v-bind="testimonial" />
     </TheCaseStudyBlock>
 
-    <TheCaseStudyBlock>
-      <AppImagesGroup v-bind="productShotsGalleries[1]" />
-    </TheCaseStudyBlock>
-
     <TheCaseStudyBlock decor="bottom-right">
       <TheCaseStudyServices v-bind="servicesSection" />
     </TheCaseStudyBlock>
 
     <TheCaseStudyBlock>
-      <AppImagesGroup v-bind="productShotsGalleries[2]" />
+      <AppImagesGroup v-bind="productShotsGalleries[1]" />
     </TheCaseStudyBlock>
 
     <TheCaseStudyBlock>

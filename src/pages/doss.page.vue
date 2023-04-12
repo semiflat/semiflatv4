@@ -43,18 +43,15 @@ import TestimonialAuthor from '~/assets/doss/wiley-jones.jpg'
 
 // services icons
 import ServiceWorkshopsIcon from '~/assets/experiences/workshops.svg?component'
-import ServiceInterfaceIcon from '~/assets/experiences/interface.svg?component'
 import ServiceUIIcon from '~/assets/experiences/user-interface-design.svg?component'
 import ServiceUXIcon from '~/assets/experiences/user-experience-design.svg?component'
 import ServiceDesignIcon from '~/assets/experiences/design.svg?component'
-import ServiceFlawlessIcon from '~/assets/icons/flawless.svg?component'
 import ServiceWebsiteIcon from '~/assets/experiences/website.svg?component'
 import ServiceSupportIcon from '~/assets/experiences/support.svg?component'
-import ServiceBranding from '~/assets/experiences/branding.svg?component'
 
 // banner assets
-import CTABannerMobileImage from '~/assets/pocus/cta_banner_mobile.png'
-import CTABannerDesktopImage from '~/assets/pocus/cta_banner_desktop.png'
+import CTABannerMobileImage from '~/assets/case-study/cta_banner_mobile.png'
+import CTABannerDesktopImage from '~/assets/case-study/cta_banner_desktop.png'
 
 // color theme
 const cssProps = {
@@ -108,7 +105,7 @@ const howWeHelped = {
   image: {
     urlDesktop: HowWeHelpedImage,
     urlMobile: HowWeHelpedImageMobile,
-    altText: 'Detail of Pocus App dashboard designed by Semiflat',
+    altText: 'Detail of Doss App dashboard designed by Semiflat',
   },
   list: [
     {
@@ -286,7 +283,7 @@ const ctaBanner = {
   image: {
     urlDesktop: CTABannerDesktopImage,
     urlMobile: CTABannerMobileImage,
-    altText: 'Semiflat Case Study: Pocus App dashboard',
+    altText: 'Semiflat Case Study: Doss App dashboard',
   },
 }
 
@@ -296,7 +293,7 @@ const productShotsGalleries = [
       {
         urlDesktop: ProductShotDesktop,
         urlMobile: ProductShotMobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Doss App dashboard',
       },
     ],
   },
@@ -305,17 +302,17 @@ const productShotsGalleries = [
       {
         urlDesktop: ProductShot2Desktop,
         urlMobile: ProductShot2Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Doss App dashboard',
       },
       {
         urlDesktop: ProductShot3Desktop,
         urlMobile: ProductShot3Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Doss App dashboard',
       },
       {
         urlDesktop: ProductShot4Desktop,
         urlMobile: ProductShot4Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Doss App dashboard',
       },
     ],
   },
@@ -324,17 +321,17 @@ const productShotsGalleries = [
       {
         urlDesktop: ProductShot8Desktop,
         urlMobile: ProductShot8Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Doss App dashboard',
       },
       {
         urlDesktop: ProductShot9Desktop,
         urlMobile: ProductShot9Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Doss App dashboard',
       },
       {
         urlDesktop: ProductShot10Desktop,
         urlMobile: ProductShot10Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Doss App dashboard',
       },
     ],
   },
@@ -343,17 +340,17 @@ const productShotsGalleries = [
       {
         urlDesktop: ProductShot5Desktop,
         urlMobile: ProductShot5Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Doss App dashboard',
       },
       {
         urlDesktop: ProductShot6Desktop,
         urlMobile: ProductShot6Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Doss App dashboard',
       },
       {
         urlDesktop: ProductShot7Desktop,
         urlMobile: ProductShot7Mobile,
-        altText: 'Semiflat Case Study: Pocus App dashboard',
+        altText: 'Semiflat Case Study: Doss App dashboard',
       },
     ],
   },

@@ -47,8 +47,8 @@ import ServiceDesignIcon from '~/assets/experiences/design.svg?component'
 import ServiceFlawlessIcon from '~/assets/icons/flawless.svg?component'
 
 // banner assets
-import CTABannerMobileImage from '~/assets/pocus/cta_banner_mobile.png'
-import CTABannerDesktopImage from '~/assets/pocus/cta_banner_desktop.png'
+import CTABannerMobileImage from '~/assets/case-study/cta_banner_mobile.png'
+import CTABannerDesktopImage from '~/assets/case-study/cta_banner_desktop.png'
 
 // color theme
 const cssProps = {
