@@ -140,6 +140,11 @@ $bg-color: #{var(--accent-color-dark)};
   }
 
   &__image {
+    &:deep(img) {
+      position: relative;
+      z-index: 1;
+    }
+
     @media (min-width: 768px) {
       position: relative;
 
@@ -148,7 +153,7 @@ $bg-color: #{var(--accent-color-dark)};
         content: '';
         position: absolute;
         top: 50%;
-        left: 0;
+        left: -1px;
         transform: translateY(-50%);
         width: 1px;
         height: calc(100% + 184px);
@@ -162,7 +167,7 @@ $bg-color: #{var(--accent-color-dark)};
 
       &::after {
         left: auto;
-        right: 0;
+        right: -1px;
       }
     }
   }

@@ -56,7 +56,7 @@ const props = defineProps<CaseStudyCTACard>()
 
   &__button {
     background: white;
-    color: #002832;
+    color: black;
   }
 }
 </style>

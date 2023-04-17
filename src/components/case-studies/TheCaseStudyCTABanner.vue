@@ -106,6 +106,11 @@ const props = defineProps<CaseStudyCTABanner>()
   &__image {
     position: relative;
 
+    &:deep(img) {
+      position: relative;
+      z-index: 1;
+    }
+
     &::before,
     &::after {
       content: '';
@@ -113,7 +118,7 @@ const props = defineProps<CaseStudyCTABanner>()
     }
 
     &::before {
-      top: 0;
+      top: -1px;
       left: 50%;
       transform: translateX(-50%);
       width: calc(100% + 72px);
@@ -128,7 +133,7 @@ const props = defineProps<CaseStudyCTABanner>()
 
     &::after {
       top: 50%;
-      left: 0;
+      left: -1px;
       transform: translateY(-50%);
       height: calc(100% + 72px);
       width: 1px;
@@ -153,7 +158,7 @@ const props = defineProps<CaseStudyCTABanner>()
 
   &__button {
     background: white;
-    color: #002832;
+    color: black;
 
     &.is-text {
       color: white;
