@@ -47,6 +47,7 @@ import CTABannerDesktopImage from '~/assets/case-study/cta_banner.png'
 // color theme
 const cssProps = {
   '--accent-color-dark': '#18ACB4',
+  '--accent-color-medium': '#30FFFF',
   '--accent-color-light': '#B4D8DB',
   '--gradient-color': '#D2F6F9',
 }

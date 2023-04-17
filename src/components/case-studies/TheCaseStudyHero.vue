@@ -47,7 +47,9 @@ const props = defineProps<{
       </div>
 
       <div class="case-study-hero__image-wrapper">
-        <AppImage class="case-study-hero__image" v-bind="props.image" />
+        <div class="case-study-hero__image-decor">
+          <AppImage class="case-study-hero__image" v-bind="props.image" />
+        </div>
       </div>
 
       <ul class="case-study-hero__details">
@@ -60,7 +62,6 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
-
 @keyframes fadein {
   to {
     opacity: 1;
@@ -80,6 +81,7 @@ const props = defineProps<{
   &__inner {
     position: relative;
     z-index: 1;
+    max-width: calc(69rem + 2px); // crispy image hack
   }
 
   // relative to .layout
@@ -171,32 +173,71 @@ const props = defineProps<{
   }
 
   &__image-wrapper {
-    width: 100%;
-    min-width: 520px;
-    aspect-ratio: 1104 / 688;
+    position: relative;
     margin: 5rem 0 0 2rem;
     border-radius: 12px;
-    border: 1px solid var(--accent-color-light);
-    overflow: hidden;
     opacity: 0;
-    animation: fadein 1.2s .5s forwards;
+    animation: fadein 1.2s 0.5s forwards;
 
     @media (min-width: 475px) {
       margin-left: 0;
       min-width: 0;
       width: 100%;
     }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 160px);
+      height: 1px;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        var(--accent-color-light) 7% 93%,
+        rgba(255, 255, 255, 0)
+      );
+    }
+
+    &::after {
+      top: calc(100% - 1px);
+    }
+  }
+
+  &__image-decor {
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: calc(100% + 160px);
+      width: 1px;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        var(--accent-color-light) 9% 91%,
+        rgba(255, 255, 255, 0)
+      );
+    }
+
+    &::after {
+      left: calc(100% - 1px);
+    }
   }
 
   &__image {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    @media (min-width: 1200px) {
-      display: block;
-      width: 1104px; // hack for crispy png
-    }
+    min-width: 520px;
+    aspect-ratio: 1104 / 688;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid var(--accent-color-light);
   }
 
   &__details {

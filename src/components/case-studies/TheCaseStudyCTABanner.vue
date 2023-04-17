@@ -34,7 +34,7 @@ const props = defineProps<CaseStudyCTABanner>()
       </div>
     </div>
     <div class="cta-banner__image-wrapper">
-      <AppImage v-bind="props.image" />
+      <AppImage class="cta-banner__image" v-bind="props.image" />
     </div>
   </div>
 </template>
@@ -95,8 +95,60 @@ const props = defineProps<CaseStudyCTABanner>()
 
   &__image-wrapper {
     padding-top: clamp(2.5rem, 7vw, 5rem);
-    padding-left: clamp(2rem, 10vw, 8rem);
+    padding-left: 1.5rem;
     align-self: flex-end;
+
+    @media (min-width: 768px) {
+      padding-left: clamp(2rem, 10vw, 8rem);
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 72px);
+      height: 1px;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        var(--accent-color-medium) 7% 93%,
+        rgba(255, 255, 255, 0)
+      );
+    }
+
+    &::after {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: calc(100% + 72px);
+      width: 1px;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        var(--accent-color-medium) 7% 93%,
+        rgba(255, 255, 255, 0)
+      );
+    }
+
+    @media (min-width: 768px) {
+      &::before {
+        width: 150%;
+      }
+
+      &::after {
+        height: 160%;
+      }
+    }
   }
 
   &__button {

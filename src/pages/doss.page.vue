@@ -54,6 +54,7 @@ import CTABannerDesktopImage from '~/assets/case-study/cta_banner.png'
 // color theme
 const cssProps = {
   '--accent-color-dark': '#1952CE',
+  '--accent-color-medium': '#32A4FF',
   '--accent-color-light': '#C8D8F8',
   '--gradient-color': '#C8D8F8',
 }
@@ -253,7 +254,7 @@ const caseOutcomes = {
     ],
   },
   cta: {
-    title: 'Have a project in mind similar to Useful?',
+    title: 'Have a project in mind similar to Doss?',
     description: 'Ask us about a fixed-scope MVP sprint and how we can create an interactive prototype to help you tell the story of your product.',
     cta: {
       href: 'mailto:hello@semiflat.com',
