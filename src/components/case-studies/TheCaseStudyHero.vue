@@ -192,7 +192,7 @@ const props = defineProps<{
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: calc(100% + 160px);
+      width: calc(100% + 64px);
       height: 1px;
       background: linear-gradient(
         to right,
@@ -205,6 +205,13 @@ const props = defineProps<{
     &::after {
       top: calc(100% - 1px);
     }
+
+    @media (min-width: 768px) {
+      &::before,
+      &::after {
+        width: calc(100% + 160px);
+      }
+    }
   }
 
   &__image-decor {
@@ -215,7 +222,7 @@ const props = defineProps<{
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      height: calc(100% + 160px);
+      height: calc(100% + 64px);
       width: 1px;
       background: linear-gradient(
         to bottom,
@@ -226,7 +233,21 @@ const props = defineProps<{
     }
 
     &::after {
+      display: none;
       left: calc(100% - 1px);
+    }
+
+    @media (min-width: 475px) {
+      &::after {
+        display: block;
+      }
+    }
+
+    @media (min-width: 768px) {
+      &::before,
+      &::after {
+        height: calc(100% + 160px);
+      }
     }
   }
 
