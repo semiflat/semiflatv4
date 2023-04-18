@@ -176,7 +176,7 @@ const props = defineProps<{
 
   @keyframes rocket-to-left {
     0% {
-      transform: translateX(50vw);
+      transform: translateX(100vw);
     }
 
 
@@ -187,7 +187,7 @@ const props = defineProps<{
 
   @keyframes rocket-to-right {
     0% {
-      transform: translateX(-50vw);
+      transform: translateX(-100vw);
     }
 
     100% {
@@ -197,7 +197,7 @@ const props = defineProps<{
 
   @keyframes rocket-to-bottom {
     0% {
-      transform: translateY(-200%);
+      transform: translateY(-100vw);
     }
 
     100% {
@@ -235,7 +235,7 @@ const props = defineProps<{
       top: 0;
       background: linear-gradient(to left, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
       transform: translateX(50vw);
-      animation: rocket-to-left 0.4s $easing infinite;
+      animation: rocket-to-left 2s $easing infinite;
       animation-delay: 0.8s;
     }
 
@@ -245,22 +245,8 @@ const props = defineProps<{
       bottom: -1px;
       background: linear-gradient(to right, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
       transform: translateX(-50vw);
-      animation: rocket-to-right 0.8s $easing infinite;
-    }
-
-    @media (min-width: 1024px) {
-      &::before,
-      &::after {
-        animation-duration: 1.5s;
-      }
-
-      &::before {
-        animation-delay: 2s;
-      }
-
-      &::after {
-        animation-delay: 2.75s;
-      }
+      animation: rocket-to-right 2s $easing infinite;
+      animation-delay: .75s;
     }
   }
 
@@ -277,13 +263,12 @@ const props = defineProps<{
       top: 0;
       transform: translateY(-200%);
       background: linear-gradient(to bottom, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
-      animation: rocket-to-bottom .8s .8s $easing infinite;
+      animation: rocket-to-bottom 1.2s $easing infinite;
+      animation-delay: 1s;
     }
 
     @media (min-width: 1024px) {
       &::before {
-        animation-duration: 1.2s;
-        animation-delay: 1.5s;
         right: 72px;
       }
     }

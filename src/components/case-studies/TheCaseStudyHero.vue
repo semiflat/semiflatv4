@@ -286,16 +286,16 @@ const props = defineProps<{
       opacity: 0;
     }
 
-    40% {
+    45% {
       opacity: 1;
     }
 
-    60% {
+    50% {
       opacity: 1;
     }
 
     100% {
-      transform: translateX(-100vw);
+      transform: translateX(-80vw);
       opacity: 0;
     }
   }
@@ -306,16 +306,16 @@ const props = defineProps<{
       opacity: 0;
     }
 
-    40% {
+    45% {
       opacity: 1;
     }
 
-    60% {
+    50% {
       opacity: 1;
     }
 
     100% {
-      transform: translateX(100vw);
+      transform: translateX(80vw);
       opacity: 0;
     }
   }
@@ -330,12 +330,12 @@ const props = defineProps<{
       opacity: 1;
     }
 
-    80% {
+    70% {
       opacity: 1;
     }
 
     100% {
-      transform: translateY(clamp(270px, 55vw, 750px));
+      transform: translateY(clamp(270px, 55vw, 720px));
       opacity: 0;
     }
   }
@@ -380,13 +380,13 @@ const props = defineProps<{
       bottom: -1px;
       background: linear-gradient(to right, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
       transform: translateX(-50vw);
-      animation: rocket-to-right 0.8s 0.8s $easing infinite;
+      animation: rocket-to-right 0.8s $easing infinite;
     }
 
     @media (min-width: 1024px) {
       &::before,
       &::after {
-        animation-duration: 1.5s;
+        animation-duration: 1.8s;
       }
     }
   }
@@ -404,12 +404,13 @@ const props = defineProps<{
       top: 0;
       transform: translateY(-200%);
       background: linear-gradient(to bottom, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
-      animation: rocket-to-bottom 1.2s 1.2s $easing infinite;
+      animation: rocket-to-bottom 1.2s $easing infinite;
+      animation-delay: .9s;
     }
 
     @media (min-width: 1024px) {
       &::before {
-        animation-duration: 1.5s;
+        animation-duration: 1.7s;
       }
     }
   }
