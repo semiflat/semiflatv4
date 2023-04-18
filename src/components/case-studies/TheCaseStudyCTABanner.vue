@@ -94,12 +94,93 @@ const props = defineProps<CaseStudyCTABanner>()
   }
 
   &__image-wrapper {
+    position: relative;
     padding-top: clamp(2.5rem, 7vw, 5rem);
     padding-left: 1.5rem;
     align-self: flex-end;
 
     @media (min-width: 768px) {
       padding-left: clamp(2rem, 10vw, 8rem);
+    }
+
+    @media (min-width: 1040px) {
+      // rockets
+      $easing: cubic-bezier(0.5, 1, 0.89, 1);
+      $rockets-color: #fff;
+      $rockets-size: 80px;
+
+      @keyframes rocket-to-left {
+        0% {
+          transform: translateX(100vw);
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 1;
+        }
+
+        80% {
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateX(-680px);
+          opacity: 0;
+        }
+      }
+
+      @keyframes rocket-to-top {
+        0% {
+          transform: translateY(100vh);
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 1;
+        }
+
+        60% {
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateY(-500px);
+          opacity: 0;
+        }
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        border-radius: 2px;
+        background-blend-mode: overlay;
+        mix-blend-mode: normal;
+        filter: blur(0.5px);
+        opacity: 0;
+      }
+
+      &::before {
+        height: 1px;
+        width: $rockets-size;
+        right: 0;
+        top: calc(clamp(2.5rem, 7vw, 5rem) - 1px);
+        background: linear-gradient(to left, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
+        transform: translateX(100vw);
+        animation: rocket-to-left 1.5s $easing infinite;
+        animation-delay: 0.8s;
+      }
+
+      &::after {
+        width: 1px;
+        height: $rockets-size;
+        left: calc(clamp(2rem, 10vw, 8rem) - 1px);
+        bottom: 0;
+        transform: translateY(100vh);
+        background: linear-gradient(to top, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
+        animation: rocket-to-top 1.2s $easing infinite;
+      }
     }
   }
 
