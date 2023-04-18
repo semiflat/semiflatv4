@@ -4,22 +4,24 @@ import vue from '@vitejs/plugin-vue'
 import ssr from 'vite-plugin-ssr/plugin'
 import Unocss from 'unocss/vite'
 import type { UserConfig } from 'vite'
-import { VitePluginFonts } from 'vite-plugin-fonts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import yaml from '@rollup/plugin-yaml'
 import svgLoader from 'vite-svg-loader'
+import autoprefixer from 'autoprefixer'
 
 const config: UserConfig = {
+  css: {
+    preprocessorOptions: {
+      scss: {
+        plugins: [autoprefixer()]
+      }
+    }
+  },
   plugins: [
     vue(),
     ssr(),
     Unocss(),
-    VitePluginFonts({
-      google: {
-        families: ['Poppins:wght@400;500;600;700;800'],
-      },
-    }),
     svgLoader({
       svgo: false,
     }),
