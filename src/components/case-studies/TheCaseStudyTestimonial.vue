@@ -176,32 +176,65 @@ const props = defineProps<{
 
   @keyframes rocket-to-left {
     0% {
-      transform: translateX(100vw);
+      transform: translateX(200%);
+      opacity: 0;
     }
 
+    1% {
+      opacity: 1;
+    }
+
+    20% {
+      transform: translateX(clamp(-1000px, -100vw, -320px));
+      opacity: 0;
+    }
 
     100% {
-      transform: translateX(-100vw);
+      transform: translateX(clamp(-1000px, -100vw, -320px));
+      opacity: 0;
     }
   }
 
   @keyframes rocket-to-right {
     0% {
-      transform: translateX(-100vw);
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+
+
+    1% {
+      opacity: 1;
+    }
+
+    20% {
+      transform: translateX(clamp(320px, 100vw, 960px));
+      opacity: 0;
     }
 
     100% {
-      transform: translateX(100vw);
+      transform: translateX(clamp(320px, 100vw, 960px));
+      opacity: 0;
     }
   }
 
   @keyframes rocket-to-bottom {
     0% {
-      transform: translateY(-100vw);
+      transform: translateY(-200%);
+      opacity: 0;
+    }
+
+    1% {
+      opacity: 1;
+    }
+
+    20% {
+      transform: translateY(clamp(270px, 30vw, 360px));
+      opacity: 0;
     }
 
     100% {
-      transform: translateY(clamp(270px, 55vw, 750px));
+      transform: translateY(clamp(270px, 30vw, 360px));
+      opacity: 0;
     }
   }
 
@@ -220,6 +253,7 @@ const props = defineProps<{
     background-blend-mode: overlay;
     mix-blend-mode: normal;
     filter: blur(0.5px);
+    opacity: 0;
   }
 
   &--horizontal {
@@ -234,9 +268,8 @@ const props = defineProps<{
       right: 0;
       top: 0;
       background: linear-gradient(to left, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
-      transform: translateX(50vw);
-      animation: rocket-to-left 2s $easing infinite;
-      animation-delay: 0.8s;
+      transform: translateX(200%);
+      animation: rocket-to-left 9s $easing infinite;
     }
 
     // bottom, ltr
@@ -244,9 +277,9 @@ const props = defineProps<{
       left: 0;
       bottom: -1px;
       background: linear-gradient(to right, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
-      transform: translateX(-50vw);
-      animation: rocket-to-right 2s $easing infinite;
-      animation-delay: .75s;
+      transform: translateX(-200%);
+      animation: rocket-to-right 9s $easing infinite;
+      animation-delay: 6s;
     }
   }
 
@@ -257,25 +290,43 @@ const props = defineProps<{
       height: $rockets-size;
     }
 
-    // left, to bottom
+    // right, to bottom
     &::before {
       right: 24px;
       top: 0;
       transform: translateY(-200%);
       background: linear-gradient(to bottom, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
-      animation: rocket-to-bottom 1.2s $easing infinite;
-      animation-delay: 1s;
+      animation: rocket-to-bottom 6s $easing infinite;
+      animation-delay: 2s;
+    }
+
+     // left, to bottom
+    &::after {
+      left: 24px;
+      top: 0;
+      transform: translateY(-200%);
+      background: linear-gradient(to bottom, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
+      animation: rocket-to-bottom 6s $easing infinite;
+      animation-delay: 4s;
     }
 
     @media (min-width: 1024px) {
       &::before {
         right: 72px;
       }
+
+      &::after {
+        left: 72px;
+      }
     }
 
     @media (min-width: 1024px) {
       &::before {
         right: 152px;
+      }
+
+      &::after {
+        left: 152px;
       }
     }
   }
