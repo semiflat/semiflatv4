@@ -25,42 +25,40 @@ const props = defineProps<{
 
 <template>
   <div class="case-study-hero">
-    <div class="case-study-hero__mask">
-      <div class="case-study-hero__inner page-content">
-        <div class="case-study-hero__text">
-          <h1 class="case-study-hero__title">
-            {{ props.title }}
-          </h1>
-          <p v-if="props.description" class="case-study-hero__lead">
-            {{ props.description }}
-          </p>
-        </div>
-
-        <div v-if="props.buttons && props.buttons.length" class="case-study-hero__buttons">
-          <AppButton
-            v-for="button in props.buttons"
-            :key="button.href"
-            :href="button.href"
-            :text="button.isText"
-            :target="button.isTargetBlank ? '_blank' : ''"
-            >{{ button.label }}</AppButton
-          >
-        </div>
-
-        <div class="case-study-hero__image-wrapper">
-          <div class="rockets rockets--horizontal"></div>
-          <div class="rockets rockets--vertical"></div>
-          <div class="case-study-hero__image-decor">
-            <AppImage class="case-study-hero__image" v-bind="props.image" />
-          </div>
-        </div>
-
-        <ul class="case-study-hero__details">
-          <li v-for="card in details" :key="card.title">
-            <AppDetailsCard v-bind="card" />
-          </li>
-        </ul>
+    <div class="case-study-hero__inner page-content">
+      <div class="case-study-hero__text">
+        <h1 class="case-study-hero__title">
+          {{ props.title }}
+        </h1>
+        <p v-if="props.description" class="case-study-hero__lead">
+          {{ props.description }}
+        </p>
       </div>
+
+      <div v-if="props.buttons && props.buttons.length" class="case-study-hero__buttons">
+        <AppButton
+          v-for="button in props.buttons"
+          :key="button.href"
+          :href="button.href"
+          :text="button.isText"
+          :target="button.isTargetBlank ? '_blank' : ''"
+          >{{ button.label }}</AppButton
+        >
+      </div>
+
+      <div class="case-study-hero__image-wrapper">
+        <div class="rockets rockets--horizontal"></div>
+        <div class="rockets rockets--vertical"></div>
+        <div class="case-study-hero__image-decor">
+          <AppImage class="case-study-hero__image" v-bind="props.image" />
+        </div>
+      </div>
+
+      <ul class="case-study-hero__details">
+        <li v-for="card in details" :key="card.title">
+          <AppDetailsCard v-bind="card" />
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -80,12 +78,6 @@ const props = defineProps<{
     margin-top: 7.5rem;
     text-align: center;
   }
-
-  // &__mask {
-  //   max-width: calc(69rem + 96px);
-  //   margin: 0 auto;
-  //   overflow: hidden;
-  // }
 
   &__inner {
     position: relative;
@@ -432,11 +424,18 @@ const props = defineProps<{
 
     // right, to top
     &::after {
+      display: none;
       right: 0;
       bottom: 0;
       transform: translateY(120px);
       background: linear-gradient(to top, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
       animation: rocket-to-top 2s $easing infinite;
+    }
+
+    @media (min-width: 475px) {
+      &::after {
+        display: block;
+      }
     }
 
     @media (min-width: 1024px) {

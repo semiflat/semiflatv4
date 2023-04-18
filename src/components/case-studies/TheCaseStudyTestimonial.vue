@@ -185,12 +185,12 @@ const props = defineProps<{
     }
 
     20% {
-      transform: translateX(clamp(-1000px, -100vw, -320px));
+      transform: translateX(clamp(-960px, -90vw, -320px));
       opacity: 0;
     }
 
     100% {
-      transform: translateX(clamp(-1000px, -100vw, -320px));
+      transform: translateX(clamp(-960px, -90vw, -320px));
       opacity: 0;
     }
   }
@@ -207,12 +207,12 @@ const props = defineProps<{
     }
 
     20% {
-      transform: translateX(clamp(320px, 100vw, 960px));
+      transform: translateX(clamp(320px, 90vw, 960px));
       opacity: 0;
     }
 
     100% {
-      transform: translateX(clamp(320px, 100vw, 960px));
+      transform: translateX(clamp(320px, 90vw, 960px));
       opacity: 0;
     }
   }
