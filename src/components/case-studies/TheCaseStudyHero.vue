@@ -47,6 +47,8 @@ const props = defineProps<{
       </div>
 
       <div class="case-study-hero__image-wrapper">
+        <div class="rockets rockets--horizontal"></div>
+        <div class="rockets rockets--vertical"></div>
         <div class="case-study-hero__image-decor">
           <AppImage class="case-study-hero__image" v-bind="props.image" />
         </div>
@@ -61,10 +63,151 @@ const props = defineProps<{
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @keyframes fadein {
   to {
     opacity: 1;
+  }
+}
+
+.rockets {
+  $easing: cubic-bezier(0.5, 1, 0.89, 1);
+  $rockets-color: var(--accent-color-dark);
+  $rockets-size: 80px;
+
+  @keyframes rocket-to-left {
+    0% {
+      transform: translateX(50vw);
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 1;
+    }
+
+    60% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+  }
+
+  @keyframes rocket-to-right {
+    0% {
+      transform: translateX(-50vw);
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 1;
+    }
+
+    60% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+  }
+
+
+  @keyframes rocket-to-bottom {
+    0% {
+      transform: translateY(-200%);
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    80% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(clamp(270px, 55vw, 750px));
+      opacity: 0;
+    }
+  }
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border-radius: 2px;
+    background-blend-mode: overlay;
+    mix-blend-mode: normal;
+    filter: blur(0.5px);
+    opacity: 0;
+  }
+
+  &--horizontal {
+    &::before,
+    &::after {
+      height: 1px;
+      width: $rockets-size;
+    }
+
+    // top, rtl
+    &::before {
+      right: 0;
+      top: 0;
+      background: linear-gradient(270deg, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
+      transform: translateX(50vw);
+      animation: rocket-to-left 0.8s 0.8s $easing infinite;
+    }
+
+    // bottom, ltr
+    &::after {
+      left: 0;
+      bottom: -1px;
+      background: linear-gradient(90deg, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
+      transform: translateX(-50vw);
+      animation: rocket-to-right 0.8s 0.8s $easing infinite;
+    }
+
+    @media (min-width: 1024px) {
+      &::before,
+      &::after {
+        animation-duration: 1.5s;
+      }
+    }
+  }
+
+  &--vertical {
+    &::before,
+    &::after {
+      width: 1px;
+      height: $rockets-size;
+    }
+
+    // left, to bottom
+    &::before {
+      left: 0;
+      top: 0;
+      transform: translateY(-200%);
+      background: linear-gradient(to bottom, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
+      animation: rocket-to-bottom 1.2s 1.2s $easing infinite;
+    }
+
+    @media (min-width: 1024px) {
+      &::before {
+        animation-duration: 1.5s;
+      }
+    }
   }
 }
 
