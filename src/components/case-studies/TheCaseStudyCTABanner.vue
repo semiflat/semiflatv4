@@ -124,7 +124,7 @@ const props = defineProps<CaseStudyCTABanner>()
         }
 
         100% {
-          transform: translateX(-680px);
+          transform: translateX(-560px);
           opacity: 0;
         }
       }
@@ -169,7 +169,7 @@ const props = defineProps<CaseStudyCTABanner>()
         background: linear-gradient(to left, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
         transform: translateX(100vw);
         animation: rocket-to-left 1.5s $easing infinite;
-        animation-delay: 0.8s;
+        animation-delay: 0.7s;
       }
 
       &::after {
