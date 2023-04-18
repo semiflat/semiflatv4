@@ -25,40 +25,42 @@ const props = defineProps<{
 
 <template>
   <div class="case-study-hero">
-    <div class="case-study-hero__inner page-content">
-      <div class="case-study-hero__text">
-        <h1 class="case-study-hero__title">
-          {{ props.title }}
-        </h1>
-        <p v-if="props.description" class="case-study-hero__lead">
-          {{ props.description }}
-        </p>
-      </div>
-
-      <div v-if="props.buttons && props.buttons.length" class="case-study-hero__buttons">
-        <AppButton
-          v-for="button in props.buttons"
-          :key="button.href"
-          :href="button.href"
-          :text="button.isText"
-          :target="button.isTargetBlank ? '_blank' : ''"
-          >{{ button.label }}</AppButton
-        >
-      </div>
-
-      <div class="case-study-hero__image-wrapper">
-        <div class="rockets rockets--horizontal"></div>
-        <div class="rockets rockets--vertical"></div>
-        <div class="case-study-hero__image-decor">
-          <AppImage class="case-study-hero__image" v-bind="props.image" />
+    <div class="case-study-hero__mask">
+      <div class="case-study-hero__inner page-content">
+        <div class="case-study-hero__text">
+          <h1 class="case-study-hero__title">
+            {{ props.title }}
+          </h1>
+          <p v-if="props.description" class="case-study-hero__lead">
+            {{ props.description }}
+          </p>
         </div>
-      </div>
 
-      <ul class="case-study-hero__details">
-        <li v-for="card in details" :key="card.title">
-          <AppDetailsCard v-bind="card" />
-        </li>
-      </ul>
+        <div v-if="props.buttons && props.buttons.length" class="case-study-hero__buttons">
+          <AppButton
+            v-for="button in props.buttons"
+            :key="button.href"
+            :href="button.href"
+            :text="button.isText"
+            :target="button.isTargetBlank ? '_blank' : ''"
+            >{{ button.label }}</AppButton
+          >
+        </div>
+
+        <div class="case-study-hero__image-wrapper">
+          <div class="rockets rockets--horizontal"></div>
+          <div class="rockets rockets--vertical"></div>
+          <div class="case-study-hero__image-decor">
+            <AppImage class="case-study-hero__image" v-bind="props.image" />
+          </div>
+        </div>
+
+        <ul class="case-study-hero__details">
+          <li v-for="card in details" :key="card.title">
+            <AppDetailsCard v-bind="card" />
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -78,6 +80,12 @@ const props = defineProps<{
     margin-top: 7.5rem;
     text-align: center;
   }
+
+  // &__mask {
+  //   max-width: calc(69rem + 96px);
+  //   margin: 0 auto;
+  //   overflow: hidden;
+  // }
 
   &__inner {
     position: relative;
@@ -282,60 +290,80 @@ const props = defineProps<{
 
   @keyframes rocket-to-left {
     0% {
-      transform: translateX(50vw);
+      transform: translateX(120px);
       opacity: 0;
     }
 
-    45% {
+    1% {
       opacity: 1;
     }
 
-    50% {
+    20% {
       opacity: 1;
     }
 
-    100% {
-      transform: translateX(-80vw);
+    40% {
+      transform: translateX(calc(clamp(-1100px, -90vw, -320px)));
       opacity: 0;
     }
   }
 
   @keyframes rocket-to-right {
     0% {
-      transform: translateX(-50vw);
+      transform: translateX(-120px);
       opacity: 0;
     }
 
-    45% {
+    1% {
       opacity: 1;
     }
 
-    50% {
+    20% {
       opacity: 1;
     }
 
-    100% {
-      transform: translateX(80vw);
+    40% {
+      transform: translateX(clamp(320px, 90vw, 1100px));
       opacity: 0;
     }
   }
 
   @keyframes rocket-to-bottom {
     0% {
-      transform: translateY(-200%);
+      transform: translateY(-150%);
       opacity: 0;
     }
 
-    10% {
+    5% {
       opacity: 1;
     }
 
-    70% {
+    35% {
       opacity: 1;
     }
 
-    100% {
-      transform: translateY(clamp(270px, 55vw, 720px));
+    50% {
+      transform: translateY(clamp(270px, 48vw, 680px));
+      opacity: 0;
+    }
+  }
+
+  @keyframes rocket-to-top {
+    0% {
+      transform: translateY(150%);
+      opacity: 0;
+    }
+
+    5% {
+      opacity: 1;
+    }
+
+    35% {
+      opacity: 1;
+    }
+
+    50% {
+      transform: translateY(clamp(-680px, -48vw, -270px));
       opacity: 0;
     }
   }
@@ -371,7 +399,8 @@ const props = defineProps<{
       top: 0;
       background: linear-gradient(to left, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
       transform: translateX(50vw);
-      animation: rocket-to-left 0.8s 0.8s $easing infinite;
+      animation: rocket-to-left 3s $easing infinite;
+      animation-delay: 1.5s;
     }
 
     // bottom, ltr
@@ -380,14 +409,7 @@ const props = defineProps<{
       bottom: -1px;
       background: linear-gradient(to right, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
       transform: translateX(-50vw);
-      animation: rocket-to-right 0.8s $easing infinite;
-    }
-
-    @media (min-width: 1024px) {
-      &::before,
-      &::after {
-        animation-duration: 1.8s;
-      }
+      animation: rocket-to-right 2.8s $easing infinite;
     }
   }
 
@@ -402,15 +424,24 @@ const props = defineProps<{
     &::before {
       left: 0;
       top: 0;
-      transform: translateY(-200%);
+      transform: translateY(-120px);
       background: linear-gradient(to bottom, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
-      animation: rocket-to-bottom 1.2s $easing infinite;
-      animation-delay: .9s;
+      animation: rocket-to-bottom 1.8s $easing infinite;
+      animation-delay: 0.9s;
+    }
+
+    // right, to top
+    &::after {
+      right: 0;
+      bottom: 0;
+      transform: translateY(120px);
+      background: linear-gradient(to top, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
+      animation: rocket-to-top 2s $easing infinite;
     }
 
     @media (min-width: 1024px) {
       &::before {
-        animation-duration: 1.7s;
+        animation-duration: 2.8s;
       }
     }
   }
