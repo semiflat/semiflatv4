@@ -2,9 +2,9 @@
 // hero assets
 import Dashboard from '~/assets/useful/dashboard.png'
 import DashboardDesktop from '~/assets/useful/dashboard-desktop.png'
-import FundingIcon from '~/assets/useful/funding.svg?url'
-import LocationIcon from '~/assets/useful/location.svg?url'
-import TimelineIcon from '~/assets/useful/timeline.svg?url'
+import FundingIcon from '~/assets/useful/funding.png'
+import LocationIcon from '~/assets/useful/location.png'
+import TimelineIcon from '~/assets/useful/timeline.png'
 
 // how we helped assets
 import HowWeHelpedImage from '~/assets/useful/how-we-helped.png'

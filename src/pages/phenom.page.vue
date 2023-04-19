@@ -2,9 +2,9 @@
 // hero assets
 import Dashboard from '~/assets/phenom/dashboard.png'
 import DashboardDesktop from '~/assets/phenom/dashboard-desktop.png'
-import FundingIcon from '~/assets/phenom/funding.svg?url'
-import LocationIcon from '~/assets/phenom/location.svg?url'
-import TimelineIcon from '~/assets/phenom/timeline.svg?url'
+import FundingIcon from '~/assets/phenom/funding.png'
+import LocationIcon from '~/assets/phenom/location.png'
+import TimelineIcon from '~/assets/phenom/timeline.png'
 
 // how we helped assets
 import HowWeHelpedImage from '~/assets/phenom/how-we-helped.png'

@@ -2,9 +2,9 @@
 // hero assets
 import Dashboard from '~/assets/doss/dashboard.png'
 import DashboardDesktop from '~/assets/doss/dashboard-desktop.png'
-import FundingIcon from '~/assets/doss/funding.svg?url'
-import LocationIcon from '~/assets/doss/location.svg?url'
-import TimelineIcon from '~/assets/doss/timeline.svg?url'
+import FundingIcon from '~/assets/doss/funding.png'
+import LocationIcon from '~/assets/doss/location.png'
+import TimelineIcon from '~/assets/doss/timeline.png'
 
 // how we helped assets
 import HowWeHelpedImage from '~/assets/doss/how-we-helped.png'

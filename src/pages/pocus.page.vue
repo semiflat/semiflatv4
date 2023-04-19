@@ -2,9 +2,9 @@
 // hero assets
 import Dashboard from '~/assets/pocus/pocus-dashboard-tiny.png'
 import DashboardDesktop from '~/assets/pocus/dashboard-desktop.png'
-import FundingIcon from '~/assets/pocus/funding.svg?url'
-import LocationIcon from '~/assets/pocus/location.svg?url'
-import TimelineIcon from '~/assets/pocus/timeline.svg?url'
+import FundingIcon from '~/assets/pocus/funding.png'
+import LocationIcon from '~/assets/pocus/location.png'
+import TimelineIcon from '~/assets/pocus/timeline.png'
 
 // how we helped assets
 import HowWeHelpedImage from '~/assets/pocus/how-we-helped.png'
