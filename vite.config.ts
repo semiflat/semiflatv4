@@ -14,7 +14,8 @@ const config: UserConfig = {
   css: {
     preprocessorOptions: {
       scss: {
-        plugins: [autoprefixer()]
+        plugins: [autoprefixer()],
+        additionalData: '@use "@/styles/_variables" as *;',
       }
     }
   },
@@ -102,6 +103,7 @@ const config: UserConfig = {
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
+      '@': `${path.resolve(__dirname, 'src')}/`,
     },
   },
   ssr: {

@@ -55,7 +55,7 @@
   --accent-color-dark: #002832;
   --accent-color-medium: #BCDCDC;
   --accent-color-light: #BCDCDC;
-  --gradient-color: #BCDCDC;
+  --gradient-rgb: 150,235,214;
 }
 
 html,

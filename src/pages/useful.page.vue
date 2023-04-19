@@ -53,7 +53,7 @@ const cssProps = {
   '--accent-color-dark': '#6F2DE7',
   '--accent-color-medium': '#C48AFF',
   '--accent-color-light': '#E0D1FA',
-  '--gradient-color': '#E0D1FA',
+  '--gradient-rgb': '224,209,250', // must be hex code to work with rgba() function
 }
 
 const hero = {

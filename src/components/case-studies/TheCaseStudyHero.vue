@@ -70,6 +70,8 @@ const props = defineProps<{
   }
 }
 .case-study-hero {
+  @include hero-gradient();
+
   margin-top: 3.5rem;
   background: #fff;
   color: #000;
@@ -83,59 +85,6 @@ const props = defineProps<{
     position: relative;
     z-index: 1;
     max-width: calc(69rem + 2px); // crispy image hack
-  }
-
-  // relative to .layout
-  &::before {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    left: 75vw;
-    top: -40vw;
-    filter: blur(32vw);
-    background: var(--gradient-color);
-
-    @media (min-width: 768px) {
-      width: 20vw;
-      height: 20vw;
-      left: 85vw;
-      top: -5vw;
-      filter: blur(14vw);
-    }
-  }
-
-  // relative to .layout
-  &::after {
-    content: '';
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    right: 40vw;
-    top: -50vw;
-    filter: blur(32vw);
-    background: var(--gradient-color);
-
-    @media (min-width: 768px) {
-      width: 50vw;
-      height: 50vw;
-      right: 78vw;
-      top: 15rem;
-      filter: blur(16vw);
-    }
-  }
-
-  &__logo {
-    display: none;
-
-    @media (min-width: 768px) {
-      display: block;
-      margin: 0 auto 4rem;
-      width: 10rem;
-      height: 3rem;
-      object-fit: contain;
-      object-position: center;
-    }
   }
 
   &__text {

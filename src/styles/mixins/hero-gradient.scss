@@ -1,0 +1,46 @@
+@mixin hero-gradient() {
+  // relative to .layout
+  &::before {
+    content: '';
+    position: absolute;
+    left: 40vw;
+    top: -40vw;
+    display: block;
+    width: 120vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: radial-gradient(
+      rgba(var(--gradient-rgb), 0.4),
+      rgba(var(--gradient-rgb), 0),
+      rgba(255, 255, 255, 0)
+    );
+
+    @media (min-width: 768px) {
+      left: 60vw;
+      top: -50vw;
+      width: 100vw;
+    }
+  }
+
+  // relative to .layout
+  &::after {
+    content: '';
+    position: absolute;
+    left: -150vw;
+    top: -150vw;
+    width: 300vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: radial-gradient(
+      rgba(var(--gradient-rgb), 0.5),
+      rgba(var(--gradient-rgb), 0),
+      rgba(255, 255, 255, 0)
+    );
+
+    @media (min-width: 768px) {
+      left: -60vw;
+      top: -30vw;
+      width: 120vw;
+    }
+  }
+}

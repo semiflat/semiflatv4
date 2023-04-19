@@ -40,6 +40,8 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 .hero {
+  @include hero-gradient();
+
   margin-top: 3.5rem;
 
   @media (min-width: 768px) {
@@ -50,46 +52,6 @@ const props = defineProps<{
   &__inner {
     position: relative;
     z-index: 1;
-  }
-
-  // relative to .layout
-  &::before {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    left: 75vw;
-    top: -40vw;
-    filter: blur(32vw);
-    background: #96ebd6;
-
-    @media (min-width: 768px) {
-      width: 20vw;
-      height: 20vw;
-      left: 85vw;
-      top: -5vw;
-      filter: blur(14vw);
-    }
-  }
-
-  // relative to .layout
-  &::after {
-    content: '';
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    right: 40vw;
-    top: -50vw;
-    filter: blur(32vw);
-    background: rgba(#c9f7e8, 0.8);
-
-    @media (min-width: 768px) {
-      width: 50vw;
-      height: 50vw;
-      right: 78vw;
-      top: 15rem;
-      filter: blur(16vw);
-    }
   }
 
   &__lead {
