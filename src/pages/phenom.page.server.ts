@@ -17,6 +17,7 @@ export async function onBeforeRender() {
           accentColorLight: '#D2F6F9',
           textColor: '!text-[#6F2DE7]',
           navHover: 'hover:!bg-black/08',
+          gradientRGB: '210,246,249',
         },
       },
     },

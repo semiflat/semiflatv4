@@ -15,7 +15,7 @@ const config: UserConfig = {
     preprocessorOptions: {
       scss: {
         plugins: [autoprefixer()],
-        additionalData: '@use "@/styles/_variables" as *;',
+        additionalData: '@import "@/styles/variables";',
       }
     }
   },

@@ -1,4 +1,4 @@
-@mixin hero-gradient() {
+@mixin hero-gradient {
   // relative to .layout
   &::before {
     content: '';
@@ -10,7 +10,7 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     background: radial-gradient(
-      rgba(var(--gradient-rgb), 0.4),
+      rgba(var(--gradient-rgb), 0.5),
       rgba(var(--gradient-rgb), 0),
       rgba(255, 255, 255, 0)
     );
@@ -32,7 +32,7 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     background: radial-gradient(
-      rgba(var(--gradient-rgb), 0.5),
+      rgba(var(--gradient-rgb), 0.6),
       rgba(var(--gradient-rgb), 0),
       rgba(255, 255, 255, 0)
     );

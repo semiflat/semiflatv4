@@ -91,6 +91,7 @@ const services = [
     :style="{
       '--accent-color-dark': context.pageProps?.pageShell?.accentColor,
       '--accent-color-light': context.pageProps?.pageShell?.accentColorLight,
+      '--gradient-rgb': context.pageProps?.pageShell?.gradientRGB,
     }"
   >
     <div class="page-content pt-28 pb-20 md:pb-[12.5rem] md:mt-12 relative overflow-y-clip">
@@ -160,21 +161,24 @@ const services = [
   &::before {
     content: '';
     position: absolute;
+    right: -50vw;
+    top: 0;
     display: block;
-    width: 450px;
-    height: 450px;
-    right: 92vw;
-    left: auto;
-    top: 60vw;
-    filter: blur(32vw);
-    background: var(--accent-color-light);
+    width: 300vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: radial-gradient(
+      rgba(var(--gradient-rgb), 0.7),
+      rgba(var(--gradient-rgb), 0),
+      rgba(255, 255, 255, 0)
+    );
 
     @media (min-width: 768px) {
-      width: 45vw;
-      height: 45vw;
-      right: 86vw;
-      top: 28vw;
-      filter: blur(16vw);
+      width: 120vw;
+      height: 120vw;
+      right: 40vw;
+      top: auto;
+      bottom: -60vw;
     }
   }
 }

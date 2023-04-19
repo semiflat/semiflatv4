@@ -70,7 +70,7 @@ const props = defineProps<{
   }
 }
 .case-study-hero {
-  @include hero-gradient();
+  @include hero-gradient;
 
   margin-top: 3.5rem;
   background: #fff;
