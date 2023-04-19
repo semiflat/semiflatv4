@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import type { Component } from 'vue'
 
-import Doss from '~/assets/home/case-studies/doss.png'
-import Phenom from '~/assets/home/case-studies/phenom.png'
-import Pocus from '~/assets/home/case-studies/pocus.png'
-import Useful from '~/assets/home/case-studies/useful.png'
+import Doss from '~/assets/case-studies/doss.png'
+import Phenom from '~/assets/case-studies/phenom.png'
+import Pocus from '~/assets/case-studies/pocus.png'
+import Useful from '~/assets/case-studies/useful.png'
 
 import DossBg from '~/components/utility/animations/DossBg.vue'
 import PhenomBg from '~/components/utility/animations/PhenomBg.vue'
@@ -49,36 +49,10 @@ const cases = [
 </script>
 
 <template>
-  <div class="mt-16 md:mt-46 gap-6 md:gap-8 page-content">
-    <div class="case-study-section">
-      <ul class="case-study-section__list">
-        <li class="case-study-section__card" v-for="el in cases">
-          <AppCaseStudyCard :data="el" />
-        </li>
-      </ul>
-    </div>
+  <div class="mt-16 md:mt-46 page-content">
+    <AppCaseStudyGrid :cards="cases" />
   </div>
 </template>
 
 <style lang="scss">
-.case-study-section {
-  &__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(12, 1fr);
-
-      > * {
-        grid-column: span 5;
-
-        &:nth-child(2),
-        &:nth-child(3) {
-          grid-column: span 7;
-        }
-      }
-    }
-  }
-}
 </style>

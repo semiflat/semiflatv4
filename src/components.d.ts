@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     AppButton: typeof import('./components/utility/AppButton.vue')['default']
     AppCard: typeof import('./components/utility/AppCard.vue')['default']
     AppCaseStudyCard: typeof import('./components/common/AppCaseStudyCard.vue')['default']
+    AppCaseStudyGrid: typeof import('./components/common/AppCaseStudyGrid.vue')['default']
     AppCirclesHorizontal: typeof import('./components/svg/AppCirclesHorizontal.vue')['default']
     AppDetailsCard: typeof import('./components/common/AppDetailsCard.vue')['default']
     AppDialog: typeof import('./components/utility/AppDialog.vue')['default']
