@@ -115,12 +115,17 @@ const props = defineProps<CaseStudyCTABanner>()
           opacity: 0;
         }
 
-        10% {
+        5% {
           opacity: 1;
         }
 
-        80% {
+        40% {
           opacity: 1;
+        }
+
+        50% {
+          transform: translateX(-560px);
+          opacity: 0;
         }
 
         100% {
@@ -135,12 +140,17 @@ const props = defineProps<CaseStudyCTABanner>()
           opacity: 0;
         }
 
-        10% {
+        5% {
           opacity: 1;
         }
 
-        60% {
+        30% {
           opacity: 1;
+        }
+
+        50% {
+          transform: translateY(-500px);
+          opacity: 0;
         }
 
         100% {
@@ -168,8 +178,8 @@ const props = defineProps<CaseStudyCTABanner>()
         top: calc(clamp(2.5rem, 7vw, 5rem) - 1px);
         background: linear-gradient(to left, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
         transform: translateX(100vw);
-        animation: rocket-to-left 1.5s $easing infinite;
-        animation-delay: 0.7s;
+        animation: rocket-to-left 4s $easing infinite;
+        animation-delay: 2s;
       }
 
       &::after {
@@ -179,7 +189,7 @@ const props = defineProps<CaseStudyCTABanner>()
         bottom: 0;
         transform: translateY(100vh);
         background: linear-gradient(to top, rgba(72, 27, 151, 0) 0%, $rockets-color 100%);
-        animation: rocket-to-top 1.2s $easing infinite;
+        animation: rocket-to-top 4s $easing infinite;
       }
     }
   }
