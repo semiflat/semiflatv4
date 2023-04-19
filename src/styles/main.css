@@ -76,11 +76,9 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-soothing: antialiased;
-  -webkit-text-size-adjust: 100%;
+picture,
+img {
+  display: block;
 }
 
 #nprogress {
