@@ -35,6 +35,6 @@ const faqs = reactive([
         <h2
             class="text-xl gradient-text font-semibold mb-12 md:text-[1.75rem] md:leading-[120%] md:text-center md:mb-[5rem]">
             Have any questions? We’re here to help you <br class="hidden md:block" /> navigate the world of design_</h2>
-            <TheFaqComponent :faqs="faqs"/>
+            <AppAccordion :faqs="faqs"/>
     </div>
 </template>

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Asset from '~/assets/home/case-studies/phenom-bg.svg'
+import Asset from '~/assets/case-studies/phenom-bg.svg'
 </script>
 
 <template>

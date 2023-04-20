@@ -30,6 +30,6 @@ const faqs = reactive([
         <h2
             class="text-xl gradient-text font-semibold mb-12 md:text-[1.75rem] md:leading-[120%] md:text-center md:mb-[5rem]">
             But wait, what if I still have questions?_</h2>
-            <TheFaqComponent :faqs="faqs"/>
+            <AppAccordion :faqs="faqs"/>
     </div>
 </template>

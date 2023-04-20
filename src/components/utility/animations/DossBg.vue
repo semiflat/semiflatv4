@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Asset from '~/assets/home/case-studies/doss-bg.svg'
+import Asset from '~/assets/case-studies/doss-bg.svg'
 </script>
 
 <template>

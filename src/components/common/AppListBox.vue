@@ -39,18 +39,8 @@ const props = defineProps<{
 </template>
 
 <style lang="scss" scoped>
-$bg-color: #{var(--accent-color-dark)};
 .list-box {
-  border-radius: 24px;
-  overflow: hidden;
-  background: radial-gradient(
-      63.24% 50% at 50% 0%,
-      rgba(255, 255, 255, 0.48) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    $bg-color;
-  background-blend-mode: overlay, normal;
-  color: white;
+  @include card;
 
   @media (min-width: 768px) {
     display: grid;

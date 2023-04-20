@@ -364,7 +364,7 @@ const productShotsGalleries = [
     </TheCaseStudyBlock>
 
     <TheCaseStudyBlock>
-      <TheCaseStudyCTABanner v-bind="ctaBanner" />
+      <AppCTABanner v-bind="ctaBanner" />
     </TheCaseStudyBlock>
   </div>
 </template>

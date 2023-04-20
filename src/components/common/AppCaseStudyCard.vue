@@ -13,7 +13,10 @@ defineProps<{
 </script>
 
 <template>
-  <div class="case-study-card" :class="{ 'case-study-card--clickable': !!data?.link }">
+  <div
+    class="case-study-card"
+    :class="{ 'case-study-card--clickable': !!data?.link }"
+  >
     <div class="case-study-card__image-wrapper">
       <div class="case-study-card__image-bg">
           <component v-if="data?.background" :is="data?.background"  />
@@ -85,6 +88,7 @@ defineProps<{
   &__image {
     position: relative;
     z-index: 1;
+    width: 100%;
   }
 
   &__text-wrapper {

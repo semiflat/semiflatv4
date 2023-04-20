@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Asset from '~/assets/home/case-studies/pocus-bg.svg'
+import Asset from '~/assets/case-studies/pocus-bg.svg'
 </script>
 
 <template>

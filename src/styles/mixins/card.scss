@@ -1,0 +1,14 @@
+@mixin card {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: radial-gradient(
+      63.24% 50% at 50% 0%,
+      rgba(255, 255, 255, 0.48) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    var(--accent-color-dark);
+  background-blend-mode: overlay, normal;
+  color: white;
+  font-size: 1rem;
+}
