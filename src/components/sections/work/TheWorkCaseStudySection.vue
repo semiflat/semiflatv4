@@ -94,24 +94,20 @@ const cases = [
 </script>
 
 <template>
-  <div class="work-case-study-section" v-for="el in cases" :key="el.service?.title">
+  <AppBlock v-for="el in cases" :key="el.service?.title">
     <div class="page-content">
-      <div class="work-case-study-section__inner">
+      <div class="work-case-study-section">
         <AppServiceCard v-bind="el.service" />
         <AppCaseStudyGrid :cards="el.cards" />
       </div>
     </div>
-  </div>
+  </AppBlock>
 </template>
 
 <style lang="scss" scoped>
 .work-case-study-section {
-  @include section;
-
-  &__inner {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 3rem;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
 }
 </style>

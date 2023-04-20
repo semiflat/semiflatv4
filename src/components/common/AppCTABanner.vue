@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import type { Image } from '../common/AppImage.vue'
 
-interface CaseStudyCTABanner {
+export interface CTABanner {
   title: string
   description: string
   buttons: any[]
   image: Image
 }
 
-const props = defineProps<CaseStudyCTABanner>()
+const props = defineProps<CTABanner>()
 </script>
 
 <template>
@@ -41,19 +41,7 @@ const props = defineProps<CaseStudyCTABanner>()
 
 <style lang="scss" scoped>
 .cta-banner {
-  $bg-color: #{var(--accent-color-dark)};
-
-  border-radius: 16px;
-  overflow: hidden;
-  background: radial-gradient(
-      63.24% 50% at 50% 0%,
-      rgba(255, 255, 255, 0.48) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    $bg-color;
-  background-blend-mode: overlay, normal;
-  color: white;
-  font-size: 1rem;
+  @include card;
 
   @media (min-width: 768px) {
     display: grid;

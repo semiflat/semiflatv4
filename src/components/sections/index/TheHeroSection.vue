@@ -74,64 +74,16 @@ const hero = {
 
 <template>
   <AppHero :title="hero.title" :description="hero.description" :buttons="hero.buttons">
-    <div class="hero-slider">
-      <div v-for="i in 2" :key="i" class="hero-slider__inner">
-        <component v-for="logo in logos" :is="logo" class="hero-slider__logo" />
-      </div>
-    </div>
+    <AppLogosMarquee class="hero-slider" :items="logos" />
   </AppHero>
 </template>
 
-<style lang="scss">
-@keyframes marquee {
-  to {
-    transform: translateX(-100%);
-  }
-}
-
+<style lang="scss" scoped>
 .hero-slider {
-  display: flex;
-  overflow: hidden;
   margin-top: 4rem;
-  mask-image: linear-gradient(
-    270deg,
-    rgba(242, 242, 242, 0) 0%,
-    rgba(245, 245, 245, 1) 15%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(244, 244, 244, 1) 85%,
-    rgba(242, 242, 242, 0) 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    270deg,
-    rgba(242, 242, 242, 0) 0%,
-    rgba(245, 245, 245, 1) 15%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(244, 244, 244, 1) 85%,
-    rgba(242, 242, 242, 0) 100%
-  );
 
   @media (min-width: 768px) {
     margin-top: 10rem;
-  }
-
-  &__inner {
-    display: flex;
-    flex: 0 0 auto;
-    animation: marquee 90s linear infinite;
-
-    @media (min-width: 768px) {
-      animation-duration: 130s;
-    }
-  }
-
-  &__logo {
-    flex-shrink: 0;
-    width: 180px;
-    object-fit: contain;
-
-    @media (min-width: 768px) {
-      width: 240px;
-    }
   }
 }
 </style>

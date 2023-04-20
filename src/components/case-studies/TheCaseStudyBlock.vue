@@ -5,29 +5,18 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div
+  <AppBlock
     class="case-study-block"
     :class="{ [`case-study-block--decor-${props.decor}`]: !!props.decor }"
   >
     <div class="case-study-block__inner page-content">
       <slot></slot>
     </div>
-  </div>
+  </AppBlock>
 </template>
 
 <style lang="scss" scoped>
 .case-study-block {
-  position: relative;
-  padding-top: 3rem;
-
-  @media (min-width: 768px) {
-    padding-top: 8rem;
-  }
-
-  @media (min-width: 1040px) {
-    padding-top: 10rem;
-  }
-
   &::before {
     content: '';
     position: absolute;
