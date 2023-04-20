@@ -1,0 +1,12 @@
+@mixin section {
+  position: relative;
+  padding-top: 3rem;
+
+  @media (min-width: 768px) {
+    padding-top: 8rem;
+  }
+
+  @media (min-width: 1040px) {
+    padding-top: 10rem;
+  }
+}

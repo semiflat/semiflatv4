@@ -24,6 +24,7 @@ declare module '@vue/runtime-core' {
     AppListBox: typeof import('./components/common/AppListBox.vue')['default']
     AppMultistepContainer: typeof import('./components/utility/AppMultistepContainer.vue')['default']
     AppNumberedList: typeof import('./components/common/AppNumberedList.vue')['default']
+    AppServiceCard: typeof import('./components/common/AppServiceCard.vue')['default']
     AppSlider: typeof import('./components/utility/AppSlider.vue')['default']
     AppSpinner: typeof import('./components/utility/AppSpinner.vue')['default']
     AppStepper: typeof import('./components/utility/AppStepper.vue')['default']

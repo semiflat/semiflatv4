@@ -17,7 +17,14 @@ import UsefulBg from '~/components/utility/animations/UsefulBg.vue'
 
 const cases = [
   {
-    title: 'Ground-up product design',
+    service: {
+      title: 'Ground-up product design',
+      description:
+        'We help SaaS companies go to market or raise funding by designing development-ready MVPs. From ideation to a polished interface.',
+      cta: {
+        label: 'Learn about ground-up projects',
+      },
+    },
     cards: [
       {
         picture: Pocus,
@@ -33,7 +40,8 @@ const cases = [
       },
       {
         picture: Rengage,
-        caption: 'Building an MVP and a new identity for Rengage to unify the customer journey across channels.',
+        caption:
+          'Building an MVP and a new identity for Rengage to unify the customer journey across channels.',
       },
       {
         picture: Doss,
@@ -52,7 +60,14 @@ const cases = [
     ],
   },
   {
-    title: 'Ongoing design support',
+    service: {
+      title: 'Ongoing design support',
+      description:
+        'We help SaaS companies by augmenting their teams with dedicated talent to take their product to the next level.',
+      cta: {
+        label: 'Learn about design support',
+      },
+    },
     cards: [
       {
         picture: Default,
@@ -66,23 +81,37 @@ const cases = [
       },
       {
         picture: Gyaan,
-        caption: 'Supporting Gyaan - a revenue team platform with a dedicated, full-time senior designer.',
+        caption:
+          'Supporting Gyaan - a revenue team platform with a dedicated, full-time senior designer.',
       },
       {
         picture: Sisu,
         caption: 'Augmenting Sisu’s team with flexible, world-class talent on-demand.',
       },
-  
     ],
   },
 ]
 </script>
 
 <template>
-  <div>
-    <div v-for="el in cases" :key="el.title" class="mt-16 md:mt-46 page-content">
-      <h2 class="mb-10">{{ el.title }}</h2>
-      <AppCaseStudyGrid :cards="el.cards" />
+  <div class="work-case-study-section" v-for="el in cases" :key="el.service?.title">
+    <div class="page-content">
+      <div class="work-case-study-section__inner">
+        <AppServiceCard v-bind="el.service" />
+        <AppCaseStudyGrid :cards="el.cards" />
+      </div>
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.work-case-study-section {
+  @include section;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+}
+</style>
