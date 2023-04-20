@@ -20,7 +20,7 @@ const props = defineProps<ServiceCard>()
       <p class="service-card__description">{{ props.description }}</p>
     </div>
     <div class="service-card__cta-wrapper">
-      <AppButton class="service-card__cta" :href="cta.href">
+      <AppButton class="service-card__cta" :disabled="!cta.href" :href="cta.href">
         {{ cta.label }}
       </AppButton>
     </div>
@@ -65,12 +65,18 @@ const props = defineProps<ServiceCard>()
   }
 
   &__cta-wrapper {
-    text-align: right;
+    @media (min-width: 768px) {
+      text-align: right;
+    }
   }
 
   &__cta {
     background: white;
     color: var(--accent-color-dark);
+
+    &[disabled] {
+      opacity: 0.5;
+    }
   }
 }
 </style>

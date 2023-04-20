@@ -17,12 +17,13 @@ import UsefulBg from '~/components/utility/animations/UsefulBg.vue'
 
 const cases = [
   {
+    decor: 'middle-right',
     service: {
       title: 'Ground-up product design',
       description:
         'We help SaaS companies go to market or raise funding by designing development-ready MVPs. From ideation to a polished interface.',
       cta: {
-        label: 'Learn about ground-up projects',
+        label: 'Details coming soon',
       },
     },
     cards: [
@@ -60,12 +61,13 @@ const cases = [
     ],
   },
   {
+    decor: 'top-left',
     service: {
       title: 'Ongoing design support',
       description:
         'We help SaaS companies by augmenting their teams with dedicated talent to take their product to the next level.',
       cta: {
-        label: 'Learn about design support',
+        label: 'Details coming soon',
       },
     },
     cards: [
@@ -94,20 +96,28 @@ const cases = [
 </script>
 
 <template>
-  <AppBlock v-for="el in cases" :key="el.service?.title">
-    <div class="page-content">
-      <div class="work-case-study-section">
-        <AppServiceCard v-bind="el.service" />
-        <AppCaseStudyGrid :cards="el.cards" />
+  <div class="work-case-study-section">
+    <AppBlock v-for="el in cases" :key="el.service?.title" :decor="el.decor">
+      <div class="page-content">
+        <div class="work-case-study-section__inner">
+          <AppServiceCard v-bind="el.service" />
+          <AppCaseStudyGrid :cards="el.cards" />
+        </div>
       </div>
-    </div>
-  </AppBlock>
+    </AppBlock>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 .work-case-study-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+  &:deep(.block--decor-top-left::before) {
+    top: -18vw;
+    right: 50vw;
+  }
 }
 </style>
