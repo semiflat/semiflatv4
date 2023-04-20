@@ -23,6 +23,8 @@ const props = defineProps<{ items: Component[] }>()
   }
 }
 .logos-marquee {
+  max-width: 100rem;
+  margin: 0 auto;
   display: flex;
   overflow: hidden;
   mask-image: linear-gradient(
