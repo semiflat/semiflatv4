@@ -6,14 +6,9 @@ const ctaBanner = {
   description: 'We’re excited to talk to you about your project requirements and business goals.',
   buttons: [
     {
-      href: 'mailto:hello@semiflat.com',
-      label: 'Send an email',
-    },
-    {
-      href: 'https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction',
       label: 'Schedule a call',
+      href: 'https://calendly.com/semiflat_demo/30min',
       isTargetBlank: true,
-      isText: true,
     },
   ],
   image: {

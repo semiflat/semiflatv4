@@ -59,7 +59,7 @@ const hero = {
   image: {
     urlMobile: Dashboard,
     urlDesktop: DashboardDesktop,
-    altText: 'Pocus app dashboard, designed by Semiflat'
+    altText: 'Pocus app dashboard, designed by Semiflat',
   },
   title: 'Designing Pocus, a product-led sales tool that raised a $23M series A',
   description:
@@ -219,8 +219,9 @@ const caseOutcomes = {
     title: 'Have a project in mind similar to Pocus?',
     description: 'Ask us about a dedicated senior designer long-term collaboration model.',
     cta: {
-      href: 'mailto:hello@semiflat.com',
-      label: 'Get in touch',
+      label: 'Schedule a call',
+      href: 'https://calendly.com/semiflat_demo/30min',
+      isTargetBlank: true,
     },
   },
 }
@@ -230,14 +231,9 @@ const ctaBanner = {
   description: 'We’re excited to talk to you about your project requirements and business goals.',
   buttons: [
     {
-      href: 'mailto:hello@semiflat.com',
-      label: 'Send an email',
-    },
-    {
-      href: 'https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction',
       label: 'Schedule a call',
+      href: 'https://calendly.com/semiflat_demo/30min',
       isTargetBlank: true,
-      isText: true,
     },
   ],
   image: {
@@ -369,5 +365,4 @@ const productShotsGalleries = [
   </div>
 </template>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

@@ -62,14 +62,9 @@ const hero = {
     'Our approach to design is technical - not purely aesthetic. Every design decision is process and data-driven to deliver an intuitive and delightful experience for your users.',
   buttons: [
     {
-      label: 'Get in touch',
-      href: 'mailto:hello@semiflat.com',
-    },
-    {
       label: 'Schedule a call',
-      href: 'https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction',
+      href: 'https://calendly.com/semiflat_demo/30min',
       isTargetBlank: true,
-      isText: true,
     },
   ],
 }

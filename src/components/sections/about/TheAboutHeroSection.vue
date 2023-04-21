@@ -5,14 +5,9 @@ const hero = {
     'We are a remote team of product designers, laser focused on delivering top tier SaaS product design to world’s most innovative startups.',
   buttons: [
     {
-      label: 'Get in touch',
-      href: 'mailto:hello@semiflat.com',
-    },
-    {
       label: 'Schedule a call',
-      href: 'https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction',
+      href: 'https://calendly.com/semiflat_demo/30min',
       isTargetBlank: true,
-      isText: true,
     },
   ],
 }

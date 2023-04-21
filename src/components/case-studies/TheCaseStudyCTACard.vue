@@ -16,7 +16,11 @@ const props = defineProps<CaseStudyCTACard>()
     <p class="cta-card__description">
       {{ props.description }}
     </p>
-    <AppButton class="cta-card__button" :href="cta.href">
+    <AppButton
+      class="cta-card__button"
+      :href="cta.href"
+      :target="cta.isTargetBlank ? '_blank' : ''"
+    >
       {{ cta.label }}
     </AppButton>
   </div>

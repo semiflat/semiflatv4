@@ -59,14 +59,9 @@ const hero = {
     'Semiflat is a full-service design agency specialized in solving complex problems through design. We design tools that help millions of professionals be more effective at their job.',
   buttons: [
     {
-      label: 'Get in touch',
-      href: 'mailto:hello@semiflat.com',
-    },
-    {
       label: 'Schedule a call',
-      href: 'https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction',
+      href: 'https://calendly.com/semiflat_demo/30min',
       isTargetBlank: true,
-      isText: true,
     },
   ],
 }

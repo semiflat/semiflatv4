@@ -245,8 +245,9 @@ const caseOutcomes = {
     title: 'Have a project in mind similar to Useful?',
     description: 'Ask us about a fixed-scope MVP sprint and how we can create an interactive prototype to help you tell the story of your product.',
     cta: {
-      href: 'mailto:hello@semiflat.com',
-      label: 'Get in touch',
+      label: 'Schedule a call',
+      href: 'https://calendly.com/semiflat_demo/30min',
+      isTargetBlank: true,
     },
   },
 }
@@ -256,14 +257,9 @@ const ctaBanner = {
   description: 'Reach out with more details about your project so we can prepare for an introductory call. We’ll schedule it within 24 hours from receiving your query.',
   buttons: [
     {
-      href: 'mailto:hello@semiflat.com',
-      label: 'Send an email',
-    },
-    {
-      href: 'https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction',
       label: 'Schedule a call',
+      href: 'https://calendly.com/semiflat_demo/30min',
       isTargetBlank: true,
-      isText: true,
     },
   ],
   image: {

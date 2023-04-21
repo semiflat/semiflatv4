@@ -255,8 +255,9 @@ const caseOutcomes = {
     title: 'Does your company have ongoing design needs like Phenom?',
     description: 'Ask us about an ongoing collaboration with a dedicated design team.',
     cta: {
-      href: 'mailto:hello@semiflat.com',
-      label: 'Get in touch',
+      label: 'Schedule a call',
+      href: 'https://calendly.com/semiflat_demo/30min',
+      isTargetBlank: true,
     },
   },
 }
@@ -264,16 +265,11 @@ const caseOutcomes = {
 const ctaBanner = {
   title: 'Want to partner with design experts in SaaS?',
   description: 'We’re excited to talk to you about your project requirements and business goals.',
-  buttons: [
+   buttons: [
     {
-      href: 'mailto:hello@semiflat.com',
-      label: 'Send an email',
-    },
-    {
-      href: 'https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction',
       label: 'Schedule a call',
+      href: 'https://calendly.com/semiflat_demo/30min',
       isTargetBlank: true,
-      isText: true,
     },
   ],
   image: {

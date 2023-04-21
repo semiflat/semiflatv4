@@ -63,7 +63,7 @@ const hero = {
   image: {
     urlMobile: Dashboard,
     urlDesktop: DashboardDesktop,
-    altText: 'Doss app dashboard, designed by Semiflat'
+    altText: 'Doss app dashboard, designed by Semiflat',
   },
   title: 'MVP prototype and ongoing support for Doss - a platform for operations teams',
   description:
@@ -109,14 +109,12 @@ const howWeHelped = {
     {
       icon: UXIcon,
       title: 'User experience design',
-      description:
-        'We’ve designed the user experience for specific scenarios from scratch.',
+      description: 'We’ve designed the user experience for specific scenarios from scratch.',
     },
     {
       icon: UIIcon,
       title: 'User interface design',
-      description:
-        'We’ve come up with a subtle yet polished look & feel for the application. ',
+      description: 'We’ve come up with a subtle yet polished look & feel for the application. ',
     },
     {
       icon: DesignIcon,
@@ -127,14 +125,12 @@ const howWeHelped = {
     {
       icon: BrandingIcon,
       title: 'Branding',
-      description:
-        'We’ve designed a few iterations of brand identity for Doss.',
+      description: 'We’ve designed a few iterations of brand identity for Doss.',
     },
     {
       icon: WebsiteIcon,
       title: 'Website design and development',
-      description:
-        'We’ve designed and implemented a marketing page for Doss in Webflow.',
+      description: 'We’ve designed and implemented a marketing page for Doss in Webflow.',
     },
     {
       icon: SupportIcon,
@@ -234,12 +230,12 @@ const caseOutcomes = {
       {
         title: 'A high-fidelity Figma file containing all screens from the prototype',
         description:
-          "We’ve delivered a set of high-fidelity screens containing all states and steps in the user’s journey for specific scenarios we’ve identified beforehand.",
+          'We’ve delivered a set of high-fidelity screens containing all states and steps in the user’s journey for specific scenarios we’ve identified beforehand.',
       },
       {
         title: 'A separate Figma file containing all custom components from the interface',
         description:
-          "We’ve made sure that all of the custom components from the design were reflected in a separate design system file, along with all of their variants, for smooth implementation and consistency.",
+          'We’ve made sure that all of the custom components from the design were reflected in a separate design system file, along with all of their variants, for smooth implementation and consistency.',
       },
       {
         title: 'An interactive Figma prototype',
@@ -249,16 +245,18 @@ const caseOutcomes = {
       {
         title: 'Brand design',
         description:
-          "We’ve created a simple brand book with a new logo, logo mark, color palette, and typography for Doss.",
+          'We’ve created a simple brand book with a new logo, logo mark, color palette, and typography for Doss.',
       },
     ],
   },
   cta: {
     title: 'Have a project in mind similar to Doss?',
-    description: 'Ask us about a fixed-scope MVP sprint and how we can create an interactive prototype to help you tell the story of your product.',
+    description:
+      'Ask us about a fixed-scope MVP sprint and how we can create an interactive prototype to help you tell the story of your product.',
     cta: {
-      href: 'mailto:hello@semiflat.com',
-      label: 'Get in touch',
+      label: 'Schedule a call',
+      href: 'https://calendly.com/semiflat_demo/30min',
+      isTargetBlank: true,
     },
   },
 }
@@ -268,14 +266,9 @@ const ctaBanner = {
   description: 'We’re excited to talk to you about your project requirements and business goals.',
   buttons: [
     {
-      href: 'mailto:hello@semiflat.com',
-      label: 'Send an email',
-    },
-    {
-      href: 'https://calendly.com/d/g3b-8j5-vzs/semiflat-design-partner-introduction',
       label: 'Schedule a call',
+      href: 'https://calendly.com/semiflat_demo/30min',
       isTargetBlank: true,
-      isText: true,
     },
   ],
   image: {

@@ -102,10 +102,11 @@ onMounted(() => {
       </ul>
       <AppButton
         class="!hidden md:!inline-flex"
-        href="mailto:hello@semiflat.com"
+        href="https://calendly.com/semiflat_demo/30min"
+        :isTargetBlank="true"
         :class="[context.pageProps?.pageShell?.bgColor]"
         :style="{ background: context.pageProps?.pageShell?.accentColor }"
-        >Get in touch</AppButton
+      >Schedule a call</AppButton
       >
     </nav>
   </div>
