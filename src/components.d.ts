@@ -24,6 +24,7 @@ declare module '@vue/runtime-core' {
     AppImage: typeof import('./components/common/AppImage.vue')['default']
     AppImagesGroup: typeof import('./components/common/AppImagesGroup.vue')['default']
     AppInput: typeof import('./components/inputs/AppInput.vue')['default']
+    AppLargeCard: typeof import('./components/common/AppLargeCard.vue')['default']
     AppListBox: typeof import('./components/common/AppListBox.vue')['default']
     AppLogosMarquee: typeof import('./components/common/AppLogosMarquee.vue')['default']
     AppMultistepContainer: typeof import('./components/utility/AppMultistepContainer.vue')['default']
@@ -86,5 +87,7 @@ declare module '@vue/runtime-core' {
     TheWorkFaqSection: typeof import('./components/sections/work/TheWorkFaqSection.vue')['default']
     TheWorkHeroSection: typeof import('./components/sections/work/TheWorkHeroSection.vue')['default']
     UsefulBg: typeof import('./components/utility/animations/UsefulBg.vue')['default']
+    WorkInfoCards: typeof import('./components/work/WorkInfoCards.vue')['default']
+    WorkSummaryBanner: typeof import('./components/work/WorkSummaryBanner.vue')['default']
   }
 }
