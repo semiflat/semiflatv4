@@ -352,11 +352,11 @@ const ctaBanner = {
         <WorkSummaryBanner :data="summaryBanner" />
       </AppBlock>
 
-      <AppBlock id="case-studies" :title="caseStudies.title">
+      <AppBlock id="case-studies" decor="top-right" :title="caseStudies.title">
         <AppCaseStudyGrid :cards="caseStudies.cards" />
       </AppBlock>
 
-      <AppBlock>
+      <AppBlock decor="middle-left">
         <AppLongTextSection id="process" :data="process" :isPrimary="true">
           <AppNumberedList :items="process.list" :isLayoutCards="true" :isPrimary="true" />
         </AppLongTextSection>

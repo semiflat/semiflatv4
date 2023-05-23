@@ -39,7 +39,6 @@ declare module '@vue/runtime-core' {
     AppTestimonialsSlider: typeof import('./components/common/AppTestimonialsSlider.vue')['default']
     AppToastError: typeof import('./components/toasts/AppToastError.vue')['default']
     AppToastSuccess: typeof import('./components/toasts/AppToastSuccess.vue')['default']
-    AppTwoColumnsSection: typeof import('./components/common/AppTwoColumnsSection.vue')['default']
     ClientOnly: typeof import('./components/utility/ClientOnly.vue')['default']
     DossBg: typeof import('./components/utility/animations/DossBg.vue')['default']
     PhenomBg: typeof import('./components/utility/animations/PhenomBg.vue')['default']
