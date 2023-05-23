@@ -45,7 +45,7 @@ defineProps<{
   }
 
   @media (min-width: 1040px) {
-    padding: 3.5rem 3rem;
+    padding: 3.5rem 2.5rem;
   }
 
   &__title {
@@ -165,6 +165,9 @@ defineProps<{
   }
 
   &__icon {
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1 / 1;
     stroke: currentColor;
 
     &:deep(path) {
