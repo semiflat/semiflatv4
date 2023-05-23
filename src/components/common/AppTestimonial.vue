@@ -24,25 +24,13 @@ const props = defineProps<Testimonial>()
 
 <style lang="scss" scoped>
 .testimonial {
-  $bg-color: #{var(--accent-color-dark)};
+  @include card;
 
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   padding: 2.5rem 1.5rem;
-  border-radius: 24px;
-  background: radial-gradient(
-      63.24% 50% at 50% 0%,
-      rgba(255, 255, 255, 0.48) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    $bg-color;
-  background-blend-mode: overlay, normal;
-  color: white;
-  font-size: 1rem;
-  overflow: hidden;
 
   &::before,
   &::after {

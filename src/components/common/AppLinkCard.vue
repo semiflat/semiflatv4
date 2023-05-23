@@ -5,7 +5,7 @@ export interface LinkCard {
   iconUrl: string
   title: string
   description: string
-  url: string
+  url?: string
 }
 
 defineProps<LinkCard>()
@@ -15,10 +15,13 @@ defineProps<LinkCard>()
   <div class="link-card">
     <div class="link-card__header">
       <img class="link-card__image" :src="iconUrl" loading="lazy" />
-      <a class="link-card__link" :href="url" target="_blank" rel="noopener nofollow">
+      <a v-if="url" class="link-card__link" :href="url" target="_blank" rel="noopener nofollow">
         <h3 class="link-card__title">{{ title }}</h3>
         <ArrowRight class="link-card__arrow" />
       </a>
+      <div v-else class="link-card__link">
+        <h3 class="link-card__title">{{ title }}</h3>
+      </div>
     </div>
 
     <p class="link-card__description">{{ description }}</p>

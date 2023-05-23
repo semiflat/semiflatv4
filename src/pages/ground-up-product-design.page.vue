@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 // hero cards assets
 import HeroCardImage1 from '~/assets/work/ground-up-design-card-1.png'
+import HeroCardImage2 from '~/assets/work/ground-up-design-card-2.png'
 
 // summary banner assets
 import FoundationIcon from '~/assets/icons/foundation.svg'
@@ -16,32 +17,35 @@ import UsefulBg from '~/components/utility/animations/UsefulBg.vue'
 
 // testimonials
 import UsefulCEO from '~/assets/useful/useful-ceo.png'
-import UsefulLogo from '~/assets/tint-logos/logo-useful.svg?component'
+import UsefulLogo from '~/assets/tint-logos/logo-useful.svg?url'
 
 import PocusCEO from '~/assets/pocus/pocus-ceo.jpeg'
-import PocusLogo from '~/assets/tint-logos/logo-pocus.svg?component'
+import PocusLogo from '~/assets/tint-logos/logo-pocus.svg?url'
 
 import ErinAvatar from '~/assets/avatars/erin.png'
-import YuzedataLogo from '~/assets/tint-logos/logo-yuzedata.svg?component'
+import YuzedataLogo from '~/assets/tint-logos/logo-yuzedata.svg?url'
 
 import AndreAvatar from '~/assets/avatars/andre.png'
-import JeticLogo from '~/assets/tint-logos/logo-jetic.svg?component'
+import JeticLogo from '~/assets/tint-logos/logo-jetic.svg?url'
 
 // clients
-import Ahana from '~/assets/clients/logos/ahana.png';
-import AppFleet from '~/assets/clients/logos/appfleet.png';
-import ClickMagic from '~/assets/clients/logos/click-magic.png';
-import DevZero from '~/assets/clients/logos/dev-zero.png';
-import Doss from '~/assets/clients/logos/doss.png';
-import Jetic from '~/assets/clients/logos/jetic.png';
-import Metlo from '~/assets/clients/logos/metlo.png';
-import Onward from '~/assets/clients/logos/onward.png';
-import Pocus from '~/assets/clients/logos/pocus.png';
-import Runchise from '~/assets/clients/logos/runchise.png';
-import Scholaris from '~/assets/clients/logos/scholaris.png';
-import Tau from '~/assets/clients/logos/tau.png';
-import Useful from '~/assets/clients/logos/useful.png';
-import YuzeData from '~/assets/clients/logos/yuze-data.png';
+import Ahana from '~/assets/clients/logos/ahana.png'
+import AppFleet from '~/assets/clients/logos/appfleet.png'
+import ClickMagic from '~/assets/clients/logos/click-magic.png'
+import DevZero from '~/assets/clients/logos/dev-zero.png'
+import Doss from '~/assets/clients/logos/doss.png'
+import Jetic from '~/assets/clients/logos/jetic.png'
+import Metlo from '~/assets/clients/logos/metlo.png'
+import Onward from '~/assets/clients/logos/onward.png'
+import Pocus from '~/assets/clients/logos/pocus.png'
+import Runchise from '~/assets/clients/logos/runchise.png'
+import Scholaris from '~/assets/clients/logos/scholaris.png'
+import Tau from '~/assets/clients/logos/tau.png'
+import Useful from '~/assets/clients/logos/useful.png'
+import YuzeData from '~/assets/clients/logos/yuze-data.png'
+
+// banner
+import CTABannerDesktopImage from '~/assets/case-study/cta_banner.png'
 
 const hero = {
   title: 'Ground-up product design_',
@@ -64,17 +68,17 @@ const heroCards = [
     picture: HeroCardImage1,
     button: {
       label: 'See the process',
-      href: '/',
+      href: '#process',
     },
   },
   {
     title: 'Who is ground-up product design for?',
     description:
       'Ground-up product design is perfect for early stage startups, SaaS companies launching new products or legacy software needing a complete overhaul.',
-    picture: HeroCardImage1,
+    picture: HeroCardImage2,
     button: {
       label: 'See our clients',
-      href: '/',
+      href: '#clients',
     },
   },
 ]
@@ -318,6 +322,22 @@ const faqs = reactive([
     isOpen: false,
   },
 ])
+
+const ctaBanner = {
+  title: 'Want to partner with design experts in SaaS?',
+  description: 'We’re excited to talk to you about your project requirements and business goals.',
+  buttons: [
+    {
+      label: 'Schedule a call',
+      href: 'https://calendly.com/semiflat_demo/30min',
+      isTargetBlank: true,
+    },
+  ],
+  image: {
+    urlDesktop: CTABannerDesktopImage,
+    altText: 'Semiflat Case Study: Pocus App dashboard',
+  },
+}
 </script>
 
 <template>
@@ -336,8 +356,8 @@ const faqs = reactive([
         <AppCaseStudyGrid :cards="caseStudies.cards" />
       </AppBlock>
 
-      <AppBlock id="steps">
-        <AppLongTextSection :data="process" :isPrimary="true">
+      <AppBlock>
+        <AppLongTextSection id="process" :data="process" :isPrimary="true">
           <AppNumberedList :items="process.list" :isLayoutCards="true" :isPrimary="true" />
         </AppLongTextSection>
       </AppBlock>
@@ -346,12 +366,16 @@ const faqs = reactive([
         <AppTestimonialsSlider :testimonials="testimonials" />
       </AppBlock>
 
-      <AppBlock id="clients" :title="clients.title">
-        <WorkClients :cards="clients.cards" />
+      <AppBlock :title="clients.title">
+        <WorkClients id="clients" :cards="clients.cards" />
       </AppBlock>
 
       <AppBlock id="faq" :title="faqsTitle">
         <AppAccordion :faqs="faqs" />
+      </AppBlock>
+
+      <AppBlock id="cta">
+        <AppCTABanner v-bind="ctaBanner" />
       </AppBlock>
     </div>
   </div>

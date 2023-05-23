@@ -31,14 +31,15 @@ defineProps<{
     <div class="large-card__text-wrapper">
       <h2 class="large-card__title">{{ data.title }}</h2>
       <p class="large-card__description">{{ data.description }}</p>
-      <AppButton
+      <a
         class="large-card__button"
         :href="data.button.href"
         :target="data.button.isTargetBlank ? '_blank' : ''"
-        secondary
       >
-        {{ data.button.label }}
-      </AppButton>
+        <AppButton secondary>
+          {{ data.button.label }}
+        </AppButton>
+      </a>
     </div>
   </div>
 </template>
@@ -109,6 +110,18 @@ defineProps<{
     @media (min-width: 1200px) {
       margin-bottom: 2.5rem;
       font-size: 1rem;
+    }
+  }
+
+  &__button {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
     }
   }
 }

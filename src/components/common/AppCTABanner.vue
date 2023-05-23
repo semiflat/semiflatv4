@@ -75,6 +75,7 @@ const props = defineProps<CTABanner>()
 
   &__description {
     margin: 1rem 0 2.5rem;
+    opacity: .75;
 
     @media (min-width: 768px) {
       margin-top: 1.5rem;
