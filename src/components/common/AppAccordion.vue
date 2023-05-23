@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ChevronDown from '~/assets/icons/chevron-down.svg?component'
 
-interface FaqItem {
+export interface FaqItem {
   header: string
   text: string
   isOpen: boolean
