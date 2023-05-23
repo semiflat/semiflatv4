@@ -22,7 +22,7 @@ defineProps<{
           <component v-if="data?.background" :is="data?.background"  />
       </div>
     
-      <img :src="data?.picture" class="case-study-card__image" />
+      <img :src="data?.picture" class="case-study-card__image" loading="lazy" />
     </div>
 
     <div class="case-study-card__text-wrapper">

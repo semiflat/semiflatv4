@@ -11,8 +11,6 @@ import MikeAvatar from '~/assets/avatars/mike.png'
 import ErinAvatar from '~/assets/avatars/erin.png'
 import NicoAvatar from '~/assets/avatars/nico.png'
 import AndreAvatar from '~/assets/avatars/andre.png'
-import StrokeLeft from '~/assets/index-strokes/stroke-left.svg?component'
-import StrokeTop from '~/assets/index-strokes/stroke-top.svg?component'
 
 const testimonials = [
   {
@@ -61,101 +59,146 @@ const testimonials = [
 </script>
 
 <template>
-  <div class="page-content mt-16 md:mt-40 relative">
-    <h2
-      class="text-xl gradient-text font-semibold mb-12 md:text-[1.75rem] md:leading-[120%] md:text-center md:mb-0"
-    >
-      Dozens of trailblazing startups loving our work <br class="hidden md:block" />
-      can’t be wrong_
-    </h2>
-    <div class="grid gap-6 md:grid-cols-3 md:hidden">
-      <TheTestimonialComponent
-        v-for="(testimonial, i) in testimonials"
-        :key="i"
-        :testimonial="testimonial"
-      />
-      <div class="px-8 py-10 bg-dark-blue rounded-4 relative md:static">
-        <AppCirclesHorizontal id="circles-sm" class="absolute right-0 bottom-0 h-51" />
-        <p class="text-white text-xl mb-8 font-semibold">Want to see what the buzz is all about?</p>
-        <AppButton secondary href="/work">See our work</AppButton>
-      </div>
-    </div>
-  </div>
-  <div
-    class="relative mask-testimonial pt-5rem pb-5rem max-w-86rem mx-auto hidden md:block px-6 lg:px-0"
-  >
-    <div class="hidden md:flex gap-8 max-w-69rem mx-auto">
-      <div class="flex flex-col gap-8 max-w-[346px] justify-center relative">
-        <component :is="StrokeTop" class="absolute w-full -top-42" />
+  <AppBlock class="testimonials-section">
+    <div class="page-content">
+      <h2 class="testimonials-section__title gradient-text">
+        Dozens of trailblazing startups loving our work can’t be wrong_
+      </h2>
 
-        <TheTestimonialComponent :testimonial="testimonials[0]" />
-        <component :is="StrokeLeft" class="absolute w-full -left-[calc(100%+2rem)]" />
-
-        <TheTestimonialComponent :testimonial="testimonials[1]" />
-        <component :is="StrokeTop" class="absolute w-full -bottom-42 -scale-y-100" />
-      </div>
-      <div class="flex flex-col gap-8 max-w-[346px] relative">
-        <component :is="StrokeTop" class="absolute w-full -top-62" />
-        <TheTestimonialComponent :testimonial="testimonials[2]" />
-        <div class="px-8 py-10 bg-dark-blue rounded-4 relative">
-          <p class="text-white text-xl mb-8 font-semibold">
-            Want to see what the buzz is all about?
-          </p>
-          <AppButton class="!bg-white !text-blue-300 relative z-1" href="/work"
-            >See our work</AppButton
-          >
-          <AppCirclesHorizontal id="circles-md" class="absolute right-0 bottom-0 h-51" />
+      <div class="testimonials-section__inner">
+        <div class="testimonials-section__column">
+          <TheTestimonialComponent :testimonial="testimonials[0]" />
+          <TheTestimonialComponent :testimonial="testimonials[1]" />
         </div>
-        <TheTestimonialComponent :testimonial="testimonials[3]" />
-        <component :is="StrokeTop" class="absolute w-full -bottom-62 -scale-y-100" />
-      </div>
-      <div class="flex flex-col gap-8 max-w-[346px] justify-center relative">
-        <component :is="StrokeTop" class="absolute w-full -top-44" />
-        <TheTestimonialComponent :testimonial="testimonials[4]" />
-        <component :is="StrokeLeft" class="absolute w-full -right-[calc(100%+2rem)] -scale-x-100" />
-        <TheTestimonialComponent :testimonial="testimonials[5]" />
-        <component :is="StrokeTop" class="absolute w-full -bottom-44 -scale-y-100" />
+
+        <div class="testimonials-section__column">
+          <TheTestimonialComponent :testimonial="testimonials[2]" />
+
+          <div class="testimonials-section__banner px-8 py-10 bg-dark-blue rounded-4 relative">
+            <p class="text-white text-xl mb-8 font-semibold">
+              Want to see what the buzz is all about?
+            </p>
+            <AppButton class="!bg-white !text-blue-300 relative z-1" href="/work"
+              >See our work</AppButton
+            >
+            <AppCirclesHorizontal id="circles-md" class="absolute right-0 bottom-0 h-51" />
+          </div>
+
+          <TheTestimonialComponent :testimonial="testimonials[3]" />
+        </div>
+
+        <div class="testimonials-section__column">
+          <TheTestimonialComponent :testimonial="testimonials[4]" />
+          <TheTestimonialComponent :testimonial="testimonials[5]" />
+        </div>
       </div>
     </div>
-  </div>
+  </AppBlock>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+$testimonials-section-bp: 1024px;
+.testimonials-section {
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+
+    @media (min-width: $testimonials-section-bp) {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 5rem 0;
+      -webkit-mask-image: radial-gradient(
+        50% 46% at 50% 50%,
+        #d9d9d9 84.46%,
+        rgba(217, 217, 217, 0) 150%
+      );
+    }
+  }
+
+  &__column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 45ch;
+    margin: 0 auto;
+
+    &:nth-child(even) {
+      @media (max-width: #{$testimonials-section-bp - 1px}) {
+        order: 1;
+      }
+    }
+
+    @media (min-width: $testimonials-section-bp) {
+      flex: 1 1 0;
+      gap: 2rem;
+
+      &::before {
+        content: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 346 216'%3E%3Crect x='.5' y='-39.5' width='345' height='255' rx='15.5' stroke='%23BCDCDC' stroke-dasharray='4 4'/%3E%3C/svg%3E");
+        position: absolute;
+        bottom: calc(100% + 2rem);
+        left: 0;
+        width: 100%;
+      }
+
+      &::after {
+        content: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 346 216'%3E%3Crect x='.5' y='-39.5' width='345' height='255' rx='15.5' stroke='%23BCDCDC' stroke-dasharray='4 4'/%3E%3C/svg%3E");
+        position: absolute;
+        top: calc(100% + 2rem);
+        left: 0;
+        width: 100%;
+        transform: scaleY(-1);
+      }
+
+      &:nth-child(odd) {
+        margin-top: 6.5rem;
+      }
+    }
+  }
+
+  &__banner {
+    @media (max-width: #{$testimonials-section-bp - 1px}) {
+      order: 1;
+    }
+  }
+
+  &__decor {
+    display: none;
+
+    @media (min-width: $testimonials-section-bp) {
+      display: block;
+    }
+  }
+
+  &__title {
+    max-width: 30ch;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 120%;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @media (min-width: 1024px) {
+      margin: 0 auto;
+      font-size: 1.75rem;
+    }
+  }
+}
 .bg-dark-blue {
   background: radial-gradient(57.03% 76.98% at 100% 0%, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
     #031c26;
   background-blend-mode: overlay, normal;
 }
 
-.rotating-border {
-  width: 100%;
-  background: linear-gradient(90deg, #bcdcdc 50%, transparent 50%),
-    linear-gradient(90deg, #bcdcdc 50%, transparent 50%),
-    linear-gradient(0deg, #bcdcdc 50%, transparent 50%),
-    linear-gradient(0deg, #bcdcdc 50%, transparent 50%);
-  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-  background-size: 15px 1px, 15px 1px, 1px 15px, 1px 15px;
-  padding: 10px;
-  animation: border-dance 36s infinite linear;
-  border-radius: 16px !important;
-  overflow: hidden;
-}
 
-.mask-testimonial {
-  -webkit-mask-image: radial-gradient(
-    50% 46% at 50% 50%,
-    #d9d9d9 84.46%,
-    rgba(217, 217, 217, 0) 122%
-  );
-}
 
-@keyframes border-dance {
-  0% {
-    background-position: 0 0, 100% 100%, 0 100%, 100% 0;
-  }
 
-  100% {
-    background-position: 100% 0, 0 100%, 0 0, 100% 100%;
-  }
-}
+
 </style>

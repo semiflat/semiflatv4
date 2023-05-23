@@ -1,12 +1,16 @@
 <script setup lang="ts">
 const props = defineProps<{
   decor?: string
+  title?: string
 }>()
 </script>
 
 <template>
   <section class="block" :class="{ [`block--decor-${props.decor}`]: !!props.decor }">
     <div class="block__inner">
+      <h2 v-if="title" class="block__title gradient-text">
+        {{ title }}
+      </h2>
       <slot></slot>
     </div>
   </section>
@@ -19,6 +23,19 @@ const props = defineProps<{
   &__inner {
     position: relative;
     z-index: 1;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+
+    @media (min-width: 768px) {
+      max-width: 40ch;
+      margin: 0 auto 5rem;
+      font-size: 1.75rem;
+      text-align: center;
+    }
   }
 
   &::before {

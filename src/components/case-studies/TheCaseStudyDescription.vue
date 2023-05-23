@@ -12,33 +12,20 @@ const props = defineProps<{
 
 <template>
   <div class="case-study-description">
-    <div
+    <AppLongTextSection
       v-for="(section, index) in props.sections"
       :key="index"
+      :data="section"
       class="case-study-description__section"
     >
-      <div class="case-study-description__section-header">
-        <div class="case-study-description__section-header-inner">
-          <h2 class="case-study-description__section-title">
-            {{ section.title }}
-          </h2>
-          <p class="case-study-description__section-lead">{{ section.lead }}</p>
-        </div>
-      </div>
-      <div class="case-study-description__section-body">
-        <div v-if="section.body" v-html="section.body"></div>
-        <slot :name="`section-${index + 1}`"></slot>
-      </div>
-    </div>
+      <slot :name="`section-${index + 1}`"></slot>
+    </AppLongTextSection>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .case-study-description {
   &__section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1.5rem;
     padding: 2rem 0;
     border-bottom: 1px solid var(--accent-color-light);
 
@@ -54,44 +41,6 @@ const props = defineProps<{
     @media (min-width: 1040px) {
       padding: 5rem 0;
       margin: 0 2.5rem;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 120px;
-    }
-  }
-
-  &__section-header-inner {
-    @media (min-width: 1040px) {
-      position: sticky;
-      top: 2rem;
-    }
-  }
-
-  &__section-title {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-
-    @media (min-width: 1040px) {
-      font-size: 1.75rem;
-    }
-  }
-
-  &__section-lead,
-  &__section-body {
-    color: #545959;
-  }
-
-  &__section-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1.5rem;
-
-    @media (min-width: 1040px) {
-      grid-gap: 3rem;
-    }
-
-    &:deep(p:not(:last-of-type)) {
-      margin-bottom: 2rem;
     }
   }
 }
