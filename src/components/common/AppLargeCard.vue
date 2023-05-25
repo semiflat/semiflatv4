@@ -115,7 +115,7 @@ defineProps<{
 
   &__button {
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;

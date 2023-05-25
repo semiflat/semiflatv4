@@ -2,6 +2,7 @@
 export interface NumberedListItem {
   title: string
   description: string
+  isHighlighted?: boolean
   label?: string
 }
 
@@ -21,7 +22,7 @@ const props = defineProps<{
       v-for="item in props.items"
       :key="item.title"
       class="numbered-list__item"
-      :class="{ 'numbered-list__item--highlighted': !!item.label }"
+      :class="{ 'numbered-list__item--highlighted': !!item.isHighlighted }"
     >
       <h3 class="numbered-list__title">{{ item.title }}</h3>
       <p class="numbered-list__description">{{ item.description }}</p>

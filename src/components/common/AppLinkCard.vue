@@ -83,6 +83,7 @@ defineProps<LinkCard>()
     &__link {
       &::before {
         border-color: transparent;
+        transition: .3s ease;
       }
 
       &:hover {

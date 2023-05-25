@@ -93,7 +93,8 @@ const tag = computed(() => {
 }
 
 .app-button.is-secondary {
-  @apply !bg-white !text-blue-300 !border !border-[#D7DBDF] shadow-primary hover:shadow-medium;
+  @apply !bg-white !text-blue-300 !border !border-[#D7DBDF] hover:shadow-primary;
+  box-shadow: 0px 1px 0px rgba(17, 24, 28, 0.08);
 }
 
 .app-button.is-text {

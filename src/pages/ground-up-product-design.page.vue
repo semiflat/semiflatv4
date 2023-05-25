@@ -1,7 +1,9 @@
 <script lang="ts" setup>
 // hero cards assets
-import HeroCardImage1 from '~/assets/work/ground-up-design-card-1.png'
-import HeroCardImage2 from '~/assets/work/ground-up-design-card-2.png'
+import HeroCardImage1 from '~/assets/work/ground-up-design-overview.png'
+import HeroCardImage2 from '~/assets/work/ground-up-design-saas.png'
+import HeroCardBg1 from '~/components/utility/animations/GroundUpDesignOverviewBg.vue'
+import HeroCardBg2 from '~/components/utility/animations/GroundUpDesignSaasBg.vue'
 
 // summary banner assets
 import FoundationIcon from '~/assets/icons/foundation.svg'
@@ -66,6 +68,7 @@ const heroCards = [
     description:
       'Ground-up product design refers to designing a software product from scratch. Our design process takes your software from idea to polished interface.',
     picture: HeroCardImage1,
+    background: HeroCardBg1,
     button: {
       label: 'See the process',
       href: '#process',
@@ -76,6 +79,7 @@ const heroCards = [
     description:
       'Ground-up product design is perfect for early stage startups, SaaS companies launching new products or legacy software needing a complete overhaul.',
     picture: HeroCardImage2,
+    background: HeroCardBg2,
     button: {
       label: 'See our clients',
       href: '#clients',
@@ -137,6 +141,7 @@ const process = {
       description:
         'Semiflat can conduct user research to validate your product assumptions or discover pains of your customers. We will define your ICP, recruit users fitting the criteria and hold interviews according to a previously designed questionnaire.',
       label: 'Optional',
+      isHighlighted: true,
     },
     {
       title: 'Low-fidelity wireframing',
@@ -158,6 +163,7 @@ const process = {
       description:
         'We can conduct user testing to validate our designs with real users that fit your ICP. That way you can ensure you’re going to market with a solution that solves user pains and make immediate adjustments if necessary.',
       label: 'Optional',
+      isHighlighted: true,
     },
   ],
 }

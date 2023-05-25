@@ -1,0 +1,28 @@
+<svg width="536" height="300" viewBox="0 0 536 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_3215_27241" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="536" height="300">
+<rect width="536" height="300" fill="url(#paint0_radial_3215_27241)"/>
+</mask>
+<g mask="url(#mask0_3215_27241)">
+<path d="M137.5 0V300" stroke="#BCDCDC"/>
+<path d="M180.668 0V300" stroke="#BCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.01 6"/>
+<path d="M224.332 0V300" stroke="#BCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.01 6"/>
+<path d="M268 0V300" stroke="#BCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.01 6"/>
+<path d="M311.668 0V300" stroke="#BCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.01 6"/>
+<path d="M355.332 0V300" stroke="#BCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.01 6"/>
+<path d="M398.5 0V300" stroke="#BCDCDC"/>
+<path d="M97 0V300" stroke="#BCDCDC"/>
+<path d="M439 0V300" stroke="#BCDCDC"/>
+<path d="M0 68H536" stroke="#BCDCDC"/>
+<path d="M0 150H536" stroke="#BCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.01 6"/>
+<path d="M0 191H536" stroke="#BCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.01 6"/>
+<path d="M0 109H536" stroke="#BCDCDC" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0.01 6"/>
+<path d="M0 231H536" stroke="#BCDCDC"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_3215_27241" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(268) rotate(90) scale(300 438.379)">
+<stop stop-color="#D9D9D9"/>
+<stop offset="0.865112" stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

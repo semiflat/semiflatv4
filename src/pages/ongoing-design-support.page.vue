@@ -1,7 +1,9 @@
 <script lang="ts" setup>
 // hero cards assets
-import HeroCardImage1 from '~/assets/work/support-card-1.png'
-import HeroCardImage2 from '~/assets/work/support-card-2.png'
+import HeroCardImage1 from '~/assets/work/support-overview.png'
+import HeroCardImage2 from '~/assets/work/support-saas.png'
+import HeroCardBg1 from '~/components/utility/animations/SupportOverviewBg.vue'
+import HeroCardBg2 from '~/components/utility/animations/SupportSaasBg.vue'
 
 // summary banner assets
 import SaasIcon from '~/assets/icons/saas-icon.svg'
@@ -20,6 +22,12 @@ import DefaultLogo from '~/assets/tint-logos/logo-default.svg?url'
 
 import HananAvatar from '~/assets/phenom/hanan-hermelin.jpg'
 import PhenomLogo from '~/assets/tint-logos/logo-phenom.svg?url'
+
+import CalvinAvatar from '~/assets/avatars/calvin-corelli.jpeg'
+import SimpleroLogo from '~/assets/tint-logos/logo-simplero.svg?url'
+
+import SunnyAvatar from '~/assets/avatars/sunny-rai.jpeg'
+import GyaanLogo from '~/assets/tint-logos/logo-gyaan.svg?url'
 
 // clients
 import Cloudstore from '~/assets/clients/logos/cloudstore.png'
@@ -54,6 +62,7 @@ const heroCards = [
     description:
       'Design support typically includes a broad range of ongoing design services, supplementing or replacing an internal design team at a partner organization.',
     picture: HeroCardImage1,
+    background: HeroCardBg1,
     button: {
       label: 'See the process',
       href: '#process',
@@ -64,6 +73,7 @@ const heroCards = [
     description:
       'Ongoing design support is a great solution for companies with an already functioning SaaS product, or products requiring a prolonged exploratory work.',
     picture: HeroCardImage2,
+    background: HeroCardBg2,
     button: {
       label: 'See our clients',
       href: '#clients',
@@ -137,11 +147,23 @@ const process = {
       title: 'Next design sprints',
       description:
         'The dedicated designer or team will be available to work exclusively on your product-related tasks every month. You can use their expertise to deliver new features for your users, create new assets for your brand or ideate a completely new product.',
+      isHighlighted: true,
     },
   ],
 }
 
 const testimonials = [
+  {
+    quote:
+      '“What impressed me most about Semiflat was their ability to work seamlessly with our existing design team. They integrated members of their team with ours, and this collaboration proved to be highly effective. Their collaborative approach, responsiveness, and expertise make them a valuable asset to any project.”',
+    author: {
+      name: 'Hanan Hermelin',
+      role: 'Executive Director of Product Experience Operations',
+      imageUrl: HananAvatar,
+    },
+    company: 'Phenom',
+    companyLogo: PhenomLogo,
+  },
   {
     quote:
       "“We're super happy with the work the team is producing. Only regret is not working together sooner. I recommend Semiflat to all my founder friends!”",
@@ -155,14 +177,25 @@ const testimonials = [
   },
   {
     quote:
-      ' “What impressed me most about Semiflat was their ability to work seamlessly with our existing design team. They integrated members of their team with ours, and this collaboration proved to be highly effective. Their collaborative approach, responsiveness, and expertise make them a valuable asset to any project.”',
+      '“I just wanted to take a moment and recognize Jakub for the amazing work he is doing. Everything he touches looks amazing!!”',
     author: {
-      name: 'Hanan Hermelin',
-      role: 'Executive Director of Product Experience Operations',
-      imageUrl: HananAvatar,
+      name: 'Sunny Rai',
+      role: 'Co-Founder at Gyaan',
+      imageUrl: SunnyAvatar,
     },
-    company: 'Phenom',
-    companyLogo: PhenomLogo,
+    company: 'Gyaan',
+    companyLogo: GyaanLogo,
+  },
+  {
+    quote:
+      "“I love how responsive and flexible Semiflat is to work with. Their design chops are great, they do excellent work. That's table stakes. But what sets them apart is how willing they are to work with our process, and work the way we need to work with them, rather than force their own process on us, or being inflexible and difficult like some other agencies have been. They've allowed us to deliver features at a much higher quality, and at a much faster timeline than we would have otherwise.”",
+    author: {
+      name: 'Calvin Correli',
+      role: 'Founder & CEO at Simplero',
+      imageUrl: CalvinAvatar,
+    },
+    company: 'Simplero',
+    companyLogo: SimpleroLogo,
   },
 ]
 
