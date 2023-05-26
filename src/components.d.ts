@@ -40,7 +40,6 @@ declare module '@vue/runtime-core' {
     AppToastError: typeof import('./components/toasts/AppToastError.vue')['default']
     AppToastSuccess: typeof import('./components/toasts/AppToastSuccess.vue')['default']
     ClientOnly: typeof import('./components/utility/ClientOnly.vue')['default']
-    copy: typeof import('./components/utility/animations/GroundUpDesignSaasBg copy.vue')['default']
     DossBg: typeof import('./components/utility/animations/DossBg.vue')['default']
     GroundUpDesignOverviewBg: typeof import('./components/utility/animations/GroundUpDesignOverviewBg.vue')['default']
     GroundUpDesignSaasBg: typeof import('./components/utility/animations/GroundUpDesignSaasBg.vue')['default']

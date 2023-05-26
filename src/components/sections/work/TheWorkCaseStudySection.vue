@@ -23,7 +23,8 @@ const cases = [
       description:
         'We help SaaS companies go to market or raise funding by designing development-ready MVPs. From ideation to a polished interface.',
       cta: {
-        label: 'Details coming soon',
+        label: 'Learn about ground-up projects',
+        href: '/ground-up-product-design/'
       },
     },
     cards: [
@@ -67,7 +68,8 @@ const cases = [
       description:
         'We help SaaS companies by augmenting their teams with dedicated talent to take their product to the next level.',
       cta: {
-        label: 'Details coming soon',
+        label: 'Learn about design support',
+        href: '/ongoing-design-support/'
       },
     },
     cards: [
